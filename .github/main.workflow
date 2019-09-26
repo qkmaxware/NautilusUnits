@@ -5,7 +5,10 @@ on:
 jobs:
   test:
     name: "Test"
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
     steps:
     - name: "Run Unit Tests"
       uses: mcr.microsoft.com/dotnet/core/sdk:3.0
