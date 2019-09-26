@@ -1,8 +1,0 @@
-C:\Users\chalseth\Desktop\NPM\Units\obj\Debug\netstandard2.1\Units.csprojAssemblyReference.cache
-C:\Users\chalseth\Desktop\NPM\Units\obj\Debug\netstandard2.1\Units.AssemblyInfoInputs.cache
-C:\Users\chalseth\Desktop\NPM\Units\obj\Debug\netstandard2.1\Units.AssemblyInfo.cs
-C:\Users\chalseth\Desktop\NPM\Units\bin\Debug\netstandard2.1\Units.deps.json
-C:\Users\chalseth\Desktop\NPM\Units\bin\Debug\netstandard2.1\Units.dll
-C:\Users\chalseth\Desktop\NPM\Units\bin\Debug\netstandard2.1\Units.pdb
-C:\Users\chalseth\Desktop\NPM\Units\obj\Debug\netstandard2.1\Units.dll
-C:\Users\chalseth\Desktop\NPM\Units\obj\Debug\netstandard2.1\Units.pdb
