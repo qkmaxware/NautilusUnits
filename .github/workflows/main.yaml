@@ -11,6 +11,7 @@ jobs:
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps:
     - name: Run Unit Tests
+      working-directory: /github/home/
       run: dotnet test Units.Tests
     - name: Run Examples
       run: dotnet run Units.Examples
@@ -22,6 +23,8 @@ jobs:
     needs: [ Test ]
     steps: 
     - name: Build
+      working-directory: /github/home/
       run: dotnet build Units
     - name: Pack
+      working-directory: /github/home/
       run: dotnet pack Units
