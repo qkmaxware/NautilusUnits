@@ -9,7 +9,7 @@ namespace System.Units.Examples {
 /// </summary>
 public class Example3 {
 
-    public static void Main (string[] args) {
+    public static void Run (string[] args) {
         var speed   = 12.0.m_s();
         var time    = 5.0.s();
 
@@ -17,8 +17,7 @@ public class Example3 {
 
         // An object travelling at {12m/s} will have moved {60m} in {5s}.
         Console.WriteLine(
-            String.Format("An object travelling at {0} will have moved {2} in {1}."),
-            speed, time, dist
+            String.Format("An object travelling at {0} will have moved {2} in {1}.", speed, time, dist)
         );
     }
 

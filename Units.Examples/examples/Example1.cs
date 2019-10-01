@@ -8,7 +8,7 @@ namespace System.Units.Examples {
 /// </summary>
 public class Example1 {
 
-    public static void Main (string[] args) {
+    public static void Run (string[] args) {
         var x = 12.45.As<double, Metre>();  // Manual declaration of a type as a measured quantity
         var y = (-6.24).m();                // Shortcut method to declare a type of a certain unit
 

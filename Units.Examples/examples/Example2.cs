@@ -8,7 +8,7 @@ namespace System.Units.Examples {
 /// </summary>
 public class Example2 {
 
-    public static void Main (string[] args) {
+    public static void Run (string[] args) {
         var x = 12.45.m(); // Value in metres
         Console.WriteLine(x);
 
