@@ -6,6 +6,7 @@ on:
 jobs:
   test:
     name: Test
+    runs-on: ubuntu-latest
     container: 
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps:
@@ -15,6 +16,7 @@ jobs:
       run: dotnet run Units.Examples
   build:
     name: Build & Pack
+    runs-on: ubuntu-latest
     container: 
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     needs: [ Test ]
