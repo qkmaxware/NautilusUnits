@@ -1,30 +1,25 @@
-name: "Test"
+name: Build
 on:
   push: 
     branches: 
     - "master"
 jobs:
   test:
-    name: "Test"
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+    name: Test
+    container: 
+      image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps:
-    - name: "Run Unit Tests"
-      uses: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
-      run: "dotnet test Units.Tests"
-    - name: "Run Examples"
-      uses: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
-      run: "dotnet run Units.Examples"
+    - name: Run Unit Tests
+      run: dotnet test Units.Tests
+    - name: Run Examples
+      run: dotnet run Units.Examples
   build:
-    name: "Build & Pack"
-    runs-on: ubuntu-latest
+    name: Build & Pack
+    container: 
+      image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     needs: [ Test ]
     steps: 
-    - name: "Build"
-      uses: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
-      run: "dotnet build Units"
-    - name: "Pack"
-      uses: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
-      run: "dotnet pack Units"
+    - name: Build
+      run: dotnet build Units
+    - name: Pack
+      run: dotnet pack Units
