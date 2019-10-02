@@ -10,6 +10,8 @@ jobs:
     container: 
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps: 
+    - name: Checkout
+      uses: actions/checkout
     - name: Pack
       run: dotnet pack Units
     - name: Publish

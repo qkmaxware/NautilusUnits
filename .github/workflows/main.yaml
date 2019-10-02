@@ -10,8 +10,8 @@ jobs:
     container: 
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps:
-    - name: List Directory
-      run: pwd -P && ls -al
+    - name: Checkout
+      uses: actions/checkout
     - name: Run Unit Tests
       run: dotnet test Units.Tests
     - name: Run Examples
@@ -23,6 +23,8 @@ jobs:
       image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     needs: [ Test ]
     steps: 
+    - name: Checkout
+      uses: actions/checkout
     - name: Build
       run: dotnet build Units
     - name: Pack
