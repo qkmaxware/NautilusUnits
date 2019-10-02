@@ -13,8 +13,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Run Unit Tests
+      working-directory: ${{ github.workspace }}
       run: dotnet test Units.Tests
     - name: Run Examples
+      working-directory: ${{ github.workspace }}
       run: dotnet run Units.Examples
   build:
     name: Build & Pack
@@ -26,6 +28,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Build
+      working-directory: ${{ github.workspace }}
       run: dotnet build Units
     - name: Pack
+      working-directory: ${{ github.workspace }}
       run: dotnet pack Units
