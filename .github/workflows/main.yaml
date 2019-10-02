@@ -13,11 +13,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Run Unit Tests
-      working-directory: /home/runner/work/CsUnits/CsUnits/
-      run: dotnet test Units.Tests
+      run: dotnet test ${GITHUB_WORKSPACE}/Units.Tests
     - name: Run Examples
-      working-directory: /home/runner/work/CsUnits/CsUnits/
-      run: dotnet run Units.Examples
+      run: dotnet run ${GITHUB_WORKSPACE}/Units.Examples
   build:
     name: Build & Pack
     runs-on: ubuntu-latest
@@ -28,8 +26,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Build
-      working-directory: /home/runner/work/CsUnits/CsUnits/
-      run: dotnet build Units
+      run: dotnet build ${GITHUB_WORKSPACE}
     - name: Pack
-      working-directory: /home/runner/work/CsUnits/CsUnits/
-      run: dotnet pack Units
+      run: dotnet pack ${GITHUB_WORKSPACE}
