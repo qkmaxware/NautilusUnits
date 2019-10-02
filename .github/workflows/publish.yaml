@@ -7,13 +7,12 @@ jobs:
   publish:
     name: Pack & Publish
     runs-on: ubuntu-latest
-    container: 
-      image: docker://mcr.microsoft.com/dotnet/core/sdk:3.0
     steps: 
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@master
+    - uses: actions/setup-dotnet@v1
     - name: Pack
-      run: dotnet pack /home/runner/work/CsUnits/CsUnits/Units
+      run: dotnet pack Units
     - name: Publish
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
