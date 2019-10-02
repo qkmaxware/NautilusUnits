@@ -13,8 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Pack
-      working-directory: ${{ github.workspace }}
-      run: dotnet pack Units
+      run: dotnet pack /home/runner/work/CsUnits/CsUnits/Units
     - name: Publish
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
