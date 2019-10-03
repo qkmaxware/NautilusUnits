@@ -15,11 +15,19 @@ See [License](LICENSE) for license details.
 1. Dotnet Standard 2.1+
 2. C# 8+
 
+## Examples
+See the [Examples](Units.Examples/Readme.md) sub-project. 
+
+## Automatic Unit Tests
+See the [Tests](Units.Tests/Readme.md) sub-project. 
+
 ## Table Of Contents
 - [CSharp Units (CsUnits)](#csharp-units-csunits)
   - [Build Status](#build-status)
   - [License](#license)
   - [Technology](#technology)
+  - [Examples](#examples)
+  - [Automatic Unit Tests](#automatic-unit-tests)
   - [Table Of Contents](#table-of-contents)
 - [Predefined Units](#predefined-units)
   - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
