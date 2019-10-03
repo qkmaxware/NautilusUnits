@@ -15,7 +15,7 @@ namespace System.Units.Luminosity {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Gigacandela> Gcd<T>(this T value) {
-            return value.As<T, Gigacandela>();
+            return value.As<Gigacandela, T>();
         }
 	}
 }

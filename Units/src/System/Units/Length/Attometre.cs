@@ -15,7 +15,7 @@ namespace System.Units.Length {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Attometre> am<T>(this T value) {
-            return value.As<T, Attometre>();
+            return value.As<Attometre, T>();
         }
 	}
 }

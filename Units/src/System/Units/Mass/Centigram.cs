@@ -15,7 +15,7 @@ namespace System.Units.Mass {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Centigram> cg<T>(this T value) {
-            return value.As<T, Centigram>();
+            return value.As<Centigram, T>();
         }
 	}
 }

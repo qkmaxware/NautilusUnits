@@ -1,7 +1,8 @@
+using System;
 using System.Units;
 using System.Units.Length;
 
-namespace System.Units.Examples {
+namespace Examples {
 
 /// <summary>
 /// This example shows how pre-defined unit conversions work

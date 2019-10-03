@@ -13,7 +13,7 @@ namespace System.Units.Current {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Ampere> A<T>(this T value) {
-            return value.As<T, Ampere>();
+            return value.As<Ampere, T>();
         }
     }
 

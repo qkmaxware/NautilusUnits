@@ -13,7 +13,7 @@ namespace System.Units.Temperature {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Kelvin> K<T>(this T value) {
-            return value.As<T, Kelvin>();
+            return value.As<Kelvin, T>();
         }
     }
 

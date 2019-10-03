@@ -13,7 +13,7 @@ namespace System.Units.Angle {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Degrees> deg<T>(this T value) {
-            return value.As<T, Degrees>();
+            return value.As<Degrees, T>();
         }
     }
 

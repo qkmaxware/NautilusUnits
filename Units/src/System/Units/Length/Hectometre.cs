@@ -15,7 +15,7 @@ namespace System.Units.Length {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Hectometre> hm<T>(this T value) {
-            return value.As<T, Hectometre>();
+            return value.As<Hectometre, T>();
         }
 	}
 }

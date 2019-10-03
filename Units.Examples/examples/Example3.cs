@@ -1,8 +1,9 @@
+using System;
 using System.Units;
 using System.Units.Length;
 using System.Units.Time;
 
-namespace System.Units.Examples {
+namespace Examples {
 
 /// <summary>
 /// This example shows how to create custom units 
@@ -28,7 +29,7 @@ public class Example3 {
     /// <param name="time">Time in Seconds</param>
     /// <returns>Distance in Metres</returns>
     public static Quantity<double, Metre> Distance(Quantity<double, M_S> speed, Quantity<double, Second> time) {
-        return (speed.Value * time.Value).As<double, Metre>();
+        return (speed.Value * time.Value).As<Metre, double>();
     }
 
 }
@@ -42,7 +43,7 @@ public struct M_S : IUnit {
 // Extension method to make constructing objects of this utility easy (optional)
 public static class M_SUtils {
     public static Quantity<T, M_S> m_s<T> (this T value) {
-        return value.As<T, M_S>();
+        return value.As<M_S, T>();
     }
 }
 

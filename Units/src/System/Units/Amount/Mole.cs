@@ -13,7 +13,7 @@ namespace System.Units.Amount {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Mole> mol<T>(this T value) {
-            return value.As<T, Mole>();
+            return value.As<Mole, T>();
         }
     }
 

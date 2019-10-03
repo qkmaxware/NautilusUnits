@@ -1,7 +1,8 @@
+using System;
 using System.Units;
 using System.Units.Length;
 
-namespace System.Units.Examples {
+namespace Examples {
 
 /// <summary>
 /// This example shows how to create measured quantities and statically restrict the units allowed in methods
@@ -9,7 +10,7 @@ namespace System.Units.Examples {
 public class Example1 {
 
     public static void Run (string[] args) {
-        var x = 12.45.As<double, Metre>();  // Manual declaration of a type as a measured quantity
+        var x = 12.45.As<Metre, double>();  // Manual declaration of a type as a measured quantity
         var y = (-6.24).m();                // Shortcut method to declare a type of a certain unit
 
         var z = x.Add<double, Metre>(y);

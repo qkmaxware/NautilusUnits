@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Units.Examples;
+using Examples;
 
-namespace System.Units.Examples {
+namespace Examples {
     class Program {
         static void Main(string[] args) {
             Example1.Run(args);

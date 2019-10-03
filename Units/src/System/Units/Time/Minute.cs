@@ -13,7 +13,7 @@ namespace System.Units.Time {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Minute> min<T>(this T value) {
-            return value.As<T, Minute>();
+            return value.As<Minute, T>();
         }
     }
 

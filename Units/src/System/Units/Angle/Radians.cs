@@ -13,7 +13,7 @@ namespace System.Units.Angle {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Radians> rad<T>(this T value) {
-            return value.As<T, Radians>();
+            return value.As<Radians, T>();
         }
     }
 

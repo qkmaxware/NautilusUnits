@@ -12,7 +12,7 @@ public static class QuantityExtensions {
     /// <typeparam name="U">The units the value is measured in</typeparam>
     /// <typeparam name="T">The type of the value</typeparam>
     /// <returns></returns>
-    public static Quantity<T, U> As<T, U> (this T value) where U:IUnit {
+    public static Quantity<T, U> As<U, T> (this T value) where U:IUnit {
         return new Quantity<T, U>(value);
     } 
     

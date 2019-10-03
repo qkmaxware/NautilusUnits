@@ -15,7 +15,7 @@ namespace System.Units.Luminosity {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Attocandela> acd<T>(this T value) {
-            return value.As<T, Attocandela>();
+            return value.As<Attocandela, T>();
         }
 	}
 }

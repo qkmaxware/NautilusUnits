@@ -15,7 +15,7 @@ namespace System.Units.Mass {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Petagram> Pg<T>(this T value) {
-            return value.As<T, Petagram>();
+            return value.As<Petagram, T>();
         }
 	}
 }

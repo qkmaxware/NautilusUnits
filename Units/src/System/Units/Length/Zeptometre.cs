@@ -15,7 +15,7 @@ namespace System.Units.Length {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Zeptometre> zm<T>(this T value) {
-            return value.As<T, Zeptometre>();
+            return value.As<Zeptometre, T>();
         }
 	}
 }
