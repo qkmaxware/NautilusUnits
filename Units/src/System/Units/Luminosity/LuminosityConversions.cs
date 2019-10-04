@@ -10,7 +10,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -20,7 +20,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -30,7 +30,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -40,7 +40,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -50,7 +50,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -60,7 +60,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -70,7 +70,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -80,7 +80,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -90,7 +90,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -100,7 +100,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -110,7 +110,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -120,7 +120,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -130,7 +130,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -140,7 +140,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -150,7 +150,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -160,7 +160,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -170,7 +170,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -180,7 +180,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -190,7 +190,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -200,7 +200,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -210,7 +210,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -220,7 +220,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -230,7 +230,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -240,7 +240,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -250,7 +250,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -260,7 +260,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -270,7 +270,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -280,7 +280,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -290,7 +290,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -300,7 +300,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -310,7 +310,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -320,7 +320,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -330,7 +330,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -340,7 +340,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -350,7 +350,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -360,7 +360,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -370,7 +370,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -380,7 +380,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -390,7 +390,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e24
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -400,7 +400,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -410,7 +410,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -420,7 +420,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -430,7 +430,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -440,7 +440,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -450,7 +450,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -460,7 +460,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -470,7 +470,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -480,7 +480,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -490,7 +490,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -500,7 +500,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -510,7 +510,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -520,7 +520,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -530,7 +530,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -540,7 +540,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -550,7 +550,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -560,7 +560,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -570,7 +570,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -580,7 +580,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e21
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -590,7 +590,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -600,7 +600,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -610,7 +610,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -620,7 +620,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -630,7 +630,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -640,7 +640,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -650,7 +650,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -660,7 +660,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -670,7 +670,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -680,7 +680,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -690,7 +690,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -700,7 +700,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -710,7 +710,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -720,7 +720,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -730,7 +730,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -740,7 +740,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -750,7 +750,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -760,7 +760,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -770,7 +770,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e18
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -780,7 +780,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -790,7 +790,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -800,7 +800,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -810,7 +810,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -820,7 +820,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -830,7 +830,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -840,7 +840,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -850,7 +850,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -860,7 +860,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -870,7 +870,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -880,7 +880,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -890,7 +890,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -900,7 +900,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -910,7 +910,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -920,7 +920,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -930,7 +930,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -940,7 +940,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -950,7 +950,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -960,7 +960,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e15
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -970,7 +970,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -980,7 +980,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -990,7 +990,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1000,7 +1000,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1010,7 +1010,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1020,7 +1020,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1030,7 +1030,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1040,7 +1040,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1050,7 +1050,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1060,7 +1060,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1070,7 +1070,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1080,7 +1080,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1090,7 +1090,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1100,7 +1100,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1110,7 +1110,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1120,7 +1120,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1130,7 +1130,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1140,7 +1140,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1150,7 +1150,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e12
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -1160,7 +1160,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1170,7 +1170,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1180,7 +1180,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1190,7 +1190,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1200,7 +1200,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1210,7 +1210,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1220,7 +1220,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1230,7 +1230,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1240,7 +1240,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1250,7 +1250,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1260,7 +1260,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1270,7 +1270,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1280,7 +1280,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1290,7 +1290,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1300,7 +1300,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1310,7 +1310,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1320,7 +1320,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1330,7 +1330,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1340,7 +1340,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e9
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -1350,7 +1350,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1360,7 +1360,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1370,7 +1370,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1380,7 +1380,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1390,7 +1390,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1400,7 +1400,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1410,7 +1410,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1420,7 +1420,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1430,7 +1430,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1440,7 +1440,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1450,7 +1450,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1460,7 +1460,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1470,7 +1470,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1480,7 +1480,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1490,7 +1490,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1500,7 +1500,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1510,7 +1510,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1520,7 +1520,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1530,7 +1530,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e6
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -1540,7 +1540,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1550,7 +1550,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1560,7 +1560,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1570,7 +1570,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1580,7 +1580,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1590,7 +1590,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1600,7 +1600,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1610,7 +1610,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1620,7 +1620,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1630,7 +1630,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1640,7 +1640,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1650,7 +1650,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1660,7 +1660,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1670,7 +1670,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1680,7 +1680,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1690,7 +1690,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1700,7 +1700,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1710,7 +1710,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1720,7 +1720,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e3
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -1730,7 +1730,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1740,7 +1740,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1750,7 +1750,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1760,7 +1760,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1770,7 +1770,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1780,7 +1780,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1790,7 +1790,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1800,7 +1800,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1810,7 +1810,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1820,7 +1820,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1830,7 +1830,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1840,7 +1840,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1850,7 +1850,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1860,7 +1860,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1870,7 +1870,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1880,7 +1880,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1890,7 +1890,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1900,7 +1900,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1910,7 +1910,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e2
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -1920,7 +1920,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1930,7 +1930,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1940,7 +1940,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1950,7 +1950,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1960,7 +1960,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1970,7 +1970,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1980,7 +1980,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -1990,7 +1990,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2000,7 +2000,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2010,7 +2010,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2020,7 +2020,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2030,7 +2030,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2040,7 +2040,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2050,7 +2050,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2060,7 +2060,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2070,7 +2070,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2080,7 +2080,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2090,7 +2090,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2100,7 +2100,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e1
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -2110,7 +2110,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2120,7 +2120,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2130,7 +2130,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2140,7 +2140,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2150,7 +2150,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2160,7 +2160,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2170,7 +2170,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2180,7 +2180,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2190,7 +2190,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2200,7 +2200,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2210,7 +2210,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2220,7 +2220,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2230,7 +2230,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2240,7 +2240,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2250,7 +2250,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2260,7 +2260,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2270,7 +2270,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2280,7 +2280,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2290,7 +2290,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-1
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -2300,7 +2300,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2310,7 +2310,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2320,7 +2320,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2330,7 +2330,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2340,7 +2340,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2350,7 +2350,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2360,7 +2360,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2370,7 +2370,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2380,7 +2380,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2390,7 +2390,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2400,7 +2400,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2410,7 +2410,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2420,7 +2420,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2430,7 +2430,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2440,7 +2440,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2450,7 +2450,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2460,7 +2460,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2470,7 +2470,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2480,7 +2480,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-2
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -2490,7 +2490,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2500,7 +2500,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2510,7 +2510,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2520,7 +2520,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2530,7 +2530,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2540,7 +2540,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2550,7 +2550,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2560,7 +2560,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2570,7 +2570,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2580,7 +2580,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2590,7 +2590,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2600,7 +2600,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2610,7 +2610,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2620,7 +2620,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2630,7 +2630,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2640,7 +2640,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2650,7 +2650,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2660,7 +2660,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2670,7 +2670,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-3
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -2680,7 +2680,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2690,7 +2690,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2700,7 +2700,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2710,7 +2710,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2720,7 +2720,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2730,7 +2730,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2740,7 +2740,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2750,7 +2750,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2760,7 +2760,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2770,7 +2770,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2780,7 +2780,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2790,7 +2790,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2800,7 +2800,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2810,7 +2810,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2820,7 +2820,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2830,7 +2830,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2840,7 +2840,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2850,7 +2850,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2860,7 +2860,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-6
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -2870,7 +2870,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2880,7 +2880,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2890,7 +2890,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2900,7 +2900,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2910,7 +2910,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2920,7 +2920,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2930,7 +2930,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2940,7 +2940,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2950,7 +2950,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2960,7 +2960,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2970,7 +2970,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2980,7 +2980,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -2990,7 +2990,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3000,7 +3000,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3010,7 +3010,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3020,7 +3020,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3030,7 +3030,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3040,7 +3040,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3050,7 +3050,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-9
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -3060,7 +3060,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3070,7 +3070,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3080,7 +3080,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3090,7 +3090,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3100,7 +3100,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3110,7 +3110,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3120,7 +3120,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3130,7 +3130,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3140,7 +3140,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3150,7 +3150,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3160,7 +3160,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3170,7 +3170,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3180,7 +3180,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3190,7 +3190,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3200,7 +3200,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3210,7 +3210,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3220,7 +3220,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3230,7 +3230,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3240,7 +3240,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-12
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -3250,7 +3250,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3260,7 +3260,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3270,7 +3270,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3280,7 +3280,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3290,7 +3290,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3300,7 +3300,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3310,7 +3310,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3320,7 +3320,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3330,7 +3330,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3340,7 +3340,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3350,7 +3350,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3360,7 +3360,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3370,7 +3370,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3380,7 +3380,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3390,7 +3390,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3400,7 +3400,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3410,7 +3410,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3420,7 +3420,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3430,7 +3430,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-15
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -3440,7 +3440,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3450,7 +3450,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3460,7 +3460,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3470,7 +3470,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3480,7 +3480,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3490,7 +3490,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3500,7 +3500,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3510,7 +3510,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3520,7 +3520,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3530,7 +3530,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3540,7 +3540,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3550,7 +3550,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3560,7 +3560,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3570,7 +3570,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3580,7 +3580,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3590,7 +3590,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3600,7 +3600,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3610,7 +3610,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3620,7 +3620,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-18
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -3630,7 +3630,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3640,7 +3640,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3650,7 +3650,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3660,7 +3660,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3670,7 +3670,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3680,7 +3680,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3690,7 +3690,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3700,7 +3700,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3710,7 +3710,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3720,7 +3720,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3730,7 +3730,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3740,7 +3740,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3750,7 +3750,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3760,7 +3760,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3770,7 +3770,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3780,7 +3780,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3790,7 +3790,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3800,7 +3800,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3810,7 +3810,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yoctocandela</returns>
 	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
         return new Quantity<double, Yoctocandela>(
-            Convert.ToDouble(val.Value) * 10e-21
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -3820,7 +3820,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Yottacandela</returns>
 	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Yottacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3830,7 +3830,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zettacandela</returns>
 	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Zettacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3840,7 +3840,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Exacandela</returns>
 	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Exacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3850,7 +3850,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Petacandela</returns>
 	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Petacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3860,7 +3860,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Teracandela</returns>
 	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Teracandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3870,7 +3870,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Gigacandela</returns>
 	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Gigacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3880,7 +3880,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Megacandela</returns>
 	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Megacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3890,7 +3890,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Kilocandela</returns>
 	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Kilocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3900,7 +3900,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Hectocandela</returns>
 	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Hectocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3910,7 +3910,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Dekacandela</returns>
 	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Dekacandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3920,7 +3920,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Decicandela</returns>
 	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Decicandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3930,7 +3930,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Centicandela</returns>
 	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Centicandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3940,7 +3940,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Millicandela</returns>
 	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Millicandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3950,7 +3950,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Microcandela</returns>
 	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Microcandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3960,7 +3960,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Nanocandela</returns>
 	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Nanocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3970,7 +3970,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Picocandela</returns>
 	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Picocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3980,7 +3980,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Femtocandela</returns>
 	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Femtocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -3990,7 +3990,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Attocandela</returns>
 	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Attocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -4000,7 +4000,7 @@ public static class LuminosityConversions {
     /// <returns>quantity measured in Zeptocandela</returns>
 	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
         return new Quantity<double, Zeptocandela>(
-            Convert.ToDouble(val.Value) * 10e-24
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 }

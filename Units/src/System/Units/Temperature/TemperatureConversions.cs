@@ -22,7 +22,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in kelvin</returns>
     public static Quantity<double, Kelvin> ToKelvins<T>(this Quantity<T, Fahrenheit> val) where T:IConvertible {
         return new Quantity<double, Kelvin>(
-            (Convert.ToDouble(val.Value) - 32) * (5/9) + 273.15
+            (Convert.ToDouble(val.Value) - 32) * (5d/9d) + 273.15
         );
     }
 
@@ -33,7 +33,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in kelvin</returns>
     public static Quantity<double, Kelvin> ToKelvins<T>(this Quantity<T, Rankine> val) where T:IConvertible {
         return new Quantity<double, Kelvin>(
-            Convert.ToDouble(val.Value) * (5/9)
+            Convert.ToDouble(val.Value) * (5d/9d)
         );
     }
 
@@ -55,7 +55,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in celsius</returns>
     public static Quantity<double, Celsius> ToCelsius<T>(this Quantity<T, Fahrenheit> val) where T:IConvertible {
         return new Quantity<double, Celsius>(
-            (Convert.ToDouble(val.Value) - 32) * (5/9)
+            (Convert.ToDouble(val.Value) - 32) * (5d/9d)
         );
     }
 
@@ -66,7 +66,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in celsius</returns>
     public static Quantity<double, Celsius> ToCelsius<T>(this Quantity<T, Rankine> val) where T:IConvertible {
         return new Quantity<double, Celsius>(
-            (Convert.ToDouble(val.Value) - 491.67) * (5/9)
+            (Convert.ToDouble(val.Value) - 491.67) * (5d/9d)
         );
     }
 
@@ -77,7 +77,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in fahrenheit</returns>
     public static Quantity<double, Fahrenheit> ToFahrenheit<T>(this Quantity<T, Kelvin> val) where T:IConvertible {
         return new Quantity<double, Fahrenheit>(
-            (Convert.ToDouble(val.Value) - 273.15) * (9/5) + 32
+            (Convert.ToDouble(val.Value) - 273.15) * (9d/5d) + 32
         );
     }
 
@@ -99,7 +99,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in fahrenheit</returns>
     public static Quantity<double, Fahrenheit> ToFahrenheit<T>(this Quantity<T, Celsius> val) where T:IConvertible {
         return new Quantity<double, Fahrenheit>(
-            (Convert.ToDouble(val.Value) * (9/5)) + 32
+            (Convert.ToDouble(val.Value) * (9d/5d)) + 32
         );
     }
 
@@ -110,7 +110,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in rankine</returns>
     public static Quantity<double, Rankine> ToRankine<T>(this Quantity<T, Kelvin> val) where T:IConvertible {
         return new Quantity<double, Rankine>(
-            (Convert.ToDouble(val.Value) * (9/5))
+            (Convert.ToDouble(val.Value) * (9d/5d))
         );
     }
 
@@ -121,7 +121,7 @@ public static class TemperatureConversions {
     /// <returns>temperature in rankine</returns>
     public static Quantity<double, Rankine> ToRankine<T>(this Quantity<T, Celsius> val) where T:IConvertible {
         return new Quantity<double, Rankine>(
-            (Convert.ToDouble(val.Value) * (9/5)) + 491.67
+            (Convert.ToDouble(val.Value) * (9d/5d)) + 491.67
         );
     }
 
