@@ -101,6 +101,27 @@ See the [Tests](Units.Tests/Readme.md) sub-project.
 | AttoJoule | aJ |
 | ZeptoJoule | zJ |
 | YoctoJoule | yJ |
+| Electronvolt | eV |
+| YottaElectronvolt | YeV |
+| ZettaElectronvolt | ZeV |
+| ExaElectronvolt | EeV |
+| PetaElectronvolt | PeV |
+| TeraElectronvolt | TeV |
+| GigaElectronvolt | GeV |
+| MegaElectronvolt | MeV |
+| KiloElectronvolt | keV |
+| HectoElectronvolt | heV |
+| DekaElectronvolt | daeV |
+| DeciElectronvolt | deV |
+| CentiElectronvolt | ceV |
+| MilliElectronvolt | meV |
+| MicroElectronvolt | ueV |
+| NanoElectronvolt | neV |
+| PicoElectronvolt | peV |
+| FemtoElectronvolt | feV |
+| AttoElectronvolt | aeV |
+| ZeptoElectronvolt | zeV |
+| YoctoElectronvolt | yeV |
 
 ## Length (System.Units.Length)
 | Name | Symbol |
