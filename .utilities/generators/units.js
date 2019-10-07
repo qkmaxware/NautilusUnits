@@ -205,6 +205,6 @@ namespace ${namespace} {
 
 // Output conversion class
 save(
-    path.join(__dirname, "obj", conversionName + "Conversions.cs"), 
+    path.join(__dirname, "obj", ToPascalCase(element.name) + conversionName + "Conversions.cs"), 
     conversionClass(namespace, conversionName, conversions)
 );
