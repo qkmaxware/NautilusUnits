@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Megacandela (Mcd)
+	/// Unit of measurement for the MegaCandela (Mcd)
 	/// </summary>
-	public struct Megacandela : ILuminosity {
-        public static string Name => "Megacandela";
+	public struct MegaCandela : ILuminosity {
+        public static string Name => "MegaCandela";
         public static string Symbol => "Mcd";
     }
 	
-	public static class MegacandelaFactory {
+	public static class MegaCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Megacandelas
+        /// Create a quantity measured in MegaCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Megacandela> Mcd<T>(this T value) {
-            return value.As<Megacandela, T>();
+        public static Quantity<T, MegaCandela> Mcd<T>(this T value) {
+            return new Quantity<T, MegaCandela> (value);
         }
 	}
 }

@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Zettagram (Zg)
+	/// Unit of measurement for the ZettaGram (Zg)
 	/// </summary>
-	public struct Zettagram : IMass {
-        public static string Name => "Zettagram";
+	public struct ZettaGram : IMass {
+        public static string Name => "ZettaGram";
         public static string Symbol => "Zg";
     }
 	
-	public static class ZettagramFactory {
+	public static class ZettaGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Zettagrams
+        /// Create a quantity measured in ZettaGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Zettagram> Zg<T>(this T value) {
-            return value.As<Zettagram, T>();
+        public static Quantity<T, ZettaGram> Zg<T>(this T value) {
+            return new Quantity<T, ZettaGram> (value);
         }
 	}
 }

@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Femtogram (fg)
+	/// Unit of measurement for the FemtoGram (fg)
 	/// </summary>
-	public struct Femtogram : IMass {
-        public static string Name => "Femtogram";
+	public struct FemtoGram : IMass {
+        public static string Name => "FemtoGram";
         public static string Symbol => "fg";
     }
 	
-	public static class FemtogramFactory {
+	public static class FemtoGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Femtograms
+        /// Create a quantity measured in FemtoGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Femtogram> fg<T>(this T value) {
-            return value.As<Femtogram, T>();
+        public static Quantity<T, FemtoGram> fg<T>(this T value) {
+            return new Quantity<T, FemtoGram> (value);
         }
 	}
 }

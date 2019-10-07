@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Gigagram (Gg)
+	/// Unit of measurement for the GigaGram (Gg)
 	/// </summary>
-	public struct Gigagram : IMass {
-        public static string Name => "Gigagram";
+	public struct GigaGram : IMass {
+        public static string Name => "GigaGram";
         public static string Symbol => "Gg";
     }
 	
-	public static class GigagramFactory {
+	public static class GigaGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Gigagrams
+        /// Create a quantity measured in GigaGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Gigagram> Gg<T>(this T value) {
-            return value.As<Gigagram, T>();
+        public static Quantity<T, GigaGram> Gg<T>(this T value) {
+            return new Quantity<T, GigaGram> (value);
         }
 	}
 }

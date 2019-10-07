@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Centicandela (ccd)
+	/// Unit of measurement for the CentiCandela (ccd)
 	/// </summary>
-	public struct Centicandela : ILuminosity {
-        public static string Name => "Centicandela";
+	public struct CentiCandela : ILuminosity {
+        public static string Name => "CentiCandela";
         public static string Symbol => "ccd";
     }
 	
-	public static class CenticandelaFactory {
+	public static class CentiCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Centicandelas
+        /// Create a quantity measured in CentiCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Centicandela> ccd<T>(this T value) {
-            return value.As<Centicandela, T>();
+        public static Quantity<T, CentiCandela> ccd<T>(this T value) {
+            return new Quantity<T, CentiCandela> (value);
         }
 	}
 }

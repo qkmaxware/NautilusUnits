@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Nanogram (ng)
+	/// Unit of measurement for the NanoGram (ng)
 	/// </summary>
-	public struct Nanogram : IMass {
-        public static string Name => "Nanogram";
+	public struct NanoGram : IMass {
+        public static string Name => "NanoGram";
         public static string Symbol => "ng";
     }
 	
-	public static class NanogramFactory {
+	public static class NanoGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Nanograms
+        /// Create a quantity measured in NanoGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Nanogram> ng<T>(this T value) {
-            return value.As<Nanogram, T>();
+        public static Quantity<T, NanoGram> ng<T>(this T value) {
+            return new Quantity<T, NanoGram> (value);
         }
 	}
 }

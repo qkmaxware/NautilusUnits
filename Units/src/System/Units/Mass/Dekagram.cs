@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Dekagram (dag)
+	/// Unit of measurement for the DekaGram (dag)
 	/// </summary>
-	public struct Dekagram : IMass {
-        public static string Name => "Dekagram";
+	public struct DekaGram : IMass {
+        public static string Name => "DekaGram";
         public static string Symbol => "dag";
     }
 	
-	public static class DekagramFactory {
+	public static class DekaGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Dekagrams
+        /// Create a quantity measured in DekaGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Dekagram> dag<T>(this T value) {
-            return value.As<Dekagram, T>();
+        public static Quantity<T, DekaGram> dag<T>(this T value) {
+            return new Quantity<T, DekaGram> (value);
         }
 	}
 }

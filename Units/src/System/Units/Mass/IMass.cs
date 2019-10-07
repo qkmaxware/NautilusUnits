@@ -1,5 +1,7 @@
+using System.Units; 
+
 namespace System.Units.Mass {
 
-public interface IMass : IUnit {}
+	public interface IMass : IUnit {}
 
 }

@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Petacandela (Pcd)
+	/// Unit of measurement for the PetaCandela (Pcd)
 	/// </summary>
-	public struct Petacandela : ILuminosity {
-        public static string Name => "Petacandela";
+	public struct PetaCandela : ILuminosity {
+        public static string Name => "PetaCandela";
         public static string Symbol => "Pcd";
     }
 	
-	public static class PetacandelaFactory {
+	public static class PetaCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Petacandelas
+        /// Create a quantity measured in PetaCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Petacandela> Pcd<T>(this T value) {
-            return value.As<Petacandela, T>();
+        public static Quantity<T, PetaCandela> Pcd<T>(this T value) {
+            return new Quantity<T, PetaCandela> (value);
         }
 	}
 }

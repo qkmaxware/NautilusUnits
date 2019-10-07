@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Millicandela (mcd)
+	/// Unit of measurement for the MilliCandela (mcd)
 	/// </summary>
-	public struct Millicandela : ILuminosity {
-        public static string Name => "Millicandela";
+	public struct MilliCandela : ILuminosity {
+        public static string Name => "MilliCandela";
         public static string Symbol => "mcd";
     }
 	
-	public static class MillicandelaFactory {
+	public static class MilliCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Millicandelas
+        /// Create a quantity measured in MilliCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Millicandela> mcd<T>(this T value) {
-            return value.As<Millicandela, T>();
+        public static Quantity<T, MilliCandela> mcd<T>(this T value) {
+            return new Quantity<T, MilliCandela> (value);
         }
 	}
 }

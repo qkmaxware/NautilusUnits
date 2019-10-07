@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Yottacandela (Ycd)
+	/// Unit of measurement for the YottaCandela (Ycd)
 	/// </summary>
-	public struct Yottacandela : ILuminosity {
-        public static string Name => "Yottacandela";
+	public struct YottaCandela : ILuminosity {
+        public static string Name => "YottaCandela";
         public static string Symbol => "Ycd";
     }
 	
-	public static class YottacandelaFactory {
+	public static class YottaCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Yottacandelas
+        /// Create a quantity measured in YottaCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Yottacandela> Ycd<T>(this T value) {
-            return value.As<Yottacandela, T>();
+        public static Quantity<T, YottaCandela> Ycd<T>(this T value) {
+            return new Quantity<T, YottaCandela> (value);
         }
 	}
 }

@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Picocandela (pcd)
+	/// Unit of measurement for the PicoCandela (pcd)
 	/// </summary>
-	public struct Picocandela : ILuminosity {
-        public static string Name => "Picocandela";
+	public struct PicoCandela : ILuminosity {
+        public static string Name => "PicoCandela";
         public static string Symbol => "pcd";
     }
 	
-	public static class PicocandelaFactory {
+	public static class PicoCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Picocandelas
+        /// Create a quantity measured in PicoCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Picocandela> pcd<T>(this T value) {
-            return value.As<Picocandela, T>();
+        public static Quantity<T, PicoCandela> pcd<T>(this T value) {
+            return new Quantity<T, PicoCandela> (value);
         }
 	}
 }

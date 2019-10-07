@@ -1,21 +1,21 @@
 namespace System.Units.Length {
 	/// <summary>
-	/// Unit of measurement for Zettametre (Zm)
+	/// Unit of measurement for the ZettaMetre (Zm)
 	/// </summary>
-	public struct Zettametre : ILength {
-        public static string Name => "Zettametre";
+	public struct ZettaMetre : ILength {
+        public static string Name => "ZettaMetre";
         public static string Symbol => "Zm";
     }
 	
-	public static class ZettametreFactory {
+	public static class ZettaMetreFactory {
 		/// <summary>
-        /// Create a quantity measured in Zettametres
+        /// Create a quantity measured in ZettaMetres
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Zettametre> Zm<T>(this T value) {
-            return value.As<Zettametre, T>();
+        public static Quantity<T, ZettaMetre> Zm<T>(this T value) {
+            return new Quantity<T, ZettaMetre> (value);
         }
 	}
 }

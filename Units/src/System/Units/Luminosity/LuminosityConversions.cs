@@ -1,4008 +1,4005 @@
 using System;
-
 namespace System.Units.Luminosity {
-
 public static class LuminosityConversions {
 	/// <summary>
-    /// Extension method to convert Candela to Yottacandela
+    /// Extension method to convert Candela to YottaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Zettacandela
+    /// Extension method to convert Candela to ZettaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Exacandela
+    /// Extension method to convert Candela to ExaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Petacandela
+    /// Extension method to convert Candela to PetaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Teracandela
+    /// Extension method to convert Candela to TeraCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Gigacandela
+    /// Extension method to convert Candela to GigaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Megacandela
+    /// Extension method to convert Candela to MegaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Kilocandela
+    /// Extension method to convert Candela to KiloCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Hectocandela
+    /// Extension method to convert Candela to HectoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Dekacandela
+    /// Extension method to convert Candela to DekaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Decicandela
+    /// Extension method to convert Candela to DeciCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Centicandela
+    /// Extension method to convert Candela to CentiCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Millicandela
+    /// Extension method to convert Candela to MilliCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Microcandela
+    /// Extension method to convert Candela to MicroCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Nanocandela
+    /// Extension method to convert Candela to NanoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Picocandela
+    /// Extension method to convert Candela to PicoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Femtocandela
+    /// Extension method to convert Candela to FemtoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Attocandela
+    /// Extension method to convert Candela to AttoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Zeptocandela
+    /// Extension method to convert Candela to ZeptoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Candela to Yoctocandela
+    /// Extension method to convert Candela to YoctoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, Candela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Zettacandela
+    /// Extension method to convert YottaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Exacandela
+    /// Extension method to convert YottaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Petacandela
+    /// Extension method to convert YottaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Teracandela
+    /// Extension method to convert YottaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Gigacandela
+    /// Extension method to convert YottaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Megacandela
+    /// Extension method to convert YottaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Kilocandela
+    /// Extension method to convert YottaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Hectocandela
+    /// Extension method to convert YottaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Dekacandela
+    /// Extension method to convert YottaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Decicandela
+    /// Extension method to convert YottaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Centicandela
+    /// Extension method to convert YottaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Millicandela
+    /// Extension method to convert YottaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Microcandela
+    /// Extension method to convert YottaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Nanocandela
+    /// Extension method to convert YottaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Picocandela
+    /// Extension method to convert YottaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Femtocandela
+    /// Extension method to convert YottaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Attocandela
+    /// Extension method to convert YottaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Zeptocandela
+    /// Extension method to convert YottaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yottacandela to Yoctocandela
+    /// Extension method to convert YottaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yottacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Yottacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Yottacandela
+    /// Extension method to convert ZettaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Exacandela
+    /// Extension method to convert ZettaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Petacandela
+    /// Extension method to convert ZettaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Teracandela
+    /// Extension method to convert ZettaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Gigacandela
+    /// Extension method to convert ZettaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Megacandela
+    /// Extension method to convert ZettaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Kilocandela
+    /// Extension method to convert ZettaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Hectocandela
+    /// Extension method to convert ZettaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Dekacandela
+    /// Extension method to convert ZettaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Decicandela
+    /// Extension method to convert ZettaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Centicandela
+    /// Extension method to convert ZettaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Millicandela
+    /// Extension method to convert ZettaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Microcandela
+    /// Extension method to convert ZettaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Nanocandela
+    /// Extension method to convert ZettaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Picocandela
+    /// Extension method to convert ZettaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Femtocandela
+    /// Extension method to convert ZettaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Attocandela
+    /// Extension method to convert ZettaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Zeptocandela
+    /// Extension method to convert ZettaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zettacandela to Yoctocandela
+    /// Extension method to convert ZettaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zettacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Zettacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Yottacandela
+    /// Extension method to convert ExaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Zettacandela
+    /// Extension method to convert ExaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Petacandela
+    /// Extension method to convert ExaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Teracandela
+    /// Extension method to convert ExaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Gigacandela
+    /// Extension method to convert ExaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Megacandela
+    /// Extension method to convert ExaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Kilocandela
+    /// Extension method to convert ExaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Hectocandela
+    /// Extension method to convert ExaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Dekacandela
+    /// Extension method to convert ExaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Decicandela
+    /// Extension method to convert ExaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Centicandela
+    /// Extension method to convert ExaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Millicandela
+    /// Extension method to convert ExaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Microcandela
+    /// Extension method to convert ExaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Nanocandela
+    /// Extension method to convert ExaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Picocandela
+    /// Extension method to convert ExaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Femtocandela
+    /// Extension method to convert ExaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Attocandela
+    /// Extension method to convert ExaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Zeptocandela
+    /// Extension method to convert ExaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Exacandela to Yoctocandela
+    /// Extension method to convert ExaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Exacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Exacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Yottacandela
+    /// Extension method to convert PetaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Zettacandela
+    /// Extension method to convert PetaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Exacandela
+    /// Extension method to convert PetaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Teracandela
+    /// Extension method to convert PetaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Gigacandela
+    /// Extension method to convert PetaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Megacandela
+    /// Extension method to convert PetaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Kilocandela
+    /// Extension method to convert PetaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Hectocandela
+    /// Extension method to convert PetaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Dekacandela
+    /// Extension method to convert PetaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Decicandela
+    /// Extension method to convert PetaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Centicandela
+    /// Extension method to convert PetaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Millicandela
+    /// Extension method to convert PetaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Microcandela
+    /// Extension method to convert PetaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Nanocandela
+    /// Extension method to convert PetaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Picocandela
+    /// Extension method to convert PetaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Femtocandela
+    /// Extension method to convert PetaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Attocandela
+    /// Extension method to convert PetaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Zeptocandela
+    /// Extension method to convert PetaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Petacandela to Yoctocandela
+    /// Extension method to convert PetaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Petacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Petacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Yottacandela
+    /// Extension method to convert TeraCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Zettacandela
+    /// Extension method to convert TeraCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Exacandela
+    /// Extension method to convert TeraCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Petacandela
+    /// Extension method to convert TeraCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Gigacandela
+    /// Extension method to convert TeraCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Megacandela
+    /// Extension method to convert TeraCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Kilocandela
+    /// Extension method to convert TeraCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Hectocandela
+    /// Extension method to convert TeraCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Dekacandela
+    /// Extension method to convert TeraCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Decicandela
+    /// Extension method to convert TeraCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Centicandela
+    /// Extension method to convert TeraCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Millicandela
+    /// Extension method to convert TeraCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Microcandela
+    /// Extension method to convert TeraCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Nanocandela
+    /// Extension method to convert TeraCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Picocandela
+    /// Extension method to convert TeraCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Femtocandela
+    /// Extension method to convert TeraCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Attocandela
+    /// Extension method to convert TeraCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Zeptocandela
+    /// Extension method to convert TeraCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Teracandela to Yoctocandela
+    /// Extension method to convert TeraCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Teracandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Teracandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Yottacandela
+    /// Extension method to convert GigaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Zettacandela
+    /// Extension method to convert GigaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Exacandela
+    /// Extension method to convert GigaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Petacandela
+    /// Extension method to convert GigaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Teracandela
+    /// Extension method to convert GigaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Megacandela
+    /// Extension method to convert GigaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Kilocandela
+    /// Extension method to convert GigaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Hectocandela
+    /// Extension method to convert GigaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Dekacandela
+    /// Extension method to convert GigaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Decicandela
+    /// Extension method to convert GigaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Centicandela
+    /// Extension method to convert GigaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Millicandela
+    /// Extension method to convert GigaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Microcandela
+    /// Extension method to convert GigaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Nanocandela
+    /// Extension method to convert GigaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Picocandela
+    /// Extension method to convert GigaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Femtocandela
+    /// Extension method to convert GigaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Attocandela
+    /// Extension method to convert GigaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Zeptocandela
+    /// Extension method to convert GigaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Gigacandela to Yoctocandela
+    /// Extension method to convert GigaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Gigacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Gigacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Yottacandela
+    /// Extension method to convert MegaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Zettacandela
+    /// Extension method to convert MegaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Exacandela
+    /// Extension method to convert MegaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Petacandela
+    /// Extension method to convert MegaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Teracandela
+    /// Extension method to convert MegaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Gigacandela
+    /// Extension method to convert MegaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Kilocandela
+    /// Extension method to convert MegaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Hectocandela
+    /// Extension method to convert MegaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Dekacandela
+    /// Extension method to convert MegaCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Decicandela
+    /// Extension method to convert MegaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Centicandela
+    /// Extension method to convert MegaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Millicandela
+    /// Extension method to convert MegaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Microcandela
+    /// Extension method to convert MegaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Nanocandela
+    /// Extension method to convert MegaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Picocandela
+    /// Extension method to convert MegaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Femtocandela
+    /// Extension method to convert MegaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Attocandela
+    /// Extension method to convert MegaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Zeptocandela
+    /// Extension method to convert MegaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Megacandela to Yoctocandela
+    /// Extension method to convert MegaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Megacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Megacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Yottacandela
+    /// Extension method to convert KiloCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Zettacandela
+    /// Extension method to convert KiloCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Exacandela
+    /// Extension method to convert KiloCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Petacandela
+    /// Extension method to convert KiloCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Teracandela
+    /// Extension method to convert KiloCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Gigacandela
+    /// Extension method to convert KiloCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Megacandela
+    /// Extension method to convert KiloCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Hectocandela
+    /// Extension method to convert KiloCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Dekacandela
+    /// Extension method to convert KiloCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Decicandela
+    /// Extension method to convert KiloCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Centicandela
+    /// Extension method to convert KiloCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Millicandela
+    /// Extension method to convert KiloCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Microcandela
+    /// Extension method to convert KiloCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Nanocandela
+    /// Extension method to convert KiloCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Picocandela
+    /// Extension method to convert KiloCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Femtocandela
+    /// Extension method to convert KiloCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Attocandela
+    /// Extension method to convert KiloCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Zeptocandela
+    /// Extension method to convert KiloCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Kilocandela to Yoctocandela
+    /// Extension method to convert KiloCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Kilocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Kilocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Yottacandela
+    /// Extension method to convert HectoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Zettacandela
+    /// Extension method to convert HectoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Exacandela
+    /// Extension method to convert HectoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Petacandela
+    /// Extension method to convert HectoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Teracandela
+    /// Extension method to convert HectoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Gigacandela
+    /// Extension method to convert HectoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Megacandela
+    /// Extension method to convert HectoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Kilocandela
+    /// Extension method to convert HectoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Dekacandela
+    /// Extension method to convert HectoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Decicandela
+    /// Extension method to convert HectoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Centicandela
+    /// Extension method to convert HectoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Millicandela
+    /// Extension method to convert HectoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Microcandela
+    /// Extension method to convert HectoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Nanocandela
+    /// Extension method to convert HectoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Picocandela
+    /// Extension method to convert HectoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Femtocandela
+    /// Extension method to convert HectoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Attocandela
+    /// Extension method to convert HectoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Zeptocandela
+    /// Extension method to convert HectoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Hectocandela to Yoctocandela
+    /// Extension method to convert HectoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Hectocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Hectocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Yottacandela
+    /// Extension method to convert DekaCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Zettacandela
+    /// Extension method to convert DekaCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Exacandela
+    /// Extension method to convert DekaCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Petacandela
+    /// Extension method to convert DekaCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Teracandela
+    /// Extension method to convert DekaCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Gigacandela
+    /// Extension method to convert DekaCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Megacandela
+    /// Extension method to convert DekaCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Kilocandela
+    /// Extension method to convert DekaCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Hectocandela
+    /// Extension method to convert DekaCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Decicandela
+    /// Extension method to convert DekaCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Centicandela
+    /// Extension method to convert DekaCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Millicandela
+    /// Extension method to convert DekaCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Microcandela
+    /// Extension method to convert DekaCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Nanocandela
+    /// Extension method to convert DekaCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Picocandela
+    /// Extension method to convert DekaCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Femtocandela
+    /// Extension method to convert DekaCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Attocandela
+    /// Extension method to convert DekaCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Zeptocandela
+    /// Extension method to convert DekaCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Dekacandela to Yoctocandela
+    /// Extension method to convert DekaCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Dekacandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Dekacandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Yottacandela
+    /// Extension method to convert DeciCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Zettacandela
+    /// Extension method to convert DeciCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Exacandela
+    /// Extension method to convert DeciCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Petacandela
+    /// Extension method to convert DeciCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Teracandela
+    /// Extension method to convert DeciCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Gigacandela
+    /// Extension method to convert DeciCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Megacandela
+    /// Extension method to convert DeciCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Kilocandela
+    /// Extension method to convert DeciCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Hectocandela
+    /// Extension method to convert DeciCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Dekacandela
+    /// Extension method to convert DeciCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Centicandela
+    /// Extension method to convert DeciCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Millicandela
+    /// Extension method to convert DeciCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Microcandela
+    /// Extension method to convert DeciCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Nanocandela
+    /// Extension method to convert DeciCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Picocandela
+    /// Extension method to convert DeciCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Femtocandela
+    /// Extension method to convert DeciCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Attocandela
+    /// Extension method to convert DeciCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Zeptocandela
+    /// Extension method to convert DeciCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Decicandela to Yoctocandela
+    /// Extension method to convert DeciCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Decicandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Decicandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Yottacandela
+    /// Extension method to convert CentiCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Zettacandela
+    /// Extension method to convert CentiCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Exacandela
+    /// Extension method to convert CentiCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Petacandela
+    /// Extension method to convert CentiCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Teracandela
+    /// Extension method to convert CentiCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Gigacandela
+    /// Extension method to convert CentiCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Megacandela
+    /// Extension method to convert CentiCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Kilocandela
+    /// Extension method to convert CentiCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Hectocandela
+    /// Extension method to convert CentiCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Dekacandela
+    /// Extension method to convert CentiCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Decicandela
+    /// Extension method to convert CentiCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Millicandela
+    /// Extension method to convert CentiCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Microcandela
+    /// Extension method to convert CentiCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Nanocandela
+    /// Extension method to convert CentiCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Picocandela
+    /// Extension method to convert CentiCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Femtocandela
+    /// Extension method to convert CentiCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Attocandela
+    /// Extension method to convert CentiCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Zeptocandela
+    /// Extension method to convert CentiCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Centicandela to Yoctocandela
+    /// Extension method to convert CentiCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Centicandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Centicandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Yottacandela
+    /// Extension method to convert MilliCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Zettacandela
+    /// Extension method to convert MilliCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Exacandela
+    /// Extension method to convert MilliCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Petacandela
+    /// Extension method to convert MilliCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Teracandela
+    /// Extension method to convert MilliCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Gigacandela
+    /// Extension method to convert MilliCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Megacandela
+    /// Extension method to convert MilliCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Kilocandela
+    /// Extension method to convert MilliCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Hectocandela
+    /// Extension method to convert MilliCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Dekacandela
+    /// Extension method to convert MilliCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Decicandela
+    /// Extension method to convert MilliCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Centicandela
+    /// Extension method to convert MilliCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Microcandela
+    /// Extension method to convert MilliCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Nanocandela
+    /// Extension method to convert MilliCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Picocandela
+    /// Extension method to convert MilliCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Femtocandela
+    /// Extension method to convert MilliCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Attocandela
+    /// Extension method to convert MilliCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Zeptocandela
+    /// Extension method to convert MilliCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Millicandela to Yoctocandela
+    /// Extension method to convert MilliCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Millicandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Millicandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Yottacandela
+    /// Extension method to convert MicroCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Zettacandela
+    /// Extension method to convert MicroCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Exacandela
+    /// Extension method to convert MicroCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Petacandela
+    /// Extension method to convert MicroCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Teracandela
+    /// Extension method to convert MicroCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Gigacandela
+    /// Extension method to convert MicroCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Megacandela
+    /// Extension method to convert MicroCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Kilocandela
+    /// Extension method to convert MicroCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Hectocandela
+    /// Extension method to convert MicroCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Dekacandela
+    /// Extension method to convert MicroCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Decicandela
+    /// Extension method to convert MicroCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Centicandela
+    /// Extension method to convert MicroCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Millicandela
+    /// Extension method to convert MicroCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Nanocandela
+    /// Extension method to convert MicroCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Picocandela
+    /// Extension method to convert MicroCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Femtocandela
+    /// Extension method to convert MicroCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Attocandela
+    /// Extension method to convert MicroCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Zeptocandela
+    /// Extension method to convert MicroCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Microcandela to Yoctocandela
+    /// Extension method to convert MicroCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Microcandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Microcandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Yottacandela
+    /// Extension method to convert NanoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Zettacandela
+    /// Extension method to convert NanoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Exacandela
+    /// Extension method to convert NanoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Petacandela
+    /// Extension method to convert NanoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Teracandela
+    /// Extension method to convert NanoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Gigacandela
+    /// Extension method to convert NanoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Megacandela
+    /// Extension method to convert NanoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Kilocandela
+    /// Extension method to convert NanoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Hectocandela
+    /// Extension method to convert NanoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Dekacandela
+    /// Extension method to convert NanoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Decicandela
+    /// Extension method to convert NanoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Centicandela
+    /// Extension method to convert NanoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Millicandela
+    /// Extension method to convert NanoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Microcandela
+    /// Extension method to convert NanoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Picocandela
+    /// Extension method to convert NanoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Femtocandela
+    /// Extension method to convert NanoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Attocandela
+    /// Extension method to convert NanoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Zeptocandela
+    /// Extension method to convert NanoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Nanocandela to Yoctocandela
+    /// Extension method to convert NanoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Nanocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Nanocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Yottacandela
+    /// Extension method to convert PicoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Zettacandela
+    /// Extension method to convert PicoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Exacandela
+    /// Extension method to convert PicoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Petacandela
+    /// Extension method to convert PicoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Teracandela
+    /// Extension method to convert PicoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Gigacandela
+    /// Extension method to convert PicoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Megacandela
+    /// Extension method to convert PicoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Kilocandela
+    /// Extension method to convert PicoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Hectocandela
+    /// Extension method to convert PicoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Dekacandela
+    /// Extension method to convert PicoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Decicandela
+    /// Extension method to convert PicoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Centicandela
+    /// Extension method to convert PicoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Millicandela
+    /// Extension method to convert PicoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Microcandela
+    /// Extension method to convert PicoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Nanocandela
+    /// Extension method to convert PicoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Femtocandela
+    /// Extension method to convert PicoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Attocandela
+    /// Extension method to convert PicoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Zeptocandela
+    /// Extension method to convert PicoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Picocandela to Yoctocandela
+    /// Extension method to convert PicoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Picocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Picocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Yottacandela
+    /// Extension method to convert FemtoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Zettacandela
+    /// Extension method to convert FemtoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Exacandela
+    /// Extension method to convert FemtoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Petacandela
+    /// Extension method to convert FemtoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Teracandela
+    /// Extension method to convert FemtoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Gigacandela
+    /// Extension method to convert FemtoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Megacandela
+    /// Extension method to convert FemtoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Kilocandela
+    /// Extension method to convert FemtoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Hectocandela
+    /// Extension method to convert FemtoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Dekacandela
+    /// Extension method to convert FemtoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Decicandela
+    /// Extension method to convert FemtoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Centicandela
+    /// Extension method to convert FemtoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Millicandela
+    /// Extension method to convert FemtoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Microcandela
+    /// Extension method to convert FemtoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Nanocandela
+    /// Extension method to convert FemtoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Picocandela
+    /// Extension method to convert FemtoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Attocandela
+    /// Extension method to convert FemtoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Zeptocandela
+    /// Extension method to convert FemtoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Femtocandela to Yoctocandela
+    /// Extension method to convert FemtoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Femtocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Femtocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Yottacandela
+    /// Extension method to convert AttoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Zettacandela
+    /// Extension method to convert AttoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Exacandela
+    /// Extension method to convert AttoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Petacandela
+    /// Extension method to convert AttoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Teracandela
+    /// Extension method to convert AttoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Gigacandela
+    /// Extension method to convert AttoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Megacandela
+    /// Extension method to convert AttoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Kilocandela
+    /// Extension method to convert AttoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Hectocandela
+    /// Extension method to convert AttoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Dekacandela
+    /// Extension method to convert AttoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Decicandela
+    /// Extension method to convert AttoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Centicandela
+    /// Extension method to convert AttoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Millicandela
+    /// Extension method to convert AttoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Microcandela
+    /// Extension method to convert AttoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Nanocandela
+    /// Extension method to convert AttoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Picocandela
+    /// Extension method to convert AttoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Femtocandela
+    /// Extension method to convert AttoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Zeptocandela
+    /// Extension method to convert AttoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Attocandela to Yoctocandela
+    /// Extension method to convert AttoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Attocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Attocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Yottacandela
+    /// Extension method to convert ZeptoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Zettacandela
+    /// Extension method to convert ZeptoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Exacandela
+    /// Extension method to convert ZeptoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Petacandela
+    /// Extension method to convert ZeptoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Teracandela
+    /// Extension method to convert ZeptoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Gigacandela
+    /// Extension method to convert ZeptoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Megacandela
+    /// Extension method to convert ZeptoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Kilocandela
+    /// Extension method to convert ZeptoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Hectocandela
+    /// Extension method to convert ZeptoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Dekacandela
+    /// Extension method to convert ZeptoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Decicandela
+    /// Extension method to convert ZeptoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Centicandela
+    /// Extension method to convert ZeptoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Millicandela
+    /// Extension method to convert ZeptoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Microcandela
+    /// Extension method to convert ZeptoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Nanocandela
+    /// Extension method to convert ZeptoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Picocandela
+    /// Extension method to convert ZeptoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Femtocandela
+    /// Extension method to convert ZeptoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Attocandela
+    /// Extension method to convert ZeptoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Zeptocandela to Yoctocandela
+    /// Extension method to convert ZeptoCandela to YoctoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Zeptocandela</param>
-    /// <returns>quantity measured in Yoctocandela</returns>
-	public static Quantity<double, Yoctocandela> ToYoctocandela<T>(this Quantity<T, Zeptocandela> val) where T:IConvertible {
-        return new Quantity<double, Yoctocandela>(
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in YoctoCandela</returns>
+	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this Quantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Yottacandela
+    /// Extension method to convert YoctoCandela to YottaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Yottacandela</returns>
-	public static Quantity<double, Yottacandela> ToYottacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Yottacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in YottaCandela</returns>
+	public static Quantity<double, YottaCandela> ToYottaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, YottaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Zettacandela
+    /// Extension method to convert YoctoCandela to ZettaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Zettacandela</returns>
-	public static Quantity<double, Zettacandela> ToZettacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Zettacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in ZettaCandela</returns>
+	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Exacandela
+    /// Extension method to convert YoctoCandela to ExaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Exacandela</returns>
-	public static Quantity<double, Exacandela> ToExacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Exacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in ExaCandela</returns>
+	public static Quantity<double, ExaCandela> ToExaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, ExaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Petacandela
+    /// Extension method to convert YoctoCandela to PetaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Petacandela</returns>
-	public static Quantity<double, Petacandela> ToPetacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Petacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in PetaCandela</returns>
+	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Teracandela
+    /// Extension method to convert YoctoCandela to TeraCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Teracandela</returns>
-	public static Quantity<double, Teracandela> ToTeracandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Teracandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in TeraCandela</returns>
+	public static Quantity<double, TeraCandela> ToTeraCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, TeraCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Gigacandela
+    /// Extension method to convert YoctoCandela to GigaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Gigacandela</returns>
-	public static Quantity<double, Gigacandela> ToGigacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Gigacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in GigaCandela</returns>
+	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Megacandela
+    /// Extension method to convert YoctoCandela to MegaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Megacandela</returns>
-	public static Quantity<double, Megacandela> ToMegacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Megacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in MegaCandela</returns>
+	public static Quantity<double, MegaCandela> ToMegaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, MegaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Kilocandela
+    /// Extension method to convert YoctoCandela to KiloCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Kilocandela</returns>
-	public static Quantity<double, Kilocandela> ToKilocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Kilocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in KiloCandela</returns>
+	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Hectocandela
+    /// Extension method to convert YoctoCandela to HectoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Hectocandela</returns>
-	public static Quantity<double, Hectocandela> ToHectocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Hectocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in HectoCandela</returns>
+	public static Quantity<double, HectoCandela> ToHectoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, HectoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Dekacandela
+    /// Extension method to convert YoctoCandela to DekaCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Dekacandela</returns>
-	public static Quantity<double, Dekacandela> ToDekacandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Dekacandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in DekaCandela</returns>
+	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Decicandela
+    /// Extension method to convert YoctoCandela to DeciCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Decicandela</returns>
-	public static Quantity<double, Decicandela> ToDecicandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Decicandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in DeciCandela</returns>
+	public static Quantity<double, DeciCandela> ToDeciCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, DeciCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Centicandela
+    /// Extension method to convert YoctoCandela to CentiCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Centicandela</returns>
-	public static Quantity<double, Centicandela> ToCenticandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Centicandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in CentiCandela</returns>
+	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Millicandela
+    /// Extension method to convert YoctoCandela to MilliCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Millicandela</returns>
-	public static Quantity<double, Millicandela> ToMillicandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Millicandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in MilliCandela</returns>
+	public static Quantity<double, MilliCandela> ToMilliCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, MilliCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Microcandela
+    /// Extension method to convert YoctoCandela to MicroCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Microcandela</returns>
-	public static Quantity<double, Microcandela> ToMicrocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Microcandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in MicroCandela</returns>
+	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Nanocandela
+    /// Extension method to convert YoctoCandela to NanoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Nanocandela</returns>
-	public static Quantity<double, Nanocandela> ToNanocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Nanocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in NanoCandela</returns>
+	public static Quantity<double, NanoCandela> ToNanoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, NanoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Picocandela
+    /// Extension method to convert YoctoCandela to PicoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Picocandela</returns>
-	public static Quantity<double, Picocandela> ToPicocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Picocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in PicoCandela</returns>
+	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Femtocandela
+    /// Extension method to convert YoctoCandela to FemtoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Femtocandela</returns>
-	public static Quantity<double, Femtocandela> ToFemtocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Femtocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in FemtoCandela</returns>
+	public static Quantity<double, FemtoCandela> ToFemtoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, FemtoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Attocandela
+    /// Extension method to convert YoctoCandela to AttoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Attocandela</returns>
-	public static Quantity<double, Attocandela> ToAttocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Attocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in AttoCandela</returns>
+	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
-    /// Extension method to convert Yoctocandela to Zeptocandela
+    /// Extension method to convert YoctoCandela to ZeptoCandela
     /// </summary>
-    /// <param name="val">quantity measured in Yoctocandela</param>
-    /// <returns>quantity measured in Zeptocandela</returns>
-	public static Quantity<double, Zeptocandela> ToZeptocandela<T>(this Quantity<T, Yoctocandela> val) where T:IConvertible {
-        return new Quantity<double, Zeptocandela>(
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in ZeptoCandela</returns>
+	public static Quantity<double, ZeptoCandela> ToZeptoCandela<T>(this Quantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, ZeptoCandela>(
             Convert.ToDouble(val.Value) * 1E24
         );
     }
 }
-
 }

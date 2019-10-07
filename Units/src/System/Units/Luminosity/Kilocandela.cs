@@ -1,21 +1,21 @@
 namespace System.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for Kilocandela (kcd)
+	/// Unit of measurement for the KiloCandela (kcd)
 	/// </summary>
-	public struct Kilocandela : ILuminosity {
-        public static string Name => "Kilocandela";
+	public struct KiloCandela : ILuminosity {
+        public static string Name => "KiloCandela";
         public static string Symbol => "kcd";
     }
 	
-	public static class KilocandelaFactory {
+	public static class KiloCandelaFactory {
 		/// <summary>
-        /// Create a quantity measured in Kilocandelas
+        /// Create a quantity measured in KiloCandelas
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Kilocandela> kcd<T>(this T value) {
-            return value.As<Kilocandela, T>();
+        public static Quantity<T, KiloCandela> kcd<T>(this T value) {
+            return new Quantity<T, KiloCandela> (value);
         }
 	}
 }

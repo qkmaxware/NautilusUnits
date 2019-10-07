@@ -1,21 +1,21 @@
 namespace System.Units.Length {
 	/// <summary>
-	/// Unit of measurement for Yottametre (Ym)
+	/// Unit of measurement for the YottaMetre (Ym)
 	/// </summary>
-	public struct Yottametre : ILength {
-        public static string Name => "Yottametre";
+	public struct YottaMetre : ILength {
+        public static string Name => "YottaMetre";
         public static string Symbol => "Ym";
     }
 	
-	public static class YottametreFactory {
+	public static class YottaMetreFactory {
 		/// <summary>
-        /// Create a quantity measured in Yottametres
+        /// Create a quantity measured in YottaMetres
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Yottametre> Ym<T>(this T value) {
-            return value.As<Yottametre, T>();
+        public static Quantity<T, YottaMetre> Ym<T>(this T value) {
+            return new Quantity<T, YottaMetre> (value);
         }
 	}
 }

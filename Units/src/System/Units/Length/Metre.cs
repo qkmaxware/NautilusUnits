@@ -1,6 +1,6 @@
 namespace System.Units.Length {
 	/// <summary>
-	/// Unit of measurement for Metre (m)
+	/// Unit of measurement for the Metre (m)
 	/// </summary>
 	public struct Metre : ILength {
         public static string Name => "Metre";
@@ -15,7 +15,7 @@ namespace System.Units.Length {
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
         public static Quantity<T, Metre> m<T>(this T value) {
-            return value.As<Metre, T>();
+            return new Quantity<T, Metre> (value);
         }
 	}
 }

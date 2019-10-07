@@ -1,21 +1,21 @@
 namespace System.Units.Length {
 	/// <summary>
-	/// Unit of measurement for Micrometre (um)
+	/// Unit of measurement for the MicroMetre (um)
 	/// </summary>
-	public struct Micrometre : ILength {
-        public static string Name => "Micrometre";
+	public struct MicroMetre : ILength {
+        public static string Name => "MicroMetre";
         public static string Symbol => "um";
     }
 	
-	public static class MicrometreFactory {
+	public static class MicroMetreFactory {
 		/// <summary>
-        /// Create a quantity measured in Micrometres
+        /// Create a quantity measured in MicroMetres
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Micrometre> um<T>(this T value) {
-            return value.As<Micrometre, T>();
+        public static Quantity<T, MicroMetre> um<T>(this T value) {
+            return new Quantity<T, MicroMetre> (value);
         }
 	}
 }

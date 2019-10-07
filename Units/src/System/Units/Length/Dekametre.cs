@@ -1,21 +1,21 @@
 namespace System.Units.Length {
 	/// <summary>
-	/// Unit of measurement for Dekametre (dam)
+	/// Unit of measurement for the DekaMetre (dam)
 	/// </summary>
-	public struct Dekametre : ILength {
-        public static string Name => "Dekametre";
+	public struct DekaMetre : ILength {
+        public static string Name => "DekaMetre";
         public static string Symbol => "dam";
     }
 	
-	public static class DekametreFactory {
+	public static class DekaMetreFactory {
 		/// <summary>
-        /// Create a quantity measured in Dekametres
+        /// Create a quantity measured in DekaMetres
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Dekametre> dam<T>(this T value) {
-            return value.As<Dekametre, T>();
+        public static Quantity<T, DekaMetre> dam<T>(this T value) {
+            return new Quantity<T, DekaMetre> (value);
         }
 	}
 }

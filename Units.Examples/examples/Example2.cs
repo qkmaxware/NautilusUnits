@@ -14,10 +14,10 @@ public class Example2 {
         Console.WriteLine(x);
 
         // Some conversion functions are pre-defined for ease of use
-        DoIt(x.ToKilometre());
+        DoIt(x.ToKiloMetre());
     }
 
-    public static void DoIt(Quantity<double, Kilometre> km) {
+    public static void DoIt(Quantity<double, KiloMetre> km) {
         Console.WriteLine(km);
     }
 

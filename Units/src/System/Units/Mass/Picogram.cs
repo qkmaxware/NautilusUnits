@@ -1,21 +1,21 @@
 namespace System.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Picogram (pg)
+	/// Unit of measurement for the PicoGram (pg)
 	/// </summary>
-	public struct Picogram : IMass {
-        public static string Name => "Picogram";
+	public struct PicoGram : IMass {
+        public static string Name => "PicoGram";
         public static string Symbol => "pg";
     }
 	
-	public static class PicogramFactory {
+	public static class PicoGramFactory {
 		/// <summary>
-        /// Create a quantity measured in Picograms
+        /// Create a quantity measured in PicoGrams
         /// </summary>
         /// <param name="value">measured value</param>
         /// <typeparam name="T">type of measured value</typeparam>
         /// <returns>quantity with value and units</returns>
-        public static Quantity<T, Picogram> pg<T>(this T value) {
-            return value.As<Picogram, T>();
+        public static Quantity<T, PicoGram> pg<T>(this T value) {
+            return new Quantity<T, PicoGram> (value);
         }
 	}
 }

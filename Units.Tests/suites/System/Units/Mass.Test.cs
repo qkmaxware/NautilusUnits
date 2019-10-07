@@ -10,27 +10,27 @@ namespace TestSuites.System.Units {
         public void GramConversions() {
             var m = 1.g();
 
-            Assert.AreEqual(1e-24,     m.ToYottagram().Value);
-            Assert.AreEqual(1e-21,     m.ToZettagram().Value);
-            Assert.AreEqual(1e-18,     m.ToExagram().Value);
-            Assert.AreEqual(1e-15,     m.ToPetagram().Value);
-            Assert.AreEqual(1e-12,     m.ToTeragram().Value);
-            Assert.AreEqual(1e-9,      m.ToGigagram().Value);
-            Assert.AreEqual(1e-6,      m.ToMegagram().Value);
-            Assert.AreEqual(1e-3,      m.ToKilogram().Value);
-            Assert.AreEqual(1e-2,      m.ToHectogram().Value);
-            Assert.AreEqual(1e-1,      m.ToDekagram().Value);
+            Assert.AreEqual(1e-24,     m.ToYottaGram().Value);
+            Assert.AreEqual(1e-21,     m.ToZettaGram().Value);
+            Assert.AreEqual(1e-18,     m.ToExaGram().Value);
+            Assert.AreEqual(1e-15,     m.ToPetaGram().Value);
+            Assert.AreEqual(1e-12,     m.ToTeraGram().Value);
+            Assert.AreEqual(1e-9,      m.ToGigaGram().Value);
+            Assert.AreEqual(1e-6,      m.ToMegaGram().Value);
+            Assert.AreEqual(1e-3,      m.ToKiloGram().Value);
+            Assert.AreEqual(1e-2,      m.ToHectoGram().Value);
+            Assert.AreEqual(1e-1,      m.ToDekaGram().Value);
 
-            Assert.AreEqual(1e1,       m.ToDecigram().Value);
-            Assert.AreEqual(1e2,       m.ToCentigram().Value);
-            Assert.AreEqual(1e3,       m.ToMilligram().Value);
-            Assert.AreEqual(1e6,       m.ToMicrogram().Value);
-            Assert.AreEqual(1e9,       m.ToNanogram().Value);
-            Assert.AreEqual(1e12,      m.ToPicogram().Value);
-            Assert.AreEqual(1e15,      m.ToFemtogram().Value);
-            Assert.AreEqual(1e18,      m.ToAttogram().Value);
-            Assert.AreEqual(1e21,      m.ToZeptogram().Value);
-            Assert.AreEqual(1e24,      m.ToYoctogram().Value);
+            Assert.AreEqual(1e1,       m.ToDeciGram().Value);
+            Assert.AreEqual(1e2,       m.ToCentiGram().Value);
+            Assert.AreEqual(1e3,       m.ToMilliGram().Value);
+            Assert.AreEqual(1e6,       m.ToMicroGram().Value);
+            Assert.AreEqual(1e9,       m.ToNanoGram().Value);
+            Assert.AreEqual(1e12,      m.ToPicoGram().Value);
+            Assert.AreEqual(1e15,      m.ToFemtoGram().Value);
+            Assert.AreEqual(1e18,      m.ToAttoGram().Value);
+            Assert.AreEqual(1e21,      m.ToZeptoGram().Value);
+            Assert.AreEqual(1e24,      m.ToYoctoGram().Value);
         }
     }
 }
