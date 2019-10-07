@@ -1,6 +1,6 @@
 using System;
 namespace System.Units.Luminosity {
-public static class LuminosityConversions {
+public static class CandelaLuminosityConversions {
 	/// <summary>
     /// Extension method to convert Candela to YottaCandela
     /// </summary>
