@@ -66,8 +66,16 @@ namespace TestSuites.System.Units {
             var j = 1.J();
             var ev = 1.eV();
 
+            // Base conversions
             Assert.AreEqual(1.60218e-19, ev.ToJoule().Value, 0.01);
-            Assert.AreEqual(6.242e+18, j.ToElectronvolt().Value, 0.01);
+            Assert.AreEqual(6.241509e+18, j.ToElectronvolt().Value, 0.01);
+
+            // Up/down conversions
+            Assert.AreEqual(1.602e-17, ev.ToCentiJoule().Value, 0.01);
+            Assert.AreEqual(1.602e-22, ev.ToKiloJoule().Value, 0.01);
+
+            Assert.AreEqual(6.241509e+20, j.ToCentiElectronvolt().Value, 0.01);
+            Assert.AreEqual(6.241509e+15, j.ToKiloElectronvolt().Value, 0.01);
         }
     }
 }
