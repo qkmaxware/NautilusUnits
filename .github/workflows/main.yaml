@@ -26,8 +26,9 @@ jobs:
       env:
         GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
         GITHUB_USERNAME: qkmaxware
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: nuget source Add -Name "GitHub" -Source $GITHUB_SOURCE -UserName $GITHUB_USERNAME -Password $GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+      shell: cmd
+      run: nuget source Add -Name "GitHub" -Source %GITHUB_SOURCE% -UserName %GITHUB_USERNAME% -Password %GITHUB_TOKEN%
     - name: Pack Nuget Package
       env:
         # Work around https://github.com/actions/setup-dotnet/issues/29
