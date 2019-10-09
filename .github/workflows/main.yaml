@@ -20,18 +20,24 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '${{ matrix.dotnet }}'
+    - name: Set up nuget
+      uses: warrenbuckley/Setup-Nuget@v1
     - name: Pack
       env:
         # Work around https://github.com/actions/setup-dotnet/issues/29
         DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
-      run: dotnet pack Units
-    - name: Publish
+      run: dotnet pack Units --configuration Release
+    - name: Register Nuget Source
+      env:
+        GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
+        GITHUB_USERNAME: qkmaxware
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: nuget source Add -Name "GitHub" -Source $GITHUB_SOURCE -UserName $GITHUB_USERNAME -Password $GITHUB_TOKEN
+    - name: Publish Nuget Package
       env:
         # Work around https://github.com/actions/setup-dotnet/issues/29
         DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
-      run: dotnet nuget push $(find . -type f -iname "*.nupkg" | head -n 1) --source $GITHUB_SOURCE --api-key $GITHUB_TOKEN
+      run: nuget push $(find . -type f -iname "*.nupkg" | head -n 1) -Source "GitHub"
   build:
     name: Test and Build
     runs-on: ${{ matrix.os }}
