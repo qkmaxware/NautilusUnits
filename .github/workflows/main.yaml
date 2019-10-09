@@ -31,9 +31,7 @@ jobs:
         DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
-      run: |
-        NUGETPKG=$(find . -type f -iname "Units/*.nupkg" | head -n 1)
-        dotnet nuget push $NUGETPKG --source $GITHUB_SOURCE 
+      run: dotnet nuget push $(find . -type f -iname "*.nupkg" | head -n 1) --source $GITHUB_SOURCE --api-key ${GITHUB_TOKEN}
   build:
     name: Test and Build
     runs-on: ${{ matrix.os }}
