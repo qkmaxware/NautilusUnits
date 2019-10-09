@@ -36,7 +36,7 @@ var prefixes = [
 	{ name: "yocto", symbol: "y", factor: -24 },
 ]
 
-var regex = /([a-zA-Z]+){([a-zA-Z0-9\+\-\^\\\*]+)}@((?:[a-zA-Z]+\.)+([a-zA-Z]+))/;
+var regex = /([a-zA-Z]+){([a-zA-Z0-9\+\-\^\\\*\/]+)}@((?:[a-zA-Z]+\.)+([a-zA-Z]+))/;
 var map = {
     Unit: 1,
     Symbol: 2,
