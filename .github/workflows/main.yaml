@@ -25,13 +25,13 @@ jobs:
         # Work around https://github.com/actions/setup-dotnet/issues/29
         DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
       run: dotnet pack Units
-  #   - name: Publish
-  #     env:
-  #       # Work around https://github.com/actions/setup-dotnet/issues/29
-  #       DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
-  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #       GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
-  #     run: dotnet nuget push ${find . -type f -iname "*.nupkg" | head -n 1} --api-key ${GITHUB_TOKEN} --source ${GITHUB_SOURCE}
+    - name: Publish
+      env:
+        # Work around https://github.com/actions/setup-dotnet/issues/29
+        DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
+      run: dotnet nuget push ${find . -type f -iname "*.nupkg" | head -n 1} --source ${GITHUB_SOURCE} 
   build:
     name: Test and Build
     runs-on: ${{ matrix.os }}
