@@ -16,7 +16,7 @@ See [License](LICENSE) for license details.
 2. C# 8+
 
 ## Library and Units
-See the [Core Units](Units/Readme.md) sub-project.
+For more information about the features of this library see the [Units](Units/Readme.md) main project directory.
 
 ## Examples
 See the [Examples](Units.Examples/Readme.md) sub-project. 
