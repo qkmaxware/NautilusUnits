@@ -8,14 +8,18 @@ This sub-project contains the source code for the CSharp Units library.
   - [Velocity Change (System.Units.Acceleration)](#velocity-change-systemunitsacceleration)
   - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
   - [Geometric Angle (System.Units.Angle)](#geometric-angle-systemunitsangle)
+  - [Electrical Conductance (System.Units.Conductance)](#electrical-conductance-systemunitsconductance)
   - [Electrical Current (System.Units.Current)](#electrical-current-systemunitscurrent)
+  - [Electrical Potential (System.Units.ElectricPotential)](#electrical-potential-systemunitselectricpotential)
   - [Energy (System.Units.Energy)](#energy-systemunitsenergy)
   - [Force (System.Units.Force)](#force-systemunitsforce)
+  - [Frequency (System.Units.Frequency)](#frequency-systemunitsfrequency)
   - [Length (System.Units.Length)](#length-systemunitslength)
   - [Luminosity (System.Units.Luminosity)](#luminosity-systemunitsluminosity)
   - [Mass (System.Units.Mass)](#mass-systemunitsmass)
   - [Power (System.Units.Power)](#power-systemunitspower)
   - [Pressure (System.Units.Pressure)](#pressure-systemunitspressure)
+  - [Electrical Resistance (System.Units.Resistance)](#electrical-resistance-systemunitsresistance)
   - [Thermodynamic Temperature (System.Units.Temperature)](#thermodynamic-temperature-systemunitstemperature)
   - [Time (System.Units.Time)](#time-systemunitstime)
   - [Velocity (System.Units.Velocity)](#velocity-systemunitsvelocity)
@@ -67,6 +71,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | Degrees | ° |
 | Radians | rad |
 
+## Electrical Conductance (System.Units.Conductance)
+| Name | Symbol |
+|------|--------|
+| Siemen | ℧ |
+| YottaSiemen | Y℧ |
+| ZettaSiemen | Z℧ |
+| ExaSiemen | E℧ |
+| PetaSiemen | P℧ |
+| TeraSiemen | T℧ |
+| GigaSiemen | G℧ |
+| MegaSiemen | M℧ |
+| KiloSiemen | k℧ |
+| HectoSiemen | h℧ |
+| DekaSiemen | da℧ |
+| DeciSiemen | d℧ |
+| CentiSiemen | c℧ |
+| MilliSiemen | m℧ |
+| MicroSiemen | u℧ |
+| NanoSiemen | n℧ |
+| PicoSiemen | p℧ |
+| FemtoSiemen | f℧ |
+| AttoSiemen | a℧ |
+| ZeptoSiemen | z℧ |
+| YoctoSiemen | y℧ |
+
 ## Electrical Current (System.Units.Current)
 | Name | Symbol |
 |------|--------|
@@ -91,6 +120,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoAmpere | aA |
 | ZeptoAmpere | zA |
 | YoctoAmpere | yA |
+
+## Electrical Potential (System.Units.ElectricPotential)
+| Name | Symbol |
+|------|--------|
+| Volt | V |
+| YottaVolt | YV |
+| ZettaVolt | ZV |
+| ExaVolt | EV |
+| PetaVolt | PV |
+| TeraVolt | TV |
+| GigaVolt | GV |
+| MegaVolt | MV |
+| KiloVolt | kV |
+| HectoVolt | hV |
+| DekaVolt | daV |
+| DeciVolt | dV |
+| CentiVolt | cV |
+| MilliVolt | mV |
+| MicroVolt | uV |
+| NanoVolt | nV |
+| PicoVolt | pV |
+| FemtoVolt | fV |
+| AttoVolt | aV |
+| ZeptoVolt | zV |
+| YoctoVolt | yV |
 
 ## Energy (System.Units.Energy)
 | Name | Symbol |
@@ -162,6 +216,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoNewton | aN |
 | ZeptoNewton | zN |
 | YoctoNewton | yN |
+
+## Frequency (System.Units.Frequency)
+| Name | Symbol |
+|------|--------|
+| Hertz | Hz |
+| YottaHertz | YHz |
+| ZettaHertz | ZHz |
+| ExaHertz | EHz |
+| PetaHertz | PHz |
+| TeraHertz | THz |
+| GigaHertz | GHz |
+| MegaHertz | MHz |
+| KiloHertz | kHz |
+| HectoHertz | hHz |
+| DekaHertz | daHz |
+| DeciHertz | dHz |
+| CentiHertz | cHz |
+| MilliHertz | mHz |
+| MicroHertz | uHz |
+| NanoHertz | nHz |
+| PicoHertz | pHz |
+| FemtoHertz | fHz |
+| AttoHertz | aHz |
+| ZeptoHertz | zHz |
+| YoctoHertz | yHz |
 
 ## Length (System.Units.Length)
 | Name | Symbol |
@@ -308,6 +387,52 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoPascal | aPa |
 | ZeptoPascal | zPa |
 | YoctoPascal | yPa |
+| Bar | bar |
+| YottaBar | Ybar |
+| ZettaBar | Zbar |
+| ExaBar | Ebar |
+| PetaBar | Pbar |
+| TeraBar | Tbar |
+| GigaBar | Gbar |
+| MegaBar | Mbar |
+| KiloBar | kbar |
+| HectoBar | hbar |
+| DekaBar | dabar |
+| DeciBar | dbar |
+| CentiBar | cbar |
+| MilliBar | mbar |
+| MicroBar | ubar |
+| NanoBar | nbar |
+| PicoBar | pbar |
+| FemtoBar | fbar |
+| AttoBar | abar |
+| ZeptoBar | zbar |
+| YoctoBar | ybar |
+
+## Electrical Resistance (System.Units.Resistance)
+| Name | Symbol |
+|------|--------|
+| Ohm | Ω |
+| YottaOhm | YΩ |
+| ZettaOhm | ZΩ |
+| ExaOhm | EΩ |
+| PetaOhm | PΩ |
+| TeraOhm | TΩ |
+| GigaOhm | GΩ |
+| MegaOhm | MΩ |
+| KiloOhm | kΩ |
+| HectoOhm | hΩ |
+| DekaOhm | daΩ |
+| DeciOhm | dΩ |
+| CentiOhm | cΩ |
+| MilliOhm | mΩ |
+| MicroOhm | uΩ |
+| NanoOhm | nΩ |
+| PicoOhm | pΩ |
+| FemtoOhm | fΩ |
+| AttoOhm | aΩ |
+| ZeptoOhm | zΩ |
+| YoctoOhm | yΩ |
 
 ## Thermodynamic Temperature (System.Units.Temperature)
 | Name | Symbol |
