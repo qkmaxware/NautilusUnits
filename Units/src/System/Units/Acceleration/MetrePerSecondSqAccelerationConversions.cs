@@ -1,6 +1,6 @@
 using System;
 namespace System.Units.Acceleration {
-public static class AccelerationConversions {
+public static class MetrePerSecondSqAccelerationConversions {
 	/// <summary>
     /// Extension method to convert MetrePerSecondSq to YottaMetrePerSecondSq
     /// </summary>

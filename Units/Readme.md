@@ -59,6 +59,7 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoMetrePerSecondSq | am/s^2|
 | ZeptoMetrePerSecondSq | zm/s^2|
 | YoctoMetrePerSecondSq | ym/s^2|
+| G | g |
 
 ## Amount Of Substance (System.Units.Amount)
 | Name | Symbol |
