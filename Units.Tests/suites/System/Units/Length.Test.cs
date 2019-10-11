@@ -32,5 +32,17 @@ namespace TestSuites.System.Units {
             Assert.AreEqual(1e21,      m.ToZeptoMetre().Value);
             Assert.AreEqual(1e24,      m.ToYoctoMetre().Value);
         }
+
+        [TestMethod]
+        public void MileConversions() {
+            var x = 1.mi();
+
+            Assert.AreEqual(63360, x.ToInch().Value);
+            Assert.AreEqual(5280, x.ToFoot().Value);
+            Assert.AreEqual(1760, x.ToYard().Value);
+            Assert.AreEqual(0.289659, x.ToLeague().Value);
+
+            Assert.AreEqual(1, 36.As<Inch, int>().ToYard().Value);
+        }
     }
 }

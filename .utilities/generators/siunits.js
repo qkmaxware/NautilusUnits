@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node units.js "Gram{g}@System.Units.Mass"
+	> node siunits.js "Gram{g}@System.Units.Mass"
 	
 	From root directory
-	> node .\.utilities\generators\units.js "Gram{g}@System.Units.Mass"
+	> node .\.utilities\generators\siunits.js "Gram{g}@System.Units.Mass"
 */
 
 // ---------------------------------------------------
