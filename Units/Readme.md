@@ -4,6 +4,7 @@ This sub-project contains the source code for the CSharp Units library.
 - [CSharp Units](#csharp-units)
 - [Usage](#usage)
 - [Simple Example](#simple-example)
+- [Predefined Constants](#predefined-constants)
 - [Predefined Units](#predefined-units)
   - [Velocity Change (System.Units.Acceleration)](#velocity-change-systemunitsacceleration)
   - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
@@ -33,6 +34,18 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
     return (mass.Value * acceleration.Value).N();
 }
 ```
+# Predefined Constants
+All constants are stored in the `System.Units.Constants` static object and can be accessed with dereferencing by name such as `System.Units.Constants.GravitationalConstant`. Each constant is stored as a Quantity of type double with the appropriate units of measure. 
+| Constant | Symbol | Value | Type |
+|----------|--------|-------|------|
+| Atomic Mass Unit | u | 1.660538782e-27 kg | Quantity\<double, KiloGram\> |
+| Bohr Radius | a<sub>0</sub> | 5.2917720859e-11 m | Quantity\<double, Metre\> |
+| Compton Wavelength | &#955;<sub>C</sub> | 2.4263102175e-12 m | Quantity\<double, Metre\> |
+| Deuteron Mass | m<sub>d</sub> | 3.34358320e-27 kg | Quantity\<double, KiloGram\> |
+| Electron Mass | m<sub>e</sub> | 9.10938215e-31 kg | Quantity\<double, KiloGram\> |
+| Neutron Mass | m<sub>n</sub> | 1.674927211e-27 kg | Quantity\<double, KiloGram\> |
+| Proton Mass | m<sub>p</sub> | 1.672621637e-27 kg | Quantity\<double, KiloGram\> |
+| Speed of Light in a Vacuum | c | 2.99792458e8 m/s | Quantity\<double, MetrePerSecond\> |
 
 # Predefined Units
 ## Velocity Change (System.Units.Acceleration)
