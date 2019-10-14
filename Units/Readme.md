@@ -36,6 +36,7 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 ```
 # Predefined Constants
 All constants are stored in the `System.Units.Constants` static object and can be accessed with dereferencing by name such as `System.Units.Constants.GravitationalConstant`. Each constant is stored as a Quantity of type double with the appropriate units of measure. 
+
 | Constant | Symbol | Value | Type |
 |----------|--------|-------|------|
 | Atomic Mass Unit | u | 1.660538782e-27 kg | Quantity\<double, KiloGram\> |
