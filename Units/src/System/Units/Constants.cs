@@ -4,32 +4,34 @@ using System.Units.Velocity;
 using System.Units.Time;
 using System.Units.Pressure;
 
+using System.Units.CompoundUnits;
+
 namespace System.Units {
 
 public static class Constants {
+    // Physical Constants
     public static readonly Quantity<double, KiloGram> AtomicMassUnit = new Quantity<double, KiloGram>(1.660538782e-27);
-    // public static readonly double AvogadroNumber = 6.02214179e23;
-    // TODO BohrMagneton
+    public static readonly Quantity<double, ParticlesPerMol> AvogadroNumber = new Quantity<double, ParticlesPerMol>(6.02214179e23);
+    public static readonly Quantity<double, JoulePerTesla> BohrMagneton = new Quantity<double, JoulePerTesla>(9.27400915e-24);
     public static readonly Quantity<double, Metre> BohrRadius = new Quantity<double, Metre>(5.2917720859e-11);
     // TODO BoltzmannConstant
     public static readonly Quantity<double, Metre> ComptonWavelength = new Quantity<double, Metre>(2.4263102175e-12);
     // TODO CoulombConstant
     public static readonly Quantity<double, KiloGram> DeuteronMass = new Quantity<double, KiloGram>(3.34358320e-27);
     public static readonly Quantity<double, KiloGram> ElectronMass = new Quantity<double, KiloGram>(9.10938215e-31);
-    // TODO ElectronVolt
     // TODO ElementaryCharge
     // TODO GasConstant
-    // TODO GravitationalConstant
+    public static readonly Quantity<double, NewtonMetreSqPerKiloGramSq> GravitationalConstant = new Quantity<double, NewtonMetreSqPerKiloGramSq>(6.67428e-11);
     public static readonly Quantity<double, KiloGram> NeutronMass = new Quantity<double, KiloGram>(1.674927211e-27);
     // TODO NuclearMagneton
     // TODO PermeabilityOfFreeSpace
     // TODO PermittivityOfFreeSpace
-    // TODO PlankConstant
+    public static readonly Quantity<double, JouleSecond> PlankConstant = new Quantity<double, JouleSecond>(6.62606896e-34);
     public static readonly Quantity<double, KiloGram> ProtonMass = new Quantity<double, KiloGram>(1.672621637e-27);
     // TODO RydbergConstant
     public static readonly Quantity<double, MetrePerSecond> SpeedOfLightInVacuum = new Quantity<double, MetrePerSecond>(2.99792458e8);
 
-    // TODO Planetary constants (mass, mean orbit radius, etc...)
+    // Solar System Data Constants
     public static readonly Quantity<double, Metre> AverageEarthMoonDistance = new Quantity<double, Metre>(3.84e8);
     public static readonly Quantity<double, Metre> AverageEarthSunDistance = new Quantity<double, Metre>(1.496e11);
     public static readonly Quantity<double, Pascal> StandardAtmosphericPressure = new Quantity<double, Pascal>(1.013e5);
@@ -76,6 +78,7 @@ public static class Constants {
 
     public static readonly Quantity<double, KiloGram> MoonMass = new Quantity<double, KiloGram>(7.35e22);
     public static readonly Quantity<double, Metre> MoonMeanRadius = new Quantity<double, Metre>(1.74e6);
+    public static readonly Quantity<double, Metre> MoonMeanDistanceFromEarth = new Quantity<double, Metre>(384400);
 
     public static readonly Quantity<double, KiloGram> SunMass = new Quantity<double, KiloGram>(1.989e30);
     public static readonly Quantity<double, Metre> SunMeanRadius = new Quantity<double, Metre>(6.96e8);

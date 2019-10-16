@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node genunits.js "System.Units.Length" "Mile{mi}" "..\maps\Mile2Imperial.Length.json"
+	> node genunits.js "System.Units.Length" "Mile{mi}" "..\maps\Mile.Length.json"
 	
 	From root directory
-	> node .\.utilities\generators\genunits.js "System.Units.Length" "Mile{mi}" ".utilities\maps\Mile2Imperial.Length.json"
+	> node .\.utilities\generators\genunits.js "System.Units.Length" "Mile{mi}" ".utilities\maps\Mile.Length.json"
 */
 
 const os    = require('os');
@@ -160,7 +160,7 @@ for (var elem in mapd) {
         convert(
             ToPascalCase(unit),
             ToPascalCase(dname),
-            factor
+            "(" + factor + ")"
         )
     );
     conversions.push(

@@ -19,6 +19,7 @@ This sub-project contains the source code for the CSharp Units library.
   - [Frequency (System.Units.Frequency)](#frequency-systemunitsfrequency)
   - [Length (System.Units.Length)](#length-systemunitslength)
   - [Luminosity (System.Units.Luminosity)](#luminosity-systemunitsluminosity)
+  - [Magnetic Flux Density (System.Units.MagneticFlux)](#magnetic-flux-density-systemunitsmagneticflux)
   - [Mass (System.Units.Mass)](#mass-systemunitsmass)
   - [Power (System.Units.Power)](#power-systemunitspower)
   - [Pressure (System.Units.Pressure)](#pressure-systemunitspressure)
@@ -43,11 +44,15 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Constant | Symbol | Value | Type |
 |----------|--------|-------|------|
 | Atomic Mass Unit | u | 1.660538782e-27 kg | Quantity\<double, KiloGram\> |
+| AvogadroNumber | N<sub>A</sub> | 6.02214179e23 particles/mol | Quantity\<double, ParticlesPerMol\> | 
+| Bohr Magneton | &#956;<sub>B</sub> | 9.27400915e-24 J/T | Quantity\<double, JoulePerTesla\> |
 | Bohr Radius | a<sub>0</sub> | 5.2917720859e-11 m | Quantity\<double, Metre\> |
 | Compton Wavelength | &#955;<sub>C</sub> | 2.4263102175e-12 m | Quantity\<double, Metre\> |
 | Deuteron Mass | m<sub>d</sub> | 3.34358320e-27 kg | Quantity\<double, KiloGram\> |
 | Electron Mass | m<sub>e</sub> | 9.10938215e-31 kg | Quantity\<double, KiloGram\> |
+| GravitationalConstant | G | 6.67428e-11 Nm<sup>2</sup>/kg<sup>2</sup> | Quantity\<double, NewtonMetreSqPerKiloGramSq\> | 
 | Neutron Mass | m<sub>n</sub> | 1.674927211e-27 kg | Quantity\<double, KiloGram\> |
+| Planck's Constant | h | 6.62606896e-34 Js | Quantity\<double, JouleSecond\> |
 | Proton Mass | m<sub>p</sub> | 1.672621637e-27 kg | Quantity\<double, KiloGram\> |
 | Speed of Light in a Vacuum | c | 2.99792458e8 m/s | Quantity\<double, MetrePerSecond\> |
 | Standard Atmospheric Pressure | | 1.013e5 Pa | Quantity\<double, Pascal\> |
@@ -93,6 +98,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Neptune Mean Radius | 2.46e7 m | Quantity\<double, Metre\> |
 | Moon Mass | 7.35e22 kg | Quantity\<double, KiloGram\> |
 | Moon Mean Radius | 1.74e6 m | Quantity\<double, Metre\> |
+| Moon Mean Distance From Earth | 384400 m | Quantity\<double, Metre\> |
 | Sun Mass | 1.989e30 kg | Quantity\<double, KiloGram\> |
 | Sun Mean Radius | 6.96e8 m | Quantity\<double, Metre\> |
 
@@ -381,6 +387,31 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoLumen | zlm |
 | YoctoLumen | ylm |
 
+## Magnetic Flux Density (System.Units.MagneticFlux)
+| Name | Symbol |
+|------|--------|
+| Tesla | T |
+| YottaTesla | YT |
+| ZettaTesla | ZT |
+| ExaTesla | ET |
+| PetaTesla | PT |
+| TeraTesla | TT |
+| GigaTesla | GT |
+| MegaTesla | MT |
+| KiloTesla | kT |
+| HectoTesla | hT |
+| DekaTesla | daT |
+| DeciTesla | dT |
+| CentiTesla | cT |
+| MilliTesla | mT |
+| MicroTesla | uT |
+| NanoTesla | nT |
+| PicoTesla | pT |
+| FemtoTesla | fT |
+| AttoTesla | aT |
+| ZeptoTesla | zT |
+| YoctoTesla | yT |
+
 ## Mass (System.Units.Mass)
 | Name | Symbol |
 |------|--------|
@@ -517,7 +548,9 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Minute | min |
 | Hour | hr |
 | Day | day |
+| Sidereal Day | sday |
 | Year | yr |
+| Sidereal Year | syr |
 
 ## Velocity (System.Units.Velocity)
 | Name | Symbol |
