@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-container w3-padding w3-blue">
+    <div class="w3-center">
+        <i class="fa fa-gears" style="font-size:64px"></i>
+        <h1 class="w3-xxxlarge">Updates</h1>
+    </div>
+</div>
+
+<!-- Updates -->
+<div id="updates" class="w3-timeline w3-timeline-ruler">
+{% for post in site.github.commits limit: 25 %}
+    <!-- If iteration is even->left otherwise->right -->
+    <div class="w3-timeline-container {% cycle  'w3-timeline-left', 'w3-timeline-right' %}">
+        <div class="w3-timeline-content">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        </div>
+    </div>
+{% endfor%}
+</div>
+    

@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-container w3-padding w3-blue">
+    <div class="w3-center">
+        <i class="fa fa-cloud-download" style="font-size:64px"></i>
+        <h1 class="w3-xxxlarge"><a href="{{ site.github.releases_url }}">Downloads</a></h1>
+    </div>
+</div>
+
+<!-- Downloads -->
+<div id="downloads" class="w3-container w3-center">
+    {% if site.github.latest_release %}
+    <h1>Latest: {{ site.github.latest_release.tag_name }}</h1>
+    <ul class="w3-wide w3-margin w3-ul w3-card-4">
+        {% for asset in site.github.latest_release.assets %}
+        <li>{{asset.name}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <h1>Other</h1>
+    <ul class="w3-wide w3-margin w3-ul w3-card-4">
+    {% if site.github.tar_url %}
+    <li>
+        <a href="{{ site.github.tar_url }}">
+            <i class="fa fa-archive fa-3x"></i> Compressed tar file of source code
+        </a>
+    </li>
+    {% endif %}
+    {% if site.github.zip_url  %}
+    <li>
+        <a href="{{ site.github.zip_url }}">
+            <i class="fa fa-file-archive-o fa-3x"></i> Compressed zip file of source code
+        </a>
+    </li>
+    {% endif %}
+    {% for release in site.github.releases %}
+
+    {% endfor %}
+    </ul>
+</div>

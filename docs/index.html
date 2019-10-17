@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-container w3-padding w3-blue">
+    <div class="w3-center">
+        <img src="{{ site.baseurl }}/logo.svg"/>
+        <h1 class="w3-xxxlarge w3-animate-bottom">C# Units</h1>
+        <h4>A Units of Measure library for .Net Core</h4>
+        <div class="w3-padding-32">
+            <a class="w3-btn w3-xlarge w3-round w3-white" href="{{ site.baseurl }}/updates">
+            See What's New
+            </a>
+            <a class="w3-btn w3-xlarge w3-round w3-white" href="{{ site.baseurl }}/downloads">
+            Download Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Features -->
+<div class="w3-center">
+    <h1 class="w3-xxxlarge">Features</h1>
+</div>
+{% for feature in site.features %}
+{% assign row = forloop.index | modulo: 2 %}
+<div 
+    id="feature_{{forloop.index}}" 
+    class="w3-container w3-padding {% if row == 0 %}w3-blue{%else%}w3-leftbar w3-border-blue{%endif%}" 
+    style="text-align:{% if row != 0 %}left{%else%}right{%endif%};">
+    <h2>
+        {{ feature.title }}
+    </h2>
+    {% if feature.media %}
+    <div class="w3-half w3-padding">
+    {% if row != 0 %}
+    {{ feature.content }}
+    {% else %}
+    {{ feature.media }}
+    {% endif %}
+    </div>
+    <div class="w3-half w3-padding">
+    {% if row != 0 %}
+    {{ feature.media }}
+    {% else %}
+    {{ feature.content }}
+    {% endif %}
+    </div>
+    {% else %}
+    <div class="w3-padding">
+    {{ feature.content }}
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
