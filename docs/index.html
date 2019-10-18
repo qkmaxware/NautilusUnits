@@ -24,32 +24,12 @@ layout: default
 </div>
 {% for feature in site.features %}
 {% assign row = forloop.index | modulo: 2 %}
-<div 
-    id="feature_{{forloop.index}}" 
-    class="w3-container w3-padding {% if row == 0 %}w3-blue{%else%}w3-leftbar w3-border-blue{%endif%}" 
-    style="text-align:{% if row != 0 %}left{%else%}right{%endif%};">
-    <h2>
-        {{ feature.title }}
-    </h2>
-    {% if feature.media %}
-    <div class="w3-half w3-padding">
-    {% if row != 0 %}
-    {{ feature.content }}
-    {% else %}
-    {{ feature.media }}
-    {% endif %}
+<div class="w3-container {% if row == 0 %}w3-leftbar{% else %}w3-rightbar{% endif %} w3-border-blue" style="margin: 0; padding: 0;">
+    <div class="w3-container w3-blue w3-padding">
+        <h2 class="{% if row == 0 %}w3-left{% else %}w3-right{% endif %}">{{ feature.title }}</h2>
     </div>
-    <div class="w3-half w3-padding">
-    {% if row != 0 %}
-    {{ feature.media }}
-    {% else %}
-    {{ feature.content }}
-    {% endif %}
+    <div class="w3-container w3-padding">
+        {{ feature.content }}
     </div>
-    {% else %}
-    <div class="w3-padding">
-    {{ feature.content }}
-    </div>
-    {% endif %}
 </div>
 {% endfor %}

@@ -13,7 +13,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #2196F3;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -34,7 +34,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -13px;
     background-color: white;
     border: 4px solid #FF9F55;
     top: 15px;
@@ -63,7 +63,7 @@
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #616161;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -77,12 +77,12 @@
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #616161 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .w3-timeline-right::after {
-    left: -16px;
+    left: -13px;
 }
 
 /* The actual content */
@@ -118,7 +118,7 @@
 
     /* Make sure all circles are at the same spot */
     .w3-timeline-left::after, .w3-timeline-right::after {
-        left: 15px;
+        left: 18px;
     }
 
     /* Make all right containers behave like the left ones */
