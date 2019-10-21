@@ -18,40 +18,45 @@
     list-style: none;
     display: block;
     background-color: rgba(255, 255, 255, 0.15);
-    bottom: -100px;
+    bottom: -80px;
     animation: float-up 20s linear infinite;
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
     border-color: rgba(255,255,255,0.5);
+    overflow: hidden;
 }
 
 .bubble-sm {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
 }
 
 .bubble-md {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
     animation-delay: 2s;
     animation-duration: 17s;
 }
 
 .bubble-lg {
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
     animation-delay: 4s;
     animation-duration: 24s;
 }
 
 .bubble-xl {
-    width: 100px;
-    height: 100px;
-    line-height: 60px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 64px;
     animation-delay: 6s;
     animation-duration: 32s;
 }
@@ -65,4 +70,84 @@
         -webkit-transform: translateY(-1080px) rotate(630deg);
         transform: translateY(-1080px) rotate(630deg);
     }
+}
+
+.delay-1s {
+    animation-delay: 1s;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+.delay-3s {
+    animation-delay: 3s;
+}
+
+.delay-4s {
+    animation-delay: 4s;
+}
+
+.delay-5s {
+    animation-delay: 5s;
+}
+
+.delay-6s {
+    animation-delay: 6s;
+}
+
+.delay-7s {
+    animation-delay: 7s;
+}
+
+.delay-8s {
+    animation-delay: 8s;
+}
+
+.delay-9s {
+    animation-delay: 9s;
+}
+
+.delay-10s {
+    animation-delay: 10s;
+}
+
+.delay-11s {
+    animation-delay: 11s;
+}
+
+.delay-12s {
+    animation-delay: 12s;
+}
+
+.delay-13s {
+    animation-delay: 13s;
+}
+
+.delay-14s {
+    animation-delay: 14s;
+}
+
+.delay-15s {
+    animation-delay: 15s;
+}
+
+.delay-16s {
+    animation-delay: 16s;
+}
+
+.delay-17s {
+    animation-delay: 17s;
+}
+
+.delay-18s {
+    animation-delay: 18s;
+}
+
+.delay-19s {
+    animation-delay: 19s;
+}
+
+.delay-20s {
+    animation-delay: 20s;
 }
