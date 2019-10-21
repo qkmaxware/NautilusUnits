@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-container w3-blue" style="padding-top: 70px;">
+    <div class="w3-center">
+        <i class="fa fa-cloud-download" style="font-size:64px"></i>
+        <h1 class="w3-xxxlarge"><a href="{{ site.github.releases_url }}">Downloads</a></h1>
+    </div>
+</div>
+
+<!-- Downloads -->
+<div id="downloads" class="w3-container w3-center">
+    <h1>Latest</h1>
+    <ul class="w3-wide w3-margin w3-ul w3-card-4">
+        <li>
+            <a href="https://github.com/qkmaxware?tab=packages"> 
+                <img src="https://www.nuget.org/favicon.ico" width="48" style="display: inline-block;"/> Nuget Package
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.github.repository_url }}">
+                <i class="fa fa-github fa-3x"></i> Source Code
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.github.tar_url }}">
+                <i class="fa fa-archive fa-3x"></i> .Tar Archive
+            </a>
+        </li>
+        <li>
+            <a href="{{ site.github.zip_url }}">
+                <i class="fa fa-file-archive-o fa-3x"></i> .Zip Archive
+            </a>
+        </li>
+    <ul>
+    {% if site.github.releases.size > 0 %}
+    <h1>Other</h1>
+    <ul class="w3-wide w3-margin w3-ul w3-card-4">
+    {% for release in site.github.releases %}
+        <li>
+            <a href = "{{ release.url }}">
+                {% if release.isDraft %}<span class="w3-badge w3-green">draft</span> {% endif %}
+                {% if release.isPrerelease  %}<span class="w3-badge w3-deep-orange">pre-release</span> {% endif %}
+                {{ release.name }}:{{ release.tag }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+</div>

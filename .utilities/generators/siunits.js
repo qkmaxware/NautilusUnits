@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node units.js "Gram{g}@System.Units.Mass"
+	> node siunits.js "Gram{g}@System.Units.Mass"
 	
 	From root directory
-	> node .\.utilities\generators\units.js "Gram{g}@System.Units.Mass"
+	> node .\.utilities\generators\siunits.js "Gram{g}@System.Units.Mass"
 */
 
 // ---------------------------------------------------
@@ -69,7 +69,9 @@ var name = ToPascalCase(name);
 // Remove spaces, times signs, and division symbols from symbol to create function name
 var cleaned_symbol = symbol.replace(" ", "").replace("^", "").replace("*", "").replace("/","_");
 
-var tpl= `namespace ${namespace} {
+var useFactory = /^[a-zA-Z_][a-zA-Z_0-9]*$/.test(cleaned_symbol);
+
+var tpl1 = `namespace ${namespace} {
 	/// <summary>
 	/// Unit of measurement for the ${name} (${symbol})
 	/// </summary>
@@ -90,7 +92,16 @@ var tpl= `namespace ${namespace} {
         }
 	}
 }`;
-return tpl;
+var tpl2 = `namespace ${namespace} {
+	/// <summary>
+	/// Unit of measurement for the ${name} (${symbol})
+	/// </summary>
+	public struct ${name} : I${conversionName} {
+        public static string Name => "${name}";
+        public static string Symbol => "${symbol}";
+    }
+}`;
+return (useFactory ? tpl1 : tpl2);
 }
 
 function convert(from, to, factor) {
@@ -206,5 +217,5 @@ namespace ${namespace} {
 // Output conversion class
 save(
     path.join(__dirname, "obj", ToPascalCase(element.name) + conversionName + "Conversions.cs"), 
-    conversionClass(namespace, conversionName, conversions)
+    conversionClass(namespace, ToPascalCase(element.name) + conversionName, conversions)
 );

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-blue w3-display" style="height: 100vh">
+    <ul class="bubbles">
+        <!-- Equation Bubbles -->
+        <li class="bubble bubble-lg delay-4s" style="left:40%;">
+            &#916;V
+        </li>
+        <li class="bubble bubble-md delay-8s" style="left:25%;">
+            G
+        </li>
+        <li class="bubble bubble-md delay-2s" style="left:10%;">
+            N<sub>A</sub>
+        </li>
+        <li class="bubble bubble-md delay-6s" style="left:75%;">
+            m<sub>e</sub> 
+        </li>
+        <li class="bubble bubble-md delay-1s" style="left:80%;">
+            &#952;
+        </li>
+
+        <li class="bubble bubble-lg delay-5s" style="left:32%;">
+            &#964;
+        </li>
+        <li class="bubble bubble-md delay-7s" style="left:57%;">
+            a<sub>0</sub>
+        </li>
+        <li class="bubble bubble-md delay-10s" style="left:90%;">
+            V<sub>f</sub> 
+        </li>
+        <li class="bubble bubble-md delay-8s" style="left:64%;">
+            &#8463;
+        </li>
+
+        <li class="bubble bubble-md delay-12s" style="left:24%;">
+            b`
+        </li>
+        <!-- Decorative Bubbles -->
+        <li class="bubble bubble-sm delay-1s" style="left:22%;"></li>
+        <li class="bubble bubble-sm delay-2s" style="left:60%;"></li>
+        <li class="bubble bubble-sm" style="left:90%;"></li>
+
+        <li class="bubble bubble-sm delay-5s" style="left:15%;"></li>
+        <li class="bubble bubble-sm delay-6s" style="left:70%;"></li>
+        <li class="bubble bubble-sm delay-3s" style="left:32%;"></li>
+
+        <li class="bubble bubble-sm delay-14s" style="left:45%;"></li>
+        <li class="bubble bubble-sm delay-10s" style="left:75%;"></li>
+        <li class="bubble bubble-sm delay-9s" style="left:80%;"></li>
+
+        <li class="bubble bubble-sm delay-16s" style="left:2%;"></li>
+        <li class="bubble bubble-sm delay-19s" style="left:50%;"></li>
+        <li class="bubble bubble-sm delay-12s" style="left:15%;"></li>
+
+        <li class="bubble bubble-sm delay-18s" style="left:96%;"></li>
+        <li class="bubble bubble-sm delay-20s" style="left:70%;"></li>
+    </ul> 
+
+    <div class="w3-center w3-display-middle">
+        <img src="{{ site.baseurl }}/logo.svg"/>
+        <h1 class="w3-xxxlarge w3-animate-bottom">C# Units</h1>
+        <h4>A Units of Measure library for .Net Core</h4>
+        <div class="w3-padding-32">
+            <a class="w3-btn w3-xlarge w3-margin w3-round w3-white" href="{{ site.baseurl }}/updates">
+            See What's New
+            </a>
+            <a class="w3-btn w3-xlarge w3-margin w3-round w3-white" href="{{ site.baseurl }}/downloads">
+            Download Now
+            </a>
+        </div>
+        <p>
+            <a href="#features" class="bob w3-xxlarge"><i class="fa fa-chevron-down"></i></a>
+        </p>
+    </div>     
+</div>
+
+<!-- Features -->
+<div id="features" class="w3-dark-grey" style="height: 40px"></div>
+<div class="w3-center">
+    <h1 class="w3-xxxlarge">Features</h1>
+</div>
+{% for feature in site.features %}
+{% assign row = forloop.index | modulo: 2 %}
+<div class="w3-container {% if row == 0 %}w3-leftbar{% else %}w3-rightbar{% endif %} w3-border-blue" style="margin: 0; padding: 0;">
+    <div class="w3-container w3-blue w3-padding">
+        <h2 class="{% if row == 0 %}w3-left{% else %}w3-right{% endif %}">{{ feature.title }}</h2>
+    </div>
+    <div class="w3-container w3-padding">
+        {{ feature.content }}
+    </div>
+</div>
+{% endfor %}

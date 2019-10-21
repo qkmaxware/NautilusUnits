@@ -1,6 +1,6 @@
 using System;
 namespace System.Units.Length {
-public static class LengthConversions {
+public static class MetreLengthConversions {
 	/// <summary>
     /// Extension method to convert Metre to YottaMetre
     /// </summary>

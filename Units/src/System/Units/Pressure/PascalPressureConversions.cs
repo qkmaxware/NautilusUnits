@@ -1,6 +1,6 @@
 using System;
 namespace System.Units.Pressure {
-public static class PressureConversions {
+public static class PascalPressureConversions {
 	/// <summary>
     /// Extension method to convert Pascal to YottaPascal
     /// </summary>

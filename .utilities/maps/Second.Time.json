@@ -1,0 +1,8 @@
+{
+    "Minute{min}": "1d/60",
+    "Hour{hr}": "1d/3600",
+    "Day{day}": "1d/86400",
+    "SiderealDay{sday}": "1d/86164.1",
+    "Year{yr}": "1d/3.1709791983765E-8",
+    "SiderealYear{syr}": "1d/31558149.504" 
+}

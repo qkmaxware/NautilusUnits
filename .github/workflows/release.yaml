@@ -1,0 +1,57 @@
+name: Build
+on:
+  release: 
+    types: [ published ]
+jobs:
+  publish:
+    name: Publish
+    runs-on: ${{ matrix.os }}
+    needs: [ build ]
+    strategy: 
+      fail-fast: false
+      matrix: 
+        os: [ ubuntu-latest ]
+        dotnet: [ '3.0.100-preview8-013656' ]
+    steps:
+    - name: Pack
+      env:
+        # Work around https://github.com/actions/setup-dotnet/issues/29
+        DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
+      run: dotnet pack Units
+  #   - name: Publish
+  #     env:
+  #       # Work around https://github.com/actions/setup-dotnet/issues/29
+  #       DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       GITHUB_SOURCE: https://nuget.pkg.github.com/qkmaxware/index.json
+  #     run: dotnet nuget push Units --api-key ${GITHUB_TOKEN} --source ${GITHUB_SOURCE}
+  build:
+    name: Test and Build
+    runs-on: ${{ matrix.os }}
+    strategy: 
+      fail-fast: false
+      matrix: 
+        os: [ windows-latest, ubuntu-latest, macOS-latest ]
+        dotnet: [ '3.0.100-preview8-013656' ]
+    steps:
+    - name: Checkout Code - ${{ github.sha }}
+      uses: actions/checkout@master
+    - name: Setup .NET Core - ${{ matrix.dotnet }}@${{ matrix.os }}
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '${{ matrix.dotnet }}'
+    - name: .Net Core Info
+      run: dotnet --info
+    - name: Run Unit Tests
+      run: dotnet test Units.Tests
+    - name: Run Examples
+      env:
+        # Work around https://github.com/actions/setup-dotnet/issues/29
+        DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
+      run: dotnet run --project Units.Examples
+    - name: Build Standalone
+      env:
+        # Work around https://github.com/actions/setup-dotnet/issues/29
+        DOTNET_ROOT: ${{ runner.tool_cache }}/dncs/${{ matrix.dotnet }}/x64
+      run: dotnet build --configuration Release Units
+      

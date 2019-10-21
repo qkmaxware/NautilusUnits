@@ -4,18 +4,26 @@ This sub-project contains the source code for the CSharp Units library.
 - [CSharp Units](#csharp-units)
 - [Usage](#usage)
 - [Simple Example](#simple-example)
+- [Predefined Constants](#predefined-constants)
+  - [Physical Constants](#physical-constants)
+  - [Solar System Data](#solar-system-data)
 - [Predefined Units](#predefined-units)
   - [Velocity Change (System.Units.Acceleration)](#velocity-change-systemunitsacceleration)
   - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
   - [Geometric Angle (System.Units.Angle)](#geometric-angle-systemunitsangle)
+  - [Electrical Conductance (System.Units.Conductance)](#electrical-conductance-systemunitsconductance)
   - [Electrical Current (System.Units.Current)](#electrical-current-systemunitscurrent)
+  - [Electrical Potential (System.Units.ElectricPotential)](#electrical-potential-systemunitselectricpotential)
   - [Energy (System.Units.Energy)](#energy-systemunitsenergy)
   - [Force (System.Units.Force)](#force-systemunitsforce)
+  - [Frequency (System.Units.Frequency)](#frequency-systemunitsfrequency)
   - [Length (System.Units.Length)](#length-systemunitslength)
   - [Luminosity (System.Units.Luminosity)](#luminosity-systemunitsluminosity)
+  - [Magnetic Flux Density (System.Units.MagneticFlux)](#magnetic-flux-density-systemunitsmagneticflux)
   - [Mass (System.Units.Mass)](#mass-systemunitsmass)
   - [Power (System.Units.Power)](#power-systemunitspower)
   - [Pressure (System.Units.Pressure)](#pressure-systemunitspressure)
+  - [Electrical Resistance (System.Units.Resistance)](#electrical-resistance-systemunitsresistance)
   - [Thermodynamic Temperature (System.Units.Temperature)](#thermodynamic-temperature-systemunitstemperature)
   - [Time (System.Units.Time)](#time-systemunitstime)
   - [Velocity (System.Units.Velocity)](#velocity-systemunitsvelocity)
@@ -29,6 +37,70 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
     return (mass.Value * acceleration.Value).N();
 }
 ```
+# Predefined Constants
+All constants are stored in the `System.Units.Constants` static object and can be accessed with dereferencing by name such as `System.Units.Constants.GravitationalConstant`. Each constant is stored as a Quantity of type double with the appropriate units of measure. 
+
+## Physical Constants
+| Constant | Symbol | Value | Type |
+|----------|--------|-------|------|
+| Atomic Mass Unit | u | 1.660538782e-27 kg | Quantity\<double, KiloGram\> |
+| AvogadroNumber | N<sub>A</sub> | 6.02214179e23 particles/mol | Quantity\<double, ParticlesPerMol\> | 
+| Bohr Magneton | &#956;<sub>B</sub> | 9.27400915e-24 J/T | Quantity\<double, JoulePerTesla\> |
+| Bohr Radius | a<sub>0</sub> | 5.2917720859e-11 m | Quantity\<double, Metre\> |
+| Compton Wavelength | &#955;<sub>C</sub> | 2.4263102175e-12 m | Quantity\<double, Metre\> |
+| Deuteron Mass | m<sub>d</sub> | 3.34358320e-27 kg | Quantity\<double, KiloGram\> |
+| Electron Mass | m<sub>e</sub> | 9.10938215e-31 kg | Quantity\<double, KiloGram\> |
+| GravitationalConstant | G | 6.67428e-11 Nm<sup>2</sup>/kg<sup>2</sup> | Quantity\<double, NewtonMetreSqPerKiloGramSq\> | 
+| Neutron Mass | m<sub>n</sub> | 1.674927211e-27 kg | Quantity\<double, KiloGram\> |
+| Planck's Constant | h | 6.62606896e-34 Js | Quantity\<double, JouleSecond\> |
+| Proton Mass | m<sub>p</sub> | 1.672621637e-27 kg | Quantity\<double, KiloGram\> |
+| Speed of Light in a Vacuum | c | 2.99792458e8 m/s | Quantity\<double, MetrePerSecond\> |
+| Standard Atmospheric Pressure | | 1.013e5 Pa | Quantity\<double, Pascal\> |
+
+## Solar System Data
+| Constant | Value | Type |
+|----------|-------|------|
+| Average Earth-Moon Distance | 3.84e8 m | Quantity\<double, Metre\> |
+| Average Earth-Sun Distance | 1.496e11 m | Quantity\<double, Metre\> |
+| Mercury Mass | 3.30e23 kg | Quantity\<double, KiloGram\> |
+| Mercury Mean Radius | 2.44e6 m | Quantity\<double, Metre\> |
+| Mercury Orbital Period | 7.60e6 s | Quantity\<double, Second\> |
+| Mercury Mean Distance From Sun | 5.79e10 m | Quantity\<double, Metre\> | 
+| Venus Mass | 4.87e24 kg | Quantity\<double, KiloGram\> |
+| Venus Mean Radius | 6.05e6 m | Quantity\<double, Metre\> |
+| Venus Orbital Period | 1.94e7 s | Quantity\<double, Second\> |
+| Venus Mean Distance From Sun | 1.08e11 m | Quantity\<double, Metre\> | 
+| Earth Mass | 5.97e24 kg | Quantity\<double, KiloGram\> |
+| Earth Mean Radius | 6.37e6 m | Quantity\<double, Metre\> |
+| Earth Orbital Period | 3.156e7 s | Quantity\<double, Second\> |
+| Earth Mean Distance From Sun | 1.496e11 m | Quantity\<double, Metre\> | 
+| Mars Mass | 6.42e23 kg | Quantity\<double, KiloGram\> |
+| Mars Mean Radius | 3.39e6 m | Quantity\<double, Metre\> |
+| Mars Orbital Period | 5.94e7 s | Quantity\<double, Second\> |
+| Mars Mean Distance From Sun | 2.28e11 m | Quantity\<double, Metre\> | 
+| Jupiter Mass | 1.90e27 kg | Quantity\<double, KiloGram\> |
+| Jupiter Mean Radius | 6.99e7 m | Quantity\<double, Metre\> |
+| Jupiter Orbital Period | 3.74e8 s | Quantity\<double, Second\> |
+| Jupiter Mean Distance From Sun | 7.78e11 m | Quantity\<double, Metre\> | 
+| Saturn Mass | 5.68e26 kg | Quantity\<double, KiloGram\> |
+| Saturn Mean Radius | 5.82e7 m | Quantity\<double, Metre\> |
+| Saturn Orbital Period | 9.29e8 s | Quantity\<double, Second\> |
+| Saturn Mean Distance From Sun | 1.43e12 m | Quantity\<double, Metre\> |
+| Uranus Mass | 8.68e25 kg | Quantity\<double, KiloGram\> |
+| Uranus Mean Radius | 2.54e7 m | Quantity\<double, Metre\> |
+| Uranus Orbital Period | 2.65e9 s | Quantity\<double, Second\> |
+| Uranus Mean Distance From Sun | 2.87e12 m | Quantity\<double, Metre\> |
+| Neptune Mass | 1.02e26 kg | Quantity\<double, KiloGram\> |
+| Neptune Mean Radius | 2.46e7 m | Quantity\<double, Metre\> |
+| Neptune Orbital Period | 5.18e9 s | Quantity\<double, Second\> |
+| Neptune Mean Distance From Sun | 4.50e12 m | Quantity\<double, Metre\> |
+| Neptune Mass | 1.02e26 kg | Quantity\<double, KiloGram\> |
+| Neptune Mean Radius | 2.46e7 m | Quantity\<double, Metre\> |
+| Moon Mass | 7.35e22 kg | Quantity\<double, KiloGram\> |
+| Moon Mean Radius | 1.74e6 m | Quantity\<double, Metre\> |
+| Moon Mean Distance From Earth | 384400 m | Quantity\<double, Metre\> |
+| Sun Mass | 1.989e30 kg | Quantity\<double, KiloGram\> |
+| Sun Mean Radius | 6.96e8 m | Quantity\<double, Metre\> |
 
 # Predefined Units
 ## Velocity Change (System.Units.Acceleration)
@@ -55,6 +127,7 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoMetrePerSecondSq | am/s^2|
 | ZeptoMetrePerSecondSq | zm/s^2|
 | YoctoMetrePerSecondSq | ym/s^2|
+| G | g |
 
 ## Amount Of Substance (System.Units.Amount)
 | Name | Symbol |
@@ -66,6 +139,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 |------|--------|
 | Degrees | ° |
 | Radians | rad |
+
+## Electrical Conductance (System.Units.Conductance)
+| Name | Symbol |
+|------|--------|
+| Siemen | ℧ |
+| YottaSiemen | Y℧ |
+| ZettaSiemen | Z℧ |
+| ExaSiemen | E℧ |
+| PetaSiemen | P℧ |
+| TeraSiemen | T℧ |
+| GigaSiemen | G℧ |
+| MegaSiemen | M℧ |
+| KiloSiemen | k℧ |
+| HectoSiemen | h℧ |
+| DekaSiemen | da℧ |
+| DeciSiemen | d℧ |
+| CentiSiemen | c℧ |
+| MilliSiemen | m℧ |
+| MicroSiemen | u℧ |
+| NanoSiemen | n℧ |
+| PicoSiemen | p℧ |
+| FemtoSiemen | f℧ |
+| AttoSiemen | a℧ |
+| ZeptoSiemen | z℧ |
+| YoctoSiemen | y℧ |
 
 ## Electrical Current (System.Units.Current)
 | Name | Symbol |
@@ -91,6 +189,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoAmpere | aA |
 | ZeptoAmpere | zA |
 | YoctoAmpere | yA |
+
+## Electrical Potential (System.Units.ElectricPotential)
+| Name | Symbol |
+|------|--------|
+| Volt | V |
+| YottaVolt | YV |
+| ZettaVolt | ZV |
+| ExaVolt | EV |
+| PetaVolt | PV |
+| TeraVolt | TV |
+| GigaVolt | GV |
+| MegaVolt | MV |
+| KiloVolt | kV |
+| HectoVolt | hV |
+| DekaVolt | daV |
+| DeciVolt | dV |
+| CentiVolt | cV |
+| MilliVolt | mV |
+| MicroVolt | uV |
+| NanoVolt | nV |
+| PicoVolt | pV |
+| FemtoVolt | fV |
+| AttoVolt | aV |
+| ZeptoVolt | zV |
+| YoctoVolt | yV |
 
 ## Energy (System.Units.Energy)
 | Name | Symbol |
@@ -163,6 +286,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | ZeptoNewton | zN |
 | YoctoNewton | yN |
 
+## Frequency (System.Units.Frequency)
+| Name | Symbol |
+|------|--------|
+| Hertz | Hz |
+| YottaHertz | YHz |
+| ZettaHertz | ZHz |
+| ExaHertz | EHz |
+| PetaHertz | PHz |
+| TeraHertz | THz |
+| GigaHertz | GHz |
+| MegaHertz | MHz |
+| KiloHertz | kHz |
+| HectoHertz | hHz |
+| DekaHertz | daHz |
+| DeciHertz | dHz |
+| CentiHertz | cHz |
+| MilliHertz | mHz |
+| MicroHertz | uHz |
+| NanoHertz | nHz |
+| PicoHertz | pHz |
+| FemtoHertz | fHz |
+| AttoHertz | aHz |
+| ZeptoHertz | zHz |
+| YoctoHertz | yHz |
+
 ## Length (System.Units.Length)
 | Name | Symbol |
 |------|--------|
@@ -187,31 +335,36 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoMetre | am |
 | ZeptoMetre | zm |
 | YoctoMetre | ym |
+| Mile | mi |
+| Inch | " |
+| Foot | ft |
+| Yard | yd |
+| League | lea |
 
 ## Luminosity (System.Units.Luminosity)
 | Name | Symbol |
 |------|--------|
-| Candela | lm |
-| YottaCandela | Ylm |
-| ZettaCandela | Zlm |
-| ExaCandela | Elm |
-| PetaCandela | Plm |
-| TeraCandela | Tlm |
-| GigaCandela | Glm |
-| MegaCandela | Mlm |
-| KiloCandela | klm |
-| HectoCandela | hlm |
-| DekaCandela | dalm |
-| DeciCandela | dlm |
-| CentiCandela | clm |
-| MilliCandela | mlm |
-| MicroCandela | ulm |
-| NanoCandela | nlm |
-| PicoCandela | plm |
-| FemtoCandela | flm |
-| AttoCandela | alm |
-| ZeptoCandela | zlm |
-| YoctoCandela | ylm |
+| Candela | cd |
+| YottaCandela | Ycd |
+| ZettaCandela | Zcd |
+| ExaCandela | Ecd |
+| PetaCandela | Pcd |
+| TeraCandela | Tcd |
+| GigaCandela | Gcd |
+| MegaCandela | Mcd |
+| KiloCandela | kcd |
+| HectoCandela | hcd |
+| DekaCandela | dacd |
+| DeciCandela | dcd |
+| CentiCandela | ccd |
+| MilliCandela | mcd |
+| MicroCandela | ucd |
+| NanoCandela | ncd |
+| PicoCandela | pcd |
+| FemtoCandela | fcd |
+| AttoCandela | acd |
+| ZeptoCandela | zcd |
+| YoctoCandela | ycd |
 | Lumen | lm |
 | YottaLumen | Ylm |
 | ZettaLumen | Zlm |
@@ -233,6 +386,31 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoLumen | alm |
 | ZeptoLumen | zlm |
 | YoctoLumen | ylm |
+
+## Magnetic Flux Density (System.Units.MagneticFlux)
+| Name | Symbol |
+|------|--------|
+| Tesla | T |
+| YottaTesla | YT |
+| ZettaTesla | ZT |
+| ExaTesla | ET |
+| PetaTesla | PT |
+| TeraTesla | TT |
+| GigaTesla | GT |
+| MegaTesla | MT |
+| KiloTesla | kT |
+| HectoTesla | hT |
+| DekaTesla | daT |
+| DeciTesla | dT |
+| CentiTesla | cT |
+| MilliTesla | mT |
+| MicroTesla | uT |
+| NanoTesla | nT |
+| PicoTesla | pT |
+| FemtoTesla | fT |
+| AttoTesla | aT |
+| ZeptoTesla | zT |
+| YoctoTesla | yT |
 
 ## Mass (System.Units.Mass)
 | Name | Symbol |
@@ -308,6 +486,52 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | AttoPascal | aPa |
 | ZeptoPascal | zPa |
 | YoctoPascal | yPa |
+| Bar | bar |
+| YottaBar | Ybar |
+| ZettaBar | Zbar |
+| ExaBar | Ebar |
+| PetaBar | Pbar |
+| TeraBar | Tbar |
+| GigaBar | Gbar |
+| MegaBar | Mbar |
+| KiloBar | kbar |
+| HectoBar | hbar |
+| DekaBar | dabar |
+| DeciBar | dbar |
+| CentiBar | cbar |
+| MilliBar | mbar |
+| MicroBar | ubar |
+| NanoBar | nbar |
+| PicoBar | pbar |
+| FemtoBar | fbar |
+| AttoBar | abar |
+| ZeptoBar | zbar |
+| YoctoBar | ybar |
+
+## Electrical Resistance (System.Units.Resistance)
+| Name | Symbol |
+|------|--------|
+| Ohm | Ω |
+| YottaOhm | YΩ |
+| ZettaOhm | ZΩ |
+| ExaOhm | EΩ |
+| PetaOhm | PΩ |
+| TeraOhm | TΩ |
+| GigaOhm | GΩ |
+| MegaOhm | MΩ |
+| KiloOhm | kΩ |
+| HectoOhm | hΩ |
+| DekaOhm | daΩ |
+| DeciOhm | dΩ |
+| CentiOhm | cΩ |
+| MilliOhm | mΩ |
+| MicroOhm | uΩ |
+| NanoOhm | nΩ |
+| PicoOhm | pΩ |
+| FemtoOhm | fΩ |
+| AttoOhm | aΩ |
+| ZeptoOhm | zΩ |
+| YoctoOhm | yΩ |
 
 ## Thermodynamic Temperature (System.Units.Temperature)
 | Name | Symbol |
@@ -324,7 +548,9 @@ public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity
 | Minute | min |
 | Hour | hr |
 | Day | day |
+| Sidereal Day | sday |
 | Year | yr |
+| Sidereal Year | syr |
 
 ## Velocity (System.Units.Velocity)
 | Name | Symbol |

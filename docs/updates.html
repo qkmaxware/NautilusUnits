@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!-- Header -->
+<div id="header" class="w3-container w3-blue" style="padding-top: 70px;">
+    <div class="w3-center">
+        <i class="fa fa-gears" style="font-size:64px"></i>
+        <h1 class="w3-xxxlarge">Updates</h1>
+    </div>
+</div>
+
+<!-- Updates -->
+<div id="updates" class="w3-timeline w3-timeline-ruler">
+{% for post in site.posts %}
+    <!-- If iteration is even->left otherwise->right -->
+    <div class="w3-timeline-container {% cycle  'w3-timeline-left', 'w3-timeline-right' %}">
+        <div class="w3-card w3-timeline-content">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            <a href="{{ post.url }}" class="w3-button w3-block w3-dark-grey">Read More</a>
+        </div>
+    </div>
+{% endfor %}
+</div>
+    

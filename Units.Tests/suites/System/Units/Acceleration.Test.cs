@@ -32,5 +32,14 @@ namespace TestSuites.System.Units {
             Assert.AreEqual(1e21,      m.ToZeptoMetrePerSecondSq().Value);
             Assert.AreEqual(1e24,      m.ToYoctoMetrePerSecondSq().Value);
         }
+
+        [TestMethod]
+        public void GConversions() {
+            var x = 1.g();
+            var y = 9.8.m_s2();
+
+            Assert.AreEqual(9.8, x.ToMetrePerSecondSq().Value, 0.1);
+            Assert.AreEqual(1, y.ToG().Value, 0.1);
+        }
     }
 }
