@@ -9,7 +9,7 @@ CsUnits is a units of measure library for the .net core framework. It is designe
 ![](https://github.com/qkmaxware/CsUnits/workflows/Build/badge.svg)
 
 ## License
-See [License](LICENSE) for license details.
+See [License](LICENSE.md) for license details.
 
 ## Technology
 1. Dotnet Standard 2.1+
