@@ -3,20 +3,20 @@ a {
 }
 
 .bob {
-    animation: bob 5s linear infinite;
+    -moz-animation: bob-up-down 1s linear infinite;
+    -ms-animation: bob-up-down 1s linear infinite;
+    -o-animation: bob-up-down 1s linear infinite;
+    -webkit-animation: bob-up-down 1s linear infinite;
+    animation: bob-up-down 1s linear infinite; 
 }
 
-@keyframes bob {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+@keyframes bob-up-down {
+    0%, 100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
     50% {
-        -webkit-transform: translateY(-24px);
-        transform: translateY(-24px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+        -webkit-transform: translate(0px, 10px);
+        transform: translate(0px, 10px);
     }
 }
