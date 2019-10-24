@@ -1,8 +1,9 @@
-name: Master/Test
+name: Prod/Test
 on:
   push: 
     branches: 
     - "master"
+    - "staging"
 jobs:
   build:
     name: Test and Build
