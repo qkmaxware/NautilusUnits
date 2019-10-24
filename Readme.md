@@ -2,8 +2,8 @@
   <img width="120" height="120" src="docs/logo.svg">
 </p>
 
-# CSharp Units (CsUnits)
-CsUnits is a units of measure library for the .net core framework. It is designed for compile time checking of units. This library does this through use of the Quantity class which uses generics for specifying at compile time which units are associated with a given quantity. All predefined units are contained within the `System.Units` namespace. 
+# Nautilus
+Nautilus is a units of measure library for the .net core framework. It is designed for compile time checking of units. This library does this through use of the Quantity class which uses generics for specifying at compile time which units are associated with a given quantity. All predefined units are contained within the `System.Units` namespace. 
 
 ## Build Status
 ![](https://github.com/qkmaxware/CsUnits/workflows/Build/badge.svg)

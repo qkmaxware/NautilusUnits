@@ -1,2 +1,2 @@
-# CSharp Units - Usage Examples
-This sub-project contains various examples for using CSharp Units. These examples are run automatically when new code is committed to this repository in order to ensure that the examples are continually kept up to date. 
+# Nautilus Units - Usage Examples
+This sub-project contains various examples for using Nautilus Units. These examples are run automatically when new code is committed to this repository in order to ensure that the examples are continually kept up to date. 

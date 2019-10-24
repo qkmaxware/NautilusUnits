@@ -6,7 +6,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
   <PropertyGroup>
-    <PackageId>CsUnits</PackageId>
+    <PackageId>NautilusUnits</PackageId>
     <Version>1.0.1</Version>
     <Authors>Colin Halseth</Authors>
     <PackageTags>units of measure</PackageTags>
@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/qkmaxware/CsUnits</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageDescription>
-      CsUnits is a units of measure library for the .net core framework.
+      Nautilus is a units of measure library for the .net core framework.
     </PackageDescription>
   </PropertyGroup>
 

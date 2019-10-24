@@ -1,7 +1,7 @@
-# CSharp Units
-This sub-project contains the source code for the CSharp Units library. 
+# Nautilus Units
+This sub-project contains the source code for the Nautilus Units library. 
 
-- [CSharp Units](#csharp-units)
+- [Nautilus Units](#nautilus-units)
 - [Usage](#usage)
 - [Simple Example](#simple-example)
 - [Predefined Constants](#predefined-constants)
