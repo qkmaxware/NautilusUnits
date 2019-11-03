@@ -11,7 +11,7 @@
     <Authors>Colin Halseth</Authors>
     <PackageTags>units of measure</PackageTags>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/qkmaxware/CsUnits</RepositoryUrl>
+    <RepositoryUrl>https://github.com/qkmaxware/NautilusUnits.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageDescription>
       Nautilus is a units of measure library for the .net core framework.
