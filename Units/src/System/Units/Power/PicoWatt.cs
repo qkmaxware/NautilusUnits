@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "pW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoWatt (pW)
+	/// </summary>
 	public static class PicoWattFactory {
 		/// <summary>
         /// Create a quantity measured in PicoWatts

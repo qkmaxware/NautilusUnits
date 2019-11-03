@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "nV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoVolt (nV)
+	/// </summary>
 	public static class NanoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in NanoVolts

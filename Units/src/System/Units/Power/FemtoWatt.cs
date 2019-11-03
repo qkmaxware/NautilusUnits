@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "fW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoWatt (fW)
+	/// </summary>
 	public static class FemtoWattFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoWatts

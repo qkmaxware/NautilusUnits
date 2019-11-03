@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "nm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoMetre (nm)
+	/// </summary>
 	public static class NanoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in NanoMetres

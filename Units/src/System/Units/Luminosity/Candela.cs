@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "cd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Candela (cd)
+	/// </summary>
 	public static class CandelaFactory {
 		/// <summary>
         /// Create a quantity measured in Candelas

@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Luminosity {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Lumen"
+/// </summary>
 public static class LuminosityConversions {
 	/// <summary>
     /// Extension method to convert Lumen to YottaLumen

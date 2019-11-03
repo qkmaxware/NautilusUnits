@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "pm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating PicoMetrePerSecondSq (pm/s^2) 
+	/// </summary>
 	public static class PicoMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in PicoMetrePerSecondSqs

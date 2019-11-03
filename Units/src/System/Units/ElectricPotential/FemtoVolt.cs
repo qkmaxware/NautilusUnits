@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "fV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoVolt (fV)
+	/// </summary>
 	public static class FemtoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoVolts

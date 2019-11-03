@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Force {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Newton"
+/// </summary>
 public static class ForceConversions {
 	/// <summary>
     /// Extension method to convert Newton to YottaNewton

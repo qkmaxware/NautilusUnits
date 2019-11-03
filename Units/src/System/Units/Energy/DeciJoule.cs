@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "dJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciJoule (dJ)
+	/// </summary>
 	public static class DeciJouleFactory {
 		/// <summary>
         /// Create a quantity measured in DeciJoules

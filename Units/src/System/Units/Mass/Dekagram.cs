@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "dag";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaGram (dag)
+	/// </summary>
 	public static class DekaGramFactory {
 		/// <summary>
         /// Create a quantity measured in DekaGrams

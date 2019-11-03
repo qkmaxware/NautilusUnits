@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Energy {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Electronvolt"
+/// </summary>
 public static class ElectronvoltEnergyConversions {
 	/// <summary>
     /// Extension method to convert Electronvolt to YottaElectronvolt

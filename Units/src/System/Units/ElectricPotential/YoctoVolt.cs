@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "yV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoVolt (yV)
+	/// </summary>
 	public static class YoctoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoVolts

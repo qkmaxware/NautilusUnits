@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Pbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaBar (Pbar)
+	/// </summary>
 	public static class PetaBarFactory {
 		/// <summary>
         /// Create a quantity measured in PetaBars

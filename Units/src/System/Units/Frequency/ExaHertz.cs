@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "EHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaHertz (EHz)
+	/// </summary>
 	public static class ExaHertzFactory {
 		/// <summary>
         /// Create a quantity measured in ExaHertzs

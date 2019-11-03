@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Pressure {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Pascal"
+/// </summary>
 public static class PascalPressureConversions {
 	/// <summary>
     /// Extension method to convert Pascal to YottaPascal

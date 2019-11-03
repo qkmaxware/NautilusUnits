@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "GeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaElectronvolt (GeV)
+	/// </summary>
 	public static class GigaElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in GigaElectronvolts

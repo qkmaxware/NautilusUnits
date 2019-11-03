@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "nW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoWatt (nW)
+	/// </summary>
 	public static class NanoWattFactory {
 		/// <summary>
         /// Create a quantity measured in NanoWatts

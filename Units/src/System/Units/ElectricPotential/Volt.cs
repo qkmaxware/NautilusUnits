@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "V";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Volt (V)
+	/// </summary>
 	public static class VoltFactory {
 		/// <summary>
         /// Create a quantity measured in Volts

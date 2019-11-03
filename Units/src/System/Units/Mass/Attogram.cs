@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "ag";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoGram (ag)
+	/// </summary>
 	public static class AttoGramFactory {
 		/// <summary>
         /// Create a quantity measured in AttoGrams

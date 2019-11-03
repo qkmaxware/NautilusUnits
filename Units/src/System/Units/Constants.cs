@@ -8,6 +8,9 @@ using System.Units.CompoundUnits;
 
 namespace System.Units {
 
+/// <summary>
+/// Read-only constant definitions
+/// </summary>
 public static class Constants {
     // Physical Constants
     public static readonly Quantity<double, KiloGram> AtomicMassUnit = new Quantity<double, KiloGram>(1.660538782e-27);

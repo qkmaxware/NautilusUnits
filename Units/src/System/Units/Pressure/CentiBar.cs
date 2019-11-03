@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "cbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiBar (cbar)
+	/// </summary>
 	public static class CentiBarFactory {
 		/// <summary>
         /// Create a quantity measured in CentiBars

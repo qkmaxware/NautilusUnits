@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "dA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciAmpere (dA)
+	/// </summary>
 	public static class DeciAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in DeciAmperes

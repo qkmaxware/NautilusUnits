@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "kW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloWatt (kW)
+	/// </summary>
 	public static class KiloWattFactory {
 		/// <summary>
         /// Create a quantity measured in KiloWatts

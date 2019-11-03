@@ -7,7 +7,10 @@ public struct Minute : ITime {
     public static string Symbol => "min";
 }
 
-public static class MinuteFactory {
+/// <summary>
+	///Extension method factory for generating Minute (min)
+	/// </summary>
+	public static class MinuteFactory {
     /// <summary>
     /// Create a quantity measured in Minutes
     /// </summary>

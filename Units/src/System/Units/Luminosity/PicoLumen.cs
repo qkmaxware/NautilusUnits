@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "plm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoLumen (plm)
+	/// </summary>
 	public static class PicoLumenFactory {
 		/// <summary>
         /// Create a quantity measured in PicoLumens

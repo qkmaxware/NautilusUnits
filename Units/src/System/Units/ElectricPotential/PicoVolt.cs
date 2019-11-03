@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "pV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoVolt (pV)
+	/// </summary>
 	public static class PicoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in PicoVolts

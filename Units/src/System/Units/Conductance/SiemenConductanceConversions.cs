@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Conductance {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Siemen"
+/// </summary>
 public static class SiemenConductanceConversions {
 	/// <summary>
     /// Extension method to convert Siemen to YottaSiemen

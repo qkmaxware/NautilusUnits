@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "Tm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating TeraMetrePerSecondSq (Tm/s^2) 
+	/// </summary>
 	public static class TeraMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in TeraMetrePerSecondSqs

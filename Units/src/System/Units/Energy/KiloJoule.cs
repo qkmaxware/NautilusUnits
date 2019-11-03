@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "kJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloJoule (kJ)
+	/// </summary>
 	public static class KiloJouleFactory {
 		/// <summary>
         /// Create a quantity measured in KiloJoules

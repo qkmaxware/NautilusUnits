@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "mN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliNewton (mN)
+	/// </summary>
 	public static class MilliNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in MilliNewtons

@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "cJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiJoule (cJ)
+	/// </summary>
 	public static class CentiJouleFactory {
 		/// <summary>
         /// Create a quantity measured in CentiJoules

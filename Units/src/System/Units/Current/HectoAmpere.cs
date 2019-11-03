@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "hA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoAmpere (hA)
+	/// </summary>
 	public static class HectoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in HectoAmperes

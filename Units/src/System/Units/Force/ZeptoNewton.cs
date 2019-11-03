@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "zN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZeptoNewton (zN)
+	/// </summary>
 	public static class ZeptoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in ZeptoNewtons

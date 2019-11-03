@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "nN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoNewton (nN)
+	/// </summary>
 	public static class NanoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in NanoNewtons

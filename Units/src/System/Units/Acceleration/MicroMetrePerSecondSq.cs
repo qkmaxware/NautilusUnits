@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "um/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating MicroMetrePerSecondSq (um/s^2) 
+	/// </summary>
 	public static class MicroMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in MicroMetrePerSecondSqs

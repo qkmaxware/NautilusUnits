@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "pPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoPascal (pPa)
+	/// </summary>
 	public static class PicoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in PicoPascals

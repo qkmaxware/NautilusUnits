@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "kA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloAmpere (kA)
+	/// </summary>
 	public static class KiloAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in KiloAmperes

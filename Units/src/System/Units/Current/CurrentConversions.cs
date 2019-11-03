@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Current {
+    /// <summary>
+/// Static class housing si-prefix conversions for the unit "Ampere"
+/// </summary>
 public static class CurrentConversions {
 	/// <summary>
     /// Extension method to convert Ampere to YottaAmpere

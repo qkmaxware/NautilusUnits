@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "EA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaAmpere (EA)
+	/// </summary>
 	public static class ExaAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in ExaAmperes

@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Mass {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Gram"
+/// </summary>
 public static class MassConversions {
 	/// <summary>
     /// Extension method to convert Gram to YottaGram

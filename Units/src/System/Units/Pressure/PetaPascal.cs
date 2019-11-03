@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "PPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaPascal (PPa)
+	/// </summary>
 	public static class PetaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in PetaPascals

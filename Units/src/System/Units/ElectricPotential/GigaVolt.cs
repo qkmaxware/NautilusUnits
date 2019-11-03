@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "GV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaVolt (GV)
+	/// </summary>
 	public static class GigaVoltFactory {
 		/// <summary>
         /// Create a quantity measured in GigaVolts

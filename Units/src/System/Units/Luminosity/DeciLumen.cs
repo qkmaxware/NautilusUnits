@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "dlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciLumen (dlm)
+	/// </summary>
 	public static class DeciLumenFactory {
 		/// <summary>
         /// Create a quantity measured in DeciLumens

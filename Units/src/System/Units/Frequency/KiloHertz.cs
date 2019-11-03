@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "kHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloHertz (kHz)
+	/// </summary>
 	public static class KiloHertzFactory {
 		/// <summary>
         /// Create a quantity measured in KiloHertzs

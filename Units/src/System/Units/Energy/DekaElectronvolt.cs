@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "daeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaElectronvolt (daeV)
+	/// </summary>
 	public static class DekaElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in DekaElectronvolts

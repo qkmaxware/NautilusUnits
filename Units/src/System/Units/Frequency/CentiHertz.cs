@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "cHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiHertz (cHz)
+	/// </summary>
 	public static class CentiHertzFactory {
 		/// <summary>
         /// Create a quantity measured in CentiHertzs

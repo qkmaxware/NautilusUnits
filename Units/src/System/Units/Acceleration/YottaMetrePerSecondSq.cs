@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "Ym/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating YottaMetrePerSecondSq (Ym/s^2)
+	/// </summary>
 	public static class YottaMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in YottaMetrePerSecondSqs

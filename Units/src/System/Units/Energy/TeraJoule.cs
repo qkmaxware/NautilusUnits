@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "TJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraJoule (TJ)
+	/// </summary>
 	public static class TeraJouleFactory {
 		/// <summary>
         /// Create a quantity measured in TeraJoules

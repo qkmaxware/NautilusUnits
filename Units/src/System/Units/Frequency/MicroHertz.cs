@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "uHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroHertz (uHz)
+	/// </summary>
 	public static class MicroHertzFactory {
 		/// <summary>
         /// Create a quantity measured in MicroHertzs

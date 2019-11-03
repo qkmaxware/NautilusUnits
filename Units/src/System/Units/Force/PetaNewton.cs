@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "PN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaNewton (PN)
+	/// </summary>
 	public static class PetaNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in PetaNewtons

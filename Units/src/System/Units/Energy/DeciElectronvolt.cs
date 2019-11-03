@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "deV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciElectronvolt (deV)
+	/// </summary>
 	public static class DeciElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in DeciElectronvolts

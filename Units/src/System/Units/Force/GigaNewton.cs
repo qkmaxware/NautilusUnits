@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "GN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaNewton (GN)
+	/// </summary>
 	public static class GigaNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in GigaNewtons

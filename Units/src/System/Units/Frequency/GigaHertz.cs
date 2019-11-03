@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "GHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaHertz (GHz)
+	/// </summary>
 	public static class GigaHertzFactory {
 		/// <summary>
         /// Create a quantity measured in GigaHertzs

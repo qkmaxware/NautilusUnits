@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "YT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaTesla (YT)
+	/// </summary>
 	public static class YottaTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in YottaTeslas

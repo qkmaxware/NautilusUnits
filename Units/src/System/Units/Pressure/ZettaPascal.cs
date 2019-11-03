@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "ZPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaPascal (ZPa)
+	/// </summary>
 	public static class ZettaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaPascals

@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "dam/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating DekaMetrePerSecondSq (dam/s^2)
+	/// </summary>
 	public static class DekaMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in DekaMetrePerSecondSqs

@@ -7,7 +7,10 @@ public struct Mile : ILength {
     public static string Symbol => "mi";
 }
 
-public static class MileFactory {
+/// <summary>
+	///Extension method factory for generating Mile (mi)
+	/// </summary>
+	public static class MileFactory {
     /// <summary>
     /// Create a quantity measured in Miles
     /// </summary>

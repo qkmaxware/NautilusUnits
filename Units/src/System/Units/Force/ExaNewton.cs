@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "EN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaNewton (EN)
+	/// </summary>
 	public static class ExaNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in ExaNewtons

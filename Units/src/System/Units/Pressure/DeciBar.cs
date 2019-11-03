@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "dbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciBar (dbar)
+	/// </summary>
 	public static class DeciBarFactory {
 		/// <summary>
         /// Create a quantity measured in DeciBars

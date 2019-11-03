@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "YN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaNewton (YN)
+	/// </summary>
 	public static class YottaNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in YottaNewtons

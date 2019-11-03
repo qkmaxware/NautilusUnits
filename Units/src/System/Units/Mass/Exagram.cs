@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "Eg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaGram (Eg)
+	/// </summary>
 	public static class ExaGramFactory {
 		/// <summary>
         /// Create a quantity measured in ExaGrams

@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "ZHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaHertz (ZHz)
+	/// </summary>
 	public static class ZettaHertzFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaHertzs

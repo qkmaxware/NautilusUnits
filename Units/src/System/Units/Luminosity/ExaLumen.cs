@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Elm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaLumen (Elm)
+	/// </summary>
 	public static class ExaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in ExaLumens

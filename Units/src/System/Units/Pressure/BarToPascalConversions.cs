@@ -1,6 +1,9 @@
 using System;
 
 namespace System.Units.Pressure {
+/// <summary>
+/// Static class housing conversions to and from Pascal and Bar
+/// </summary>
 public static class BarToPascalConversionsConversions {
 	/// <summary>
     /// Extension method to convert Bar to Pascal

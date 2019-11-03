@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Pcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaCandela (Pcd)
+	/// </summary>
 	public static class PetaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in PetaCandelas

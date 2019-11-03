@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "Tm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraMetrePerSecond (Tm/s)
+	/// </summary>
 	public static class TeraMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in TeraMetrePerSeconds

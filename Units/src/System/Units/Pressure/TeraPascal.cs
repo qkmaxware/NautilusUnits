@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "TPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraPascal (TPa)
+	/// </summary>
 	public static class TeraPascalFactory {
 		/// <summary>
         /// Create a quantity measured in TeraPascals

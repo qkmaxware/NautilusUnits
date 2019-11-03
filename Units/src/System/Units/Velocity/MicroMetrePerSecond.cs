@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "um/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroMetrePerSecond (um/s)
+	/// </summary>
 	public static class MicroMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in MicroMetrePerSeconds

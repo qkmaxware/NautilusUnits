@@ -1,12 +1,15 @@
 namespace System.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the MetrePerSecondSq (m/s^2)
+	/// Unit of measurement for the G (g)
 	/// </summary>
 	public struct G : IAcceleration {
         public static string Name => "G";
         public static string Symbol => "g";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating G (g) 
+	/// </summary>
 	public static class GFactory {
 		/// <summary>
         /// Create a quantity measured in G's

@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "mT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliTesla (mT)
+	/// </summary>
 	public static class MilliTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in MilliTeslas

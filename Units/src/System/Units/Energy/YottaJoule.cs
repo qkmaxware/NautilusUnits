@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "YJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaJoule (YJ)
+	/// </summary>
 	public static class YottaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in YottaJoules

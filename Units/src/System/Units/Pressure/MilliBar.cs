@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "mbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliBar (mbar)
+	/// </summary>
 	public static class MilliBarFactory {
 		/// <summary>
         /// Create a quantity measured in MilliBars

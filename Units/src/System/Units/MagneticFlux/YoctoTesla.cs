@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "yT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoTesla (yT)
+	/// </summary>
 	public static class YoctoTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoTeslas

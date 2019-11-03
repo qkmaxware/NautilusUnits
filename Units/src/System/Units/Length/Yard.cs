@@ -7,7 +7,10 @@ public struct Yard : ILength {
     public static string Symbol => "yd";
 }
 
-public static class YardFactory {
+/// <summary>
+	///Extension method factory for generating Yard (yd)
+	/// </summary>
+	public static class YardFactory {
     /// <summary>
     /// Create a quantity measured in Yards
     /// </summary>

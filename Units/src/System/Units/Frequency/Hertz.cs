@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "Hz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Hertz (Hz)
+	/// </summary>
 	public static class HertzFactory {
 		/// <summary>
         /// Create a quantity measured in Hertzs

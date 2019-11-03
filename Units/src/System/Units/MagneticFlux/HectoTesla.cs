@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "hT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoTesla (hT)
+	/// </summary>
 	public static class HectoTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in HectoTeslas

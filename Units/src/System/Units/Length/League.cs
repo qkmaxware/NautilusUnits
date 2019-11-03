@@ -7,7 +7,10 @@ public struct League : ILength {
     public static string Symbol => "lea";
 }
 
-public static class LeagueFactory {
+/// <summary>
+	///Extension method factory for generating League (lea)
+	/// </summary>
+	public static class LeagueFactory {
     /// <summary>
     /// Create a quantity measured in Leagues
     /// </summary>

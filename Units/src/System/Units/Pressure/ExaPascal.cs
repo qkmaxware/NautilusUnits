@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "EPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaPascal (EPa)
+	/// </summary>
 	public static class ExaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in ExaPascals

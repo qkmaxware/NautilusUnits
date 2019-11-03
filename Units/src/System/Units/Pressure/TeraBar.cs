@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Tbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraBar (Tbar)
+	/// </summary>
 	public static class TeraBarFactory {
 		/// <summary>
         /// Create a quantity measured in TeraBars

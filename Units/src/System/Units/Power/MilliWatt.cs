@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "mW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliWatt (mW)
+	/// </summary>
 	public static class MilliWattFactory {
 		/// <summary>
         /// Create a quantity measured in MilliWatts

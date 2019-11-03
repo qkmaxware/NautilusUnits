@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "A";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Ampere (A)
+	/// </summary>
 	public static class AmpereFactory {
 		/// <summary>
         /// Create a quantity measured in Amperes

@@ -21,7 +21,7 @@ public static class QuantityArithmetic {
     /// <param name="quantity1">quantity to negate</param>
     /// <typeparam name="U">units of measure</typeparam>
     /// <returns>quantity with its value negated</returns>
-    public static Quantity<R, U> Negate<R, T, U>(this Quantity<T, U> quantity1) where U:IUnit where T:INegateable<R,T> {
+    public static Quantity<R, U> Negate<R, T, U>(this Quantity<T, U> quantity1) where U:IUnit where T:INegateable<R> {
         return new Quantity<R, U>(quantity1.Value.Negate());
     }
 

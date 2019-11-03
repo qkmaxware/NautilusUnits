@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "ccd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiCandela (ccd)
+	/// </summary>
 	public static class CentiCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in CentiCandelas

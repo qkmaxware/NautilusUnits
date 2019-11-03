@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "aeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoElectronvolt (aeV)
+	/// </summary>
 	public static class AttoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in AttoElectronvolts

@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "T";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Tesla (T)
+	/// </summary>
 	public static class TeslaFactory {
 		/// <summary>
         /// Create a quantity measured in Teslas

@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "hbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoBar (hbar)
+	/// </summary>
 	public static class HectoBarFactory {
 		/// <summary>
         /// Create a quantity measured in HectoBars

@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "km";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloMetre (km)
+	/// </summary>
 	public static class KiloMetreFactory {
 		/// <summary>
         /// Create a quantity measured in KiloMetres

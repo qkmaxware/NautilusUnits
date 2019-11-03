@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Ylm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaLumen (Ylm)
+	/// </summary>
 	public static class YottaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in YottaLumens

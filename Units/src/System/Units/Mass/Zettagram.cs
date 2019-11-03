@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "Zg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaGram (Zg)
+	/// </summary>
 	public static class ZettaGramFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaGrams

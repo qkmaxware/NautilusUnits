@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "J";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Joule (J)
+	/// </summary>
 	public static class JouleFactory {
 		/// <summary>
         /// Create a quantity measured in Joules

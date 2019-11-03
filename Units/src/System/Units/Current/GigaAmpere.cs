@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "GA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaAmpere (GA)
+	/// </summary>
 	public static class GigaAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in GigaAmperes

@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Velocity {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "MetrePerSecond"
+/// </summary>
 public static class VelocityConversions {
 	/// <summary>
     /// Extension method to convert MetrePerSecond to YottaMetrePerSecond

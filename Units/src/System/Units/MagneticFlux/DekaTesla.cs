@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "daT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaTesla (daT)
+	/// </summary>
 	public static class DekaTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in DekaTeslas

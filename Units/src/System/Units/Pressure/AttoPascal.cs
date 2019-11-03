@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "aPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoPascal (aPa)
+	/// </summary>
 	public static class AttoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in AttoPascals

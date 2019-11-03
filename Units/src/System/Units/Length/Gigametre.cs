@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "Gm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaMetre (Gm)
+	/// </summary>
 	public static class GigaMetreFactory {
 		/// <summary>
         /// Create a quantity measured in GigaMetres

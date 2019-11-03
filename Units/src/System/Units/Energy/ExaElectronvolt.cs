@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "EeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaElectronvolt (EeV)
+	/// </summary>
 	public static class ExaElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in ExaElectronvolts

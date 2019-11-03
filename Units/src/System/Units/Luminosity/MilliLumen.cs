@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "mlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliLumen (mlm)
+	/// </summary>
 	public static class MilliLumenFactory {
 		/// <summary>
         /// Create a quantity measured in MilliLumens

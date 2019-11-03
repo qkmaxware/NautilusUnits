@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "am/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoMetrePerSecond (am/s)
+	/// </summary>
 	public static class AttoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in AttoMetrePerSeconds

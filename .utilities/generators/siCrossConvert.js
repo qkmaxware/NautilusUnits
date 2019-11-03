@@ -97,8 +97,9 @@ return `	/// <summary>
     }`;
 }
 
-function CreateClass(firstNamespace, secondNamespace, namespace, name, data) {
+function CreateClass(firstNamespace, secondNamespace, namespace, unit1Name, unit2Name, data) {
 var str = data.join(os.EOL);
+var name = unit1Name + "To" + unit2Name + "Conversions";
 var namespaces = "";
 if (firstNamespace != namespace) {
     namespaces += ("using " + firstNamespace + ";" + os.EOL);
@@ -110,6 +111,9 @@ if (secondNamespace != firstNamespace) {
 return `using System;
 ${namespaces}
 namespace ${namespace} {
+/// <summary>
+/// Static class housing conversions between ${unit1Name} and ${unit2Name}
+/// </summary>
 public static class ${name}Conversions {
 ${str}
 }
@@ -183,8 +187,7 @@ for (var i = 0; i < prefixes.length; i++) {
     }
 }
 
-var conversionName = ToPascalCase(unit1) + "To" + ToPascalCase(unit2) + "Conversions";
 save(
     path.join(outpath, conversionName + ".cs"), 
-    CreateClass(namespace1, namespace2, namespace, conversionName, conversions)
+    CreateClass(namespace1, namespace2, namespace, ToPascalCase(unit1), ToPascalCase(unit2), conversions)
 );

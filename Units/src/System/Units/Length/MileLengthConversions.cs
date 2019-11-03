@@ -1,6 +1,9 @@
 using System;
 
 namespace System.Units.Length {
+/// <summary>
+/// Static class housing conversions to and from the unit "Mile"
+/// </summary>
 public static class MileLengthConversions {
 	/// <summary>
     /// Extension method to convert Mile to Inch

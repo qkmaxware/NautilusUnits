@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "N";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Newton (N)
+	/// </summary>
 	public static class NewtonFactory {
 		/// <summary>
         /// Create a quantity measured in Newtons

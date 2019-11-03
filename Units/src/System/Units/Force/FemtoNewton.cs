@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "fN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoNewton (fN)
+	/// </summary>
 	public static class FemtoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoNewtons

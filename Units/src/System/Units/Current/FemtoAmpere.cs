@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "fA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoAmpere (fA)
+	/// </summary>
 	public static class FemtoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoAmperes

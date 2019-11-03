@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.MagneticFlux {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Tesla"
+/// </summary>
 public static class TeslaMagneticFluxConversions {
 	/// <summary>
     /// Extension method to convert Tesla to YottaTesla

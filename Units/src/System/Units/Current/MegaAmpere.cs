@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "MA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MegaAmpere (MA)
+	/// </summary>
 	public static class MegaAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in MegaAmperes

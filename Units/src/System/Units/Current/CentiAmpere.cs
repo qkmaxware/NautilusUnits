@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "cA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiAmpere (cA)
+	/// </summary>
 	public static class CentiAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in CentiAmperes

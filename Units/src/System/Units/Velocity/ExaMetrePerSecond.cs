@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "Em/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaMetrePerSecond (Em/s)
+	/// </summary>
 	public static class ExaMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in ExaMetrePerSeconds

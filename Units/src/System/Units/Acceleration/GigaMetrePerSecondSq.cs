@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "Gm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating GigaMetrePerSecondSq (Gm/s^2) 
+	/// </summary>
 	public static class GigaMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in GigaMetrePerSecondSqs

@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Plm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaLumen (Plm)
+	/// </summary>
 	public static class PetaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in PetaLumens

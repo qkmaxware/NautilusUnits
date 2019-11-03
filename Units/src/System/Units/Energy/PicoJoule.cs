@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "pJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoJoule (pJ)
+	/// </summary>
 	public static class PicoJouleFactory {
 		/// <summary>
         /// Create a quantity measured in PicoJoules

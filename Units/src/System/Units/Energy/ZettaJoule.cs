@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "ZJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaJoule (ZJ)
+	/// </summary>
 	public static class ZettaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaJoules

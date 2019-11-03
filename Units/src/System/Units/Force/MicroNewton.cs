@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "uN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroNewton (uN)
+	/// </summary>
 	public static class MicroNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in MicroNewtons

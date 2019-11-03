@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "fHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoHertz (fHz)
+	/// </summary>
 	public static class FemtoHertzFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoHertzs

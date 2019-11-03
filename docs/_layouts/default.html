@@ -18,9 +18,12 @@
       <div id="navbar-content" class="w3-wide w3-top" style="z-index: 9999;">
           <div class="w3-bar w3-black w3-card">
             <a href="{{ site.baseurl }}/" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
-            <a href="{{ site.baseurl }}/updates" class="w3-bar-item w3-button">UPDATES</a>
-            <a href="{{ site.baseurl }}/downloads" class="w3-bar-item w3-button">DOWNLOAD</a>
-
+            <a href="{{ site.baseurl }}/updates" class="w3-bar-item w3-button">Updates</a>
+            <a href="{{ site.baseurl }}/downloads" class="w3-bar-item w3-button">Downloads</a>
+            {% assign static_paths = site.static_files | map: 'path' %}
+            {% if static_paths contains '/documentation/index.html'%} 
+            <a href="{{ site.baseurl }}/documentation" class="w3-bar-item w3-button">Docs</a>
+            {% endif %}
           </div>
       </div>
     </div>
@@ -30,7 +33,9 @@
     <!-- Footer -->
     <div id="footer" class="w3-wide">
       <div class="w3-bar w3-black w3-right-align">
-        {{ site.github.license.name }}
+        {% if site.github.license %}
+        {{ site.github.license.name }} License
+        {% endif %}
       </div>
     </div>
   </body>

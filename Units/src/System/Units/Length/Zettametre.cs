@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "Zm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaMetre (Zm)
+	/// </summary>
 	public static class ZettaMetreFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaMetres

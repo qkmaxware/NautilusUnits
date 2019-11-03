@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "dV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciVolt (dV)
+	/// </summary>
 	public static class DeciVoltFactory {
 		/// <summary>
         /// Create a quantity measured in DeciVolts

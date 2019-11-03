@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "PV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaVolt (PV)
+	/// </summary>
 	public static class PetaVoltFactory {
 		/// <summary>
         /// Create a quantity measured in PetaVolts

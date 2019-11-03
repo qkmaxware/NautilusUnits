@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "bar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Bar (bar)
+	/// </summary>
 	public static class BarFactory {
 		/// <summary>
         /// Create a quantity measured in Bars

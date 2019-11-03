@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "W";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Watt (W)
+	/// </summary>
 	public static class WattFactory {
 		/// <summary>
         /// Create a quantity measured in Watts

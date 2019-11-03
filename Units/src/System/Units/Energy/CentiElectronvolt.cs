@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "ceV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiElectronvolt (ceV)
+	/// </summary>
 	public static class CentiElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in CentiElectronvolts

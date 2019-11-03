@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "dm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciMetrePerSecond (dm/s)
+	/// </summary>
 	public static class DeciMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in DeciMetrePerSeconds

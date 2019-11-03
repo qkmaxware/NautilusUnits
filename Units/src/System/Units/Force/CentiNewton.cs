@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "cN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiNewton (cN)
+	/// </summary>
 	public static class CentiNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in CentiNewtons

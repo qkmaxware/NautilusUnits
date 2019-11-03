@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "Pm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaMetrePerSecond (Pm/s)
+	/// </summary>
 	public static class PetaMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in PetaMetrePerSeconds

@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "pm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoMetrePerSecond (pm/s)
+	/// </summary>
 	public static class PicoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in PicoMetrePerSeconds

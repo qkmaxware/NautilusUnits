@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "kV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloVolt (kV)
+	/// </summary>
 	public static class KiloVoltFactory {
 		/// <summary>
         /// Create a quantity measured in KiloVolts

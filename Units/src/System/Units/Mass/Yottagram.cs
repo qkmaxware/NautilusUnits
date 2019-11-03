@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "Yg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaGram (Yg)
+	/// </summary>
 	public static class YottaGramFactory {
 		/// <summary>
         /// Create a quantity measured in YottaGrams

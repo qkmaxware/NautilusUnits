@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "daV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaVolt (daV)
+	/// </summary>
 	public static class DekaVoltFactory {
 		/// <summary>
         /// Create a quantity measured in DekaVolts

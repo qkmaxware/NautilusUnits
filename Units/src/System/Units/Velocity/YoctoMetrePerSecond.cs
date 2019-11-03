@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "ym/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoMetrePerSecond (ym/s)
+	/// </summary>
 	public static class YoctoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoMetrePerSeconds

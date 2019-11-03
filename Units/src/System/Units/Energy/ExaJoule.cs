@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "EJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaJoule (EJ)
+	/// </summary>
 	public static class ExaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in ExaJoules

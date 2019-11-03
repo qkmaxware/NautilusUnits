@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "Pm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaMetre (Pm)
+	/// </summary>
 	public static class PetaMetreFactory {
 		/// <summary>
         /// Create a quantity measured in PetaMetres

@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "Pm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating PetaMetrePerSecondSq (Pm/s^2) 
+	/// </summary>
 	public static class PetaMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in PetaMetrePerSecondSqs

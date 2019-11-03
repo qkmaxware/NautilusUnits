@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "neV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoElectronvolt (neV)
+	/// </summary>
 	public static class NanoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in NanoElectronvolts

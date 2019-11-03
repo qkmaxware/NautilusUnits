@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "aJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoJoule (aJ)
+	/// </summary>
 	public static class AttoJouleFactory {
 		/// <summary>
         /// Create a quantity measured in AttoJoules

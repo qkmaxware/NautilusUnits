@@ -6,7 +6,10 @@ namespace System.Units.Acceleration {
         public static string Name => "DeciMetrePerSecondSq";
         public static string Symbol => "dm/s^2";
     }
-	
+
+    /// <summary>
+	/// Extension method factory for generating DeciMetrePerSecondSq (dm/s^2) 
+	/// </summary>
 	public static class DeciMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in DeciMetrePerSecondSqs

@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "pbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoBar (pbar)
+	/// </summary>
 	public static class PicoBarFactory {
 		/// <summary>
         /// Create a quantity measured in PicoBars

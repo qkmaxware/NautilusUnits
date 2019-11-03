@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "fJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoJoule (fJ)
+	/// </summary>
 	public static class FemtoJouleFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoJoules

@@ -7,7 +7,10 @@ public struct Foot : ILength {
     public static string Symbol => "ft";
 }
 
-public static class FootFactory {
+/// <summary>
+	///Extension method factory for generating Foot (ft)
+	/// </summary>
+	public static class FootFactory {
     /// <summary>
     /// Create a quantity measured in Foots
     /// </summary>

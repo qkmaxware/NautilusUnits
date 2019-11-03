@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "Pg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaGram (Pg)
+	/// </summary>
 	public static class PetaGramFactory {
 		/// <summary>
         /// Create a quantity measured in PetaGrams
