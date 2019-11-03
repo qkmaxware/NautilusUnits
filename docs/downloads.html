@@ -49,7 +49,7 @@ layout: default
             <a href = "{{ release.html_url }}">
                 {% if release.isDraft %}<span class="w3-badge w3-green">draft</span> {% endif %}
                 {% if release.isPrerelease  %}<span class="w3-badge w3-deep-orange">pre-release</span> {% endif %}
-                {{ release.name }}:{{ release.tag }}
+                {{ release.name }}
             </a>
         </li>
     {% endfor %}
