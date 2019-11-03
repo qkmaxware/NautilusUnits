@@ -13,6 +13,7 @@ This sub-project contains the source code for the Nautilus Units library.
   - [Geometric Angle (System.Units.Angle)](#geometric-angle-systemunitsangle)
   - [Electrical Conductance (System.Units.Conductance)](#electrical-conductance-systemunitsconductance)
   - [Electrical Current (System.Units.Current)](#electrical-current-systemunitscurrent)
+  - [Binary Data (System.Units.Data)](#binary-data-systemunitsdata)
   - [Electrical Potential (System.Units.ElectricPotential)](#electrical-potential-systemunitselectricpotential)
   - [Energy (System.Units.Energy)](#energy-systemunitsenergy)
   - [Force (System.Units.Force)](#force-systemunitsforce)
@@ -189,6 +190,60 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | AttoAmpere | aA |
 | ZeptoAmpere | zA |
 | YoctoAmpere | yA |
+
+## Binary Data (System.Units.Data)
+| Name | Symbol |
+|------|--------|
+| Bit | bit |
+| YottaBit | Ybit |
+| ZettaBit | Zbit |
+| ExaBit | Ebit |
+| PetaBit | Pbit |
+| TeraBit | Tbit |
+| GigaBit | Gbit |
+| MegaBit | Mbit |
+| KiloBit | kbit |
+| HectoBit | hbit |
+| DekaBit | dabit |
+| DeciBit | dbit |
+| CentiBit | cbit |
+| MilliBit | mbit |
+| MicroBit | ubit |
+| NanoBit | nbit |
+| PicoBit | pbit |
+| FemtoBit | fbit |
+| AttoBit | abit |
+| ZeptoBit | zbit |
+| YoctoBit | ybit |
+| Byte | B |
+| YottaByte | YB |
+| ZettaByte | ZB |
+| ExaByte | EB |
+| PetaByte | PB |
+| TeraByte | TB |
+| GigaByte | GB |
+| MegaByte | MB |
+| KiloByte | kB |
+| HectoByte | hB |
+| DekaByte | daB |
+| DeciByte | dB |
+| CentiByte | cB |
+| MilliByte | mB |
+| MicroByte | uB |
+| NanoByte | nB |
+| PicoByte | pB |
+| FemtoByte | fB |
+| AttoByte | aB |
+| ZeptoByte | zB |
+| YoctoByte | yB |
+| YobiByte | YiB |
+| ZebiByte | ZiB |
+| ExbiByte | EiB |
+| PebiByte | PiB |
+| TebiByte | TiB |
+| GibiByte | GiB |
+| MebiByte | MiB |
+| KibiByte | kiB |
 
 ## Electrical Potential (System.Units.ElectricPotential)
 | Name | Symbol |

@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "ZeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaElectronvolt (ZeV)
+	/// </summary>
 	public static class ZettaElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaElectronvolts

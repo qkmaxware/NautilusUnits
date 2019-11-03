@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "ET";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaTesla (ET)
+	/// </summary>
 	public static class ExaTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in ExaTeslas

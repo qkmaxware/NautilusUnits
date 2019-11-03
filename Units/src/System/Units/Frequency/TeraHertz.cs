@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "THz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraHertz (THz)
+	/// </summary>
 	public static class TeraHertzFactory {
 		/// <summary>
         /// Create a quantity measured in TeraHertzs

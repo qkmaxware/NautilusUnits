@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "ym";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoMetre (ym)
+	/// </summary>
 	public static class YoctoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoMetres

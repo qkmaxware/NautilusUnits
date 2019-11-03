@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "nlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoLumen (nlm)
+	/// </summary>
 	public static class NanoLumenFactory {
 		/// <summary>
         /// Create a quantity measured in NanoLumens

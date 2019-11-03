@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "yPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoPascal (yPa)
+	/// </summary>
 	public static class YoctoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoPascals

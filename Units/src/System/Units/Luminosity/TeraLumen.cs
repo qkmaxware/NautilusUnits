@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Tlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraLumen (Tlm)
+	/// </summary>
 	public static class TeraLumenFactory {
 		/// <summary>
         /// Create a quantity measured in TeraLumens

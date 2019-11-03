@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "pA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoAmpere (pA)
+	/// </summary>
 	public static class PicoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in PicoAmperes

@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "ueV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroElectronvolt (ueV)
+	/// </summary>
 	public static class MicroElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in MicroElectronvolts

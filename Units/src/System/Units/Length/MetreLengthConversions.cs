@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Length {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Metre"
+/// </summary>
 public static class MetreLengthConversions {
 	/// <summary>
     /// Extension method to convert Metre to YottaMetre

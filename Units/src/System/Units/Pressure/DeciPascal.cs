@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "dPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciPascal (dPa)
+	/// </summary>
 	public static class DeciPascalFactory {
 		/// <summary>
         /// Create a quantity measured in DeciPascals

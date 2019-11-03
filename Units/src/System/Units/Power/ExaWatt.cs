@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "EW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaWatt (EW)
+	/// </summary>
 	public static class ExaWattFactory {
 		/// <summary>
         /// Create a quantity measured in ExaWatts

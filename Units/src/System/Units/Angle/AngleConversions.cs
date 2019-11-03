@@ -2,6 +2,9 @@ using System;
 
 namespace System.Units.Angle {
 
+/// <summary>
+/// Static class housing conversions for all geometric angles
+/// </summary>
 public static class AngleConversions {
 
     private static double Rad2Deg = 180 / Math.PI;

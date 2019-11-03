@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "TN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraNewton (TN)
+	/// </summary>
 	public static class TeraNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in TeraNewtons

@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "GJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaJoule (GJ)
+	/// </summary>
 	public static class GigaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in GigaJoules

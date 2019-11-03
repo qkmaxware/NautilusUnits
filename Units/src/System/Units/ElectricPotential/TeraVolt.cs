@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "TV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraVolt (TV)
+	/// </summary>
 	public static class TeraVoltFactory {
 		/// <summary>
         /// Create a quantity measured in TeraVolts

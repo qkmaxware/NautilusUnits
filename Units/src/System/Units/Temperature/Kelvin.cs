@@ -5,7 +5,10 @@ namespace System.Units.Temperature {
         public static string Symbol => "K";
     }
 
-    public static class KelvinFactory {
+    /// <summary>
+	///Extension method factory for generating Kelvin (K)
+	/// </summary>
+	public static class KelvinFactory {
         /// <summary>
         /// Create a quantity measured in Kelvins
         /// </summary>

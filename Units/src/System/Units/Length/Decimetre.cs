@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "dm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciMetre (dm)
+	/// </summary>
 	public static class DeciMetreFactory {
 		/// <summary>
         /// Create a quantity measured in DeciMetres

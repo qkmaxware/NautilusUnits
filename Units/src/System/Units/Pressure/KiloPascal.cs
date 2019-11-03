@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "kPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloPascal (kPa)
+	/// </summary>
 	public static class KiloPascalFactory {
 		/// <summary>
         /// Create a quantity measured in KiloPascals

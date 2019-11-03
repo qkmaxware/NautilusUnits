@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "km/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating KiloMetrePerSecondSq (km/s^2) 
+	/// </summary>
 	public static class KiloMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in KiloMetrePerSecondSqs

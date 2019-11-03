@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "nbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoBar (nbar)
+	/// </summary>
 	public static class NanoBarFactory {
 		/// <summary>
         /// Create a quantity measured in NanoBars

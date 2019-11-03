@@ -7,7 +7,10 @@ public struct Day : ITime {
     public static string Symbol => "day";
 }
 
-public static class DayFactory {
+/// <summary>
+	///Extension method factory for generating Day (day)
+	/// </summary>
+	public static class DayFactory {
     /// <summary>
     /// Create a quantity measured in Days
     /// </summary>

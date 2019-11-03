@@ -1,6 +1,9 @@
 using System;
 
 namespace System.Units.Energy {
+/// <summary>
+/// Static class housing conversions to and from Joule and Electronvolt
+/// </summary>
 public static class JouleToElectronvoltConversionsConversions {
 	/// <summary>
     /// Extension method to convert Joule to Electronvolt

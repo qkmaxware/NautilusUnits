@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "PJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaJoule (PJ)
+	/// </summary>
 	public static class PetaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in PetaJoules

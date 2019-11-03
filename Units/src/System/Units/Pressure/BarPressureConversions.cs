@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Pressure {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Bar"
+/// </summary>
 public static class BarPressureConversions {
 	/// <summary>
     /// Extension method to convert Bar to YottaBar

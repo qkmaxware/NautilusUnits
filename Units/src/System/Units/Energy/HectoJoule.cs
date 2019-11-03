@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "hJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoJoule (hJ)
+	/// </summary>
 	public static class HectoJouleFactory {
 		/// <summary>
         /// Create a quantity measured in HectoJoules

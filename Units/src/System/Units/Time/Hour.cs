@@ -7,7 +7,10 @@ public struct Hour : ITime {
     public static string Symbol => "hr";
 }
 
-public static class HourFactory {
+/// <summary>
+	///Extension method factory for generating Hour (hr)
+	/// </summary>
+	public static class HourFactory {
     /// <summary>
     /// Create a quantity measured in Hours
     /// </summary>

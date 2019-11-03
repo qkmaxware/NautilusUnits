@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "daJ";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaJoule (daJ)
+	/// </summary>
 	public static class DekaJouleFactory {
 		/// <summary>
         /// Create a quantity measured in DekaJoules

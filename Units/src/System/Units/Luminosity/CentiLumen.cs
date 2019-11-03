@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "clm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiLumen (clm)
+	/// </summary>
 	public static class CentiLumenFactory {
 		/// <summary>
         /// Create a quantity measured in CentiLumens

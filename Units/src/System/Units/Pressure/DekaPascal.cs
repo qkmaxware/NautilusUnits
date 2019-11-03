@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "daPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaPascal (daPa)
+	/// </summary>
 	public static class DekaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in DekaPascals

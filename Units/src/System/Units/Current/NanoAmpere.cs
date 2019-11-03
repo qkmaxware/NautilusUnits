@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "nA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoAmpere (nA)
+	/// </summary>
 	public static class NanoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in NanoAmperes

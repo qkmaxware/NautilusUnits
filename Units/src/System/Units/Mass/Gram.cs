@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "g";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Gram (g)
+	/// </summary>
 	public static class GramFactory {
 		/// <summary>
         /// Create a quantity measured in Grams

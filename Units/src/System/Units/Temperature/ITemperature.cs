@@ -1,5 +1,7 @@
 namespace System.Units.Temperature {
-
-public interface ITemperature : IUnit {}
+    /// <summary>
+	/// Interface for all units that represent temperature
+	/// </summary>
+    public interface ITemperature : IUnit {}
 
 }

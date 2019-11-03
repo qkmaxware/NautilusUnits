@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "zA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZeptoAmpere (zA)
+	/// </summary>
 	public static class ZeptoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in ZeptoAmperes

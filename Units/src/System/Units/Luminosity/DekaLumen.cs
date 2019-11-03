@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "dalm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaLumen (dalm)
+	/// </summary>
 	public static class DekaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in DekaLumens

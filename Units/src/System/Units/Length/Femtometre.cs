@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "fm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoMetre (fm)
+	/// </summary>
 	public static class FemtoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoMetres

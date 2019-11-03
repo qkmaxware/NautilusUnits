@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Pa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Pascal (Pa)
+	/// </summary>
 	public static class PascalFactory {
 		/// <summary>
         /// Create a quantity measured in Pascals

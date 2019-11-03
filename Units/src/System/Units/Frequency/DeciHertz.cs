@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "dHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciHertz (dHz)
+	/// </summary>
 	public static class DeciHertzFactory {
 		/// <summary>
         /// Create a quantity measured in DeciHertzs

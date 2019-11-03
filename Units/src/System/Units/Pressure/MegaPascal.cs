@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "MPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MegaPascal (MPa)
+	/// </summary>
 	public static class MegaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in MegaPascals

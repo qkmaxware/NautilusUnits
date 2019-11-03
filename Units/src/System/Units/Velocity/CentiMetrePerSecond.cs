@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "cm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiMetrePerSecond (cm/s)
+	/// </summary>
 	public static class CentiMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in CentiMetrePerSeconds

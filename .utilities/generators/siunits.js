@@ -73,13 +73,16 @@ var useFactory = /^[a-zA-Z_][a-zA-Z_0-9]*$/.test(cleaned_symbol);
 
 var tpl1 = `namespace ${namespace} {
 	/// <summary>
-	/// Unit of measurement for the ${name} (${symbol})
+	/// Unit of measurement for ${name} (${symbol})
 	/// </summary>
 	public struct ${name} : I${conversionName} {
         public static string Name => "${name}";
         public static string Symbol => "${symbol}";
     }
 	
+	/// <summary>
+	/// Extension method factory for generating ${name} (${symbol})
+	/// </summary>
 	public static class ${name}Factory {
 		/// <summary>
         /// Create a quantity measured in ${name}s
@@ -128,6 +131,9 @@ var str = conversions.join(os.EOL);
 
 var tpl = `using System;
 namespace ${namespace} {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "${name}"
+/// </summary>
 public static class ${name}Conversions {
 ${str}
 }

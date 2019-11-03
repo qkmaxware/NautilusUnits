@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Power {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Watt"
+/// </summary>
 public static class PowerConversions {
 	/// <summary>
     /// Extension method to convert Watt to YottaWatt

@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "cV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiVolt (cV)
+	/// </summary>
 	public static class CentiVoltFactory {
 		/// <summary>
         /// Create a quantity measured in CentiVolts

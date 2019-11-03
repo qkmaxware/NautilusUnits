@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "cm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating CentiMetrePerSecondSq (cm/s^2)
+	/// </summary>
 	public static class CentiMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in CentiMetrePerSecondSqs

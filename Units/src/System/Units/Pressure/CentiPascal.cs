@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "cPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiPascal (cPa)
+	/// </summary>
 	public static class CentiPascalFactory {
 		/// <summary>
         /// Create a quantity measured in CentiPascals

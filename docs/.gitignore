@@ -3,5 +3,7 @@ _site
 .jekyll-metadata
 
 # Ignore documentation.
-# TODO build automatically on website update
-documentation/
+# documentation/
+
+# Ignore doxygen build intermediates
+doxygen_*.tmp

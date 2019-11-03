@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "TeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraElectronvolt (TeV)
+	/// </summary>
 	public static class TeraElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in TeraElectronvolts

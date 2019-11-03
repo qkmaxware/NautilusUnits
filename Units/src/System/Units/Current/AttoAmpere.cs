@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "aA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoAmpere (aA)
+	/// </summary>
 	public static class AttoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in AttoAmperes

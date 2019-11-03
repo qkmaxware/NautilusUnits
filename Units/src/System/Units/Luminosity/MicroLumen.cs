@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "ulm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroLumen (ulm)
+	/// </summary>
 	public static class MicroLumenFactory {
 		/// <summary>
         /// Create a quantity measured in MicroLumens

@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Zlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaLumen (Zlm)
+	/// </summary>
 	public static class ZettaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaLumens

@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "TW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraWatt (TW)
+	/// </summary>
 	public static class TeraWattFactory {
 		/// <summary>
         /// Create a quantity measured in TeraWatts

@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "meV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MilliElectronvolt (meV)
+	/// </summary>
 	public static class MilliElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in MilliElectronvolts

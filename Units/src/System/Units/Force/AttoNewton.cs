@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "aN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoNewton (aN)
+	/// </summary>
 	public static class AttoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in AttoNewtons

@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "EV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaVolt (EV)
+	/// </summary>
 	public static class ExaVoltFactory {
 		/// <summary>
         /// Create a quantity measured in ExaVolts

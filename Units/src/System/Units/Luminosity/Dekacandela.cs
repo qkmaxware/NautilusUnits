@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "dacd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaCandela (dacd)
+	/// </summary>
 	public static class DekaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in DekaCandelas

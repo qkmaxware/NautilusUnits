@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "feV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoElectronvolt (feV)
+	/// </summary>
 	public static class FemtoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoElectronvolts

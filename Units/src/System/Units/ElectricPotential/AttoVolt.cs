@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "aV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoVolt (aV)
+	/// </summary>
 	public static class AttoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in AttoVolts

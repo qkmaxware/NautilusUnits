@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "ncd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoCandela (ncd)
+	/// </summary>
 	public static class NanoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in NanoCandelas

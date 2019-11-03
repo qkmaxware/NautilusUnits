@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "abar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoBar (abar)
+	/// </summary>
 	public static class AttoBarFactory {
 		/// <summary>
         /// Create a quantity measured in AttoBars

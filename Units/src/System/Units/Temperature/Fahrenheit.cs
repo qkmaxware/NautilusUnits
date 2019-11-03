@@ -5,7 +5,10 @@ namespace System.Units.Temperature {
         public static string Symbol => "°F";
     }
 
-    public static class FahrenheitFactory {
+    /// <summary>
+	///Extension method factory for generating Fahrenheit (°F)
+	/// </summary>
+	public static class FahrenheitFactory {
         /// <summary>
         /// Create a quantity measured in Fahrenheit
         /// </summary>

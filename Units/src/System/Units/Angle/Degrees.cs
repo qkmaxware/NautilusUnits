@@ -5,7 +5,11 @@ namespace System.Units.Angle {
         public static string Symbol => "°";
     }
 
-    public static class DegreeFactory {
+
+    /// <summary>
+	///Extension method factory for generating Degree (°)
+	/// </summary>
+	public static class DegreeFactory {
         /// <summary>
         /// Create a quantity measured in Degrees
         /// </summary>

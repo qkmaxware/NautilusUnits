@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "ZV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaVolt (ZV)
+	/// </summary>
 	public static class ZettaVoltFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaVolts

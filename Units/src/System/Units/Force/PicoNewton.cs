@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "pN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoNewton (pN)
+	/// </summary>
 	public static class PicoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in PicoNewtons

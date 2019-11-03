@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "PHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaHertz (PHz)
+	/// </summary>
 	public static class PetaHertzFactory {
 		/// <summary>
         /// Create a quantity measured in PetaHertzs

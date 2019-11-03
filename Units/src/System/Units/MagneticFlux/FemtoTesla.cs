@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "fT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoTesla (fT)
+	/// </summary>
 	public static class FemtoTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoTeslas

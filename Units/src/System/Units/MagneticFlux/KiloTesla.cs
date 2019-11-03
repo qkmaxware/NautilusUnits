@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "kT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloTesla (kT)
+	/// </summary>
 	public static class KiloTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in KiloTeslas

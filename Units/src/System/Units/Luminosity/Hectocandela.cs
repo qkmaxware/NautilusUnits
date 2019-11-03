@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "hcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoCandela (hcd)
+	/// </summary>
 	public static class HectoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in HectoCandelas

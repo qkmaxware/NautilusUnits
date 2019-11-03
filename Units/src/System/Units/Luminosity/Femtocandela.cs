@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "fcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoCandela (fcd)
+	/// </summary>
 	public static class FemtoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoCandelas

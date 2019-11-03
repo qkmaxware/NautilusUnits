@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "aW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoWatt (aW)
+	/// </summary>
 	public static class AttoWattFactory {
 		/// <summary>
         /// Create a quantity measured in AttoWatts

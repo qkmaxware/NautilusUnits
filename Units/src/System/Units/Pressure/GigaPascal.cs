@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "GPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaPascal (GPa)
+	/// </summary>
 	public static class GigaPascalFactory {
 		/// <summary>
         /// Create a quantity measured in GigaPascals

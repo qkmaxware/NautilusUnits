@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "hW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoWatt (hW)
+	/// </summary>
 	public static class HectoWattFactory {
 		/// <summary>
         /// Create a quantity measured in HectoWatts

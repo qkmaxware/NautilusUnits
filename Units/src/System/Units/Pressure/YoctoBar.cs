@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "ybar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoBar (ybar)
+	/// </summary>
 	public static class YoctoBarFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoBars

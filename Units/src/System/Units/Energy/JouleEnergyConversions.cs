@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Energy {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Joule"
+/// </summary>
 public static class EnergyConversions {
 	/// <summary>
     /// Extension method to convert Joule to YottaJoule

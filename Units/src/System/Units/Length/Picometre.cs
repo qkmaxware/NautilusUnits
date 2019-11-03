@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "pm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoMetre (pm)
+	/// </summary>
 	public static class PicoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in PicoMetres

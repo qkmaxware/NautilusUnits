@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "Zm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaMetrePerSecond (Zm/s)
+	/// </summary>
 	public static class ZettaMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaMetrePerSeconds

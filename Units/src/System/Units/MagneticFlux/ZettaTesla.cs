@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "ZT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaTesla (ZT)
+	/// </summary>
 	public static class ZettaTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaTeslas

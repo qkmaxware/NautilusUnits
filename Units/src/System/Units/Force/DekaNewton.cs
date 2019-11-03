@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "daN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaNewton (daN)
+	/// </summary>
 	public static class DekaNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in DekaNewtons

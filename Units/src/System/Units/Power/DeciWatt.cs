@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "dW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciWatt (dW)
+	/// </summary>
 	public static class DeciWattFactory {
 		/// <summary>
         /// Create a quantity measured in DeciWatts

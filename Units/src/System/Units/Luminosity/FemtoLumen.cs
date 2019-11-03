@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "flm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoLumen (flm)
+	/// </summary>
 	public static class FemtoLumenFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoLumens

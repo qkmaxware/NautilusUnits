@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "dT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciTesla (dT)
+	/// </summary>
 	public static class DeciTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in DeciTeslas

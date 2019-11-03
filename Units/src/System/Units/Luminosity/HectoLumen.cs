@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "hlm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoLumen (hlm)
+	/// </summary>
 	public static class HectoLumenFactory {
 		/// <summary>
         /// Create a quantity measured in HectoLumens

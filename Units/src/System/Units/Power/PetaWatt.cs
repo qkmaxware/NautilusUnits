@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "PW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaWatt (PW)
+	/// </summary>
 	public static class PetaWattFactory {
 		/// <summary>
         /// Create a quantity measured in PetaWatts

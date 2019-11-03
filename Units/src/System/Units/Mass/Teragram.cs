@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "Tg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraGram (Tg)
+	/// </summary>
 	public static class TeraGramFactory {
 		/// <summary>
         /// Create a quantity measured in TeraGrams

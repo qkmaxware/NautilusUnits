@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "cg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiGram (cg)
+	/// </summary>
 	public static class CentiGramFactory {
 		/// <summary>
         /// Create a quantity measured in CentiGrams

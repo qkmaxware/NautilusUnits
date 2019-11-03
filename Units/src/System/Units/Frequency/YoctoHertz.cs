@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "yHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoHertz (yHz)
+	/// </summary>
 	public static class YoctoHertzFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoHertzs

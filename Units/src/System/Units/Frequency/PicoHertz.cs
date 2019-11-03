@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "pHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoHertz (pHz)
+	/// </summary>
 	public static class PicoHertzFactory {
 		/// <summary>
         /// Create a quantity measured in PicoHertzs

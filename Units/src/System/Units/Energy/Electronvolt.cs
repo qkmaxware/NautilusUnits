@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "eV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Electronvolt (eV)
+	/// </summary>
 	public static class ElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in Electronvolts

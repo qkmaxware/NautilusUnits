@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "fbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoBar (fbar)
+	/// </summary>
 	public static class FemtoBarFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoBars

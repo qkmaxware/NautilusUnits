@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Resistance {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Ohm"
+/// </summary>
 public static class ResistanceConversions {
 	/// <summary>
     /// Extension method to convert Ohm to YottaOhm

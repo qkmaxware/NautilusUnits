@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "uV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroVolt (uV)
+	/// </summary>
 	public static class MicroVoltFactory {
 		/// <summary>
         /// Create a quantity measured in MicroVolts

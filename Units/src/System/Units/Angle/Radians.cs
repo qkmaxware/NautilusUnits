@@ -5,7 +5,10 @@ namespace System.Units.Angle {
         public static string Symbol => "rad";
     }
 
-    public static class RadianFactory {
+    /// <summary>
+	///Extension method factory for generating Radian (rad)
+	/// </summary>
+	public static class RadianFactory {
         /// <summary>
         /// Create a quantity measured in Radians
         /// </summary>

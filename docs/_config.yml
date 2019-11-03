@@ -1,5 +1,5 @@
 title: Nautilus
-description: A Units of Measure library for .Net Core
+description: A Units of Measure library for .Net Standard
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

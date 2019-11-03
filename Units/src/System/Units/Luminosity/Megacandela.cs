@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Mcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MegaCandela (Mcd)
+	/// </summary>
 	public static class MegaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in MegaCandelas

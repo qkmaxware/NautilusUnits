@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "PT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaTesla (PT)
+	/// </summary>
 	public static class PetaTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in PetaTeslas

@@ -43,13 +43,16 @@ function template (namespace, name, symbol, conversionName) {
     
 var tpl1 = `namespace ${namespace} {
 /// <summary>
-/// Unit of measurement for the ${name} (${symbol})
+/// Unit of measurement for ${name} (${symbol})
 /// </summary>
 public struct ${name} : I${conversionName} {
     public static string Name => "${name}";
     public static string Symbol => "${symbol}";
 }
 
+/// <summary>
+/// Extension method factory for generating ${name} (${symbol})
+/// </summary>
 public static class ${name}Factory {
     /// <summary>
     /// Create a quantity measured in ${name}s
@@ -97,6 +100,9 @@ var str = data.join(os.EOL);
 return `using System;
 
 namespace ${namespace} {
+/// <summary>
+/// Static class housing conversions to and from the unit "${name}"
+/// </summary>
 public static class ${name}Conversions {
 ${str}
 }

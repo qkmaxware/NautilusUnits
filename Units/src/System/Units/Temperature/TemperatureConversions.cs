@@ -1,7 +1,9 @@
 using System;
 
 namespace System.Units.Temperature {
-
+/// <summary>
+/// Static class housing conversions to and from the unit "Celsius"
+/// </summary>
 public static class TemperatureConversions {
 
     /// <summary>

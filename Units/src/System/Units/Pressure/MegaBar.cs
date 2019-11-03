@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Mbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MegaBar (Mbar)
+	/// </summary>
 	public static class MegaBarFactory {
 		/// <summary>
         /// Create a quantity measured in MegaBars

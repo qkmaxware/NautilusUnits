@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "fm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoMetrePerSecond (fm/s)
+	/// </summary>
 	public static class FemtoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoMetrePerSeconds

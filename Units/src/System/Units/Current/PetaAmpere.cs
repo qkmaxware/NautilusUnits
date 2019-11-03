@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "PA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PetaAmpere (PA)
+	/// </summary>
 	public static class PetaAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in PetaAmperes

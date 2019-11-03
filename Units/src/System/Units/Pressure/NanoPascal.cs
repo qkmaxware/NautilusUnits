@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "nPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoPascal (nPa)
+	/// </summary>
 	public static class NanoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in NanoPascals

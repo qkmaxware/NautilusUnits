@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Ebar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaBar (Ebar)
+	/// </summary>
 	public static class ExaBarFactory {
 		/// <summary>
         /// Create a quantity measured in ExaBars

@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "uA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroAmpere (uA)
+	/// </summary>
 	public static class MicroAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in MicroAmperes

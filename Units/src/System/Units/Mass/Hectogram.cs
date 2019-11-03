@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "hg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoGram (hg)
+	/// </summary>
 	public static class HectoGramFactory {
 		/// <summary>
         /// Create a quantity measured in HectoGrams

@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "daA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaAmpere (daA)
+	/// </summary>
 	public static class DekaAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in DekaAmperes

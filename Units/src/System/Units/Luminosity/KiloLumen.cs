@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "klm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloLumen (klm)
+	/// </summary>
 	public static class KiloLumenFactory {
 		/// <summary>
         /// Create a quantity measured in KiloLumens

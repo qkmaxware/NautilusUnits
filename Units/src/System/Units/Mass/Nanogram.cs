@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "ng";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoGram (ng)
+	/// </summary>
 	public static class NanoGramFactory {
 		/// <summary>
         /// Create a quantity measured in NanoGrams

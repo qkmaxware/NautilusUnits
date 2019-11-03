@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "fPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoPascal (fPa)
+	/// </summary>
 	public static class FemtoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoPascals

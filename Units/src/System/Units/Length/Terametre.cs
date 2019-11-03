@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "Tm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraMetre (Tm)
+	/// </summary>
 	public static class TeraMetreFactory {
 		/// <summary>
         /// Create a quantity measured in TeraMetres

@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Zbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaBar (Zbar)
+	/// </summary>
 	public static class ZettaBarFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaBars

@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Gcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaCandela (Gcd)
+	/// </summary>
 	public static class GigaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in GigaCandelas

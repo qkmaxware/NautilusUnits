@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "am";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoMetre (am)
+	/// </summary>
 	public static class AttoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in AttoMetres

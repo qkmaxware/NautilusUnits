@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "zm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating ZeptoMetrePerSecondSq (zm/s^2) 
+	/// </summary>
 	public static class ZeptoMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in ZeptoMetrePerSecondSqs

@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.ElectricPotential {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Volt"
+/// </summary>
 public static class ElectricPotentialConversions {
 	/// <summary>
     /// Extension method to convert Volt to YottaVolt

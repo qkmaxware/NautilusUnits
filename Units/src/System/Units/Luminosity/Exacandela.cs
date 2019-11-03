@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Ecd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaCandela (Ecd)
+	/// </summary>
 	public static class ExaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in ExaCandelas

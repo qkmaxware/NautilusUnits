@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "ucd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroCandela (ucd)
+	/// </summary>
 	public static class MicroCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in MicroCandelas

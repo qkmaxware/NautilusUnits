@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Luminosity {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Candela"
+/// </summary>
 public static class CandelaLuminosityConversions {
 	/// <summary>
     /// Extension method to convert Candela to YottaCandela

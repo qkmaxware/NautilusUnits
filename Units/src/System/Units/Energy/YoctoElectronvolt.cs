@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "yeV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoElectronvolt (yeV)
+	/// </summary>
 	public static class YoctoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoElectronvolts

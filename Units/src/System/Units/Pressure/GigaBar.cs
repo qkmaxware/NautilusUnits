@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "Gbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaBar (Gbar)
+	/// </summary>
 	public static class GigaBarFactory {
 		/// <summary>
         /// Create a quantity measured in GigaBars

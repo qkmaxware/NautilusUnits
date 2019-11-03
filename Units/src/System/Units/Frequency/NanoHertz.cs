@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "nHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoHertz (nHz)
+	/// </summary>
 	public static class NanoHertzFactory {
 		/// <summary>
         /// Create a quantity measured in NanoHertzs

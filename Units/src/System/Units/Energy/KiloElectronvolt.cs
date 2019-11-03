@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "keV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloElectronvolt (keV)
+	/// </summary>
 	public static class KiloElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in KiloElectronvolts

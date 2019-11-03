@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "um";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroMetre (um)
+	/// </summary>
 	public static class MicroMetreFactory {
 		/// <summary>
         /// Create a quantity measured in MicroMetres

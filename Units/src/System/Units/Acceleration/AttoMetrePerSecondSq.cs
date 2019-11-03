@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "am/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating AttoMetrePerSecondSq (am/s^2)
+	/// </summary>
 	public static class AttoMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in AttoMetrePerSecondSqs

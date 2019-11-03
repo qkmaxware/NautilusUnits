@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "yA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YoctoAmpere (yA)
+	/// </summary>
 	public static class YoctoAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in YoctoAmperes

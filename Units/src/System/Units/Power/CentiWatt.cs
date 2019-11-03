@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "cW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiWatt (cW)
+	/// </summary>
 	public static class CentiWattFactory {
 		/// <summary>
         /// Create a quantity measured in CentiWatts

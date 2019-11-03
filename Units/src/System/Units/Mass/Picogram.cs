@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "pg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoGram (pg)
+	/// </summary>
 	public static class PicoGramFactory {
 		/// <summary>
         /// Create a quantity measured in PicoGrams

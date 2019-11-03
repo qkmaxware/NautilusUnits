@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "peV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoElectronvolt (peV)
+	/// </summary>
 	public static class PicoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in PicoElectronvolts

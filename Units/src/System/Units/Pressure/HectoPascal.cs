@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "hPa";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoPascal (hPa)
+	/// </summary>
 	public static class HectoPascalFactory {
 		/// <summary>
         /// Create a quantity measured in HectoPascals

@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Ycd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaCandela (Ycd)
+	/// </summary>
 	public static class YottaCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in YottaCandelas

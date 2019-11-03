@@ -7,6 +7,9 @@ namespace System.Units.Acceleration {
         public static string Symbol => "fm/s^2";
     }
 	
+    /// <summary>
+	/// Extension method factory for generating FemtoMetrePerSecondSq (fm/s^2) 
+	/// </summary>
 	public static class FemtoMetrePerSecondSqFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoMetrePerSecondSqs

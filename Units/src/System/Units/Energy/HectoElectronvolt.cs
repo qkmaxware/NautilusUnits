@@ -7,6 +7,9 @@ namespace System.Units.Energy {
         public static string Symbol => "heV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoElectronvolt (heV)
+	/// </summary>
 	public static class HectoElectronvoltFactory {
 		/// <summary>
         /// Create a quantity measured in HectoElectronvolts

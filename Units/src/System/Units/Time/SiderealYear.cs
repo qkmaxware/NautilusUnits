@@ -7,7 +7,10 @@ public struct SiderealYear : ITime {
     public static string Symbol => "syr";
 }
 
-public static class SiderealYearFactory {
+/// <summary>
+	///Extension method factory for generating SiderealYear (syr)
+	/// </summary>
+	public static class SiderealYearFactory {
     /// <summary>
     /// Create a quantity measured in SiderealYears
     /// </summary>

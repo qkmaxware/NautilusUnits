@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "hm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoMetrePerSecond (hm/s)
+	/// </summary>
 	public static class HectoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in HectoMetrePerSeconds

@@ -7,6 +7,9 @@ namespace System.Units.ElectricPotential {
         public static string Symbol => "hV";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoVolt (hV)
+	/// </summary>
 	public static class HectoVoltFactory {
 		/// <summary>
         /// Create a quantity measured in HectoVolts

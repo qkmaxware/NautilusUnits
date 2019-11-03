@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "fg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating FemtoGram (fg)
+	/// </summary>
 	public static class FemtoGramFactory {
 		/// <summary>
         /// Create a quantity measured in FemtoGrams

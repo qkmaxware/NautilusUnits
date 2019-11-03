@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "nm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating NanoMetrePerSecond (nm/s)
+	/// </summary>
 	public static class NanoMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in NanoMetrePerSeconds

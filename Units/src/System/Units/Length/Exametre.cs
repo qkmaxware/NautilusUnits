@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "Em";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ExaMetre (Em)
+	/// </summary>
 	public static class ExaMetreFactory {
 		/// <summary>
         /// Create a quantity measured in ExaMetres

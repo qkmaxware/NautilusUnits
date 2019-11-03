@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Frequency {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "Hertz"
+/// </summary>
 public static class FrequencyConversions {
 	/// <summary>
     /// Extension method to convert Hertz to YottaHertz

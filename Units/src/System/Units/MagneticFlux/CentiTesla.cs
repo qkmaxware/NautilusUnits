@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "cT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiTesla (cT)
+	/// </summary>
 	public static class CentiTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in CentiTeslas

@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "daW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaWatt (daW)
+	/// </summary>
 	public static class DekaWattFactory {
 		/// <summary>
         /// Create a quantity measured in DekaWatts

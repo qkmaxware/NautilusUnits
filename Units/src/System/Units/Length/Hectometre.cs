@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "hm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoMetre (hm)
+	/// </summary>
 	public static class HectoMetreFactory {
 		/// <summary>
         /// Create a quantity measured in HectoMetres

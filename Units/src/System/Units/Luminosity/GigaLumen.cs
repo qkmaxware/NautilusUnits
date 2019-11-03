@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Glm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaLumen (Glm)
+	/// </summary>
 	public static class GigaLumenFactory {
 		/// <summary>
         /// Create a quantity measured in GigaLumens

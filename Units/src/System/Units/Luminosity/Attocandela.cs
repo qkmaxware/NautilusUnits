@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "acd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoCandela (acd)
+	/// </summary>
 	public static class AttoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in AttoCandelas

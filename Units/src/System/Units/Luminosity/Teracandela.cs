@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "Tcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraCandela (Tcd)
+	/// </summary>
 	public static class TeraCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in TeraCandelas

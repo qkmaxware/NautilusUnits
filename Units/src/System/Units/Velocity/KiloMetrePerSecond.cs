@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "km/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloMetrePerSecond (km/s)
+	/// </summary>
 	public static class KiloMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in KiloMetrePerSeconds

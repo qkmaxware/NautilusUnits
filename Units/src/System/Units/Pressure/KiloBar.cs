@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "kbar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloBar (kbar)
+	/// </summary>
 	public static class KiloBarFactory {
 		/// <summary>
         /// Create a quantity measured in KiloBars

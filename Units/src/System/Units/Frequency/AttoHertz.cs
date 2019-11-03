@@ -7,6 +7,9 @@ namespace System.Units.Frequency {
         public static string Symbol => "aHz";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoHertz (aHz)
+	/// </summary>
 	public static class AttoHertzFactory {
 		/// <summary>
         /// Create a quantity measured in AttoHertzs

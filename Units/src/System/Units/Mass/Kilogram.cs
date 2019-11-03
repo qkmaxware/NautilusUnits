@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "kg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloGram (kg)
+	/// </summary>
 	public static class KiloGramFactory {
 		/// <summary>
         /// Create a quantity measured in KiloGrams

@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "m";
     }
 	
+	/// <summary>
+	///Extension method factory for generating Metre (m)
+	/// </summary>
 	public static class MetreFactory {
 		/// <summary>
         /// Create a quantity measured in Metres

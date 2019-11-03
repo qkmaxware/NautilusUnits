@@ -5,7 +5,10 @@ namespace System.Units.Temperature {
         public static string Symbol => "°C";
     }
 
-    public static class CelsiusFactory {
+    /// <summary>
+	///Extension method factory for generating Celsius (°C)
+	/// </summary>
+	public static class CelsiusFactory {
         /// <summary>
         /// Create a quantity measured in Celsius
         /// </summary>

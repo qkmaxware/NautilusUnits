@@ -1,5 +1,9 @@
 using System;
+
 namespace System.Units.Acceleration {
+/// <summary>
+/// Static class housing conversions between G and MetrePerSecondSq
+/// </summary>
 public static class GAccelerationConversions {
 
     /// <summary>

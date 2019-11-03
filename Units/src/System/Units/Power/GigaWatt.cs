@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "GW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaWatt (GW)
+	/// </summary>
 	public static class GigaWattFactory {
 		/// <summary>
         /// Create a quantity measured in GigaWatts

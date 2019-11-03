@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "hN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating HectoNewton (hN)
+	/// </summary>
 	public static class HectoNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in HectoNewtons

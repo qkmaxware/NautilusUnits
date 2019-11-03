@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "dg";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DeciGram (dg)
+	/// </summary>
 	public static class DeciGramFactory {
 		/// <summary>
         /// Create a quantity measured in DeciGrams

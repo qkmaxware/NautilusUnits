@@ -7,7 +7,10 @@ public struct Year : ITime {
     public static string Symbol => "yr";
 }
 
-public static class YearFactory {
+/// <summary>
+	///Extension method factory for generating Year (yr)
+	/// </summary>
+	public static class YearFactory {
     /// <summary>
     /// Create a quantity measured in Years
     /// </summary>

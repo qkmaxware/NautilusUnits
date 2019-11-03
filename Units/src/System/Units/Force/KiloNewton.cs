@@ -7,6 +7,9 @@ namespace System.Units.Force {
         public static string Symbol => "kN";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloNewton (kN)
+	/// </summary>
 	public static class KiloNewtonFactory {
 		/// <summary>
         /// Create a quantity measured in KiloNewtons

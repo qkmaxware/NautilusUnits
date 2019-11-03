@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "kcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating KiloCandela (kcd)
+	/// </summary>
 	public static class KiloCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in KiloCandelas

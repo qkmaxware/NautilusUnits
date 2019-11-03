@@ -7,6 +7,9 @@ namespace System.Units.Mass {
         public static string Symbol => "ug";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroGram (ug)
+	/// </summary>
 	public static class MicroGramFactory {
 		/// <summary>
         /// Create a quantity measured in MicroGrams

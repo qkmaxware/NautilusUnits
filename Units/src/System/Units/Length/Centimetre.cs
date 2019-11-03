@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "cm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating CentiMetre (cm)
+	/// </summary>
 	public static class CentiMetreFactory {
 		/// <summary>
         /// Create a quantity measured in CentiMetres

@@ -7,6 +7,9 @@ namespace System.Units.Length {
         public static string Symbol => "dam";
     }
 	
+	/// <summary>
+	///Extension method factory for generating DekaMetre (dam)
+	/// </summary>
 	public static class DekaMetreFactory {
 		/// <summary>
         /// Create a quantity measured in DekaMetres

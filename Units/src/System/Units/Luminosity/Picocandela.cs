@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "pcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoCandela (pcd)
+	/// </summary>
 	public static class PicoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in PicoCandelas

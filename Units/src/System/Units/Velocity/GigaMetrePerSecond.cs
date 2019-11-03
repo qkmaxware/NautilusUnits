@@ -7,6 +7,9 @@ namespace System.Units.Velocity {
         public static string Symbol => "Gm/s";
     }
 	
+	/// <summary>
+	///Extension method factory for generating GigaMetrePerSecond (Gm/s)
+	/// </summary>
 	public static class GigaMetrePerSecondFactory {
 		/// <summary>
         /// Create a quantity measured in GigaMetrePerSeconds

@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "alm";
     }
 	
+	/// <summary>
+	///Extension method factory for generating AttoLumen (alm)
+	/// </summary>
 	public static class AttoLumenFactory {
 		/// <summary>
         /// Create a quantity measured in AttoLumens

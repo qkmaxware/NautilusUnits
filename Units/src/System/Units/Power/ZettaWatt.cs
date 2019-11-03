@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "ZW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZettaWatt (ZW)
+	/// </summary>
 	public static class ZettaWattFactory {
 		/// <summary>
         /// Create a quantity measured in ZettaWatts

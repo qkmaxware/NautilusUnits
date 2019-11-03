@@ -5,7 +5,10 @@ namespace System.Units.Temperature {
         public static string Symbol => "°R";
     }
 
-    public static class RankineFactory {
+    /// <summary>
+	///Extension method factory for generating Rankine (°R)
+	/// </summary>
+	public static class RankineFactory {
         /// <summary>
         /// Create a quantity measured in Rankines
         /// </summary>

@@ -7,6 +7,9 @@ namespace System.Units.MagneticFlux {
         public static string Symbol => "pT";
     }
 	
+	/// <summary>
+	///Extension method factory for generating PicoTesla (pT)
+	/// </summary>
 	public static class PicoTeslaFactory {
 		/// <summary>
         /// Create a quantity measured in PicoTeslas

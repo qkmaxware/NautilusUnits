@@ -7,7 +7,10 @@ public struct SiderealDay : ITime {
     public static string Symbol => "sday";
 }
 
-public static class SiderealDayFactory {
+/// <summary>
+	///Extension method factory for generating SiderealDay (sday)
+	/// </summary>
+	public static class SiderealDayFactory {
     /// <summary>
     /// Create a quantity measured in SiderealDays
     /// </summary>

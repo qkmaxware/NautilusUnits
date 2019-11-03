@@ -1,5 +1,8 @@
 using System;
 namespace System.Units.Acceleration {
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "MetrePerSecondSq"
+/// </summary>  
 public static class MetrePerSecondSqAccelerationConversions {
 	/// <summary>
     /// Extension method to convert MetrePerSecondSq to YottaMetrePerSecondSq

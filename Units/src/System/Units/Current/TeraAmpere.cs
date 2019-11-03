@@ -7,6 +7,9 @@ namespace System.Units.Current {
         public static string Symbol => "TA";
     }
 	
+	/// <summary>
+	///Extension method factory for generating TeraAmpere (TA)
+	/// </summary>
 	public static class TeraAmpereFactory {
 		/// <summary>
         /// Create a quantity measured in TeraAmperes

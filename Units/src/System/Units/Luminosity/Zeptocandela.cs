@@ -7,6 +7,9 @@ namespace System.Units.Luminosity {
         public static string Symbol => "zcd";
     }
 	
+	/// <summary>
+	///Extension method factory for generating ZeptoCandela (zcd)
+	/// </summary>
 	public static class ZeptoCandelaFactory {
 		/// <summary>
         /// Create a quantity measured in ZeptoCandelas

@@ -7,6 +7,9 @@ namespace System.Units.Power {
         public static string Symbol => "YW";
     }
 	
+	/// <summary>
+	///Extension method factory for generating YottaWatt (YW)
+	/// </summary>
 	public static class YottaWattFactory {
 		/// <summary>
         /// Create a quantity measured in YottaWatts

@@ -7,6 +7,9 @@ namespace System.Units.Pressure {
         public static string Symbol => "ubar";
     }
 	
+	/// <summary>
+	///Extension method factory for generating MicroBar (ubar)
+	/// </summary>
 	public static class MicroBarFactory {
 		/// <summary>
         /// Create a quantity measured in MicroBars
