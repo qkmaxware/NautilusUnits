@@ -41,11 +41,12 @@ layout: default
         {% endif %}
     <ul>
     {% if site.github.releases.size > 0 %}
-    <h1>Other</h1>
+    <hr>
+    <h1>All Releases</h1>
     <ul class="w3-wide w3-margin w3-ul w3-card-4">
     {% for release in site.github.releases %}
         <li>
-            <a href = "{{ release.url }}">
+            <a href = "{{ release.html_url }}">
                 {% if release.isDraft %}<span class="w3-badge w3-green">draft</span> {% endif %}
                 {% if release.isPrerelease  %}<span class="w3-badge w3-deep-orange">pre-release</span> {% endif %}
                 {{ release.name }}:{{ release.tag }}
