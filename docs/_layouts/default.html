@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.bubbles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
   </head>
   <body>
     <!-- Navbar -->
@@ -18,11 +20,11 @@
       <div id="navbar-content" class="w3-wide w3-top" style="z-index: 9999;">
           <div class="w3-bar w3-black w3-card">
             <a href="{{ site.baseurl }}/" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
-            <a href="{{ site.baseurl }}/updates" class="w3-bar-item w3-button">Updates</a>
-            <a href="{{ site.baseurl }}/downloads" class="w3-bar-item w3-button">Downloads</a>
+            <a href="{{ site.baseurl }}/updates" class="w3-bar-item w3-button" style="padding: 8px;">News</a>
+            <a href="{{ site.baseurl }}/downloads" class="w3-bar-item w3-button" style="padding: 8px;">Download</a>
             {% assign static_paths = site.static_files | map: 'path' %}
             {% if static_paths contains '/documentation/index.html'%} 
-            <a href="{{ site.baseurl }}/documentation" class="w3-bar-item w3-button">Docs</a>
+            <a href="{{ site.baseurl }}/documentation" class="w3-bar-item w3-button" style="padding: 8px;">Docs</a>
             {% endif %}
           </div>
       </div>

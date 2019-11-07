@@ -1,5 +1,23 @@
-a {
+h1 a {
     text-decoration: none;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 240px;
+}
+
+@media (max-width:600px) { 
+    .logo {
+        max-width: 64px;
+    }
+}
+
+@media (max-height: 480px) {
+    .logo {
+        display: none;
+    }
 }
 
 .bob {
@@ -19,4 +37,8 @@ a {
         -webkit-transform: translate(0px, 10px);
         transform: translate(0px, 10px);
     }
+}
+
+pre.highlight {
+    overflow-x: scroll;
 }
