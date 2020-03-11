@@ -15,7 +15,7 @@ public static class AngleConversions {
     /// </summary>
     /// <param name="val">quantity measured in degrees</param>
     /// <returns>quantity measured in radians</returns>
-    public static Quantity<double, Radians> ToRadians<T>(this Quantity<T, Degrees> val) where T:IConvertible {
+    public static Quantity<double, Radians> ToRadians<T>(this BaseQuantity<T, Degrees> val) where T:IConvertible {
         return new Quantity<double, Radians>(
             Convert.ToDouble(val.Value) * Deg2Rad
         );
@@ -26,7 +26,7 @@ public static class AngleConversions {
     /// </summary>
     /// <param name="val">quantity measured in radians</param>
     /// <returns>quantity measured in degrees</returns>
-    public static Quantity<double, Degrees> ToDegrees<T>(this Quantity<T, Radians> val) where T:IConvertible {
+    public static Quantity<double, Degrees> ToDegrees<T>(this BaseQuantity<T, Radians> val) where T:IConvertible {
         return new Quantity<double, Degrees>(
             Convert.ToDouble(val.Value) * Rad2Deg
         );

@@ -10,7 +10,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in Electronvolt</returns>
-	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, Electronvolt>(
             Convert.ToDouble(val.Value) * (6.241509E+18)
         );
@@ -20,7 +20,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in Joule</returns>
-	public static Quantity<double, Joule> ToJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, Joule>(
             Convert.ToDouble(val.Value) * (1.0/(6.241509E+18))
         );
@@ -30,7 +30,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-24)
         );
@@ -40,7 +40,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-24)
         );
@@ -50,7 +50,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-21)
         );
@@ -60,7 +60,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-21)
         );
@@ -70,7 +70,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-18)
         );
@@ -80,7 +80,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-18)
         );
@@ -90,7 +90,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-15)
         );
@@ -100,7 +100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-15)
         );
@@ -110,7 +110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-12)
         );
@@ -120,7 +120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-12)
         );
@@ -130,7 +130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-9)
         );
@@ -140,7 +140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-9)
         );
@@ -150,7 +150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-6)
         );
@@ -160,7 +160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-6)
         );
@@ -170,7 +170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-3)
         );
@@ -180,7 +180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-3)
         );
@@ -190,7 +190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-2)
         );
@@ -200,7 +200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-2)
         );
@@ -210,7 +210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E-1)
         );
@@ -220,7 +220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E-1)
         );
@@ -230,7 +230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E1)
         );
@@ -240,7 +240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E1)
         );
@@ -250,7 +250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E2)
         );
@@ -260,7 +260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E2)
         );
@@ -270,7 +270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E3)
         );
@@ -280,7 +280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E3)
         );
@@ -290,7 +290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E6)
         );
@@ -300,7 +300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E6)
         );
@@ -310,7 +310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E9)
         );
@@ -320,7 +320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E9)
         );
@@ -330,7 +330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E12)
         );
@@ -340,7 +340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E12)
         );
@@ -350,7 +350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E15)
         );
@@ -360,7 +360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E15)
         );
@@ -370,7 +370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E18)
         );
@@ -380,7 +380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E18)
         );
@@ -390,7 +390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E21)
         );
@@ -400,7 +400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E21)
         );
@@ -410,7 +410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, Joule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * 1E24)
         );
@@ -420,7 +420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, Electronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * 1E24)
         );
@@ -430,7 +430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -440,7 +440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -450,7 +450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -460,7 +460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -470,7 +470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -480,7 +480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -490,7 +490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -500,7 +500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -510,7 +510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -520,7 +520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -530,7 +530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -540,7 +540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -550,7 +550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -560,7 +560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -570,7 +570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -580,7 +580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -590,7 +590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -600,7 +600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -610,7 +610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -620,7 +620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -630,7 +630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -640,7 +640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -650,7 +650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -660,7 +660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -670,7 +670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -680,7 +680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -690,7 +690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -700,7 +700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -710,7 +710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -720,7 +720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -730,7 +730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -740,7 +740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -750,7 +750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -760,7 +760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -770,7 +770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -780,7 +780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -790,7 +790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -800,7 +800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -810,7 +810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, YottaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-24))
         );
@@ -820,7 +820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in YottaJoule</returns>
-	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-24))
         );
@@ -830,7 +830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -840,7 +840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -850,7 +850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -860,7 +860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -870,7 +870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -880,7 +880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -890,7 +890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -900,7 +900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -910,7 +910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -920,7 +920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -930,7 +930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -940,7 +940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -950,7 +950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -960,7 +960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -970,7 +970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -980,7 +980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -990,7 +990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1000,7 +1000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1010,7 +1010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1020,7 +1020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1030,7 +1030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1040,7 +1040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1050,7 +1050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1060,7 +1060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1070,7 +1070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1080,7 +1080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1090,7 +1090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1100,7 +1100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1110,7 +1110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1120,7 +1120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1130,7 +1130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1140,7 +1140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1150,7 +1150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1160,7 +1160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1170,7 +1170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1180,7 +1180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1190,7 +1190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1200,7 +1200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1210,7 +1210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, ZettaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-21))
         );
@@ -1220,7 +1220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in ZettaJoule</returns>
-	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZettaJoule> ToZettaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-21))
         );
@@ -1230,7 +1230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1240,7 +1240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1250,7 +1250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1260,7 +1260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1270,7 +1270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1280,7 +1280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1290,7 +1290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1300,7 +1300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1310,7 +1310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1320,7 +1320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1330,7 +1330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1340,7 +1340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1350,7 +1350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1360,7 +1360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1370,7 +1370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1380,7 +1380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1390,7 +1390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1400,7 +1400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1410,7 +1410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1420,7 +1420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1430,7 +1430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1440,7 +1440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1450,7 +1450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1460,7 +1460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1470,7 +1470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1480,7 +1480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1490,7 +1490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1500,7 +1500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1510,7 +1510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1520,7 +1520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1530,7 +1530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1540,7 +1540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1550,7 +1550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1560,7 +1560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1570,7 +1570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1580,7 +1580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1590,7 +1590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1600,7 +1600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1610,7 +1610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, ExaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-18))
         );
@@ -1620,7 +1620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in ExaJoule</returns>
-	public static Quantity<double, ExaJoule> ToExaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-18))
         );
@@ -1630,7 +1630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1640,7 +1640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1650,7 +1650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1660,7 +1660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1670,7 +1670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1680,7 +1680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1690,7 +1690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1700,7 +1700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1710,7 +1710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1720,7 +1720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1730,7 +1730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1740,7 +1740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1750,7 +1750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1760,7 +1760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1770,7 +1770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1780,7 +1780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1790,7 +1790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1800,7 +1800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1810,7 +1810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1820,7 +1820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1830,7 +1830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1840,7 +1840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1850,7 +1850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1860,7 +1860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1870,7 +1870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1880,7 +1880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1890,7 +1890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1900,7 +1900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1910,7 +1910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1920,7 +1920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1930,7 +1930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1940,7 +1940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1950,7 +1950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1960,7 +1960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1970,7 +1970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -1980,7 +1980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -1990,7 +1990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -2000,7 +2000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -2010,7 +2010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, PetaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-15))
         );
@@ -2020,7 +2020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in PetaJoule</returns>
-	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PetaJoule> ToPetaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-15))
         );
@@ -2030,7 +2030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2040,7 +2040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2050,7 +2050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2060,7 +2060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2070,7 +2070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2080,7 +2080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2090,7 +2090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2100,7 +2100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2110,7 +2110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2120,7 +2120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2130,7 +2130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2140,7 +2140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2150,7 +2150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2160,7 +2160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2170,7 +2170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2180,7 +2180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2190,7 +2190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2200,7 +2200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2210,7 +2210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2220,7 +2220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2230,7 +2230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2240,7 +2240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2250,7 +2250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2260,7 +2260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2270,7 +2270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2280,7 +2280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2290,7 +2290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2300,7 +2300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2310,7 +2310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2320,7 +2320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2330,7 +2330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2340,7 +2340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2350,7 +2350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2360,7 +2360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2370,7 +2370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2380,7 +2380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2390,7 +2390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2400,7 +2400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2410,7 +2410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, TeraJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-12))
         );
@@ -2420,7 +2420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in TeraJoule</returns>
-	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-12))
         );
@@ -2430,7 +2430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2440,7 +2440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2450,7 +2450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2460,7 +2460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2470,7 +2470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2480,7 +2480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2490,7 +2490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2500,7 +2500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2510,7 +2510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2520,7 +2520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2530,7 +2530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2540,7 +2540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2550,7 +2550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2560,7 +2560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2570,7 +2570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2580,7 +2580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2590,7 +2590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2600,7 +2600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2610,7 +2610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2620,7 +2620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2630,7 +2630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2640,7 +2640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2650,7 +2650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2660,7 +2660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2670,7 +2670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2680,7 +2680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2690,7 +2690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2700,7 +2700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2710,7 +2710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2720,7 +2720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2730,7 +2730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2740,7 +2740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2750,7 +2750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2760,7 +2760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2770,7 +2770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2780,7 +2780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2790,7 +2790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2800,7 +2800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2810,7 +2810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, GigaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-9))
         );
@@ -2820,7 +2820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in GigaJoule</returns>
-	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, GigaJoule> ToGigaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-9))
         );
@@ -2830,7 +2830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2840,7 +2840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2850,7 +2850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2860,7 +2860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2870,7 +2870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2880,7 +2880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2890,7 +2890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2900,7 +2900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2910,7 +2910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2920,7 +2920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2930,7 +2930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2940,7 +2940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2950,7 +2950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2960,7 +2960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2970,7 +2970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -2980,7 +2980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -2990,7 +2990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3000,7 +3000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3010,7 +3010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3020,7 +3020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3030,7 +3030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3040,7 +3040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3050,7 +3050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3060,7 +3060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3070,7 +3070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3080,7 +3080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3090,7 +3090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3100,7 +3100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3110,7 +3110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3120,7 +3120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3130,7 +3130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3140,7 +3140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3150,7 +3150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3160,7 +3160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3170,7 +3170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3180,7 +3180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3190,7 +3190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3200,7 +3200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3210,7 +3210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, MegaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-6))
         );
@@ -3220,7 +3220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in MegaJoule</returns>
-	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-6))
         );
@@ -3230,7 +3230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3240,7 +3240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3250,7 +3250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3260,7 +3260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3270,7 +3270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3280,7 +3280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3290,7 +3290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3300,7 +3300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3310,7 +3310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3320,7 +3320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3330,7 +3330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3340,7 +3340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3350,7 +3350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3360,7 +3360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3370,7 +3370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3380,7 +3380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3390,7 +3390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3400,7 +3400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3410,7 +3410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3420,7 +3420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3430,7 +3430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3440,7 +3440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3450,7 +3450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3460,7 +3460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3470,7 +3470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3480,7 +3480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3490,7 +3490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3500,7 +3500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3510,7 +3510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3520,7 +3520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3530,7 +3530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3540,7 +3540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3550,7 +3550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3560,7 +3560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3570,7 +3570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3580,7 +3580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3590,7 +3590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3600,7 +3600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3610,7 +3610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, KiloJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-3))
         );
@@ -3620,7 +3620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in KiloJoule</returns>
-	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, KiloJoule> ToKiloJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-3))
         );
@@ -3630,7 +3630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3640,7 +3640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3650,7 +3650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3660,7 +3660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3670,7 +3670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3680,7 +3680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3690,7 +3690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3700,7 +3700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3710,7 +3710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3720,7 +3720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3730,7 +3730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3740,7 +3740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3750,7 +3750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3760,7 +3760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3770,7 +3770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3780,7 +3780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3790,7 +3790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3800,7 +3800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3810,7 +3810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3820,7 +3820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3830,7 +3830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3840,7 +3840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3850,7 +3850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3860,7 +3860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3870,7 +3870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3880,7 +3880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3890,7 +3890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3900,7 +3900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3910,7 +3910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3920,7 +3920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3930,7 +3930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3940,7 +3940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3950,7 +3950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3960,7 +3960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3970,7 +3970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -3980,7 +3980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -3990,7 +3990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -4000,7 +4000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -4010,7 +4010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, HectoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-2))
         );
@@ -4020,7 +4020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in HectoJoule</returns>
-	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-2))
         );
@@ -4030,7 +4030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4040,7 +4040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4050,7 +4050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4060,7 +4060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4070,7 +4070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4080,7 +4080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4090,7 +4090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4100,7 +4100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4110,7 +4110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4120,7 +4120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4130,7 +4130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4140,7 +4140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4150,7 +4150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4160,7 +4160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4170,7 +4170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4180,7 +4180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4190,7 +4190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4200,7 +4200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4210,7 +4210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4220,7 +4220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4230,7 +4230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4240,7 +4240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4250,7 +4250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4260,7 +4260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4270,7 +4270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4280,7 +4280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4290,7 +4290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4300,7 +4300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4310,7 +4310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4320,7 +4320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4330,7 +4330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4340,7 +4340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4350,7 +4350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4360,7 +4360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4370,7 +4370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4380,7 +4380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4390,7 +4390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4400,7 +4400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4410,7 +4410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, DekaJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E-1))
         );
@@ -4420,7 +4420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in DekaJoule</returns>
-	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DekaJoule> ToDekaJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E-1))
         );
@@ -4430,7 +4430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4440,7 +4440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4450,7 +4450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4460,7 +4460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4470,7 +4470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4480,7 +4480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4490,7 +4490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4500,7 +4500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4510,7 +4510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4520,7 +4520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4530,7 +4530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4540,7 +4540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4550,7 +4550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4560,7 +4560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4570,7 +4570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4580,7 +4580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4590,7 +4590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4600,7 +4600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4610,7 +4610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4620,7 +4620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4630,7 +4630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4640,7 +4640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4650,7 +4650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4660,7 +4660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4670,7 +4670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4680,7 +4680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4690,7 +4690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4700,7 +4700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4710,7 +4710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4720,7 +4720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4730,7 +4730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4740,7 +4740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4750,7 +4750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4760,7 +4760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4770,7 +4770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4780,7 +4780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4790,7 +4790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4800,7 +4800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4810,7 +4810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, DeciJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E1))
         );
@@ -4820,7 +4820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in DeciJoule</returns>
-	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E1))
         );
@@ -4830,7 +4830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4840,7 +4840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4850,7 +4850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4860,7 +4860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4870,7 +4870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4880,7 +4880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4890,7 +4890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4900,7 +4900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4910,7 +4910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4920,7 +4920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4930,7 +4930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4940,7 +4940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4950,7 +4950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4960,7 +4960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4970,7 +4970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -4980,7 +4980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -4990,7 +4990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5000,7 +5000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5010,7 +5010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5020,7 +5020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5030,7 +5030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5040,7 +5040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5050,7 +5050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5060,7 +5060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5070,7 +5070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5080,7 +5080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5090,7 +5090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5100,7 +5100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5110,7 +5110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5120,7 +5120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5130,7 +5130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5140,7 +5140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5150,7 +5150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5160,7 +5160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5170,7 +5170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5180,7 +5180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5190,7 +5190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5200,7 +5200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5210,7 +5210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, CentiJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E2))
         );
@@ -5220,7 +5220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in CentiJoule</returns>
-	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, CentiJoule> ToCentiJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E2))
         );
@@ -5230,7 +5230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5240,7 +5240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5250,7 +5250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5260,7 +5260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5270,7 +5270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5280,7 +5280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5290,7 +5290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5300,7 +5300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5310,7 +5310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5320,7 +5320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5330,7 +5330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5340,7 +5340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5350,7 +5350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5360,7 +5360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5370,7 +5370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5380,7 +5380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5390,7 +5390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5400,7 +5400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5410,7 +5410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5420,7 +5420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5430,7 +5430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5440,7 +5440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5450,7 +5450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5460,7 +5460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5470,7 +5470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5480,7 +5480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5490,7 +5490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5500,7 +5500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5510,7 +5510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5520,7 +5520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5530,7 +5530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5540,7 +5540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5550,7 +5550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5560,7 +5560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5570,7 +5570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5580,7 +5580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5590,7 +5590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5600,7 +5600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5610,7 +5610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, MilliJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E3))
         );
@@ -5620,7 +5620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in MilliJoule</returns>
-	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E3))
         );
@@ -5630,7 +5630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5640,7 +5640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5650,7 +5650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5660,7 +5660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5670,7 +5670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5680,7 +5680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5690,7 +5690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5700,7 +5700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5710,7 +5710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5720,7 +5720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5730,7 +5730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5740,7 +5740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5750,7 +5750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5760,7 +5760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5770,7 +5770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5780,7 +5780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5790,7 +5790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5800,7 +5800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5810,7 +5810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5820,7 +5820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5830,7 +5830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5840,7 +5840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5850,7 +5850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5860,7 +5860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5870,7 +5870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5880,7 +5880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5890,7 +5890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5900,7 +5900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5910,7 +5910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5920,7 +5920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5930,7 +5930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5940,7 +5940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5950,7 +5950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5960,7 +5960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5970,7 +5970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -5980,7 +5980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -5990,7 +5990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -6000,7 +6000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -6010,7 +6010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, MicroJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E6))
         );
@@ -6020,7 +6020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in MicroJoule</returns>
-	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, MicroJoule> ToMicroJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E6))
         );
@@ -6030,7 +6030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6040,7 +6040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6050,7 +6050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6060,7 +6060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6070,7 +6070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6080,7 +6080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6090,7 +6090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6100,7 +6100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6110,7 +6110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6120,7 +6120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6130,7 +6130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6140,7 +6140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6150,7 +6150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6160,7 +6160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6170,7 +6170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6180,7 +6180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6190,7 +6190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6200,7 +6200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6210,7 +6210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6220,7 +6220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6230,7 +6230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6240,7 +6240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6250,7 +6250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6260,7 +6260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6270,7 +6270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6280,7 +6280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6290,7 +6290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6300,7 +6300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6310,7 +6310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6320,7 +6320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6330,7 +6330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6340,7 +6340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6350,7 +6350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6360,7 +6360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6370,7 +6370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6380,7 +6380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6390,7 +6390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6400,7 +6400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6410,7 +6410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, NanoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E9))
         );
@@ -6420,7 +6420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in NanoJoule</returns>
-	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E9))
         );
@@ -6430,7 +6430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6440,7 +6440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6450,7 +6450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6460,7 +6460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6470,7 +6470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6480,7 +6480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6490,7 +6490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6500,7 +6500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6510,7 +6510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6520,7 +6520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6530,7 +6530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6540,7 +6540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6550,7 +6550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6560,7 +6560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6570,7 +6570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6580,7 +6580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6590,7 +6590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6600,7 +6600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6610,7 +6610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6620,7 +6620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6630,7 +6630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6640,7 +6640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6650,7 +6650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6660,7 +6660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6670,7 +6670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6680,7 +6680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6690,7 +6690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6700,7 +6700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6710,7 +6710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6720,7 +6720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6730,7 +6730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6740,7 +6740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6750,7 +6750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6760,7 +6760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6770,7 +6770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6780,7 +6780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6790,7 +6790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6800,7 +6800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6810,7 +6810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, PicoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E12))
         );
@@ -6820,7 +6820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in PicoJoule</returns>
-	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, PicoJoule> ToPicoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E12))
         );
@@ -6830,7 +6830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6840,7 +6840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6850,7 +6850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6860,7 +6860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6870,7 +6870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6880,7 +6880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6890,7 +6890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6900,7 +6900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6910,7 +6910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6920,7 +6920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6930,7 +6930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6940,7 +6940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6950,7 +6950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6960,7 +6960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6970,7 +6970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -6980,7 +6980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -6990,7 +6990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7000,7 +7000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7010,7 +7010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7020,7 +7020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7030,7 +7030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7040,7 +7040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7050,7 +7050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7060,7 +7060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7070,7 +7070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7080,7 +7080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7090,7 +7090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7100,7 +7100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7110,7 +7110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7120,7 +7120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7130,7 +7130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7140,7 +7140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7150,7 +7150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7160,7 +7160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7170,7 +7170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7180,7 +7180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7190,7 +7190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7200,7 +7200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7210,7 +7210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, FemtoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E15))
         );
@@ -7220,7 +7220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in FemtoJoule</returns>
-	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E15))
         );
@@ -7230,7 +7230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7240,7 +7240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7250,7 +7250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7260,7 +7260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7270,7 +7270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7280,7 +7280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7290,7 +7290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7300,7 +7300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7310,7 +7310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7320,7 +7320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7330,7 +7330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7340,7 +7340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7350,7 +7350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7360,7 +7360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7370,7 +7370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7380,7 +7380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7390,7 +7390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7400,7 +7400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7410,7 +7410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7420,7 +7420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7430,7 +7430,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7440,7 +7440,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7450,7 +7450,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7460,7 +7460,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7470,7 +7470,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7480,7 +7480,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7490,7 +7490,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7500,7 +7500,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7510,7 +7510,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7520,7 +7520,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7530,7 +7530,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7540,7 +7540,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7550,7 +7550,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7560,7 +7560,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7570,7 +7570,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7580,7 +7580,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7590,7 +7590,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7600,7 +7600,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7610,7 +7610,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, AttoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E18))
         );
@@ -7620,7 +7620,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in AttoJoule</returns>
-	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, AttoJoule> ToAttoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E18))
         );
@@ -7630,7 +7630,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7640,7 +7640,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7650,7 +7650,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7660,7 +7660,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7670,7 +7670,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7680,7 +7680,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7690,7 +7690,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7700,7 +7700,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7710,7 +7710,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7720,7 +7720,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7730,7 +7730,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7740,7 +7740,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7750,7 +7750,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7760,7 +7760,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7770,7 +7770,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7780,7 +7780,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7790,7 +7790,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7800,7 +7800,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7810,7 +7810,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7820,7 +7820,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7830,7 +7830,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7840,7 +7840,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7850,7 +7850,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7860,7 +7860,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7870,7 +7870,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7880,7 +7880,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7890,7 +7890,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7900,7 +7900,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7910,7 +7910,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7920,7 +7920,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7930,7 +7930,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7940,7 +7940,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7950,7 +7950,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7960,7 +7960,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7970,7 +7970,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -7980,7 +7980,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -7990,7 +7990,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -8000,7 +8000,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -8010,7 +8010,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, ZeptoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E21))
         );
@@ -8020,7 +8020,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in ZeptoJoule</returns>
-	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, ZeptoJoule> ToZeptoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, ZeptoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E21))
         );
@@ -8030,7 +8030,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in YottaElectronvolt</returns>
-	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, YottaElectronvolt> ToYottaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, YottaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8040,7 +8040,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, YottaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8050,7 +8050,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in ZettaElectronvolt</returns>
-	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8060,7 +8060,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, ZettaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8070,7 +8070,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in ExaElectronvolt</returns>
-	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, ExaElectronvolt> ToExaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, ExaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8080,7 +8080,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, ExaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8090,7 +8090,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in PetaElectronvolt</returns>
-	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8100,7 +8100,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, PetaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8110,7 +8110,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in TeraElectronvolt</returns>
-	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, TeraElectronvolt> ToTeraElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, TeraElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8120,7 +8120,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, TeraElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8130,7 +8130,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in GigaElectronvolt</returns>
-	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8140,7 +8140,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, GigaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8150,7 +8150,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in MegaElectronvolt</returns>
-	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, MegaElectronvolt> ToMegaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, MegaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8160,7 +8160,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, MegaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8170,7 +8170,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in KiloElectronvolt</returns>
-	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8180,7 +8180,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, KiloElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8190,7 +8190,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in HectoElectronvolt</returns>
-	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, HectoElectronvolt> ToHectoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, HectoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8200,7 +8200,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, HectoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8210,7 +8210,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in DekaElectronvolt</returns>
-	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8220,7 +8220,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, DekaElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8230,7 +8230,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in DeciElectronvolt</returns>
-	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, DeciElectronvolt> ToDeciElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, DeciElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8240,7 +8240,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, DeciElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8250,7 +8250,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in CentiElectronvolt</returns>
-	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8260,7 +8260,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, CentiElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8270,7 +8270,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in MilliElectronvolt</returns>
-	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, MilliElectronvolt> ToMilliElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, MilliElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8280,7 +8280,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, MilliElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8290,7 +8290,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in MicroElectronvolt</returns>
-	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8300,7 +8300,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, MicroElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8310,7 +8310,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in NanoElectronvolt</returns>
-	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, NanoElectronvolt> ToNanoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, NanoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8320,7 +8320,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, NanoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8330,7 +8330,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in PicoElectronvolt</returns>
-	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8340,7 +8340,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, PicoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8350,7 +8350,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in FemtoElectronvolt</returns>
-	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, FemtoElectronvolt> ToFemtoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, FemtoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8360,7 +8360,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, FemtoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8370,7 +8370,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in AttoElectronvolt</returns>
-	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8380,7 +8380,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, AttoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8390,7 +8390,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in ZeptoElectronvolt</returns>
-	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, ZeptoElectronvolt> ToZeptoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, ZeptoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8400,7 +8400,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );
@@ -8410,7 +8410,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoJoule</param>
     /// <returns>quantity measured in YoctoElectronvolt</returns>
-	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this Quantity<T, YoctoJoule> val) where T:IConvertible {
+	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * ((6.241509E+18) * (1E24))
         );
@@ -8420,7 +8420,7 @@ public static class JouleToElectronvoltConversionsConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoElectronvolt</param>
     /// <returns>quantity measured in YoctoJoule</returns>
-	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this Quantity<T, YoctoElectronvolt> val) where T:IConvertible {
+	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * ((1.0/(6.241509E+18)) * (1E24))
         );

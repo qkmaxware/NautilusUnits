@@ -3,6 +3,7 @@ var searchData=
   ['acceleration',['Acceleration',['../namespace_system_1_1_units_1_1_acceleration.html',1,'System::Units']]],
   ['amount',['Amount',['../namespace_system_1_1_units_1_1_amount.html',1,'System::Units']]],
   ['angle',['Angle',['../namespace_system_1_1_units_1_1_angle.html',1,'System::Units']]],
+  ['angularvelocity',['AngularVelocity',['../namespace_system_1_1_units_1_1_angular_velocity.html',1,'System::Units']]],
   ['compoundunits',['CompoundUnits',['../namespace_system_1_1_units_1_1_compound_units.html',1,'System::Units']]],
   ['conductance',['Conductance',['../namespace_system_1_1_units_1_1_conductance.html',1,'System::Units']]],
   ['current',['Current',['../namespace_system_1_1_units_1_1_current.html',1,'System::Units']]],

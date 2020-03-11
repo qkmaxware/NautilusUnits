@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['Value',['../struct_system_1_1_units_1_1_quantity.html#ac7e5e6964518936408c507ec8aa98b9a',1,'System::Units::Quantity']]]
+  ['value',['Value',['../class_system_1_1_units_1_1_base_quantity.html#a1c257e34d74aca8a421e0a1c91d0efac',1,'System::Units::BaseQuantity']]]
 ];

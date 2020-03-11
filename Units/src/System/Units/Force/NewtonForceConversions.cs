@@ -9,7 +9,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -19,7 +19,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -29,7 +29,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -39,7 +39,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -49,7 +49,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -59,7 +59,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -69,7 +69,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -79,7 +79,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -89,7 +89,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -99,7 +99,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -109,7 +109,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -119,7 +119,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -129,7 +129,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -139,7 +139,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -149,7 +149,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -159,7 +159,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -169,7 +169,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -179,7 +179,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -189,7 +189,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -199,7 +199,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, Newton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -209,7 +209,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -219,7 +219,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -229,7 +229,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -239,7 +239,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -249,7 +249,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -259,7 +259,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -269,7 +269,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -279,7 +279,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -289,7 +289,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -299,7 +299,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -309,7 +309,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -319,7 +319,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -329,7 +329,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -339,7 +339,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -349,7 +349,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -359,7 +359,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -369,7 +369,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -379,7 +379,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -389,7 +389,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, YottaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -399,7 +399,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -409,7 +409,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -419,7 +419,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -429,7 +429,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -439,7 +439,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -449,7 +449,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -459,7 +459,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -469,7 +469,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -479,7 +479,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -489,7 +489,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -499,7 +499,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -509,7 +509,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -519,7 +519,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -529,7 +529,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -539,7 +539,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -549,7 +549,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -559,7 +559,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -569,7 +569,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -579,7 +579,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, ZettaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -589,7 +589,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -599,7 +599,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -609,7 +609,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -619,7 +619,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -629,7 +629,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -639,7 +639,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -649,7 +649,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -659,7 +659,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -669,7 +669,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -679,7 +679,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -689,7 +689,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -699,7 +699,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -709,7 +709,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -719,7 +719,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -729,7 +729,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -739,7 +739,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -749,7 +749,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -759,7 +759,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -769,7 +769,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, ExaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -779,7 +779,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -789,7 +789,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -799,7 +799,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -809,7 +809,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -819,7 +819,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -829,7 +829,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -839,7 +839,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -849,7 +849,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -859,7 +859,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -869,7 +869,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -879,7 +879,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -889,7 +889,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -899,7 +899,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -909,7 +909,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -919,7 +919,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -929,7 +929,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -939,7 +939,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -949,7 +949,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -959,7 +959,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, PetaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -969,7 +969,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -979,7 +979,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -989,7 +989,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -999,7 +999,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1009,7 +1009,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1019,7 +1019,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1029,7 +1029,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1039,7 +1039,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1049,7 +1049,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1059,7 +1059,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1069,7 +1069,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1079,7 +1079,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1089,7 +1089,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1099,7 +1099,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1109,7 +1109,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1119,7 +1119,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1129,7 +1129,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1139,7 +1139,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1149,7 +1149,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, TeraNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1159,7 +1159,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1169,7 +1169,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1179,7 +1179,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1189,7 +1189,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1199,7 +1199,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1209,7 +1209,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1219,7 +1219,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1229,7 +1229,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1239,7 +1239,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1249,7 +1249,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1259,7 +1259,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1269,7 +1269,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1279,7 +1279,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1289,7 +1289,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1299,7 +1299,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1309,7 +1309,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1319,7 +1319,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1329,7 +1329,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1339,7 +1339,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, GigaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1349,7 +1349,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1359,7 +1359,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1369,7 +1369,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1379,7 +1379,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1389,7 +1389,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1399,7 +1399,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1409,7 +1409,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1419,7 +1419,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1429,7 +1429,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1439,7 +1439,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1449,7 +1449,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1459,7 +1459,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1469,7 +1469,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1479,7 +1479,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1489,7 +1489,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1499,7 +1499,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1509,7 +1509,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1519,7 +1519,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1529,7 +1529,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, MegaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1539,7 +1539,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1549,7 +1549,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1559,7 +1559,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1569,7 +1569,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1579,7 +1579,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1589,7 +1589,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1599,7 +1599,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1609,7 +1609,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1619,7 +1619,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1629,7 +1629,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1639,7 +1639,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1649,7 +1649,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1659,7 +1659,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1669,7 +1669,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1679,7 +1679,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1689,7 +1689,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1699,7 +1699,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1709,7 +1709,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1719,7 +1719,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, KiloNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1729,7 +1729,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1739,7 +1739,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1749,7 +1749,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1759,7 +1759,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1769,7 +1769,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1779,7 +1779,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1789,7 +1789,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1799,7 +1799,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1809,7 +1809,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1819,7 +1819,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1829,7 +1829,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1839,7 +1839,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1849,7 +1849,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1859,7 +1859,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1869,7 +1869,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1879,7 +1879,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1889,7 +1889,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1899,7 +1899,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1909,7 +1909,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, HectoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1919,7 +1919,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1929,7 +1929,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1939,7 +1939,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1949,7 +1949,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1959,7 +1959,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1969,7 +1969,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1979,7 +1979,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1989,7 +1989,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1999,7 +1999,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2009,7 +2009,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2019,7 +2019,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2029,7 +2029,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2039,7 +2039,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2049,7 +2049,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2059,7 +2059,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2069,7 +2069,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2079,7 +2079,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2089,7 +2089,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2099,7 +2099,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, DekaNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2109,7 +2109,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2119,7 +2119,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2129,7 +2129,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2139,7 +2139,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2149,7 +2149,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2159,7 +2159,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2169,7 +2169,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2179,7 +2179,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2189,7 +2189,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2199,7 +2199,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2209,7 +2209,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2219,7 +2219,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2229,7 +2229,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2239,7 +2239,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2249,7 +2249,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2259,7 +2259,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2269,7 +2269,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2279,7 +2279,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2289,7 +2289,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, DeciNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2299,7 +2299,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2309,7 +2309,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2319,7 +2319,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2329,7 +2329,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2339,7 +2339,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2349,7 +2349,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2359,7 +2359,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2369,7 +2369,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2379,7 +2379,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2389,7 +2389,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2399,7 +2399,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2409,7 +2409,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2419,7 +2419,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2429,7 +2429,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2439,7 +2439,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2449,7 +2449,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2459,7 +2459,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2469,7 +2469,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2479,7 +2479,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, CentiNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2489,7 +2489,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2499,7 +2499,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2509,7 +2509,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2519,7 +2519,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2529,7 +2529,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2539,7 +2539,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2549,7 +2549,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2559,7 +2559,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2569,7 +2569,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2579,7 +2579,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2589,7 +2589,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2599,7 +2599,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2609,7 +2609,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2619,7 +2619,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2629,7 +2629,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2639,7 +2639,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2649,7 +2649,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2659,7 +2659,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2669,7 +2669,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, MilliNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2679,7 +2679,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2689,7 +2689,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2699,7 +2699,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2709,7 +2709,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2719,7 +2719,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2729,7 +2729,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2739,7 +2739,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2749,7 +2749,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2759,7 +2759,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2769,7 +2769,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2779,7 +2779,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2789,7 +2789,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2799,7 +2799,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2809,7 +2809,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2819,7 +2819,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2829,7 +2829,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2839,7 +2839,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2849,7 +2849,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2859,7 +2859,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, MicroNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2869,7 +2869,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2879,7 +2879,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2889,7 +2889,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2899,7 +2899,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2909,7 +2909,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2919,7 +2919,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2929,7 +2929,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2939,7 +2939,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2949,7 +2949,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2959,7 +2959,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2969,7 +2969,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2979,7 +2979,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2989,7 +2989,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2999,7 +2999,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3009,7 +3009,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3019,7 +3019,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3029,7 +3029,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3039,7 +3039,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3049,7 +3049,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, NanoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3059,7 +3059,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3069,7 +3069,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3079,7 +3079,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3089,7 +3089,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3099,7 +3099,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3109,7 +3109,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3119,7 +3119,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3129,7 +3129,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3139,7 +3139,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3149,7 +3149,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3159,7 +3159,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3169,7 +3169,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3179,7 +3179,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3189,7 +3189,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3199,7 +3199,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3209,7 +3209,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3219,7 +3219,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3229,7 +3229,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3239,7 +3239,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, PicoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3249,7 +3249,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3259,7 +3259,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3269,7 +3269,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3279,7 +3279,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3289,7 +3289,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3299,7 +3299,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3309,7 +3309,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3319,7 +3319,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3329,7 +3329,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3339,7 +3339,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3349,7 +3349,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3359,7 +3359,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3369,7 +3369,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3379,7 +3379,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3389,7 +3389,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3399,7 +3399,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3409,7 +3409,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3419,7 +3419,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3429,7 +3429,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, FemtoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3439,7 +3439,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3449,7 +3449,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3459,7 +3459,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3469,7 +3469,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3479,7 +3479,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3489,7 +3489,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3499,7 +3499,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3509,7 +3509,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3519,7 +3519,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3529,7 +3529,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3539,7 +3539,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3549,7 +3549,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3559,7 +3559,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3569,7 +3569,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3579,7 +3579,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3589,7 +3589,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3599,7 +3599,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3609,7 +3609,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3619,7 +3619,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, AttoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3629,7 +3629,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3639,7 +3639,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3649,7 +3649,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3659,7 +3659,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3669,7 +3669,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3679,7 +3679,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3689,7 +3689,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3699,7 +3699,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3709,7 +3709,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3719,7 +3719,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3729,7 +3729,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3739,7 +3739,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3749,7 +3749,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3759,7 +3759,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3769,7 +3769,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3779,7 +3779,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3789,7 +3789,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3799,7 +3799,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3809,7 +3809,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoNewton</param>
     /// <returns>quantity measured in YoctoNewton</returns>
-	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this Quantity<T, ZeptoNewton> val) where T:IConvertible {
+	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3819,7 +3819,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in YottaNewton</returns>
-	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3829,7 +3829,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in ZettaNewton</returns>
-	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZettaNewton> ToZettaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, ZettaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3839,7 +3839,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in ExaNewton</returns>
-	public static Quantity<double, ExaNewton> ToExaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3849,7 +3849,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in PetaNewton</returns>
-	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, PetaNewton> ToPetaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, PetaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3859,7 +3859,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in TeraNewton</returns>
-	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3869,7 +3869,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in GigaNewton</returns>
-	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, GigaNewton> ToGigaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, GigaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3879,7 +3879,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in MegaNewton</returns>
-	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3889,7 +3889,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in KiloNewton</returns>
-	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, KiloNewton> ToKiloNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, KiloNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3899,7 +3899,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in HectoNewton</returns>
-	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3909,7 +3909,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in DekaNewton</returns>
-	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, DekaNewton> ToDekaNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, DekaNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3919,7 +3919,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in DeciNewton</returns>
-	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3929,7 +3929,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in CentiNewton</returns>
-	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, CentiNewton> ToCentiNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, CentiNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3939,7 +3939,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in MilliNewton</returns>
-	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3949,7 +3949,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in MicroNewton</returns>
-	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, MicroNewton> ToMicroNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, MicroNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3959,7 +3959,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in NanoNewton</returns>
-	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3969,7 +3969,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in PicoNewton</returns>
-	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, PicoNewton> ToPicoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, PicoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3979,7 +3979,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in FemtoNewton</returns>
-	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3989,7 +3989,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in AttoNewton</returns>
-	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, AttoNewton> ToAttoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, AttoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3999,7 +3999,7 @@ public static class ForceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoNewton</param>
     /// <returns>quantity measured in ZeptoNewton</returns>
-	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this Quantity<T, YoctoNewton> val) where T:IConvertible {
+	public static Quantity<double, ZeptoNewton> ToZeptoNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
         return new Quantity<double, ZeptoNewton>(
             Convert.ToDouble(val.Value) * 1E24
         );

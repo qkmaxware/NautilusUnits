@@ -86,7 +86,7 @@ var tpl =
     /// </summary>
     /// <param name="val">quantity measured in ${from}</param>
     /// <returns>quantity measured in ${to}</returns>
-    public static Quantity<double, ${to}> To${to}<T>(this Quantity<T, ${from}> val) where T:IConvertible {
+    public static Quantity<double, ${to}> To${to}<T>(this BaseQuantity<T, ${from}> val) where T:IConvertible {
         return new Quantity<double, ${to}>(
             Convert.ToDouble(val.Value) * ${factor}
         );

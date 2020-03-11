@@ -14,7 +14,7 @@ var searchData=
   ['um_5fs2_3c_20t_20_3e',['um_s2&lt; T &gt;',['../class_system_1_1_units_1_1_acceleration_1_1_micro_metre_per_second_sq_factory.html#ae175a0219433fd4475ca60a62a38bdf2',1,'System::Units::Acceleration::MicroMetrePerSecondSqFactory']]],
   ['um_5fs_3c_20t_20_3e',['um_s&lt; T &gt;',['../class_system_1_1_units_1_1_velocity_1_1_micro_metre_per_second_factory.html#a4b5d7f47d52d013b75a046a28e1cd7c2',1,'System::Units::Velocity::MicroMetrePerSecondFactory']]],
   ['un_3c_20t_20_3e',['uN&lt; T &gt;',['../class_system_1_1_units_1_1_force_1_1_micro_newton_factory.html#a3882901172b0bd2fdc28d309d125fdca',1,'System::Units::Force::MicroNewtonFactory']]],
-  ['units',['Units',['../struct_system_1_1_units_1_1_quantity.html#acda6cbc66d898a9b57a11fb1c22c4944',1,'System::Units::Quantity']]],
+  ['units',['Units',['../class_system_1_1_units_1_1_base_quantity.html#a2c290ef38c59d232ae764a44a0ce34f0',1,'System::Units::BaseQuantity']]],
   ['upa_3c_20t_20_3e',['uPa&lt; T &gt;',['../class_system_1_1_units_1_1_pressure_1_1_micro_pascal_factory.html#a6634ac9b985c31813ba64012955b9af0',1,'System::Units::Pressure::MicroPascalFactory']]],
   ['ut_3c_20t_20_3e',['uT&lt; T &gt;',['../class_system_1_1_units_1_1_magnetic_flux_1_1_micro_tesla_factory.html#ab68a2eafad4fd82d36fa4feae619c9be',1,'System::Units::MagneticFlux::MicroTeslaFactory']]],
   ['uv_3c_20t_20_3e',['uV&lt; T &gt;',['../class_system_1_1_units_1_1_electric_potential_1_1_micro_volt_factory.html#a8b277ab66ae9b049689311f94a10967f',1,'System::Units::ElectricPotential::MicroVoltFactory']]],

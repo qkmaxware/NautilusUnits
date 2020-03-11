@@ -3,6 +3,7 @@ var searchData=
   ['ampere',['Ampere',['../struct_system_1_1_units_1_1_current_1_1_ampere.html',1,'System::Units::Current']]],
   ['amperefactory',['AmpereFactory',['../class_system_1_1_units_1_1_current_1_1_ampere_factory.html',1,'System::Units::Current']]],
   ['angleconversions',['AngleConversions',['../class_system_1_1_units_1_1_angle_1_1_angle_conversions.html',1,'System::Units::Angle']]],
+  ['angularvelocityconversions',['AngularVelocityConversions',['../class_system_1_1_units_1_1_angular_velocity_1_1_angular_velocity_conversions.html',1,'System::Units::AngularVelocity']]],
   ['attoampere',['AttoAmpere',['../struct_system_1_1_units_1_1_current_1_1_atto_ampere.html',1,'System::Units::Current']]],
   ['attoamperefactory',['AttoAmpereFactory',['../class_system_1_1_units_1_1_current_1_1_atto_ampere_factory.html',1,'System::Units::Current']]],
   ['attobar',['AttoBar',['../struct_system_1_1_units_1_1_pressure_1_1_atto_bar.html',1,'System::Units::Pressure']]],

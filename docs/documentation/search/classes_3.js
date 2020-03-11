@@ -42,6 +42,7 @@ var searchData=
   ['deciwattfactory',['DeciWattFactory',['../class_system_1_1_units_1_1_power_1_1_deci_watt_factory.html',1,'System::Units::Power']]],
   ['degreefactory',['DegreeFactory',['../class_system_1_1_units_1_1_angle_1_1_degree_factory.html',1,'System::Units::Angle']]],
   ['degrees',['Degrees',['../struct_system_1_1_units_1_1_angle_1_1_degrees.html',1,'System::Units::Angle']]],
+  ['degreespersecond',['DegreesPerSecond',['../struct_system_1_1_units_1_1_angular_velocity_1_1_degrees_per_second.html',1,'System::Units::AngularVelocity']]],
   ['dekaampere',['DekaAmpere',['../struct_system_1_1_units_1_1_current_1_1_deka_ampere.html',1,'System::Units::Current']]],
   ['dekaamperefactory',['DekaAmpereFactory',['../class_system_1_1_units_1_1_current_1_1_deka_ampere_factory.html',1,'System::Units::Current']]],
   ['dekabar',['DekaBar',['../struct_system_1_1_units_1_1_pressure_1_1_deka_bar.html',1,'System::Units::Pressure']]],

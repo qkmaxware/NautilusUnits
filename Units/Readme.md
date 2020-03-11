@@ -11,6 +11,7 @@ This sub-project contains the source code for the Nautilus Units library.
   - [Velocity Change (System.Units.Acceleration)](#velocity-change-systemunitsacceleration)
   - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
   - [Geometric Angle (System.Units.Angle)](#geometric-angle-systemunitsangle)
+  - [Rotational Speed (System.Units.AngularVelocity)](#rotational-speed-systemunitsangularvelocity)
   - [Electrical Conductance (System.Units.Conductance)](#electrical-conductance-systemunitsconductance)
   - [Electrical Current (System.Units.Current)](#electrical-current-systemunitscurrent)
   - [Binary Data (System.Units.Data)](#binary-data-systemunitsdata)
@@ -30,11 +31,13 @@ This sub-project contains the source code for the Nautilus Units library.
   - [Velocity (System.Units.Velocity)](#velocity-systemunitsvelocity)
 
 # Usage
-Usage of this units of measure library relies heavily on the `System.Units.Quantity<Type, Unit>` type. This type is a generic type which takes in two parameters, the first of which is the stored type of the measured quantity and the second is the units associated with the measured quantity. For instance `System.Units.Quantity<double, Metre>` would represent any double precision values which are tagged to be measured in the SI unit of metres. There are several predefined units provided by this library crossing many different areas of science. Each of these units also contain relevant conversion functions if it makes sense (such as converting between SI prefixes). You can use this type to restrict certain methods to only accepting formal parameters measured in specific units. Additionally, each unit is provided with an extension method which can allow for raw values to be quickly tagged with a specific unit by using the symbol of that unit. 
+Usage of this units of measure library is based around two types. `System.Units.Quantity<Type, Unit>` is a generic type that takes in two parameters, the first of which is the stored type of the measured quantity and the second is the units associated with the measured quantity. For instance `System.Units.Quantity<double, Metre>` would represent any double precision values which are tagged to be measured in the SI unit of metres. The second type `System.Units.Quantity<Unit>` is a simpler version which only stores values of type `double`. Implicitly the two types can be converted to and from each other making their usage interchangeable. Additionally, both Quantity classes extend from the abstract class `System.Units.BaseQuantity<Type, Unit>` which is used to define behavior uniformly between both the quantity types.
+
+There are several predefined units provided by this library crossing many different areas of science. Each of these units also contain relevant conversion functions if it makes sense (such as converting between SI prefixes). You can use this type to restrict certain methods to only accepting formal parameters measured in specific units. Additionally, many of the provided units is include an extension method which can allow for literal values to be quickly tagged with a specific unit by using the symbol of that unit. 
 
 # Simple Example
 ```cs
-public Quantity<double, Newton> Force (Quantity<double, KiloGram> mass, Quantity<double, MetresPerSecondSq> acceleration) {
+public Quantity<Newton> Force (Quantity<KiloGram> mass, Quantity<MetresPerSecondSq> acceleration) {
     return (mass.Value * acceleration.Value).N();
 }
 ```
@@ -140,6 +143,12 @@ All constants are stored in the `System.Units.Constants` static object and can b
 |------|--------|
 | Degrees | ° |
 | Radians | rad |
+
+## Rotational Speed (System.Units.AngularVelocity)
+| Name | Symbol |
+|------|--------|
+| DegreesPerSecond | °/s |
+| RadiansPerSecond | rad/s |
 
 ## Electrical Conductance (System.Units.Conductance)
 | Name | Symbol |
