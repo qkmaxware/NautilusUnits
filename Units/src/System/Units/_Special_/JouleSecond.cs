@@ -5,7 +5,7 @@ namespace System.Units.CompoundUnits {
 /// </summary>
 public struct JouleSecond : IUnit {
     public static string Name => "Joule Second";
-    public static string Symbol => "Js";
+    public static string Symbol => "J·s";
 }
 
 }
