@@ -34,7 +34,7 @@ public abstract class BaseQuantity<T, U> where U:IUnit {
     /// Cast a measured quantity back to an unmeasured value
     /// </summary>
     /// <param name="quantity">Measured quantity</param>
-    public static implicit operator T(BaseQuantity<T, U> quantity) {
+    public static explicit operator T(BaseQuantity<T, U> quantity) {
         return quantity.Value;
     }
 }
