@@ -24,8 +24,20 @@ public static class QuantityExtensions {
     /// <typeparam name="U2">The new type</typeparam>
     /// <typeparam name="T">The type of the value</typeparam>
     /// <returns>Quantity in the new units</returns>
-    public static Quantity<T, U2> Cast<T,U1,U2> (this Quantity<T, U1> quantity) where U1:IUnit where U2:IUnit {
+    public static Quantity<T, U2> Cast<T,U1,U2> (this BaseQuantity<T, U1> quantity) where U1:IUnit where U2:IUnit {
         return new Quantity<T, U2> (quantity.Value);
+    }
+
+    /// <summary>
+    /// Write a quantity to string while rounding the quantity to the given number of decimal places
+    /// </summary>
+    /// <param name="quanta">quantity</param>
+    /// <param name="decimals">number of decimals to keep</param>
+    /// <returns>string quantity with units</returns>
+    public static string ToString<T,U>(this BaseQuantity<T, U> quanta, int decimals) where U:IUnit where T: IConvertible {
+        return 
+            (quanta.Value != null ? Math.Round(Convert.ToDouble(quanta.Value), decimals).ToString() : string.Empty) + 
+            (string)(quanta.Units?.GetProperty("Symbol")?.GetValue(null) ?? string.Empty);
     }
 }
 

@@ -47,20 +47,91 @@ public class Quantity<U>: BaseQuantity<double, U> where U:IUnit {
     public Quantity() : base(0) {}
     public Quantity(double value) : base(value) {}
 
+
+    /// <summary>
+    /// Quantity unitary addition
+    /// </summary>
+    public static Quantity<U> operator + (Quantity<U> rhs) {
+        return new Quantity<U>(rhs.Value);
+    }
+
+    /// <summary>
+    /// Quantity unitary negation
+    /// </summary>
+    public static Quantity<U> operator - (Quantity<U> rhs) {
+        return new Quantity<U>(-rhs.Value);
+    }
+
+    /// <summary>
+    /// Scalar multiplication
+    /// </summary>
+    public static Quantity<U> operator * (double lhs, Quantity<U> rhs) {
+        return new Quantity<U>(lhs * rhs.Value);
+    }
+
+    /// <summary>
+    /// Scalar multiplication
+    /// </summary>
+    public static Quantity<U> operator * (Quantity<U> lhs, double rhs) {
+        return new Quantity<U>(lhs.Value * rhs);
+    }
+
+    /// <summary>
+    /// Scalar division
+    /// </summary>
+    public static Quantity<U> operator / (Quantity<U> lhs, double rhs) {
+        return new Quantity<U>(lhs.Value / rhs);
+    }
+
+    /// <summary>
+    /// Quantity addition
+    /// </summary>
+    public static Quantity<U> operator + (Quantity<U> lhs, Quantity<U> rhs) {
+        return new Quantity<U>(lhs.Value + rhs.Value);
+    }
+
+    /// <summary>
+    /// Quantity subtraction
+    /// </summary>
+    public static Quantity<U> operator - (Quantity<U> lhs, Quantity<U> rhs) {
+        return new Quantity<U>(lhs.Value - rhs.Value);
+    }
+
+    /// <summary>
+    /// Quantity division. Cancels units
+    /// </summary>
+    public static double operator / (Quantity<U> lhs, Quantity<U> rhs) {
+        return lhs.Value / rhs.Value; // Division cancels out units
+    }
+
+    /// <summary>
+    /// Conversion from generic quantity
+    /// </summary>
     public static implicit operator Quantity<U> (Quantity<double, U> quanta) {
         return new Quantity<U>(quanta.Value);
     }
+    /// <summary>
+    /// Conversion from generic quantity
+    /// </summary>
     public static implicit operator Quantity<U> (Quantity<float, U> quanta) {
         return new Quantity<U>(quanta.Value);
     }
-
+    /// <summary>
+    /// Conversion from generic quantity
+    /// </summary>
     public static implicit operator Quantity<U> (Quantity<long, U> quanta) {
         return new Quantity<U>(quanta.Value);
     }
+    /// <summary>
+    /// Conversion from generic quantity
+    /// </summary>
     public static implicit operator Quantity<U> (Quantity<int, U> quanta) {
         return new Quantity<U>(quanta.Value);
     }
 
+    /// <summary>
+    /// Conversion to generic quantity
+    /// </summary>
     public static implicit operator Quantity<double,U> (Quantity<U> quanta) {
         return new Quantity<double, U>(quanta.Value);
     }
