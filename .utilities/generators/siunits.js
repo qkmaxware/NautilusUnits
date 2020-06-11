@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node siunits.js "Gram{g}@System.Units.Mass"
+	> node siunits.js "Gram{g}@Qkmaxware.Units.Mass"
 	
 	From root directory
-	> node .\.utilities\generators\siunits.js "Gram{g}@System.Units.Mass"
+	> node .\.utilities\generators\siunits.js "Gram{g}@Qkmaxware.Units.Mass"
 */
 
 // ---------------------------------------------------
@@ -211,7 +211,7 @@ for (var i = 0; i < prefixes.length; i++) {
 // Save Base class
 save (
 	path.join(__dirname, "obj", "I" + conversionName + ".cs"),
-`using System.Units; 
+`using Qkmaxware.Units; 
 
 namespace ${namespace} {
 

@@ -76,12 +76,12 @@ $$
 With the mathematical background out of the way, we can start to write the application. At the top of the project we need to add references to the Nautilus units that we will be needing.
 
 ```cs
-using System.Units;                     // Bring in measured quantities
-using System.Units.Time;                // Bring in seconds
-using System.Units.Length;              // Bring in metres
-using System.Units.Velocity;            // Bring in m/s
-using System.Units.Acceleration;        // Bring in m/s^2
-using System.Units.Angle;               // Bring in radians
+using Qkmaxware.Units;                     // Bring in measured quantities
+using Qkmaxware.Units.Time;                // Bring in seconds
+using Qkmaxware.Units.Length;              // Bring in metres
+using Qkmaxware.Units.Velocity;            // Bring in m/s
+using Qkmaxware.Units.Acceleration;        // Bring in m/s^2
+using Qkmaxware.Units.Angle;               // Bring in radians
 ```
 
 Next let us add a class for simulating projectile motion problems. 
@@ -160,11 +160,11 @@ Well now we have a projectile motion, and we limited the algorithms in it to onl
 First we will talk about type aliases. Type aliases allow us to create a shorthand for types we commonly use but are very annoying to write out each time due to their length. In this way we can replace types such as `Quantity<double, Second>` with `SecondsType` and so on. Add the following to the aliases to your project and replace all instances where you use the original type.
 
 ```cs
-using SecondsType = System.Units.Quantity<double, System.Units.Time.Second>;
-using SpeedType = System.Units.Quantity<double, System.Units.Velocity.MetrePerSecond>;
-using AccelerationType = System.Units.Quantity<double, System.Units.Acceleration.MetrePerSecondSq>;
-using AngleType = System.Units.Quantity<double, System.Units.Angle.Radians>;
-using PositionType = System.Units.Quantity<System.Numerics.Vector2, System.Units.Length.Metre>;
+using SecondsType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Time.Second>;
+using SpeedType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Velocity.MetrePerSecond>;
+using AccelerationType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Acceleration.MetrePerSecondSq>;
+using AngleType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Angle.Radians>;
+using PositionType = Qkmaxware.Units.Quantity<System.Numerics.Vector2, Qkmaxware.Units.Length.Metre>;
 ```
 
 You should notice that after replacing all the original references with the new ones, the code has become much simpler and cleaner. However, we can still do better in Nautilus. Let us get rid of the pesky instantiations such as `new SpeedType(12)`. These are readable, but not often clear as to what they mean. Luckily, in Nautilus, most units come with extension methods which allow them to be instantiated by using the symbol of the unit you want to measure in.
@@ -185,18 +185,18 @@ Replacing all our instantiations with uses of these extension methods leads to m
 ```cs
 using System;
 using System.Numerics;
-using System.Units;
-using System.Units.Time;
-using System.Units.Length;
-using System.Units.Velocity;
-using System.Units.Acceleration;
-using System.Units.Angle;
+using Qkmaxware.Units;
+using Qkmaxware.Units.Time;
+using Qkmaxware.Units.Length;
+using Qkmaxware.Units.Velocity;
+using Qkmaxware.Units.Acceleration;
+using Qkmaxware.Units.Angle;
 
-using SecondsType = System.Units.Quantity<double, System.Units.Time.Second>;
-using SpeedType = System.Units.Quantity<double, System.Units.Velocity.MetrePerSecond>;
-using AccelerationType = System.Units.Quantity<double, System.Units.Acceleration.MetrePerSecondSq>;
-using AngleType = System.Units.Quantity<double, System.Units.Angle.Radians>;
-using PositionType = System.Units.Quantity<System.Numerics.Vector2, System.Units.Length.Metre>;
+using SecondsType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Time.Second>;
+using SpeedType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Velocity.MetrePerSecond>;
+using AccelerationType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Acceleration.MetrePerSecondSq>;
+using AngleType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Angle.Radians>;
+using PositionType = Qkmaxware.Units.Quantity<System.Numerics.Vector2, Qkmaxware.Units.Length.Metre>;
 
 namespace Tutorials.Tutorial1 {
     public class Projectile {

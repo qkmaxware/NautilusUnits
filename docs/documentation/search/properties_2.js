@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value',['Value',['../class_system_1_1_units_1_1_base_quantity.html#a1c257e34d74aca8a421e0a1c91d0efac',1,'System::Units::BaseQuantity']]]
+  ['value',['Value',['../class_qkmaxware_1_1_units_1_1_base_quantity.html#afa0840a8cc45d0b19cbfb7f105a8863b',1,'Qkmaxware::Units::BaseQuantity']]]
 ];

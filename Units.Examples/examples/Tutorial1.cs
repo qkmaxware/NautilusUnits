@@ -1,17 +1,17 @@
 using System;
 using System.Numerics;
-using System.Units;
-using System.Units.Time;
-using System.Units.Length;
-using System.Units.Velocity;
-using System.Units.Acceleration;
-using System.Units.Angle;
+using Qkmaxware.Units;
+using Qkmaxware.Units.Time;
+using Qkmaxware.Units.Length;
+using Qkmaxware.Units.Velocity;
+using Qkmaxware.Units.Acceleration;
+using Qkmaxware.Units.Angle;
 
-using SecondsType = System.Units.Quantity<double, System.Units.Time.Second>;
-using SpeedType = System.Units.Quantity<double, System.Units.Velocity.MetrePerSecond>;
-using AccelerationType = System.Units.Quantity<double, System.Units.Acceleration.MetrePerSecondSq>;
-using AngleType = System.Units.Quantity<double, System.Units.Angle.Radians>;
-using PositionType = System.Units.Quantity<System.Numerics.Vector2, System.Units.Length.Metre>;
+using SecondsType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Time.Second>;
+using SpeedType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Velocity.MetrePerSecond>;
+using AccelerationType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Acceleration.MetrePerSecondSq>;
+using AngleType = Qkmaxware.Units.Quantity<double, Qkmaxware.Units.Angle.Radians>;
+using PositionType = Qkmaxware.Units.Quantity<System.Numerics.Vector2, Qkmaxware.Units.Length.Metre>;
 
 namespace Tutorials.Tutorial1 {
     public class Projectile {

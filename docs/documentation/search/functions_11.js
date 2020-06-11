@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['s_3c_20t_20_3e',['s&lt; T &gt;',['../class_system_1_1_units_1_1_time_1_1_second_factory.html#a4416d831525e0584cea84bdd653b1051',1,'System::Units::Time::SecondFactory']]],
-  ['sday_3c_20t_20_3e',['sday&lt; T &gt;',['../class_system_1_1_units_1_1_time_1_1_sidereal_day_factory.html#a0f3582c7ec1b47b6d6b5d5db7f1cf283',1,'System::Units::Time::SiderealDayFactory']]],
-  ['sub_3c_20r_2c_20t_2c_20u_20_3e',['Sub&lt; R, T, U &gt;',['../class_system_1_1_units_1_1_quantity_arithmetic.html#a449a6655454e6ea64cb13661630a4321',1,'System::Units::QuantityArithmetic']]],
-  ['sub_3c_20t_2c_20u_20_3e',['Sub&lt; T, U &gt;',['../class_system_1_1_units_1_1_quantity_arithmetic.html#aa2e54fbc5fa12702cbf1daf1853cb6b4',1,'System::Units::QuantityArithmetic']]],
-  ['syr_3c_20t_20_3e',['syr&lt; T &gt;',['../class_system_1_1_units_1_1_time_1_1_sidereal_year_factory.html#ae752322a0d5a1c7e49413d7c0b06f0b0',1,'System::Units::Time::SiderealYearFactory']]]
+  ['s_3c_20t_20_3e',['s&lt; T &gt;',['../class_qkmaxware_1_1_units_1_1_time_1_1_second_factory.html#a6944d152c4783895ec4f7af12ed5f4cb',1,'Qkmaxware::Units::Time::SecondFactory']]],
+  ['sday_3c_20t_20_3e',['sday&lt; T &gt;',['../class_qkmaxware_1_1_units_1_1_time_1_1_sidereal_day_factory.html#a3106212e6287f77e69c5aea28fc1aaad',1,'Qkmaxware::Units::Time::SiderealDayFactory']]],
+  ['sub_3c_20r_2c_20t_2c_20u_20_3e',['Sub&lt; R, T, U &gt;',['../class_qkmaxware_1_1_units_1_1_quantity_arithmetic.html#a29c5c035809f6f412715db700cbeb4c9',1,'Qkmaxware::Units::QuantityArithmetic']]],
+  ['sub_3c_20t_2c_20u_20_3e',['Sub&lt; T, U &gt;',['../class_qkmaxware_1_1_units_1_1_quantity_arithmetic.html#aa07ad1b51627be3beb0f4d22561123f1',1,'Qkmaxware::Units::QuantityArithmetic']]],
+  ['syr_3c_20t_20_3e',['syr&lt; T &gt;',['../class_qkmaxware_1_1_units_1_1_time_1_1_sidereal_year_factory.html#af4a08c9c829362c81ec50634bf5da9ad',1,'Qkmaxware::Units::Time::SiderealYearFactory']]]
 ];

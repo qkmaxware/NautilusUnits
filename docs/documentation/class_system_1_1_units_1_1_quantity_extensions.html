@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Nautilus Docs  - System.Units.QuantityExtensions Class Reference</title>
+<title>Nautilus Docs  - Qkmaxware.Units.QuantityExtensions Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="/NautilusUnits/css/pygments.default.css" rel="stylesheet" type="text/css"/>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -75,7 +75,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_system_1_1_units_1_1_quantity_extensions-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">System.Units.QuantityExtensions Class Reference</div>  </div>
+<div class="title">Qkmaxware.Units.QuantityExtensions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -87,9 +87,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b3f42797b25dd6750f5e4f384950cf3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt; T, U &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_units_1_1_quantity_extensions.html#a7b3f42797b25dd6750f5e4f384950cf3">As&lt; U, T &gt;</a> (this T value)</td></tr>
 <tr class="memdesc:a7b3f42797b25dd6750f5e4f384950cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new measured quantity from any type of object  <a href="#a7b3f42797b25dd6750f5e4f384950cf3">More...</a><br /></td></tr>
 <tr class="separator:a7b3f42797b25dd6750f5e4f384950cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa887f6f23ca2b54c5659e72df0f1931b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt; T, U2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_units_1_1_quantity_extensions.html#aa887f6f23ca2b54c5659e72df0f1931b">Cast&lt; T, U1, U2 &gt;</a> (this <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt; T, U1 &gt; quantity)</td></tr>
-<tr class="memdesc:aa887f6f23ca2b54c5659e72df0f1931b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the measurement units of a measured quantity  <a href="#aa887f6f23ca2b54c5659e72df0f1931b">More...</a><br /></td></tr>
-<tr class="separator:aa887f6f23ca2b54c5659e72df0f1931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e716fdc7f341e2fbdb5de1732ad5687"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt; T, U2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_units_1_1_quantity_extensions.html#a1e716fdc7f341e2fbdb5de1732ad5687">Cast&lt; T, U1, U2 &gt;</a> (this <a class="el" href="class_system_1_1_units_1_1_base_quantity.html">BaseQuantity</a>&lt; T, U1 &gt; quantity)</td></tr>
+<tr class="memdesc:a1e716fdc7f341e2fbdb5de1732ad5687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the measurement units of a measured quantity  <a href="#a1e716fdc7f341e2fbdb5de1732ad5687">More...</a><br /></td></tr>
+<tr class="separator:a1e716fdc7f341e2fbdb5de1732ad5687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bbb11553a8cc21c8627a54ab1bf1e2"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_units_1_1_quantity_extensions.html#af0bbb11553a8cc21c8627a54ab1bf1e2">ToString&lt; T, U &gt;</a> (this <a class="el" href="class_system_1_1_units_1_1_base_quantity.html">BaseQuantity</a>&lt; T, U &gt; quanta, int decimals)</td></tr>
+<tr class="memdesc:af0bbb11553a8cc21c8627a54ab1bf1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a quantity to string while rounding the quantity to the given number of decimal places  <a href="#af0bbb11553a8cc21c8627a54ab1bf1e2">More...</a><br /></td></tr>
+<tr class="separator:af0bbb11553a8cc21c8627a54ab1bf1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extension methods for measured quantities </p>
@@ -104,7 +107,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt;T, U&gt; System.Units.QuantityExtensions.As&lt; U, T &gt; </td>
+          <td class="memname">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt;T, U&gt; Qkmaxware.Units.QuantityExtensions.As&lt; U, T &gt; </td>
           <td>(</td>
           <td class="paramtype">this T&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -144,8 +147,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa887f6f23ca2b54c5659e72df0f1931b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa887f6f23ca2b54c5659e72df0f1931b">&#9670;&nbsp;</a></span>Cast&lt; T, U1, U2 &gt;()</h2>
+<a id="a1e716fdc7f341e2fbdb5de1732ad5687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e716fdc7f341e2fbdb5de1732ad5687">&#9670;&nbsp;</a></span>Cast&lt; T, U1, U2 &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,9 +157,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt;T, U2&gt; System.Units.QuantityExtensions.Cast&lt; T, U1, U2 &gt; </td>
+          <td class="memname">static <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt;T, U2&gt; Qkmaxware.Units.QuantityExtensions.Cast&lt; T, U1, U2 &gt; </td>
           <td>(</td>
-          <td class="paramtype">this <a class="el" href="class_system_1_1_units_1_1_quantity.html">Quantity</a>&lt; T, U1 &gt;&#160;</td>
+          <td class="paramtype">this <a class="el" href="class_system_1_1_units_1_1_base_quantity.html">BaseQuantity</a>&lt; T, U1 &gt;&#160;</td>
           <td class="paramname"><em>quantity</em></td><td>)</td>
           <td></td>
         </tr>
@@ -189,6 +192,61 @@ Static Public Member Functions</h2></td></tr>
 <table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em>U1</em></td><td>&#160;:</td><td valign="top"><em>IUnit</em></td><td>&#160;</td></tr>
 <tr><td valign="top"><em>U2</em></td><td>&#160;:</td><td valign="top"><em>IUnit</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+</div>
+</div>
+<a id="af0bbb11553a8cc21c8627a54ab1bf1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0bbb11553a8cc21c8627a54ab1bf1e2">&#9670;&nbsp;</a></span>ToString&lt; T, U &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Qkmaxware.Units.QuantityExtensions.ToString&lt; T, U &gt; </td>
+          <td>(</td>
+          <td class="paramtype">this <a class="el" href="class_system_1_1_units_1_1_base_quantity.html">BaseQuantity</a>&lt; T, U &gt;&#160;</td>
+          <td class="paramname"><em>quanta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decimals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write a quantity to string while rounding the quantity to the given number of decimal places </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quanta</td><td>quantity</td></tr>
+    <tr><td class="paramname">decimals</td><td>number of decimals to keep</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string quantity with units</dd></dl>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>U</em></td><td>&#160;:</td><td valign="top"><em>IUnit</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IConvertible</em></td><td>&#160;</td></tr>
 </table>
 </dd>
 </dl>

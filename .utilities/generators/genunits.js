@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node genunits.js "System.Units.Length" "Mile{mi}" "..\maps\Mile.Length.json"
+	> node genunits.js "Qkmaxware.Units.Length" "Mile{mi}" "..\maps\Mile.Length.json"
 	
 	From root directory
-	> node .\.utilities\generators\genunits.js "System.Units.Length" "Mile{mi}" ".utilities\maps\Mile.Length.json"
+	> node .\.utilities\generators\genunits.js "Qkmaxware.Units.Length" "Mile{mi}" ".utilities\maps\Mile.Length.json"
 */
 
 const os    = require('os');
@@ -127,7 +127,7 @@ function ToPascalCase(name) {
 // Save Base class
 save (
 	path.join(__dirname, "obj", "I" + conv + ".cs"),
-`using System.Units; 
+`using Qkmaxware.Units; 
 
 namespace ${ns} {
 

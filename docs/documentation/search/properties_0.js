@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name',['Name',['../interface_system_1_1_units_1_1_i_unit.html#a7841f43a5fc4607a7e4df939aa9fb21d',1,'System::Units::IUnit']]]
+  ['name',['Name',['../interface_qkmaxware_1_1_units_1_1_i_unit.html#ab6546ba1de8a28a20d01729a76d6400c',1,'Qkmaxware::Units::IUnit']]]
 ];

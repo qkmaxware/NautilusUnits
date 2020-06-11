@@ -9,10 +9,10 @@ We will be following the same project set-up as in the first two tutorials with 
 Nautilus only implements a small number of all the possible units of measure and as such there will be cases where the unit you would like to use is not implemented. Luckily it is very easy to create a new unit of measurement within Nautilus. 
 
 ## Some Code
-All units in Nautilus must implement the `System.Units.IUnit` interface. This interface relies on C# 8 features such as static interface members in order create units of measurement that do not need to be instantiated. 
+All units in Nautilus must implement the `Qkmaxware.Units.IUnit` interface. This interface relies on C# 8 features such as static interface members in order create units of measurement that do not need to be instantiated. 
 
 ```cs
-using System.Units; 
+using Qkmaxware.Units; 
 ...
 public struct PartsPerMillion : IUnit {
     public static string Name => "Parts/Million";

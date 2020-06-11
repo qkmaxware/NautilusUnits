@@ -3,10 +3,10 @@
 // ---------------------------------------------------
 /*
 	From current directory
-	> node siCrossConvert.js "System.Units.Energy" "System.Units.Energy.Electronvolt" "System.Units.Energy.Joule" "1.602176565e-19"
+	> node siCrossConvert.js "Qkmaxware.Units.Energy" "Qkmaxware.Units.Energy.Electronvolt" "Qkmaxware.Units.Energy.Joule" "1.602176565e-19"
 	
 	From root directory
-	> node .\.utilities\generators\siCrossConvert.js "System.Units.Energy" "System.Units.Energy.Electronvolt" "System.Units.Energy.Joule" "1.602176565e-19"
+	> node .\.utilities\generators\siCrossConvert.js "Qkmaxware.Units.Energy" "Qkmaxware.Units.Energy.Electronvolt" "Qkmaxware.Units.Energy.Joule" "1.602176565e-19"
 */
 
 // ---------------------------------------------------

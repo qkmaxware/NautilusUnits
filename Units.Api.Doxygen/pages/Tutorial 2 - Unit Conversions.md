@@ -51,7 +51,7 @@ For non-SI units, such as those found in the imperial system some but not all co
 You can create your own custom conversion functions in many ways. The simplest way is to create a function that takes in the quantity you want to convert from and returns a new quantity in the new units of measure. You should reference the stored value with a quantity's `Value` property and multiply that by the required conversion factor.
 
 ```cs
-using System.Units.Acceleration;
+using Qkmaxware.Units.Acceleration;
 
 public static class G_Convert {
 
@@ -67,7 +67,7 @@ public static class G_Convert {
 However, the preferred way to create conversion functions within Nautilus' framework is to create extension methods that use generics implementing [IConvertible](https://docs.microsoft.com/en-us/dotnet/api/system.iconvertible). This allows the extension methods to be easy to use and allow them to work for a wide variety of value types such as integer, float, or double.  
 
 ```cs
-using System.Units.Acceleration;
+using Qkmaxware.Units.Acceleration;
 
 public static class G_Convert {
 

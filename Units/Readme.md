@@ -8,30 +8,31 @@ This sub-project contains the source code for the Nautilus Units library.
   - [Physical Constants](#physical-constants)
   - [Solar System Data](#solar-system-data)
 - [Predefined Units](#predefined-units)
-  - [Velocity Change (System.Units.Acceleration)](#velocity-change-systemunitsacceleration)
-  - [Amount Of Substance (System.Units.Amount)](#amount-of-substance-systemunitsamount)
-  - [Geometric Angle (System.Units.Angle)](#geometric-angle-systemunitsangle)
-  - [Rotational Speed (System.Units.AngularVelocity)](#rotational-speed-systemunitsangularvelocity)
-  - [Electrical Conductance (System.Units.Conductance)](#electrical-conductance-systemunitsconductance)
-  - [Electrical Current (System.Units.Current)](#electrical-current-systemunitscurrent)
-  - [Binary Data (System.Units.Data)](#binary-data-systemunitsdata)
-  - [Electrical Potential (System.Units.ElectricPotential)](#electrical-potential-systemunitselectricpotential)
-  - [Energy (System.Units.Energy)](#energy-systemunitsenergy)
-  - [Force (System.Units.Force)](#force-systemunitsforce)
-  - [Frequency (System.Units.Frequency)](#frequency-systemunitsfrequency)
-  - [Length (System.Units.Length)](#length-systemunitslength)
-  - [Luminosity (System.Units.Luminosity)](#luminosity-systemunitsluminosity)
-  - [Magnetic Flux Density (System.Units.MagneticFlux)](#magnetic-flux-density-systemunitsmagneticflux)
-  - [Mass (System.Units.Mass)](#mass-systemunitsmass)
-  - [Power (System.Units.Power)](#power-systemunitspower)
-  - [Pressure (System.Units.Pressure)](#pressure-systemunitspressure)
-  - [Electrical Resistance (System.Units.Resistance)](#electrical-resistance-systemunitsresistance)
-  - [Thermodynamic Temperature (System.Units.Temperature)](#thermodynamic-temperature-systemunitstemperature)
-  - [Time (System.Units.Time)](#time-systemunitstime)
-  - [Velocity (System.Units.Velocity)](#velocity-systemunitsvelocity)
+  - [Velocity Change (Qkmaxware.Units.Acceleration)](#velocity-change-qkmaxwareunitsacceleration)
+  - [Amount Of Substance (Qkmaxware.Units.Amount)](#amount-of-substance-qkmaxwareunitsamount)
+  - [Geometric Angle (Qkmaxware.Units.Angle)](#geometric-angle-qkmaxwareunitsangle)
+  - [Rotational Speed (Qkmaxware.Units.AngularVelocity)](#rotational-speed-qkmaxwareunitsangularvelocity)
+  - [Electrical Conductance (Qkmaxware.Units.Conductance)](#electrical-conductance-qkmaxwareunitsconductance)
+  - [Electrical Current (Qkmaxware.Units.Current)](#electrical-current-qkmaxwareunitscurrent)
+  - [Binary Data (Qkmaxware.Units.Data)](#binary-data-qkmaxwareunitsdata)
+  - [Density (Qkmaxware.Units.Density)](#density-qkmaxwareunitsdensity)
+  - [Electrical Potential (Qkmaxware.Units.ElectricPotential)](#electrical-potential-qkmaxwareunitselectricpotential)
+  - [Energy (Qkmaxware.Units.Energy)](#energy-qkmaxwareunitsenergy)
+  - [Force (Qkmaxware.Units.Force)](#force-qkmaxwareunitsforce)
+  - [Frequency (Qkmaxware.Units.Frequency)](#frequency-qkmaxwareunitsfrequency)
+  - [Length (Qkmaxware.Units.Length)](#length-qkmaxwareunitslength)
+  - [Luminosity (Qkmaxware.Units.Luminosity)](#luminosity-qkmaxwareunitsluminosity)
+  - [Magnetic Flux Density (Qkmaxware.Units.MagneticFlux)](#magnetic-flux-density-qkmaxwareunitsmagneticflux)
+  - [Mass (Qkmaxware.Units.Mass)](#mass-qkmaxwareunitsmass)
+  - [Power (Qkmaxware.Units.Power)](#power-qkmaxwareunitspower)
+  - [Pressure (Qkmaxware.Units.Pressure)](#pressure-qkmaxwareunitspressure)
+  - [Electrical Resistance (Qkmaxware.Units.Resistance)](#electrical-resistance-qkmaxwareunitsresistance)
+  - [Thermodynamic Temperature (Qkmaxware.Units.Temperature)](#thermodynamic-temperature-qkmaxwareunitstemperature)
+  - [Time (Qkmaxware.Units.Time)](#time-qkmaxwareunitstime)
+  - [Velocity (Qkmaxware.Units.Velocity)](#velocity-qkmaxwareunitsvelocity)
 
 # Usage
-Usage of this units of measure library is based around two types. `System.Units.Quantity<Type, Unit>` is a generic type that takes in two parameters, the first of which is the stored type of the measured quantity and the second is the units associated with the measured quantity. For instance `System.Units.Quantity<double, Metre>` would represent any double precision values which are tagged to be measured in the SI unit of metres. The second type `System.Units.Quantity<Unit>` is a simpler version which only stores values of type `double`. Implicitly the two types can be converted to and from each other making their usage interchangeable. Additionally, both Quantity classes extend from the abstract class `System.Units.BaseQuantity<Type, Unit>` which is used to define behavior uniformly between both the quantity types.
+Usage of this units of measure library is based around two types. `Qkmaxware.Units.Quantity<Type, Unit>` is a generic type that takes in two parameters, the first of which is the stored type of the measured quantity and the second is the units associated with the measured quantity. For instance `Qkmaxware.Units.Quantity<double, Metre>` would represent any double precision values which are tagged to be measured in the SI unit of metres. The second type `Qkmaxware.Units.Quantity<Unit>` is a simpler version which only stores values of type `double`. Implicitly the two types can be converted to and from each other making their usage interchangeable. Additionally, both Quantity classes extend from the abstract class `Qkmaxware.Units.BaseQuantity<Type, Unit>` which is used to define behavior uniformly between both the quantity types.
 
 There are several predefined units provided by this library crossing many different areas of science. Each of these units also contain relevant conversion functions if it makes sense (such as converting between SI prefixes). You can use this type to restrict certain methods to only accepting formal parameters measured in specific units. Additionally, many of the provided units is include an extension method which can allow for literal values to be quickly tagged with a specific unit by using the symbol of that unit. 
 
@@ -42,7 +43,7 @@ public Quantity<Newton> Force (Quantity<KiloGram> mass, Quantity<MetresPerSecond
 }
 ```
 # Predefined Constants
-All constants are stored in the `System.Units.Constants` static object and can be accessed with dereferencing by name such as `System.Units.Constants.GravitationalConstant`. Each constant is stored as a Quantity of type double with the appropriate units of measure. 
+All constants are stored in the `Qkmaxware.Units.Constants` static object and can be accessed with dereferencing by name such as `Qkmaxware.Units.Constants.GravitationalConstant`. Each constant is stored as a Quantity of type double with the appropriate units of measure. 
 
 ## Physical Constants
 | Constant | Symbol | Value | Type |
@@ -107,7 +108,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Sun Mean Radius | 6.96e8 m | Quantity\<double, Metre\> |
 
 # Predefined Units
-## Velocity Change (System.Units.Acceleration)
+## Velocity Change (Qkmaxware.Units.Acceleration)
 | Name | Symbol |
 |------|--------|
 | MetrePerSecondSq | m/s^2|
@@ -133,24 +134,24 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | YoctoMetrePerSecondSq | ym/s^2|
 | G | g |
 
-## Amount Of Substance (System.Units.Amount)
+## Amount Of Substance (Qkmaxware.Units.Amount)
 | Name | Symbol |
 |------|--------|
 | Mole | mol |
 
-## Geometric Angle (System.Units.Angle)
+## Geometric Angle (Qkmaxware.Units.Angle)
 | Name | Symbol |
 |------|--------|
 | Degrees | ° |
 | Radians | rad |
 
-## Rotational Speed (System.Units.AngularVelocity)
+## Rotational Speed (Qkmaxware.Units.AngularVelocity)
 | Name | Symbol |
 |------|--------|
 | DegreesPerSecond | °/s |
 | RadiansPerSecond | rad/s |
 
-## Electrical Conductance (System.Units.Conductance)
+## Electrical Conductance (Qkmaxware.Units.Conductance)
 | Name | Symbol |
 |------|--------|
 | Siemen | ℧ |
@@ -175,7 +176,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoSiemen | z℧ |
 | YoctoSiemen | y℧ |
 
-## Electrical Current (System.Units.Current)
+## Electrical Current (Qkmaxware.Units.Current)
 | Name | Symbol |
 |------|--------|
 | Ampere | A |
@@ -200,7 +201,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoAmpere | zA |
 | YoctoAmpere | yA |
 
-## Binary Data (System.Units.Data)
+## Binary Data (Qkmaxware.Units.Data)
 | Name | Symbol |
 |------|--------|
 | Bit | bit |
@@ -254,7 +255,12 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | MebiByte | MiB |
 | KibiByte | kiB |
 
-## Electrical Potential (System.Units.ElectricPotential)
+## Density (Qkmaxware.Units.Density)
+| Name | Symbol |
+|------|--------|
+| KilogramPerCubicMetres | km/m^3 |
+
+## Electrical Potential (Qkmaxware.Units.ElectricPotential)
 | Name | Symbol |
 |------|--------|
 | Volt | V |
@@ -279,7 +285,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoVolt | zV |
 | YoctoVolt | yV |
 
-## Energy (System.Units.Energy)
+## Energy (Qkmaxware.Units.Energy)
 | Name | Symbol |
 |------|--------|
 | Joule | J |
@@ -325,7 +331,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoElectronvolt | zeV |
 | YoctoElectronvolt | yeV |
 
-## Force (System.Units.Force)
+## Force (Qkmaxware.Units.Force)
 | Name | Symbol |
 |------|--------|
 | Newton | N |
@@ -350,7 +356,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoNewton | zN |
 | YoctoNewton | yN |
 
-## Frequency (System.Units.Frequency)
+## Frequency (Qkmaxware.Units.Frequency)
 | Name | Symbol |
 |------|--------|
 | Hertz | Hz |
@@ -375,7 +381,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoHertz | zHz |
 | YoctoHertz | yHz |
 
-## Length (System.Units.Length)
+## Length (Qkmaxware.Units.Length)
 | Name | Symbol |
 |------|--------|
 | Metre | m |
@@ -405,7 +411,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Yard | yd |
 | League | lea |
 
-## Luminosity (System.Units.Luminosity)
+## Luminosity (Qkmaxware.Units.Luminosity)
 | Name | Symbol |
 |------|--------|
 | Candela | cd |
@@ -451,7 +457,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoLumen | zlm |
 | YoctoLumen | ylm |
 
-## Magnetic Flux Density (System.Units.MagneticFlux)
+## Magnetic Flux Density (Qkmaxware.Units.MagneticFlux)
 | Name | Symbol |
 |------|--------|
 | Tesla | T |
@@ -476,7 +482,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoTesla | zT |
 | YoctoTesla | yT |
 
-## Mass (System.Units.Mass)
+## Mass (Qkmaxware.Units.Mass)
 | Name | Symbol |
 |------|--------|
 | Gram | g |
@@ -501,7 +507,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoGram | zg |
 | YoctoGram | yg |
 
-## Power (System.Units.Power)
+## Power (Qkmaxware.Units.Power)
 | Name | Symbol |
 |------|--------|
 | Watt | W |
@@ -526,7 +532,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoWatt | zW |
 | YoctoWatt | yW |
 
-## Pressure (System.Units.Pressure)
+## Pressure (Qkmaxware.Units.Pressure)
 | Name | Symbol |
 |------|--------|
 | Pascal | Pa |
@@ -572,7 +578,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoBar | zbar |
 | YoctoBar | ybar |
 
-## Electrical Resistance (System.Units.Resistance)
+## Electrical Resistance (Qkmaxware.Units.Resistance)
 | Name | Symbol |
 |------|--------|
 | Ohm | Ω |
@@ -597,7 +603,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | ZeptoOhm | zΩ |
 | YoctoOhm | yΩ |
 
-## Thermodynamic Temperature (System.Units.Temperature)
+## Thermodynamic Temperature (Qkmaxware.Units.Temperature)
 | Name | Symbol |
 |------|--------|
 | Celsius | °C |
@@ -605,7 +611,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Kelvin | K |
 | Rankine | °R |
 
-## Time (System.Units.Time)
+## Time (Qkmaxware.Units.Time)
 | Name | Symbol |
 |------|--------|
 | Second | s |
@@ -616,7 +622,7 @@ All constants are stored in the `System.Units.Constants` static object and can b
 | Year | yr |
 | Sidereal Year | syr |
 
-## Velocity (System.Units.Velocity)
+## Velocity (Qkmaxware.Units.Velocity)
 | Name | Symbol |
 |------|--------|
 | MetrePerSecond | m/s |
