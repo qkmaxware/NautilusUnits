@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the TeraWatt (TW)
+	/// Unit of measurement for TeraWatt (TW)
 	/// </summary>
 	public struct TeraWatt : IPower {
         public static string Name => "TeraWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraWatt (TW)
+	/// Extension method factory for generating TeraWatt (TW)
 	/// </summary>
 	public static class TeraWattFactory {
 		/// <summary>

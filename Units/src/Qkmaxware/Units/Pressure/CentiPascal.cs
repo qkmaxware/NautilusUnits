@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the CentiPascal (cPa)
+	/// Unit of measurement for CentiPascal (cPa)
 	/// </summary>
 	public struct CentiPascal : IPressure {
         public static string Name => "CentiPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiPascal (cPa)
+	/// Extension method factory for generating CentiPascal (cPa)
 	/// </summary>
 	public static class CentiPascalFactory {
 		/// <summary>

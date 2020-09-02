@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the MilliHertz (mHz)
+	/// Unit of measurement for MilliHertz (mHz)
 	/// </summary>
 	public struct MilliHertz : IFrequency {
         public static string Name => "MilliHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliHertz (mHz)
+	/// Extension method factory for generating MilliHertz (mHz)
 	/// </summary>
 	public static class MilliHertzFactory {
 		/// <summary>

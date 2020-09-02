@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the DeciCandela (dcd)
+	/// Unit of measurement for DeciCandela (dcd)
 	/// </summary>
 	public struct DeciCandela : ILuminosity {
         public static string Name => "DeciCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciCandela (dcd)
+	/// Extension method factory for generating DeciCandela (dcd)
 	/// </summary>
 	public static class DeciCandelaFactory {
 		/// <summary>

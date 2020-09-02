@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the TeraLumen (Tlm)
+	/// Unit of measurement for TeraLumen (Tlm)
 	/// </summary>
 	public struct TeraLumen : ILuminosity {
         public static string Name => "TeraLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraLumen (Tlm)
+	/// Extension method factory for generating TeraLumen (Tlm)
 	/// </summary>
 	public static class TeraLumenFactory {
 		/// <summary>

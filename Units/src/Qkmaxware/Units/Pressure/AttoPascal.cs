@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the AttoPascal (aPa)
+	/// Unit of measurement for AttoPascal (aPa)
 	/// </summary>
 	public struct AttoPascal : IPressure {
         public static string Name => "AttoPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoPascal (aPa)
+	/// Extension method factory for generating AttoPascal (aPa)
 	/// </summary>
 	public static class AttoPascalFactory {
 		/// <summary>

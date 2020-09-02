@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the AttoAmpere (aA)
+	/// Unit of measurement for AttoAmpere (aA)
 	/// </summary>
 	public struct AttoAmpere : ICurrent {
         public static string Name => "AttoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoAmpere (aA)
+	/// Extension method factory for generating AttoAmpere (aA)
 	/// </summary>
 	public static class AttoAmpereFactory {
 		/// <summary>

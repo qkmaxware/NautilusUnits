@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the PetaHertz (PHz)
+	/// Unit of measurement for PetaHertz (PHz)
 	/// </summary>
 	public struct PetaHertz : IFrequency {
         public static string Name => "PetaHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaHertz (PHz)
+	/// Extension method factory for generating PetaHertz (PHz)
 	/// </summary>
 	public static class PetaHertzFactory {
 		/// <summary>

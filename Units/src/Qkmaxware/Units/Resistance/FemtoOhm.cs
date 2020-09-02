@@ -6,5 +6,4 @@ namespace Qkmaxware.Units.Resistance {
         public static string Name => "FemtoOhm";
         public static string Symbol => "f\u03A9";
     }
-	
 }

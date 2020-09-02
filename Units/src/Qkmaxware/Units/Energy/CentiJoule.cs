@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the CentiJoule (cJ)
+	/// Unit of measurement for CentiJoule (cJ)
 	/// </summary>
 	public struct CentiJoule : IEnergy {
         public static string Name => "CentiJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiJoule (cJ)
+	/// Extension method factory for generating CentiJoule (cJ)
 	/// </summary>
 	public static class CentiJouleFactory {
 		/// <summary>

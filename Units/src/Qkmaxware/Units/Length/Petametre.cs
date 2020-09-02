@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the PetaMetre (Pm)
+	/// Unit of measurement for PetaMetre (Pm)
 	/// </summary>
 	public struct PetaMetre : ILength {
         public static string Name => "PetaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaMetre (Pm)
+	/// Extension method factory for generating PetaMetre (Pm)
 	/// </summary>
 	public static class PetaMetreFactory {
 		/// <summary>

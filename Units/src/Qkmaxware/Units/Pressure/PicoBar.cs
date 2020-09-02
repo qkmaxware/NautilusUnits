@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the PicoBar (pbar)
+	/// Unit of measurement for PicoBar (pbar)
 	/// </summary>
 	public struct PicoBar : IPressure {
         public static string Name => "PicoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoBar (pbar)
+	/// Extension method factory for generating PicoBar (pbar)
 	/// </summary>
 	public static class PicoBarFactory {
 		/// <summary>

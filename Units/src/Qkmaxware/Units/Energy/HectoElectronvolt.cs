@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the HectoElectronvolt (heV)
+	/// Unit of measurement for HectoElectronvolt (heV)
 	/// </summary>
 	public struct HectoElectronvolt : IEnergy {
         public static string Name => "HectoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoElectronvolt (heV)
+	/// Extension method factory for generating HectoElectronvolt (heV)
 	/// </summary>
 	public static class HectoElectronvoltFactory {
 		/// <summary>

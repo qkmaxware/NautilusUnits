@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the GigaNewton (GN)
+	/// Unit of measurement for GigaNewton (GN)
 	/// </summary>
 	public struct GigaNewton : IForce {
         public static string Name => "GigaNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaNewton (GN)
+	/// Extension method factory for generating GigaNewton (GN)
 	/// </summary>
 	public static class GigaNewtonFactory {
 		/// <summary>

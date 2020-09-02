@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the ExaBar (Ebar)
+	/// Unit of measurement for ExaBar (Ebar)
 	/// </summary>
 	public struct ExaBar : IPressure {
         public static string Name => "ExaBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaBar (Ebar)
+	/// Extension method factory for generating ExaBar (Ebar)
 	/// </summary>
 	public static class ExaBarFactory {
 		/// <summary>

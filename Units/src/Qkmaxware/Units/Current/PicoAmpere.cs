@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the PicoAmpere (pA)
+	/// Unit of measurement for PicoAmpere (pA)
 	/// </summary>
 	public struct PicoAmpere : ICurrent {
         public static string Name => "PicoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoAmpere (pA)
+	/// Extension method factory for generating PicoAmpere (pA)
 	/// </summary>
 	public static class PicoAmpereFactory {
 		/// <summary>

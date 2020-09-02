@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the ZeptoCandela (zcd)
+	/// Unit of measurement for ZeptoCandela (zcd)
 	/// </summary>
 	public struct ZeptoCandela : ILuminosity {
         public static string Name => "ZeptoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoCandela (zcd)
+	/// Extension method factory for generating ZeptoCandela (zcd)
 	/// </summary>
 	public static class ZeptoCandelaFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.MagneticFlux {
 	/// <summary>
-	/// Unit of measurement for the PetaTesla (PT)
+	/// Unit of measurement for PetaTesla (PT)
 	/// </summary>
 	public struct PetaTesla : IMagneticFlux {
         public static string Name => "PetaTesla";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.MagneticFlux {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaTesla (PT)
+	/// Extension method factory for generating PetaTesla (PT)
 	/// </summary>
 	public static class PetaTeslaFactory {
 		/// <summary>

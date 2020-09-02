@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the CentiCandela (ccd)
+	/// Unit of measurement for CentiCandela (ccd)
 	/// </summary>
 	public struct CentiCandela : ILuminosity {
         public static string Name => "CentiCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiCandela (ccd)
+	/// Extension method factory for generating CentiCandela (ccd)
 	/// </summary>
 	public static class CentiCandelaFactory {
 		/// <summary>

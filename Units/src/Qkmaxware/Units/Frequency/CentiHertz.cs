@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the CentiHertz (cHz)
+	/// Unit of measurement for CentiHertz (cHz)
 	/// </summary>
 	public struct CentiHertz : IFrequency {
         public static string Name => "CentiHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiHertz (cHz)
+	/// Extension method factory for generating CentiHertz (cHz)
 	/// </summary>
 	public static class CentiHertzFactory {
 		/// <summary>

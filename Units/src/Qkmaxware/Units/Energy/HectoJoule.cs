@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the HectoJoule (hJ)
+	/// Unit of measurement for HectoJoule (hJ)
 	/// </summary>
 	public struct HectoJoule : IEnergy {
         public static string Name => "HectoJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoJoule (hJ)
+	/// Extension method factory for generating HectoJoule (hJ)
 	/// </summary>
 	public static class HectoJouleFactory {
 		/// <summary>

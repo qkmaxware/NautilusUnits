@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the HectoPascal (hPa)
+	/// Unit of measurement for HectoPascal (hPa)
 	/// </summary>
 	public struct HectoPascal : IPressure {
         public static string Name => "HectoPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoPascal (hPa)
+	/// Extension method factory for generating HectoPascal (hPa)
 	/// </summary>
 	public static class HectoPascalFactory {
 		/// <summary>

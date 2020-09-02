@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the Pascal (Pa)
+	/// Unit of measurement for Pascal (Pa)
 	/// </summary>
 	public struct Pascal : IPressure {
         public static string Name => "Pascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Pascal (Pa)
+	/// Extension method factory for generating Pascal (Pa)
 	/// </summary>
 	public static class PascalFactory {
 		/// <summary>

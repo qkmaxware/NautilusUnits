@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the ExaPascal (EPa)
+	/// Unit of measurement for ExaPascal (EPa)
 	/// </summary>
 	public struct ExaPascal : IPressure {
         public static string Name => "ExaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaPascal (EPa)
+	/// Extension method factory for generating ExaPascal (EPa)
 	/// </summary>
 	public static class ExaPascalFactory {
 		/// <summary>

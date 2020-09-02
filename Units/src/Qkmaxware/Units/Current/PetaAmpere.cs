@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the PetaAmpere (PA)
+	/// Unit of measurement for PetaAmpere (PA)
 	/// </summary>
 	public struct PetaAmpere : ICurrent {
         public static string Name => "PetaAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaAmpere (PA)
+	/// Extension method factory for generating PetaAmpere (PA)
 	/// </summary>
 	public static class PetaAmpereFactory {
 		/// <summary>

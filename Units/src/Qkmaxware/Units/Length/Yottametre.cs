@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the YottaMetre (Ym)
+	/// Unit of measurement for YottaMetre (Ym)
 	/// </summary>
 	public struct YottaMetre : ILength {
         public static string Name => "YottaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaMetre (Ym)
+	/// Extension method factory for generating YottaMetre (Ym)
 	/// </summary>
 	public static class YottaMetreFactory {
 		/// <summary>

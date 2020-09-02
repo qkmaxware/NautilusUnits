@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the NanoGram (ng)
+	/// Unit of measurement for NanoGram (ng)
 	/// </summary>
 	public struct NanoGram : IMass {
         public static string Name => "NanoGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoGram (ng)
+	/// Extension method factory for generating NanoGram (ng)
 	/// </summary>
 	public static class NanoGramFactory {
 		/// <summary>

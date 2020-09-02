@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the NanoCandela (ncd)
+	/// Unit of measurement for NanoCandela (ncd)
 	/// </summary>
 	public struct NanoCandela : ILuminosity {
         public static string Name => "NanoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoCandela (ncd)
+	/// Extension method factory for generating NanoCandela (ncd)
 	/// </summary>
 	public static class NanoCandelaFactory {
 		/// <summary>

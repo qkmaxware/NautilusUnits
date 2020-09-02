@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the HectoWatt (hW)
+	/// Unit of measurement for HectoWatt (hW)
 	/// </summary>
 	public struct HectoWatt : IPower {
         public static string Name => "HectoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoWatt (hW)
+	/// Extension method factory for generating HectoWatt (hW)
 	/// </summary>
 	public static class HectoWattFactory {
 		/// <summary>

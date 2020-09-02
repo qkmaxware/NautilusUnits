@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the Lumen (lm)
+	/// Unit of measurement for Lumen (lm)
 	/// </summary>
 	public struct Lumen : ILuminosity {
         public static string Name => "Lumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Lumen (lm)
+	/// Extension method factory for generating Lumen (lm)
 	/// </summary>
 	public static class LumenFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the FemtoLumen (flm)
+	/// Unit of measurement for FemtoLumen (flm)
 	/// </summary>
 	public struct FemtoLumen : ILuminosity {
         public static string Name => "FemtoLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoLumen (flm)
+	/// Extension method factory for generating FemtoLumen (flm)
 	/// </summary>
 	public static class FemtoLumenFactory {
 		/// <summary>

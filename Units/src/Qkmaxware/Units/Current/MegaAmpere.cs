@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the MegaAmpere (MA)
+	/// Unit of measurement for MegaAmpere (MA)
 	/// </summary>
 	public struct MegaAmpere : ICurrent {
         public static string Name => "MegaAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaAmpere (MA)
+	/// Extension method factory for generating MegaAmpere (MA)
 	/// </summary>
 	public static class MegaAmpereFactory {
 		/// <summary>

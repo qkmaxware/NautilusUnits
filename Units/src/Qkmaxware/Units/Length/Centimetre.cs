@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the CentiMetre (cm)
+	/// Unit of measurement for CentiMetre (cm)
 	/// </summary>
 	public struct CentiMetre : ILength {
         public static string Name => "CentiMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiMetre (cm)
+	/// Extension method factory for generating CentiMetre (cm)
 	/// </summary>
 	public static class CentiMetreFactory {
 		/// <summary>

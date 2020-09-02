@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the ExaMetre (Em)
+	/// Unit of measurement for ExaMetre (Em)
 	/// </summary>
 	public struct ExaMetre : ILength {
         public static string Name => "ExaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaMetre (Em)
+	/// Extension method factory for generating ExaMetre (Em)
 	/// </summary>
 	public static class ExaMetreFactory {
 		/// <summary>

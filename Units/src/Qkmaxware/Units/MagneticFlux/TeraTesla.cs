@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.MagneticFlux {
 	/// <summary>
-	/// Unit of measurement for the TeraTesla (TT)
+	/// Unit of measurement for TeraTesla (TT)
 	/// </summary>
 	public struct TeraTesla : IMagneticFlux {
         public static string Name => "TeraTesla";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.MagneticFlux {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraTesla (TT)
+	/// Extension method factory for generating TeraTesla (TT)
 	/// </summary>
 	public static class TeraTeslaFactory {
 		/// <summary>

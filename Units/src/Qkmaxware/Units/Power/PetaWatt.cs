@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the PetaWatt (PW)
+	/// Unit of measurement for PetaWatt (PW)
 	/// </summary>
 	public struct PetaWatt : IPower {
         public static string Name => "PetaWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaWatt (PW)
+	/// Extension method factory for generating PetaWatt (PW)
 	/// </summary>
 	public static class PetaWattFactory {
 		/// <summary>

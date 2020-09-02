@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the ZettaMetre (Zm)
+	/// Unit of measurement for ZettaMetre (Zm)
 	/// </summary>
 	public struct ZettaMetre : ILength {
         public static string Name => "ZettaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaMetre (Zm)
+	/// Extension method factory for generating ZettaMetre (Zm)
 	/// </summary>
 	public static class ZettaMetreFactory {
 		/// <summary>

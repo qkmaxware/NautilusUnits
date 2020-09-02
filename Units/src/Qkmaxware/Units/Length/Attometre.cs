@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the AttoMetre (am)
+	/// Unit of measurement for AttoMetre (am)
 	/// </summary>
 	public struct AttoMetre : ILength {
         public static string Name => "AttoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoMetre (am)
+	/// Extension method factory for generating AttoMetre (am)
 	/// </summary>
 	public static class AttoMetreFactory {
 		/// <summary>

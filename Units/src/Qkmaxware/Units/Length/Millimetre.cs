@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the MilliMetre (mm)
+	/// Unit of measurement for MilliMetre (mm)
 	/// </summary>
 	public struct MilliMetre : ILength {
         public static string Name => "MilliMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliMetre (mm)
+	/// Extension method factory for generating MilliMetre (mm)
 	/// </summary>
 	public static class MilliMetreFactory {
 		/// <summary>

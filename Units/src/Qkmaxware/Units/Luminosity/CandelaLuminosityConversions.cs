@@ -1,7 +1,7 @@
 using System;
 namespace Qkmaxware.Units.Luminosity {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Candela"
+/// Static class housing si-prefix conversions for the unit "CandelaLuminosity"
 /// </summary>
 public static class CandelaLuminosityConversions {
 	/// <summary>
@@ -15,6 +15,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert YottaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in YottaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, YottaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to ZettaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -22,6 +32,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, ZettaCandela> ToZettaCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, ZettaCandela>(
             Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZettaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, ZettaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -35,6 +55,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ExaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in ExaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, ExaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to PetaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -42,6 +72,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, PetaCandela> ToPetaCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, PetaCandela>(
             Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PetaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in PetaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, PetaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -55,6 +95,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert TeraCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in TeraCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, TeraCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to GigaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -62,6 +112,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, GigaCandela> ToGigaCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, GigaCandela>(
             Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert GigaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in GigaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, GigaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -75,6 +135,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MegaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in MegaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, MegaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to KiloCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -82,6 +152,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, KiloCandela> ToKiloCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, KiloCandela>(
             Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert KiloCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in KiloCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, KiloCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -95,6 +175,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert HectoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in HectoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, HectoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to DekaCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -102,6 +192,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, DekaCandela> ToDekaCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, DekaCandela>(
             Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DekaCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in DekaCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, DekaCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -115,6 +215,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DeciCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in DeciCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, DeciCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to CentiCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -122,6 +232,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, CentiCandela> ToCentiCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, CentiCandela>(
             Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert CentiCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in CentiCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, CentiCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -135,6 +255,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MilliCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in MilliCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, MilliCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to MicroCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -142,6 +272,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, MicroCandela> ToMicroCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, MicroCandela>(
             Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MicroCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in MicroCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, MicroCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -155,6 +295,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert NanoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in NanoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, NanoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to PicoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -162,6 +312,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, PicoCandela> ToPicoCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, PicoCandela>(
             Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PicoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in PicoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, PicoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -175,6 +335,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert FemtoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, FemtoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to AttoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -182,6 +352,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, AttoCandela> ToAttoCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, AttoCandela>(
             Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert AttoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in AttoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, AttoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -195,6 +375,16 @@ public static class CandelaLuminosityConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, ZeptoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Candela to YoctoCandela
     /// </summary>
     /// <param name="val">quantity measured in Candela</param>
@@ -202,6 +392,16 @@ public static class CandelaLuminosityConversions {
 	public static Quantity<double, YoctoCandela> ToYoctoCandela<T>(this BaseQuantity<T, Candela> val) where T:IConvertible {
         return new Quantity<double, YoctoCandela>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoCandela to Candela
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoCandela</param>
+    /// <returns>quantity measured in Candela</returns>
+	public static Quantity<double, Candela> ToCandela<T>(this BaseQuantity<T, YoctoCandela> val) where T:IConvertible {
+        return new Quantity<double, Candela>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

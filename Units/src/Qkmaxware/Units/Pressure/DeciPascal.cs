@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the DeciPascal (dPa)
+	/// Unit of measurement for DeciPascal (dPa)
 	/// </summary>
 	public struct DeciPascal : IPressure {
         public static string Name => "DeciPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciPascal (dPa)
+	/// Extension method factory for generating DeciPascal (dPa)
 	/// </summary>
 	public static class DeciPascalFactory {
 		/// <summary>

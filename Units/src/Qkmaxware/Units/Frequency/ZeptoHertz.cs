@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the ZeptoHertz (zHz)
+	/// Unit of measurement for ZeptoHertz (zHz)
 	/// </summary>
 	public struct ZeptoHertz : IFrequency {
         public static string Name => "ZeptoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoHertz (zHz)
+	/// Extension method factory for generating ZeptoHertz (zHz)
 	/// </summary>
 	public static class ZeptoHertzFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the GigaGram (Gg)
+	/// Unit of measurement for GigaGram (Gg)
 	/// </summary>
 	public struct GigaGram : IMass {
         public static string Name => "GigaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaGram (Gg)
+	/// Extension method factory for generating GigaGram (Gg)
 	/// </summary>
 	public static class GigaGramFactory {
 		/// <summary>

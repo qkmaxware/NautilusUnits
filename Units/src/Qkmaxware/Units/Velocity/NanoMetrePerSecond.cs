@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the NanoMetrePerSecond (nm/s)
+	/// Unit of measurement for NanoMetrePerSecond (nm/s)
 	/// </summary>
 	public struct NanoMetrePerSecond : IVelocity {
         public static string Name => "NanoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoMetrePerSecond (nm/s)
+	/// Extension method factory for generating NanoMetrePerSecond (nm/s)
 	/// </summary>
 	public static class NanoMetrePerSecondFactory {
 		/// <summary>

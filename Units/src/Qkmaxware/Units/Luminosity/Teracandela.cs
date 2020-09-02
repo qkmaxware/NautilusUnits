@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the TeraCandela (Tcd)
+	/// Unit of measurement for TeraCandela (Tcd)
 	/// </summary>
 	public struct TeraCandela : ILuminosity {
         public static string Name => "TeraCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraCandela (Tcd)
+	/// Extension method factory for generating TeraCandela (Tcd)
 	/// </summary>
 	public static class TeraCandelaFactory {
 		/// <summary>

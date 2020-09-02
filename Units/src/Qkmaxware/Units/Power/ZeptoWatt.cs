@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the ZeptoWatt (zW)
+	/// Unit of measurement for ZeptoWatt (zW)
 	/// </summary>
 	public struct ZeptoWatt : IPower {
         public static string Name => "ZeptoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoWatt (zW)
+	/// Extension method factory for generating ZeptoWatt (zW)
 	/// </summary>
 	public static class ZeptoWattFactory {
 		/// <summary>

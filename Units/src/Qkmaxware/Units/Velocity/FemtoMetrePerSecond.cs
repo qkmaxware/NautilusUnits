@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the FemtoMetrePerSecond (fm/s)
+	/// Unit of measurement for FemtoMetrePerSecond (fm/s)
 	/// </summary>
 	public struct FemtoMetrePerSecond : IVelocity {
         public static string Name => "FemtoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoMetrePerSecond (fm/s)
+	/// Extension method factory for generating FemtoMetrePerSecond (fm/s)
 	/// </summary>
 	public static class FemtoMetrePerSecondFactory {
 		/// <summary>

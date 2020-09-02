@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the FemtoCandela (fcd)
+	/// Unit of measurement for FemtoCandela (fcd)
 	/// </summary>
 	public struct FemtoCandela : ILuminosity {
         public static string Name => "FemtoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoCandela (fcd)
+	/// Extension method factory for generating FemtoCandela (fcd)
 	/// </summary>
 	public static class FemtoCandelaFactory {
 		/// <summary>

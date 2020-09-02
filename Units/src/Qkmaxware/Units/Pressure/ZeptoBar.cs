@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the ZeptoBar (zbar)
+	/// Unit of measurement for ZeptoBar (zbar)
 	/// </summary>
 	public struct ZeptoBar : IPressure {
         public static string Name => "ZeptoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoBar (zbar)
+	/// Extension method factory for generating ZeptoBar (zbar)
 	/// </summary>
 	public static class ZeptoBarFactory {
 		/// <summary>

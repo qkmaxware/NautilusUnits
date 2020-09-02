@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the AttoVolt (aV)
+	/// Unit of measurement for AttoVolt (aV)
 	/// </summary>
 	public struct AttoVolt : IElectricPotential {
         public static string Name => "AttoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoVolt (aV)
+	/// Extension method factory for generating AttoVolt (aV)
 	/// </summary>
 	public static class AttoVoltFactory {
 		/// <summary>

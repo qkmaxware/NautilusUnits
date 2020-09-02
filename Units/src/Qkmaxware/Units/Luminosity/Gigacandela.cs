@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the GigaCandela (Gcd)
+	/// Unit of measurement for GigaCandela (Gcd)
 	/// </summary>
 	public struct GigaCandela : ILuminosity {
         public static string Name => "GigaCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaCandela (Gcd)
+	/// Extension method factory for generating GigaCandela (Gcd)
 	/// </summary>
 	public static class GigaCandelaFactory {
 		/// <summary>

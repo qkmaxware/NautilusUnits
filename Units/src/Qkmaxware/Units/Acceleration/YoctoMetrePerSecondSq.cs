@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the YoctoMetrePerSecondSq (ym/s^2)
+	/// Unit of measurement for YoctoMetrePerSecondSq (ym/s^2)
 	/// </summary>
 	public struct YoctoMetrePerSecondSq : IAcceleration {
         public static string Name => "YoctoMetrePerSecondSq";
         public static string Symbol => "ym/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating YoctoMetrePerSecondSq (ym/s^2) 
+	/// <summary>
+	/// Extension method factory for generating YoctoMetrePerSecondSq (ym/s^2)
 	/// </summary>
 	public static class YoctoMetrePerSecondSqFactory {
 		/// <summary>

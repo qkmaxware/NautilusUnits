@@ -183,11 +183,20 @@ for (var i = 0; i < prefixes.length; i++) {
 var conversions = [];
 // Generate to/from base
 for (var i = 0; i < prefixes.length; i++) {
+	// from -> to base
 	conversions.push(
 		convert(
 			element.name, 
 			ToDerivedName(prefixes[i].name, element.name), 
 			"1E" + -prefixes[i].factor
+		)
+	);
+	// Base to -> from
+	conversions.push(
+		convert(
+			ToDerivedName(prefixes[i].name, element.name),
+			element.name,
+			"1E" + prefixes[i].factor
 		)
 	);
 }

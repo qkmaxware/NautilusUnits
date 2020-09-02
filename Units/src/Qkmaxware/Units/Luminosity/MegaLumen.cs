@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the MegaLumen (Mlm)
+	/// Unit of measurement for MegaLumen (Mlm)
 	/// </summary>
 	public struct MegaLumen : ILuminosity {
         public static string Name => "MegaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaLumen (Mlm)
+	/// Extension method factory for generating MegaLumen (Mlm)
 	/// </summary>
 	public static class MegaLumenFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the PicoMetre (pm)
+	/// Unit of measurement for PicoMetre (pm)
 	/// </summary>
 	public struct PicoMetre : ILength {
         public static string Name => "PicoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoMetre (pm)
+	/// Extension method factory for generating PicoMetre (pm)
 	/// </summary>
 	public static class PicoMetreFactory {
 		/// <summary>

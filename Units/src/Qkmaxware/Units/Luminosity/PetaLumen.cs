@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the PetaLumen (Plm)
+	/// Unit of measurement for PetaLumen (Plm)
 	/// </summary>
 	public struct PetaLumen : ILuminosity {
         public static string Name => "PetaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaLumen (Plm)
+	/// Extension method factory for generating PetaLumen (Plm)
 	/// </summary>
 	public static class PetaLumenFactory {
 		/// <summary>

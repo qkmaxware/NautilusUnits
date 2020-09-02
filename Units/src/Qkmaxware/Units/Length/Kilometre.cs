@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the KiloMetre (km)
+	/// Unit of measurement for KiloMetre (km)
 	/// </summary>
 	public struct KiloMetre : ILength {
         public static string Name => "KiloMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloMetre (km)
+	/// Extension method factory for generating KiloMetre (km)
 	/// </summary>
 	public static class KiloMetreFactory {
 		/// <summary>

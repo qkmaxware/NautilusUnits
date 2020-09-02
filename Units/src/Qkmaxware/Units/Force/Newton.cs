@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the Newton (N)
+	/// Unit of measurement for Newton (N)
 	/// </summary>
 	public struct Newton : IForce {
         public static string Name => "Newton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Newton (N)
+	/// Extension method factory for generating Newton (N)
 	/// </summary>
 	public static class NewtonFactory {
 		/// <summary>

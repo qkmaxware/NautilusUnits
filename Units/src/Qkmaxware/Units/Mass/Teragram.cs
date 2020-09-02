@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the TeraGram (Tg)
+	/// Unit of measurement for TeraGram (Tg)
 	/// </summary>
 	public struct TeraGram : IMass {
         public static string Name => "TeraGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraGram (Tg)
+	/// Extension method factory for generating TeraGram (Tg)
 	/// </summary>
 	public static class TeraGramFactory {
 		/// <summary>

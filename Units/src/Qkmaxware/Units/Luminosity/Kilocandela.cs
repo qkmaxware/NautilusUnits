@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the KiloCandela (kcd)
+	/// Unit of measurement for KiloCandela (kcd)
 	/// </summary>
 	public struct KiloCandela : ILuminosity {
         public static string Name => "KiloCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloCandela (kcd)
+	/// Extension method factory for generating KiloCandela (kcd)
 	/// </summary>
 	public static class KiloCandelaFactory {
 		/// <summary>

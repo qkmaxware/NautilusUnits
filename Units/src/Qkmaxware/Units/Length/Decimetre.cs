@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the DeciMetre (dm)
+	/// Unit of measurement for DeciMetre (dm)
 	/// </summary>
 	public struct DeciMetre : ILength {
         public static string Name => "DeciMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciMetre (dm)
+	/// Extension method factory for generating DeciMetre (dm)
 	/// </summary>
 	public static class DeciMetreFactory {
 		/// <summary>

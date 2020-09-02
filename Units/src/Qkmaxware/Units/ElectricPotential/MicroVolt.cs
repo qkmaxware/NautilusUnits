@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the MicroVolt (uV)
+	/// Unit of measurement for MicroVolt (uV)
 	/// </summary>
 	public struct MicroVolt : IElectricPotential {
         public static string Name => "MicroVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroVolt (uV)
+	/// Extension method factory for generating MicroVolt (uV)
 	/// </summary>
 	public static class MicroVoltFactory {
 		/// <summary>

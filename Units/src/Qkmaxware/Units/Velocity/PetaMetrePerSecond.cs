@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the PetaMetrePerSecond (Pm/s)
+	/// Unit of measurement for PetaMetrePerSecond (Pm/s)
 	/// </summary>
 	public struct PetaMetrePerSecond : IVelocity {
         public static string Name => "PetaMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaMetrePerSecond (Pm/s)
+	/// Extension method factory for generating PetaMetrePerSecond (Pm/s)
 	/// </summary>
 	public static class PetaMetrePerSecondFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the TeraMetre (Tm)
+	/// Unit of measurement for TeraMetre (Tm)
 	/// </summary>
 	public struct TeraMetre : ILength {
         public static string Name => "TeraMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraMetre (Tm)
+	/// Extension method factory for generating TeraMetre (Tm)
 	/// </summary>
 	public static class TeraMetreFactory {
 		/// <summary>

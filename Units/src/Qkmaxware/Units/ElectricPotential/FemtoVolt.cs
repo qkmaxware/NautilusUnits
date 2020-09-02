@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the FemtoVolt (fV)
+	/// Unit of measurement for FemtoVolt (fV)
 	/// </summary>
 	public struct FemtoVolt : IElectricPotential {
         public static string Name => "FemtoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoVolt (fV)
+	/// Extension method factory for generating FemtoVolt (fV)
 	/// </summary>
 	public static class FemtoVoltFactory {
 		/// <summary>

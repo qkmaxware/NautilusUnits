@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the MilliNewton (mN)
+	/// Unit of measurement for MilliNewton (mN)
 	/// </summary>
 	public struct MilliNewton : IForce {
         public static string Name => "MilliNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliNewton (mN)
+	/// Extension method factory for generating MilliNewton (mN)
 	/// </summary>
 	public static class MilliNewtonFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the AttoMetrePerSecond (am/s)
+	/// Unit of measurement for AttoMetrePerSecond (am/s)
 	/// </summary>
 	public struct AttoMetrePerSecond : IVelocity {
         public static string Name => "AttoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoMetrePerSecond (am/s)
+	/// Extension method factory for generating AttoMetrePerSecond (am/s)
 	/// </summary>
 	public static class AttoMetrePerSecondFactory {
 		/// <summary>

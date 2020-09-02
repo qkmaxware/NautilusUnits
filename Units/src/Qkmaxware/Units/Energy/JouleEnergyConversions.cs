@@ -1,9 +1,9 @@
 using System;
 namespace Qkmaxware.Units.Energy {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Joule"
+/// Static class housing si-prefix conversions for the unit "JouleEnergy"
 /// </summary>
-public static class EnergyConversions {
+public static class JouleEnergyConversions {
 	/// <summary>
     /// Extension method to convert Joule to YottaJoule
     /// </summary>
@@ -12,6 +12,16 @@ public static class EnergyConversions {
 	public static Quantity<double, YottaJoule> ToYottaJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, YottaJoule>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in YottaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, YottaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -25,6 +35,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZettaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, ZettaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to ExaJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -32,6 +52,16 @@ public static class EnergyConversions {
 	public static Quantity<double, ExaJoule> ToExaJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, ExaJoule>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in ExaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, ExaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -45,6 +75,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PetaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in PetaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, PetaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to TeraJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -52,6 +92,16 @@ public static class EnergyConversions {
 	public static Quantity<double, TeraJoule> ToTeraJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, TeraJoule>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in TeraJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, TeraJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -65,6 +115,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert GigaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in GigaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, GigaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to MegaJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -72,6 +132,16 @@ public static class EnergyConversions {
 	public static Quantity<double, MegaJoule> ToMegaJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, MegaJoule>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in MegaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, MegaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -85,6 +155,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert KiloJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in KiloJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, KiloJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to HectoJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -92,6 +172,16 @@ public static class EnergyConversions {
 	public static Quantity<double, HectoJoule> ToHectoJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, HectoJoule>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in HectoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, HectoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -105,6 +195,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DekaJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in DekaJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, DekaJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to DeciJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -112,6 +212,16 @@ public static class EnergyConversions {
 	public static Quantity<double, DeciJoule> ToDeciJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, DeciJoule>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in DeciJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, DeciJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -125,6 +235,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert CentiJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in CentiJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, CentiJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to MilliJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -132,6 +252,16 @@ public static class EnergyConversions {
 	public static Quantity<double, MilliJoule> ToMilliJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, MilliJoule>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in MilliJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, MilliJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -145,6 +275,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MicroJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in MicroJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, MicroJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to NanoJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -152,6 +292,16 @@ public static class EnergyConversions {
 	public static Quantity<double, NanoJoule> ToNanoJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, NanoJoule>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in NanoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, NanoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -165,6 +315,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PicoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in PicoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, PicoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to FemtoJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -172,6 +332,16 @@ public static class EnergyConversions {
 	public static Quantity<double, FemtoJoule> ToFemtoJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, FemtoJoule>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, FemtoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -185,6 +355,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert AttoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in AttoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, AttoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to ZeptoJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -195,6 +375,16 @@ public static class EnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, ZeptoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Joule to YoctoJoule
     /// </summary>
     /// <param name="val">quantity measured in Joule</param>
@@ -202,6 +392,16 @@ public static class EnergyConversions {
 	public static Quantity<double, YoctoJoule> ToYoctoJoule<T>(this BaseQuantity<T, Joule> val) where T:IConvertible {
         return new Quantity<double, YoctoJoule>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoJoule to Joule
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoJoule</param>
+    /// <returns>quantity measured in Joule</returns>
+	public static Quantity<double, Joule> ToJoule<T>(this BaseQuantity<T, YoctoJoule> val) where T:IConvertible {
+        return new Quantity<double, Joule>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

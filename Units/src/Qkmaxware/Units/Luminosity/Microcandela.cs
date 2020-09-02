@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the MicroCandela (ucd)
+	/// Unit of measurement for MicroCandela (ucd)
 	/// </summary>
 	public struct MicroCandela : ILuminosity {
         public static string Name => "MicroCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroCandela (ucd)
+	/// Extension method factory for generating MicroCandela (ucd)
 	/// </summary>
 	public static class MicroCandelaFactory {
 		/// <summary>

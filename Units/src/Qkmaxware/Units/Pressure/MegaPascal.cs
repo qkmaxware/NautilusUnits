@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the MegaPascal (MPa)
+	/// Unit of measurement for MegaPascal (MPa)
 	/// </summary>
 	public struct MegaPascal : IPressure {
         public static string Name => "MegaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaPascal (MPa)
+	/// Extension method factory for generating MegaPascal (MPa)
 	/// </summary>
 	public static class MegaPascalFactory {
 		/// <summary>

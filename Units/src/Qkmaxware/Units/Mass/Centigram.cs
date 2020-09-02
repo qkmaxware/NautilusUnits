@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the CentiGram (cg)
+	/// Unit of measurement for CentiGram (cg)
 	/// </summary>
 	public struct CentiGram : IMass {
         public static string Name => "CentiGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiGram (cg)
+	/// Extension method factory for generating CentiGram (cg)
 	/// </summary>
 	public static class CentiGramFactory {
 		/// <summary>

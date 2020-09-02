@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the FemtoPascal (fPa)
+	/// Unit of measurement for FemtoPascal (fPa)
 	/// </summary>
 	public struct FemtoPascal : IPressure {
         public static string Name => "FemtoPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoPascal (fPa)
+	/// Extension method factory for generating FemtoPascal (fPa)
 	/// </summary>
 	public static class FemtoPascalFactory {
 		/// <summary>

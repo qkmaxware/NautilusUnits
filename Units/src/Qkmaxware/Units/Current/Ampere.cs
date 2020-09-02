@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the Ampere (A)
+	/// Unit of measurement for Ampere (A)
 	/// </summary>
 	public struct Ampere : ICurrent {
         public static string Name => "Ampere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Ampere (A)
+	/// Extension method factory for generating Ampere (A)
 	/// </summary>
 	public static class AmpereFactory {
 		/// <summary>

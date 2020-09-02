@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the HectoMetre (hm)
+	/// Unit of measurement for HectoMetre (hm)
 	/// </summary>
 	public struct HectoMetre : ILength {
         public static string Name => "HectoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoMetre (hm)
+	/// Extension method factory for generating HectoMetre (hm)
 	/// </summary>
 	public static class HectoMetreFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the FemtoMetre (fm)
+	/// Unit of measurement for FemtoMetre (fm)
 	/// </summary>
 	public struct FemtoMetre : ILength {
         public static string Name => "FemtoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoMetre (fm)
+	/// Extension method factory for generating FemtoMetre (fm)
 	/// </summary>
 	public static class FemtoMetreFactory {
 		/// <summary>

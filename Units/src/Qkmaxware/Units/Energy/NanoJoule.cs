@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the NanoJoule (nJ)
+	/// Unit of measurement for NanoJoule (nJ)
 	/// </summary>
 	public struct NanoJoule : IEnergy {
         public static string Name => "NanoJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoJoule (nJ)
+	/// Extension method factory for generating NanoJoule (nJ)
 	/// </summary>
 	public static class NanoJouleFactory {
 		/// <summary>

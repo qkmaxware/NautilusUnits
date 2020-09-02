@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the ExaMetrePerSecondSq (Em/s^2)
+	/// Unit of measurement for ExaMetrePerSecondSq (Em/s^2)
 	/// </summary>
 	public struct ExaMetrePerSecondSq : IAcceleration {
         public static string Name => "ExaMetrePerSecondSq";
         public static string Symbol => "Em/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating ExaMetrePerSecondSq (Em/s^2) 
+	/// <summary>
+	/// Extension method factory for generating ExaMetrePerSecondSq (Em/s^2)
 	/// </summary>
 	public static class ExaMetrePerSecondSqFactory {
 		/// <summary>

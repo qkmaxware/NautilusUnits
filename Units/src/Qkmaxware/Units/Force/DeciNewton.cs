@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the DeciNewton (dN)
+	/// Unit of measurement for DeciNewton (dN)
 	/// </summary>
 	public struct DeciNewton : IForce {
         public static string Name => "DeciNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciNewton (dN)
+	/// Extension method factory for generating DeciNewton (dN)
 	/// </summary>
 	public static class DeciNewtonFactory {
 		/// <summary>

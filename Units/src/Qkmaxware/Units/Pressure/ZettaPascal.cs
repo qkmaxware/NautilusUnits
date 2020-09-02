@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the ZettaPascal (ZPa)
+	/// Unit of measurement for ZettaPascal (ZPa)
 	/// </summary>
 	public struct ZettaPascal : IPressure {
         public static string Name => "ZettaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaPascal (ZPa)
+	/// Extension method factory for generating ZettaPascal (ZPa)
 	/// </summary>
 	public static class ZettaPascalFactory {
 		/// <summary>

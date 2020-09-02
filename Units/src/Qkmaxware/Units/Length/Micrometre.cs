@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the MicroMetre (um)
+	/// Unit of measurement for MicroMetre (um)
 	/// </summary>
 	public struct MicroMetre : ILength {
         public static string Name => "MicroMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroMetre (um)
+	/// Extension method factory for generating MicroMetre (um)
 	/// </summary>
 	public static class MicroMetreFactory {
 		/// <summary>

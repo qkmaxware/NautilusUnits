@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the FemtoJoule (fJ)
+	/// Unit of measurement for FemtoJoule (fJ)
 	/// </summary>
 	public struct FemtoJoule : IEnergy {
         public static string Name => "FemtoJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoJoule (fJ)
+	/// Extension method factory for generating FemtoJoule (fJ)
 	/// </summary>
 	public static class FemtoJouleFactory {
 		/// <summary>

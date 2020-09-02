@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the YottaGram (Yg)
+	/// Unit of measurement for YottaGram (Yg)
 	/// </summary>
 	public struct YottaGram : IMass {
         public static string Name => "YottaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaGram (Yg)
+	/// Extension method factory for generating YottaGram (Yg)
 	/// </summary>
 	public static class YottaGramFactory {
 		/// <summary>

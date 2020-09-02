@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the ExaNewton (EN)
+	/// Unit of measurement for ExaNewton (EN)
 	/// </summary>
 	public struct ExaNewton : IForce {
         public static string Name => "ExaNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaNewton (EN)
+	/// Extension method factory for generating ExaNewton (EN)
 	/// </summary>
 	public static class ExaNewtonFactory {
 		/// <summary>

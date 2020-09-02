@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the ExaLumen (Elm)
+	/// Unit of measurement for ExaLumen (Elm)
 	/// </summary>
 	public struct ExaLumen : ILuminosity {
         public static string Name => "ExaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaLumen (Elm)
+	/// Extension method factory for generating ExaLumen (Elm)
 	/// </summary>
 	public static class ExaLumenFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the PicoElectronvolt (peV)
+	/// Unit of measurement for PicoElectronvolt (peV)
 	/// </summary>
 	public struct PicoElectronvolt : IEnergy {
         public static string Name => "PicoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoElectronvolt (peV)
+	/// Extension method factory for generating PicoElectronvolt (peV)
 	/// </summary>
 	public static class PicoElectronvoltFactory {
 		/// <summary>

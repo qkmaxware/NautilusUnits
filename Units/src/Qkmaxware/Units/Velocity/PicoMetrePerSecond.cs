@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the PicoMetrePerSecond (pm/s)
+	/// Unit of measurement for PicoMetrePerSecond (pm/s)
 	/// </summary>
 	public struct PicoMetrePerSecond : IVelocity {
         public static string Name => "PicoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoMetrePerSecond (pm/s)
+	/// Extension method factory for generating PicoMetrePerSecond (pm/s)
 	/// </summary>
 	public static class PicoMetrePerSecondFactory {
 		/// <summary>

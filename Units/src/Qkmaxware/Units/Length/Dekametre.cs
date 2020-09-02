@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the DekaMetre (dam)
+	/// Unit of measurement for DekaMetre (dam)
 	/// </summary>
 	public struct DekaMetre : ILength {
         public static string Name => "DekaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaMetre (dam)
+	/// Extension method factory for generating DekaMetre (dam)
 	/// </summary>
 	public static class DekaMetreFactory {
 		/// <summary>

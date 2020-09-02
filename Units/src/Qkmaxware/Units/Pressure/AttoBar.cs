@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the AttoBar (abar)
+	/// Unit of measurement for AttoBar (abar)
 	/// </summary>
 	public struct AttoBar : IPressure {
         public static string Name => "AttoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoBar (abar)
+	/// Extension method factory for generating AttoBar (abar)
 	/// </summary>
 	public static class AttoBarFactory {
 		/// <summary>

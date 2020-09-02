@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the NanoAmpere (nA)
+	/// Unit of measurement for NanoAmpere (nA)
 	/// </summary>
 	public struct NanoAmpere : ICurrent {
         public static string Name => "NanoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoAmpere (nA)
+	/// Extension method factory for generating NanoAmpere (nA)
 	/// </summary>
 	public static class NanoAmpereFactory {
 		/// <summary>

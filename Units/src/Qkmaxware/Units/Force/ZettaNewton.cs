@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the ZettaNewton (ZN)
+	/// Unit of measurement for ZettaNewton (ZN)
 	/// </summary>
 	public struct ZettaNewton : IForce {
         public static string Name => "ZettaNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaNewton (ZN)
+	/// Extension method factory for generating ZettaNewton (ZN)
 	/// </summary>
 	public static class ZettaNewtonFactory {
 		/// <summary>

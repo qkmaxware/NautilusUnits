@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the FemtoMetrePerSecondSq (fm/s^2)
+	/// Unit of measurement for FemtoMetrePerSecondSq (fm/s^2)
 	/// </summary>
 	public struct FemtoMetrePerSecondSq : IAcceleration {
         public static string Name => "FemtoMetrePerSecondSq";
         public static string Symbol => "fm/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating FemtoMetrePerSecondSq (fm/s^2) 
+	/// <summary>
+	/// Extension method factory for generating FemtoMetrePerSecondSq (fm/s^2)
 	/// </summary>
 	public static class FemtoMetrePerSecondSqFactory {
 		/// <summary>

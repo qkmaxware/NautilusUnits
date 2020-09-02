@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the NanoWatt (nW)
+	/// Unit of measurement for NanoWatt (nW)
 	/// </summary>
 	public struct NanoWatt : IPower {
         public static string Name => "NanoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoWatt (nW)
+	/// Extension method factory for generating NanoWatt (nW)
 	/// </summary>
 	public static class NanoWattFactory {
 		/// <summary>

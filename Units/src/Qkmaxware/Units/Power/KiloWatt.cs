@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the KiloWatt (kW)
+	/// Unit of measurement for KiloWatt (kW)
 	/// </summary>
 	public struct KiloWatt : IPower {
         public static string Name => "KiloWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloWatt (kW)
+	/// Extension method factory for generating KiloWatt (kW)
 	/// </summary>
 	public static class KiloWattFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the FemtoNewton (fN)
+	/// Unit of measurement for FemtoNewton (fN)
 	/// </summary>
 	public struct FemtoNewton : IForce {
         public static string Name => "FemtoNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoNewton (fN)
+	/// Extension method factory for generating FemtoNewton (fN)
 	/// </summary>
 	public static class FemtoNewtonFactory {
 		/// <summary>

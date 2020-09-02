@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the ZettaJoule (ZJ)
+	/// Unit of measurement for ZettaJoule (ZJ)
 	/// </summary>
 	public struct ZettaJoule : IEnergy {
         public static string Name => "ZettaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaJoule (ZJ)
+	/// Extension method factory for generating ZettaJoule (ZJ)
 	/// </summary>
 	public static class ZettaJouleFactory {
 		/// <summary>

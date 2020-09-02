@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the MicroAmpere (uA)
+	/// Unit of measurement for MicroAmpere (uA)
 	/// </summary>
 	public struct MicroAmpere : ICurrent {
         public static string Name => "MicroAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroAmpere (uA)
+	/// Extension method factory for generating MicroAmpere (uA)
 	/// </summary>
 	public static class MicroAmpereFactory {
 		/// <summary>

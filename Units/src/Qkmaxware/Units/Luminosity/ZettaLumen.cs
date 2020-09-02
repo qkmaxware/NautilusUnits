@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the ZettaLumen (Zlm)
+	/// Unit of measurement for ZettaLumen (Zlm)
 	/// </summary>
 	public struct ZettaLumen : ILuminosity {
         public static string Name => "ZettaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaLumen (Zlm)
+	/// Extension method factory for generating ZettaLumen (Zlm)
 	/// </summary>
 	public static class ZettaLumenFactory {
 		/// <summary>

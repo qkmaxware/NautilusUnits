@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the KiloElectronvolt (keV)
+	/// Unit of measurement for KiloElectronvolt (keV)
 	/// </summary>
 	public struct KiloElectronvolt : IEnergy {
         public static string Name => "KiloElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloElectronvolt (keV)
+	/// Extension method factory for generating KiloElectronvolt (keV)
 	/// </summary>
 	public static class KiloElectronvoltFactory {
 		/// <summary>

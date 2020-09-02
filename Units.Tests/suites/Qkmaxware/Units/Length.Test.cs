@@ -9,6 +9,9 @@ namespace TestSuites.Qkmaxware.Units {
         [TestMethod]
         public void MetreConversions() {
             var m = 1.m();
+            var km = 1.km();
+
+            Assert.AreEqual(1000,     km.ToMetre().Value);
 
             Assert.AreEqual(1e-24,     m.ToYottaMetre().Value);
             Assert.AreEqual(1e-21,     m.ToZettaMetre().Value);

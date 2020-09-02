@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the TeraVolt (TV)
+	/// Unit of measurement for TeraVolt (TV)
 	/// </summary>
 	public struct TeraVolt : IElectricPotential {
         public static string Name => "TeraVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraVolt (TV)
+	/// Extension method factory for generating TeraVolt (TV)
 	/// </summary>
 	public static class TeraVoltFactory {
 		/// <summary>

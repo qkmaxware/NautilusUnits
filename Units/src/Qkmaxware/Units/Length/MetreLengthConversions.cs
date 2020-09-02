@@ -1,7 +1,7 @@
 using System;
 namespace Qkmaxware.Units.Length {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Metre"
+/// Static class housing si-prefix conversions for the unit "MetreLength"
 /// </summary>
 public static class MetreLengthConversions {
 	/// <summary>
@@ -15,6 +15,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert YottaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in YottaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, YottaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to ZettaMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -22,6 +32,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, ZettaMetre> ToZettaMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, ZettaMetre>(
             Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZettaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, ZettaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -35,6 +55,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ExaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in ExaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, ExaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to PetaMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -42,6 +72,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, PetaMetre> ToPetaMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, PetaMetre>(
             Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PetaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in PetaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, PetaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -55,6 +95,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert TeraMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in TeraMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, TeraMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to GigaMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -62,6 +112,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, GigaMetre> ToGigaMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, GigaMetre>(
             Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert GigaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in GigaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, GigaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -75,6 +135,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MegaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in MegaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, MegaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to KiloMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -82,6 +152,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, KiloMetre> ToKiloMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, KiloMetre>(
             Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert KiloMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in KiloMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, KiloMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -95,6 +175,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert HectoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in HectoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, HectoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to DekaMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -102,6 +192,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, DekaMetre> ToDekaMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, DekaMetre>(
             Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DekaMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in DekaMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, DekaMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -115,6 +215,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DeciMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in DeciMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, DeciMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to CentiMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -122,6 +232,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, CentiMetre> ToCentiMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, CentiMetre>(
             Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert CentiMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in CentiMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, CentiMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -135,6 +255,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MilliMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in MilliMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, MilliMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to MicroMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -142,6 +272,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, MicroMetre> ToMicroMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, MicroMetre>(
             Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MicroMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in MicroMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, MicroMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -155,6 +295,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert NanoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in NanoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, NanoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to PicoMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -162,6 +312,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, PicoMetre> ToPicoMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, PicoMetre>(
             Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PicoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in PicoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, PicoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -175,6 +335,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert FemtoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, FemtoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to AttoMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -182,6 +352,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, AttoMetre> ToAttoMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, AttoMetre>(
             Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert AttoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in AttoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, AttoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -195,6 +375,16 @@ public static class MetreLengthConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, ZeptoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Metre to YoctoMetre
     /// </summary>
     /// <param name="val">quantity measured in Metre</param>
@@ -202,6 +392,16 @@ public static class MetreLengthConversions {
 	public static Quantity<double, YoctoMetre> ToYoctoMetre<T>(this BaseQuantity<T, Metre> val) where T:IConvertible {
         return new Quantity<double, YoctoMetre>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoMetre to Metre
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoMetre</param>
+    /// <returns>quantity measured in Metre</returns>
+	public static Quantity<double, Metre> ToMetre<T>(this BaseQuantity<T, YoctoMetre> val) where T:IConvertible {
+        return new Quantity<double, Metre>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

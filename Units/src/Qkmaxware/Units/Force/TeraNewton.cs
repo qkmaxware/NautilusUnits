@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the TeraNewton (TN)
+	/// Unit of measurement for TeraNewton (TN)
 	/// </summary>
 	public struct TeraNewton : IForce {
         public static string Name => "TeraNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraNewton (TN)
+	/// Extension method factory for generating TeraNewton (TN)
 	/// </summary>
 	public static class TeraNewtonFactory {
 		/// <summary>

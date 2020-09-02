@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the PicoCandela (pcd)
+	/// Unit of measurement for PicoCandela (pcd)
 	/// </summary>
 	public struct PicoCandela : ILuminosity {
         public static string Name => "PicoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoCandela (pcd)
+	/// Extension method factory for generating PicoCandela (pcd)
 	/// </summary>
 	public static class PicoCandelaFactory {
 		/// <summary>

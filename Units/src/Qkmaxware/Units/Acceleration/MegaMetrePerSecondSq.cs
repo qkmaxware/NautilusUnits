@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the MegaMetrePerSecondSq (Mm/s^2)
+	/// Unit of measurement for MegaMetrePerSecondSq (Mm/s^2)
 	/// </summary>
 	public struct MegaMetrePerSecondSq : IAcceleration {
         public static string Name => "MegaMetrePerSecondSq";
         public static string Symbol => "Mm/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating MegaMetrePerSecondSq (Mm/s^2) 
+	/// <summary>
+	/// Extension method factory for generating MegaMetrePerSecondSq (Mm/s^2)
 	/// </summary>
 	public static class MegaMetrePerSecondSqFactory {
 		/// <summary>

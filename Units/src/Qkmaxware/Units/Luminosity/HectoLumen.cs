@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the HectoLumen (hlm)
+	/// Unit of measurement for HectoLumen (hlm)
 	/// </summary>
 	public struct HectoLumen : ILuminosity {
         public static string Name => "HectoLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoLumen (hlm)
+	/// Extension method factory for generating HectoLumen (hlm)
 	/// </summary>
 	public static class HectoLumenFactory {
 		/// <summary>

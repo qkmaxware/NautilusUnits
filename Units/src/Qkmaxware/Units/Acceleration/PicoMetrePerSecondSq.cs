@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the PicoMetrePerSecondSq (pm/s^2)
+	/// Unit of measurement for PicoMetrePerSecondSq (pm/s^2)
 	/// </summary>
 	public struct PicoMetrePerSecondSq : IAcceleration {
         public static string Name => "PicoMetrePerSecondSq";
         public static string Symbol => "pm/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating PicoMetrePerSecondSq (pm/s^2) 
+	/// <summary>
+	/// Extension method factory for generating PicoMetrePerSecondSq (pm/s^2)
 	/// </summary>
 	public static class PicoMetrePerSecondSqFactory {
 		/// <summary>

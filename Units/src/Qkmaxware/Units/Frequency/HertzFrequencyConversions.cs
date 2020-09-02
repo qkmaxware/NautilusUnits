@@ -1,9 +1,9 @@
 using System;
 namespace Qkmaxware.Units.Frequency {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Hertz"
+/// Static class housing si-prefix conversions for the unit "HertzFrequency"
 /// </summary>
-public static class FrequencyConversions {
+public static class HertzFrequencyConversions {
 	/// <summary>
     /// Extension method to convert Hertz to YottaHertz
     /// </summary>
@@ -12,6 +12,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, YottaHertz> ToYottaHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, YottaHertz>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in YottaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, YottaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -25,6 +35,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZettaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, ZettaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to ExaHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -32,6 +52,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, ExaHertz> ToExaHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, ExaHertz>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in ExaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, ExaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -45,6 +75,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PetaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in PetaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, PetaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to TeraHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -52,6 +92,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, TeraHertz> ToTeraHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, TeraHertz>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in TeraHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, TeraHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -65,6 +115,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert GigaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in GigaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, GigaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to MegaHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -72,6 +132,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, MegaHertz> ToMegaHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, MegaHertz>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in MegaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, MegaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -85,6 +155,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert KiloHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in KiloHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, KiloHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to HectoHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -92,6 +172,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, HectoHertz> ToHectoHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, HectoHertz>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in HectoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, HectoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -105,6 +195,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DekaHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in DekaHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, DekaHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to DeciHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -112,6 +212,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, DeciHertz> ToDeciHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, DeciHertz>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in DeciHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, DeciHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -125,6 +235,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert CentiHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in CentiHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, CentiHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to MilliHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -132,6 +252,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, MilliHertz> ToMilliHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, MilliHertz>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in MilliHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, MilliHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -145,6 +275,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MicroHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in MicroHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, MicroHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to NanoHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -152,6 +292,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, NanoHertz> ToNanoHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, NanoHertz>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in NanoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, NanoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -165,6 +315,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PicoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in PicoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, PicoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to FemtoHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -172,6 +332,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, FemtoHertz> ToFemtoHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, FemtoHertz>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, FemtoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -185,6 +355,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert AttoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in AttoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, AttoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to ZeptoHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -195,6 +375,16 @@ public static class FrequencyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, ZeptoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Hertz to YoctoHertz
     /// </summary>
     /// <param name="val">quantity measured in Hertz</param>
@@ -202,6 +392,16 @@ public static class FrequencyConversions {
 	public static Quantity<double, YoctoHertz> ToYoctoHertz<T>(this BaseQuantity<T, Hertz> val) where T:IConvertible {
         return new Quantity<double, YoctoHertz>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoHertz to Hertz
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoHertz</param>
+    /// <returns>quantity measured in Hertz</returns>
+	public static Quantity<double, Hertz> ToHertz<T>(this BaseQuantity<T, YoctoHertz> val) where T:IConvertible {
+        return new Quantity<double, Hertz>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

@@ -1,9 +1,9 @@
 using System;
 namespace Qkmaxware.Units.Current {
-    /// <summary>
-/// Static class housing si-prefix conversions for the unit "Ampere"
+/// <summary>
+/// Static class housing si-prefix conversions for the unit "AmpereCurrent"
 /// </summary>
-public static class CurrentConversions {
+public static class AmpereCurrentConversions {
 	/// <summary>
     /// Extension method to convert Ampere to YottaAmpere
     /// </summary>
@@ -12,6 +12,16 @@ public static class CurrentConversions {
 	public static Quantity<double, YottaAmpere> ToYottaAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, YottaAmpere>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in YottaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, YottaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -25,6 +35,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZettaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, ZettaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to ExaAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -32,6 +52,16 @@ public static class CurrentConversions {
 	public static Quantity<double, ExaAmpere> ToExaAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, ExaAmpere>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in ExaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, ExaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -45,6 +75,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PetaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in PetaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, PetaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to TeraAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -52,6 +92,16 @@ public static class CurrentConversions {
 	public static Quantity<double, TeraAmpere> ToTeraAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, TeraAmpere>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in TeraAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, TeraAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -65,6 +115,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert GigaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in GigaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, GigaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to MegaAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -72,6 +132,16 @@ public static class CurrentConversions {
 	public static Quantity<double, MegaAmpere> ToMegaAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, MegaAmpere>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in MegaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, MegaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -85,6 +155,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert KiloAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in KiloAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, KiloAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to HectoAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -92,6 +172,16 @@ public static class CurrentConversions {
 	public static Quantity<double, HectoAmpere> ToHectoAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, HectoAmpere>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in HectoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, HectoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -105,6 +195,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DekaAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in DekaAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, DekaAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to DeciAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -112,6 +212,16 @@ public static class CurrentConversions {
 	public static Quantity<double, DeciAmpere> ToDeciAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, DeciAmpere>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in DeciAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, DeciAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -125,6 +235,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert CentiAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in CentiAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, CentiAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to MilliAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -132,6 +252,16 @@ public static class CurrentConversions {
 	public static Quantity<double, MilliAmpere> ToMilliAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, MilliAmpere>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in MilliAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, MilliAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -145,6 +275,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MicroAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in MicroAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, MicroAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to NanoAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -152,6 +292,16 @@ public static class CurrentConversions {
 	public static Quantity<double, NanoAmpere> ToNanoAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, NanoAmpere>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in NanoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, NanoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -165,6 +315,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PicoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in PicoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, PicoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to FemtoAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -172,6 +332,16 @@ public static class CurrentConversions {
 	public static Quantity<double, FemtoAmpere> ToFemtoAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, FemtoAmpere>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, FemtoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -185,6 +355,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert AttoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in AttoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, AttoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to ZeptoAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -195,6 +375,16 @@ public static class CurrentConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, ZeptoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Ampere to YoctoAmpere
     /// </summary>
     /// <param name="val">quantity measured in Ampere</param>
@@ -202,6 +392,16 @@ public static class CurrentConversions {
 	public static Quantity<double, YoctoAmpere> ToYoctoAmpere<T>(this BaseQuantity<T, Ampere> val) where T:IConvertible {
         return new Quantity<double, YoctoAmpere>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoAmpere to Ampere
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoAmpere</param>
+    /// <returns>quantity measured in Ampere</returns>
+	public static Quantity<double, Ampere> ToAmpere<T>(this BaseQuantity<T, YoctoAmpere> val) where T:IConvertible {
+        return new Quantity<double, Ampere>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

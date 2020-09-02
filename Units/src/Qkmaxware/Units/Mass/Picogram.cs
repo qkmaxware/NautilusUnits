@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the PicoGram (pg)
+	/// Unit of measurement for PicoGram (pg)
 	/// </summary>
 	public struct PicoGram : IMass {
         public static string Name => "PicoGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoGram (pg)
+	/// Extension method factory for generating PicoGram (pg)
 	/// </summary>
 	public static class PicoGramFactory {
 		/// <summary>

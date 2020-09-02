@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the YoctoMetre (ym)
+	/// Unit of measurement for YoctoMetre (ym)
 	/// </summary>
 	public struct YoctoMetre : ILength {
         public static string Name => "YoctoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoMetre (ym)
+	/// Extension method factory for generating YoctoMetre (ym)
 	/// </summary>
 	public static class YoctoMetreFactory {
 		/// <summary>

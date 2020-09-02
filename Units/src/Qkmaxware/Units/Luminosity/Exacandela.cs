@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the ExaCandela (Ecd)
+	/// Unit of measurement for ExaCandela (Ecd)
 	/// </summary>
 	public struct ExaCandela : ILuminosity {
         public static string Name => "ExaCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaCandela (Ecd)
+	/// Extension method factory for generating ExaCandela (Ecd)
 	/// </summary>
 	public static class ExaCandelaFactory {
 		/// <summary>

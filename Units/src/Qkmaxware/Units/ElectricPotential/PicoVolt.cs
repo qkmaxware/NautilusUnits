@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the PicoVolt (pV)
+	/// Unit of measurement for PicoVolt (pV)
 	/// </summary>
 	public struct PicoVolt : IElectricPotential {
         public static string Name => "PicoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoVolt (pV)
+	/// Extension method factory for generating PicoVolt (pV)
 	/// </summary>
 	public static class PicoVoltFactory {
 		/// <summary>

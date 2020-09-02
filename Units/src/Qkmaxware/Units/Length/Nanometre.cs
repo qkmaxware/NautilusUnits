@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the NanoMetre (nm)
+	/// Unit of measurement for NanoMetre (nm)
 	/// </summary>
 	public struct NanoMetre : ILength {
         public static string Name => "NanoMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoMetre (nm)
+	/// Extension method factory for generating NanoMetre (nm)
 	/// </summary>
 	public static class NanoMetreFactory {
 		/// <summary>

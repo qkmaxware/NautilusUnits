@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the NanoLumen (nlm)
+	/// Unit of measurement for NanoLumen (nlm)
 	/// </summary>
 	public struct NanoLumen : ILuminosity {
         public static string Name => "NanoLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoLumen (nlm)
+	/// Extension method factory for generating NanoLumen (nlm)
 	/// </summary>
 	public static class NanoLumenFactory {
 		/// <summary>

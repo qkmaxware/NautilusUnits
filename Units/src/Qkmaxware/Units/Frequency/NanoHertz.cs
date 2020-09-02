@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the NanoHertz (nHz)
+	/// Unit of measurement for NanoHertz (nHz)
 	/// </summary>
 	public struct NanoHertz : IFrequency {
         public static string Name => "NanoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoHertz (nHz)
+	/// Extension method factory for generating NanoHertz (nHz)
 	/// </summary>
 	public static class NanoHertzFactory {
 		/// <summary>

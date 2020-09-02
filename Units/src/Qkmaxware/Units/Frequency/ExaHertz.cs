@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the ExaHertz (EHz)
+	/// Unit of measurement for ExaHertz (EHz)
 	/// </summary>
 	public struct ExaHertz : IFrequency {
         public static string Name => "ExaHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaHertz (EHz)
+	/// Extension method factory for generating ExaHertz (EHz)
 	/// </summary>
 	public static class ExaHertzFactory {
 		/// <summary>

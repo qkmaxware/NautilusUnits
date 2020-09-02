@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the PetaPascal (PPa)
+	/// Unit of measurement for PetaPascal (PPa)
 	/// </summary>
 	public struct PetaPascal : IPressure {
         public static string Name => "PetaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaPascal (PPa)
+	/// Extension method factory for generating PetaPascal (PPa)
 	/// </summary>
 	public static class PetaPascalFactory {
 		/// <summary>

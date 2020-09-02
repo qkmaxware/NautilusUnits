@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the DeciGram (dg)
+	/// Unit of measurement for DeciGram (dg)
 	/// </summary>
 	public struct DeciGram : IMass {
         public static string Name => "DeciGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciGram (dg)
+	/// Extension method factory for generating DeciGram (dg)
 	/// </summary>
 	public static class DeciGramFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the ExaGram (Eg)
+	/// Unit of measurement for ExaGram (Eg)
 	/// </summary>
 	public struct ExaGram : IMass {
         public static string Name => "ExaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaGram (Eg)
+	/// Extension method factory for generating ExaGram (Eg)
 	/// </summary>
 	public static class ExaGramFactory {
 		/// <summary>

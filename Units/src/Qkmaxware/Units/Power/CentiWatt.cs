@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the CentiWatt (cW)
+	/// Unit of measurement for CentiWatt (cW)
 	/// </summary>
 	public struct CentiWatt : IPower {
         public static string Name => "CentiWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiWatt (cW)
+	/// Extension method factory for generating CentiWatt (cW)
 	/// </summary>
 	public static class CentiWattFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the DekaJoule (daJ)
+	/// Unit of measurement for DekaJoule (daJ)
 	/// </summary>
 	public struct DekaJoule : IEnergy {
         public static string Name => "DekaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaJoule (daJ)
+	/// Extension method factory for generating DekaJoule (daJ)
 	/// </summary>
 	public static class DekaJouleFactory {
 		/// <summary>

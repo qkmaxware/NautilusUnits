@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the DeciElectronvolt (deV)
+	/// Unit of measurement for DeciElectronvolt (deV)
 	/// </summary>
 	public struct DeciElectronvolt : IEnergy {
         public static string Name => "DeciElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciElectronvolt (deV)
+	/// Extension method factory for generating DeciElectronvolt (deV)
 	/// </summary>
 	public static class DeciElectronvoltFactory {
 		/// <summary>

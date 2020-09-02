@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the HectoBar (hbar)
+	/// Unit of measurement for HectoBar (hbar)
 	/// </summary>
 	public struct HectoBar : IPressure {
         public static string Name => "HectoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoBar (hbar)
+	/// Extension method factory for generating HectoBar (hbar)
 	/// </summary>
 	public static class HectoBarFactory {
 		/// <summary>

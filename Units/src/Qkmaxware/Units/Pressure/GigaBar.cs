@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the GigaBar (Gbar)
+	/// Unit of measurement for GigaBar (Gbar)
 	/// </summary>
 	public struct GigaBar : IPressure {
         public static string Name => "GigaBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaBar (Gbar)
+	/// Extension method factory for generating GigaBar (Gbar)
 	/// </summary>
 	public static class GigaBarFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the MicroElectronvolt (ueV)
+	/// Unit of measurement for MicroElectronvolt (ueV)
 	/// </summary>
 	public struct MicroElectronvolt : IEnergy {
         public static string Name => "MicroElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroElectronvolt (ueV)
+	/// Extension method factory for generating MicroElectronvolt (ueV)
 	/// </summary>
 	public static class MicroElectronvoltFactory {
 		/// <summary>

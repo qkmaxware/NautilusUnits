@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the CentiNewton (cN)
+	/// Unit of measurement for CentiNewton (cN)
 	/// </summary>
 	public struct CentiNewton : IForce {
         public static string Name => "CentiNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiNewton (cN)
+	/// Extension method factory for generating CentiNewton (cN)
 	/// </summary>
 	public static class CentiNewtonFactory {
 		/// <summary>

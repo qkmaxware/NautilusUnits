@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the YottaJoule (YJ)
+	/// Unit of measurement for YottaJoule (YJ)
 	/// </summary>
 	public struct YottaJoule : IEnergy {
         public static string Name => "YottaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaJoule (YJ)
+	/// Extension method factory for generating YottaJoule (YJ)
 	/// </summary>
 	public static class YottaJouleFactory {
 		/// <summary>

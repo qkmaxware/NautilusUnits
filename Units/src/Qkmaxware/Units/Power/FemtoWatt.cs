@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the FemtoWatt (fW)
+	/// Unit of measurement for FemtoWatt (fW)
 	/// </summary>
 	public struct FemtoWatt : IPower {
         public static string Name => "FemtoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoWatt (fW)
+	/// Extension method factory for generating FemtoWatt (fW)
 	/// </summary>
 	public static class FemtoWattFactory {
 		/// <summary>

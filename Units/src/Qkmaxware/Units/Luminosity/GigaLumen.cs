@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the GigaLumen (Glm)
+	/// Unit of measurement for GigaLumen (Glm)
 	/// </summary>
 	public struct GigaLumen : ILuminosity {
         public static string Name => "GigaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaLumen (Glm)
+	/// Extension method factory for generating GigaLumen (Glm)
 	/// </summary>
 	public static class GigaLumenFactory {
 		/// <summary>

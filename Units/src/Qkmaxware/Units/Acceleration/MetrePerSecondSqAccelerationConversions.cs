@@ -1,8 +1,8 @@
 using System;
 namespace Qkmaxware.Units.Acceleration {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "MetrePerSecondSq"
-/// </summary>  
+/// Static class housing si-prefix conversions for the unit "MetrePerSecondSqAcceleration"
+/// </summary>
 public static class MetrePerSecondSqAccelerationConversions {
 	/// <summary>
     /// Extension method to convert MetrePerSecondSq to YottaMetrePerSecondSq
@@ -12,6 +12,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, YottaMetrePerSecondSq> ToYottaMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, YottaMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in YottaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, YottaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -25,6 +35,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZettaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, ZettaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to ExaMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -32,6 +52,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, ExaMetrePerSecondSq> ToExaMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, ExaMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in ExaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, ExaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -45,6 +75,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PetaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in PetaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, PetaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to TeraMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -52,6 +92,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, TeraMetrePerSecondSq> ToTeraMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, TeraMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in TeraMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, TeraMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -65,6 +115,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert GigaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in GigaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, GigaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to MegaMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -72,6 +132,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, MegaMetrePerSecondSq> ToMegaMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, MegaMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in MegaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, MegaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -85,6 +155,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert KiloMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in KiloMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, KiloMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to HectoMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -92,6 +172,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, HectoMetrePerSecondSq> ToHectoMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, HectoMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in HectoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, HectoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -105,6 +195,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DekaMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in DekaMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, DekaMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to DeciMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -112,6 +212,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, DeciMetrePerSecondSq> ToDeciMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, DeciMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in DeciMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, DeciMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -125,6 +235,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert CentiMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in CentiMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, CentiMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to MilliMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -132,6 +252,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, MilliMetrePerSecondSq> ToMilliMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, MilliMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in MilliMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, MilliMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -145,6 +275,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MicroMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in MicroMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, MicroMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to NanoMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -152,6 +292,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, NanoMetrePerSecondSq> ToNanoMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, NanoMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in NanoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, NanoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -165,6 +315,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PicoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in PicoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, PicoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to FemtoMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -172,6 +332,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, FemtoMetrePerSecondSq> ToFemtoMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, FemtoMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, FemtoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -185,6 +355,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert AttoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in AttoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, AttoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to ZeptoMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -195,6 +375,16 @@ public static class MetrePerSecondSqAccelerationConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, ZeptoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert MetrePerSecondSq to YoctoMetrePerSecondSq
     /// </summary>
     /// <param name="val">quantity measured in MetrePerSecondSq</param>
@@ -202,6 +392,16 @@ public static class MetrePerSecondSqAccelerationConversions {
 	public static Quantity<double, YoctoMetrePerSecondSq> ToYoctoMetrePerSecondSq<T>(this BaseQuantity<T, MetrePerSecondSq> val) where T:IConvertible {
         return new Quantity<double, YoctoMetrePerSecondSq>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoMetrePerSecondSq to MetrePerSecondSq
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoMetrePerSecondSq</param>
+    /// <returns>quantity measured in MetrePerSecondSq</returns>
+	public static Quantity<double, MetrePerSecondSq> ToMetrePerSecondSq<T>(this BaseQuantity<T, YoctoMetrePerSecondSq> val) where T:IConvertible {
+        return new Quantity<double, MetrePerSecondSq>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

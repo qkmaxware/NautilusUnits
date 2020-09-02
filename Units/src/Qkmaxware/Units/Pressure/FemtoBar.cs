@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the FemtoBar (fbar)
+	/// Unit of measurement for FemtoBar (fbar)
 	/// </summary>
 	public struct FemtoBar : IPressure {
         public static string Name => "FemtoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoBar (fbar)
+	/// Extension method factory for generating FemtoBar (fbar)
 	/// </summary>
 	public static class FemtoBarFactory {
 		/// <summary>

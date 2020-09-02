@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the GigaJoule (GJ)
+	/// Unit of measurement for GigaJoule (GJ)
 	/// </summary>
 	public struct GigaJoule : IEnergy {
         public static string Name => "GigaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaJoule (GJ)
+	/// Extension method factory for generating GigaJoule (GJ)
 	/// </summary>
 	public static class GigaJouleFactory {
 		/// <summary>

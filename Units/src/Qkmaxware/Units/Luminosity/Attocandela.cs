@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the AttoCandela (acd)
+	/// Unit of measurement for AttoCandela (acd)
 	/// </summary>
 	public struct AttoCandela : ILuminosity {
         public static string Name => "AttoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoCandela (acd)
+	/// Extension method factory for generating AttoCandela (acd)
 	/// </summary>
 	public static class AttoCandelaFactory {
 		/// <summary>

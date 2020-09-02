@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the PicoHertz (pHz)
+	/// Unit of measurement for PicoHertz (pHz)
 	/// </summary>
 	public struct PicoHertz : IFrequency {
         public static string Name => "PicoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoHertz (pHz)
+	/// Extension method factory for generating PicoHertz (pHz)
 	/// </summary>
 	public static class PicoHertzFactory {
 		/// <summary>

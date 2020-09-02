@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the NanoPascal (nPa)
+	/// Unit of measurement for NanoPascal (nPa)
 	/// </summary>
 	public struct NanoPascal : IPressure {
         public static string Name => "NanoPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoPascal (nPa)
+	/// Extension method factory for generating NanoPascal (nPa)
 	/// </summary>
 	public static class NanoPascalFactory {
 		/// <summary>

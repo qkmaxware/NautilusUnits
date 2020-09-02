@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the ExaJoule (EJ)
+	/// Unit of measurement for ExaJoule (EJ)
 	/// </summary>
 	public struct ExaJoule : IEnergy {
         public static string Name => "ExaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaJoule (EJ)
+	/// Extension method factory for generating ExaJoule (EJ)
 	/// </summary>
 	public static class ExaJouleFactory {
 		/// <summary>

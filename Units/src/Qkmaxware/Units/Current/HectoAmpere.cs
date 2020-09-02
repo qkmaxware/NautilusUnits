@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the HectoAmpere (hA)
+	/// Unit of measurement for HectoAmpere (hA)
 	/// </summary>
 	public struct HectoAmpere : ICurrent {
         public static string Name => "HectoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoAmpere (hA)
+	/// Extension method factory for generating HectoAmpere (hA)
 	/// </summary>
 	public static class HectoAmpereFactory {
 		/// <summary>

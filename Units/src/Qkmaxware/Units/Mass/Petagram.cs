@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the PetaGram (Pg)
+	/// Unit of measurement for PetaGram (Pg)
 	/// </summary>
 	public struct PetaGram : IMass {
         public static string Name => "PetaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaGram (Pg)
+	/// Extension method factory for generating PetaGram (Pg)
 	/// </summary>
 	public static class PetaGramFactory {
 		/// <summary>

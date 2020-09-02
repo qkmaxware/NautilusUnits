@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the HectoNewton (hN)
+	/// Unit of measurement for HectoNewton (hN)
 	/// </summary>
 	public struct HectoNewton : IForce {
         public static string Name => "HectoNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoNewton (hN)
+	/// Extension method factory for generating HectoNewton (hN)
 	/// </summary>
 	public static class HectoNewtonFactory {
 		/// <summary>

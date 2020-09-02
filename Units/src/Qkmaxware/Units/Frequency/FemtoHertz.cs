@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the FemtoHertz (fHz)
+	/// Unit of measurement for FemtoHertz (fHz)
 	/// </summary>
 	public struct FemtoHertz : IFrequency {
         public static string Name => "FemtoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoHertz (fHz)
+	/// Extension method factory for generating FemtoHertz (fHz)
 	/// </summary>
 	public static class FemtoHertzFactory {
 		/// <summary>

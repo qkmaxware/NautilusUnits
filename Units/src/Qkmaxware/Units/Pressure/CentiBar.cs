@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the CentiBar (cbar)
+	/// Unit of measurement for CentiBar (cbar)
 	/// </summary>
 	public struct CentiBar : IPressure {
         public static string Name => "CentiBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiBar (cbar)
+	/// Extension method factory for generating CentiBar (cbar)
 	/// </summary>
 	public static class CentiBarFactory {
 		/// <summary>

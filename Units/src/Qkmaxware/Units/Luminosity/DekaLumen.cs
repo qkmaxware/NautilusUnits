@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the DekaLumen (dalm)
+	/// Unit of measurement for DekaLumen (dalm)
 	/// </summary>
 	public struct DekaLumen : ILuminosity {
         public static string Name => "DekaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaLumen (dalm)
+	/// Extension method factory for generating DekaLumen (dalm)
 	/// </summary>
 	public static class DekaLumenFactory {
 		/// <summary>

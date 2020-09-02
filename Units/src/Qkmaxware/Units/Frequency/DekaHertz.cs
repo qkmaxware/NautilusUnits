@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the DekaHertz (daHz)
+	/// Unit of measurement for DekaHertz (daHz)
 	/// </summary>
 	public struct DekaHertz : IFrequency {
         public static string Name => "DekaHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaHertz (daHz)
+	/// Extension method factory for generating DekaHertz (daHz)
 	/// </summary>
 	public static class DekaHertzFactory {
 		/// <summary>

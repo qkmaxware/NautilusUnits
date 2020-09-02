@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the NanoBar (nbar)
+	/// Unit of measurement for NanoBar (nbar)
 	/// </summary>
 	public struct NanoBar : IPressure {
         public static string Name => "NanoBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoBar (nbar)
+	/// Extension method factory for generating NanoBar (nbar)
 	/// </summary>
 	public static class NanoBarFactory {
 		/// <summary>

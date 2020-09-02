@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the CentiAmpere (cA)
+	/// Unit of measurement for CentiAmpere (cA)
 	/// </summary>
 	public struct CentiAmpere : ICurrent {
         public static string Name => "CentiAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiAmpere (cA)
+	/// Extension method factory for generating CentiAmpere (cA)
 	/// </summary>
 	public static class CentiAmpereFactory {
 		/// <summary>

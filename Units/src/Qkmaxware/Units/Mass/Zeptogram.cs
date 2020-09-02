@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the ZeptoGram (zg)
+	/// Unit of measurement for ZeptoGram (zg)
 	/// </summary>
 	public struct ZeptoGram : IMass {
         public static string Name => "ZeptoGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoGram (zg)
+	/// Extension method factory for generating ZeptoGram (zg)
 	/// </summary>
 	public static class ZeptoGramFactory {
 		/// <summary>

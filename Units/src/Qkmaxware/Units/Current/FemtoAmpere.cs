@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the FemtoAmpere (fA)
+	/// Unit of measurement for FemtoAmpere (fA)
 	/// </summary>
 	public struct FemtoAmpere : ICurrent {
         public static string Name => "FemtoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoAmpere (fA)
+	/// Extension method factory for generating FemtoAmpere (fA)
 	/// </summary>
 	public static class FemtoAmpereFactory {
 		/// <summary>

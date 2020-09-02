@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the KiloAmpere (kA)
+	/// Unit of measurement for KiloAmpere (kA)
 	/// </summary>
 	public struct KiloAmpere : ICurrent {
         public static string Name => "KiloAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloAmpere (kA)
+	/// Extension method factory for generating KiloAmpere (kA)
 	/// </summary>
 	public static class KiloAmpereFactory {
 		/// <summary>

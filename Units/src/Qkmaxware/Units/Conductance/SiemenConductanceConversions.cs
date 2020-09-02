@@ -1,7 +1,7 @@
 using System;
 namespace Qkmaxware.Units.Conductance {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Siemen"
+/// Static class housing si-prefix conversions for the unit "SiemenConductance"
 /// </summary>
 public static class SiemenConductanceConversions {
 	/// <summary>
@@ -15,6 +15,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert YottaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in YottaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, YottaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to ZettaSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -22,6 +32,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, ZettaSiemen> ToZettaSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, ZettaSiemen>(
             Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZettaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, ZettaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -35,6 +55,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ExaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in ExaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, ExaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to PetaSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -42,6 +72,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, PetaSiemen> ToPetaSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, PetaSiemen>(
             Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PetaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in PetaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, PetaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -55,6 +95,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert TeraSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in TeraSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, TeraSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to GigaSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -62,6 +112,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, GigaSiemen> ToGigaSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, GigaSiemen>(
             Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert GigaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in GigaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, GigaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -75,6 +135,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MegaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in MegaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, MegaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to KiloSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -82,6 +152,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, KiloSiemen> ToKiloSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, KiloSiemen>(
             Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert KiloSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in KiloSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, KiloSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -95,6 +175,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert HectoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in HectoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, HectoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to DekaSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -102,6 +192,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, DekaSiemen> ToDekaSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, DekaSiemen>(
             Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DekaSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in DekaSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, DekaSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -115,6 +215,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DeciSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in DeciSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, DeciSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to CentiSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -122,6 +232,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, CentiSiemen> ToCentiSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, CentiSiemen>(
             Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert CentiSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in CentiSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, CentiSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -135,6 +255,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MilliSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in MilliSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, MilliSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to MicroSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -142,6 +272,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, MicroSiemen> ToMicroSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, MicroSiemen>(
             Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MicroSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in MicroSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, MicroSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -155,6 +295,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert NanoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in NanoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, NanoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to PicoSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -162,6 +312,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, PicoSiemen> ToPicoSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, PicoSiemen>(
             Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PicoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in PicoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, PicoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -175,6 +335,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert FemtoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, FemtoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to AttoSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -182,6 +352,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, AttoSiemen> ToAttoSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, AttoSiemen>(
             Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert AttoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in AttoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, AttoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -195,6 +375,16 @@ public static class SiemenConductanceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, ZeptoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Siemen to YoctoSiemen
     /// </summary>
     /// <param name="val">quantity measured in Siemen</param>
@@ -202,6 +392,16 @@ public static class SiemenConductanceConversions {
 	public static Quantity<double, YoctoSiemen> ToYoctoSiemen<T>(this BaseQuantity<T, Siemen> val) where T:IConvertible {
         return new Quantity<double, YoctoSiemen>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoSiemen to Siemen
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoSiemen</param>
+    /// <returns>quantity measured in Siemen</returns>
+	public static Quantity<double, Siemen> ToSiemen<T>(this BaseQuantity<T, YoctoSiemen> val) where T:IConvertible {
+        return new Quantity<double, Siemen>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

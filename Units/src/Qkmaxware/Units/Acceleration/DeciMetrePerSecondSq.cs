@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the DeciMetrePerSecondSq (dm/s^2)
+	/// Unit of measurement for DeciMetrePerSecondSq (dm/s^2)
 	/// </summary>
 	public struct DeciMetrePerSecondSq : IAcceleration {
         public static string Name => "DeciMetrePerSecondSq";
         public static string Symbol => "dm/s^2";
     }
-
-    /// <summary>
-	/// Extension method factory for generating DeciMetrePerSecondSq (dm/s^2) 
+	
+	/// <summary>
+	/// Extension method factory for generating DeciMetrePerSecondSq (dm/s^2)
 	/// </summary>
 	public static class DeciMetrePerSecondSqFactory {
 		/// <summary>

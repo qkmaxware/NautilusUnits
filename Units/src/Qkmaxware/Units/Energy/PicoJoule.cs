@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the PicoJoule (pJ)
+	/// Unit of measurement for PicoJoule (pJ)
 	/// </summary>
 	public struct PicoJoule : IEnergy {
         public static string Name => "PicoJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoJoule (pJ)
+	/// Extension method factory for generating PicoJoule (pJ)
 	/// </summary>
 	public static class PicoJouleFactory {
 		/// <summary>

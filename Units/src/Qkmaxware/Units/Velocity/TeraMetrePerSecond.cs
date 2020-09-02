@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the TeraMetrePerSecond (Tm/s)
+	/// Unit of measurement for TeraMetrePerSecond (Tm/s)
 	/// </summary>
 	public struct TeraMetrePerSecond : IVelocity {
         public static string Name => "TeraMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraMetrePerSecond (Tm/s)
+	/// Extension method factory for generating TeraMetrePerSecond (Tm/s)
 	/// </summary>
 	public static class TeraMetrePerSecondFactory {
 		/// <summary>

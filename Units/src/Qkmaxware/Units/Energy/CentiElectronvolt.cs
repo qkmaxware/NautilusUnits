@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the CentiElectronvolt (ceV)
+	/// Unit of measurement for CentiElectronvolt (ceV)
 	/// </summary>
 	public struct CentiElectronvolt : IEnergy {
         public static string Name => "CentiElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiElectronvolt (ceV)
+	/// Extension method factory for generating CentiElectronvolt (ceV)
 	/// </summary>
 	public static class CentiElectronvoltFactory {
 		/// <summary>

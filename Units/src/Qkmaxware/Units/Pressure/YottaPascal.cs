@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the YottaPascal (YPa)
+	/// Unit of measurement for YottaPascal (YPa)
 	/// </summary>
 	public struct YottaPascal : IPressure {
         public static string Name => "YottaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaPascal (YPa)
+	/// Extension method factory for generating YottaPascal (YPa)
 	/// </summary>
 	public static class YottaPascalFactory {
 		/// <summary>

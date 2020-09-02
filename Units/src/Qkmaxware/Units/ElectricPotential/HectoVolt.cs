@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the HectoVolt (hV)
+	/// Unit of measurement for HectoVolt (hV)
 	/// </summary>
 	public struct HectoVolt : IElectricPotential {
         public static string Name => "HectoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoVolt (hV)
+	/// Extension method factory for generating HectoVolt (hV)
 	/// </summary>
 	public static class HectoVoltFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the YoctoWatt (yW)
+	/// Unit of measurement for YoctoWatt (yW)
 	/// </summary>
 	public struct YoctoWatt : IPower {
         public static string Name => "YoctoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoWatt (yW)
+	/// Extension method factory for generating YoctoWatt (yW)
 	/// </summary>
 	public static class YoctoWattFactory {
 		/// <summary>

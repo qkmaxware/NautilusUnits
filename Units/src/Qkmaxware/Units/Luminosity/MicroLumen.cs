@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the MicroLumen (ulm)
+	/// Unit of measurement for MicroLumen (ulm)
 	/// </summary>
 	public struct MicroLumen : ILuminosity {
         public static string Name => "MicroLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroLumen (ulm)
+	/// Extension method factory for generating MicroLumen (ulm)
 	/// </summary>
 	public static class MicroLumenFactory {
 		/// <summary>

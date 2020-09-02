@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.MagneticFlux {
 	/// <summary>
-	/// Unit of measurement for the NanoTesla (nT)
+	/// Unit of measurement for NanoTesla (nT)
 	/// </summary>
 	public struct NanoTesla : IMagneticFlux {
         public static string Name => "NanoTesla";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.MagneticFlux {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoTesla (nT)
+	/// Extension method factory for generating NanoTesla (nT)
 	/// </summary>
 	public static class NanoTeslaFactory {
 		/// <summary>

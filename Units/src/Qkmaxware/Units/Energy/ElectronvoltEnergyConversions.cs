@@ -1,7 +1,7 @@
 using System;
 namespace Qkmaxware.Units.Energy {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Electronvolt"
+/// Static class housing si-prefix conversions for the unit "ElectronvoltEnergy"
 /// </summary>
 public static class ElectronvoltEnergyConversions {
 	/// <summary>
@@ -15,6 +15,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert YottaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in YottaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, YottaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to ZettaElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -22,6 +32,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, ZettaElectronvolt> ToZettaElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, ZettaElectronvolt>(
             Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZettaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, ZettaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -35,6 +55,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ExaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in ExaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, ExaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to PetaElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -42,6 +72,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, PetaElectronvolt> ToPetaElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, PetaElectronvolt>(
             Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PetaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in PetaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, PetaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -55,6 +95,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert TeraElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in TeraElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, TeraElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to GigaElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -62,6 +112,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, GigaElectronvolt> ToGigaElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, GigaElectronvolt>(
             Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert GigaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in GigaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, GigaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -75,6 +135,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MegaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in MegaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, MegaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to KiloElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -82,6 +152,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, KiloElectronvolt> ToKiloElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, KiloElectronvolt>(
             Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert KiloElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in KiloElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, KiloElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -95,6 +175,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert HectoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in HectoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, HectoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to DekaElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -102,6 +192,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, DekaElectronvolt> ToDekaElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, DekaElectronvolt>(
             Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DekaElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in DekaElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, DekaElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -115,6 +215,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DeciElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in DeciElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, DeciElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to CentiElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -122,6 +232,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, CentiElectronvolt> ToCentiElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, CentiElectronvolt>(
             Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert CentiElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in CentiElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, CentiElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -135,6 +255,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MilliElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in MilliElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, MilliElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to MicroElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -142,6 +272,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, MicroElectronvolt> ToMicroElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, MicroElectronvolt>(
             Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MicroElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in MicroElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, MicroElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -155,6 +295,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert NanoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in NanoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, NanoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to PicoElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -162,6 +312,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, PicoElectronvolt> ToPicoElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, PicoElectronvolt>(
             Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PicoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in PicoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, PicoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -175,6 +335,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert FemtoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, FemtoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to AttoElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -182,6 +352,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, AttoElectronvolt> ToAttoElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, AttoElectronvolt>(
             Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert AttoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in AttoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, AttoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -195,6 +375,16 @@ public static class ElectronvoltEnergyConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, ZeptoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Electronvolt to YoctoElectronvolt
     /// </summary>
     /// <param name="val">quantity measured in Electronvolt</param>
@@ -202,6 +392,16 @@ public static class ElectronvoltEnergyConversions {
 	public static Quantity<double, YoctoElectronvolt> ToYoctoElectronvolt<T>(this BaseQuantity<T, Electronvolt> val) where T:IConvertible {
         return new Quantity<double, YoctoElectronvolt>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoElectronvolt to Electronvolt
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoElectronvolt</param>
+    /// <returns>quantity measured in Electronvolt</returns>
+	public static Quantity<double, Electronvolt> ToElectronvolt<T>(this BaseQuantity<T, YoctoElectronvolt> val) where T:IConvertible {
+        return new Quantity<double, Electronvolt>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the AttoElectronvolt (aeV)
+	/// Unit of measurement for AttoElectronvolt (aeV)
 	/// </summary>
 	public struct AttoElectronvolt : IEnergy {
         public static string Name => "AttoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoElectronvolt (aeV)
+	/// Extension method factory for generating AttoElectronvolt (aeV)
 	/// </summary>
 	public static class AttoElectronvoltFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the PetaNewton (PN)
+	/// Unit of measurement for PetaNewton (PN)
 	/// </summary>
 	public struct PetaNewton : IForce {
         public static string Name => "PetaNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaNewton (PN)
+	/// Extension method factory for generating PetaNewton (PN)
 	/// </summary>
 	public static class PetaNewtonFactory {
 		/// <summary>

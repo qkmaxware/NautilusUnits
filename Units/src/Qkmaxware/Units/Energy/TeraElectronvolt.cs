@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the TeraElectronvolt (TeV)
+	/// Unit of measurement for TeraElectronvolt (TeV)
 	/// </summary>
 	public struct TeraElectronvolt : IEnergy {
         public static string Name => "TeraElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraElectronvolt (TeV)
+	/// Extension method factory for generating TeraElectronvolt (TeV)
 	/// </summary>
 	public static class TeraElectronvoltFactory {
 		/// <summary>

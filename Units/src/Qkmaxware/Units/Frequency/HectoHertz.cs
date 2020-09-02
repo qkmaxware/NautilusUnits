@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the HectoHertz (hHz)
+	/// Unit of measurement for HectoHertz (hHz)
 	/// </summary>
 	public struct HectoHertz : IFrequency {
         public static string Name => "HectoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoHertz (hHz)
+	/// Extension method factory for generating HectoHertz (hHz)
 	/// </summary>
 	public static class HectoHertzFactory {
 		/// <summary>

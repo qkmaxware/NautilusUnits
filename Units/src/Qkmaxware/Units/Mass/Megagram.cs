@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the MegaGram (Mg)
+	/// Unit of measurement for MegaGram (Mg)
 	/// </summary>
 	public struct MegaGram : IMass {
         public static string Name => "MegaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaGram (Mg)
+	/// Extension method factory for generating MegaGram (Mg)
 	/// </summary>
 	public static class MegaGramFactory {
 		/// <summary>

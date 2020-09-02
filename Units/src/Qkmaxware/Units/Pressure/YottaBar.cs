@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the YottaBar (Ybar)
+	/// Unit of measurement for YottaBar (Ybar)
 	/// </summary>
 	public struct YottaBar : IPressure {
         public static string Name => "YottaBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaBar (Ybar)
+	/// Extension method factory for generating YottaBar (Ybar)
 	/// </summary>
 	public static class YottaBarFactory {
 		/// <summary>

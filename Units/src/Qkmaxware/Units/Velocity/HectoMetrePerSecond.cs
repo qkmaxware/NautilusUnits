@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the HectoMetrePerSecond (hm/s)
+	/// Unit of measurement for HectoMetrePerSecond (hm/s)
 	/// </summary>
 	public struct HectoMetrePerSecond : IVelocity {
         public static string Name => "HectoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoMetrePerSecond (hm/s)
+	/// Extension method factory for generating HectoMetrePerSecond (hm/s)
 	/// </summary>
 	public static class HectoMetrePerSecondFactory {
 		/// <summary>

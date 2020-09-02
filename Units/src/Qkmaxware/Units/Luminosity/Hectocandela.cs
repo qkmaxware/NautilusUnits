@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the HectoCandela (hcd)
+	/// Unit of measurement for HectoCandela (hcd)
 	/// </summary>
 	public struct HectoCandela : ILuminosity {
         public static string Name => "HectoCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating HectoCandela (hcd)
+	/// Extension method factory for generating HectoCandela (hcd)
 	/// </summary>
 	public static class HectoCandelaFactory {
 		/// <summary>

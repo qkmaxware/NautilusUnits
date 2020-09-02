@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the Volt (V)
+	/// Unit of measurement for Volt (V)
 	/// </summary>
 	public struct Volt : IElectricPotential {
         public static string Name => "Volt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Volt (V)
+	/// Extension method factory for generating Volt (V)
 	/// </summary>
 	public static class VoltFactory {
 		/// <summary>

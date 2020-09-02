@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the GigaPascal (GPa)
+	/// Unit of measurement for GigaPascal (GPa)
 	/// </summary>
 	public struct GigaPascal : IPressure {
         public static string Name => "GigaPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaPascal (GPa)
+	/// Extension method factory for generating GigaPascal (GPa)
 	/// </summary>
 	public static class GigaPascalFactory {
 		/// <summary>

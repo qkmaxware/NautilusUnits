@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the PetaJoule (PJ)
+	/// Unit of measurement for PetaJoule (PJ)
 	/// </summary>
 	public struct PetaJoule : IEnergy {
         public static string Name => "PetaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaJoule (PJ)
+	/// Extension method factory for generating PetaJoule (PJ)
 	/// </summary>
 	public static class PetaJouleFactory {
 		/// <summary>

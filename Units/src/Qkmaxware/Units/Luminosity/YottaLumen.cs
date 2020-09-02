@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the YottaLumen (Ylm)
+	/// Unit of measurement for YottaLumen (Ylm)
 	/// </summary>
 	public struct YottaLumen : ILuminosity {
         public static string Name => "YottaLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaLumen (Ylm)
+	/// Extension method factory for generating YottaLumen (Ylm)
 	/// </summary>
 	public static class YottaLumenFactory {
 		/// <summary>

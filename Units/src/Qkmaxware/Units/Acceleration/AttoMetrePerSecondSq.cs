@@ -1,13 +1,13 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the AttoMetrePerSecondSq (am/s^2)
+	/// Unit of measurement for AttoMetrePerSecondSq (am/s^2)
 	/// </summary>
 	public struct AttoMetrePerSecondSq : IAcceleration {
         public static string Name => "AttoMetrePerSecondSq";
         public static string Symbol => "am/s^2";
     }
 	
-    /// <summary>
+	/// <summary>
 	/// Extension method factory for generating AttoMetrePerSecondSq (am/s^2)
 	/// </summary>
 	public static class AttoMetrePerSecondSqFactory {

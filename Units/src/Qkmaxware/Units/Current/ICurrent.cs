@@ -1,8 +1,7 @@
+using Qkmaxware.Units; 
+
 namespace Qkmaxware.Units.Current {
 
-/// <summary>
-/// Interface for all units that represent electric current
-/// </summary>
-public interface ICurrent : IUnit {}
+	public interface ICurrent : IUnit {}
 
 }

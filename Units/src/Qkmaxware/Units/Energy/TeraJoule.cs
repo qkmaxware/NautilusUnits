@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the TeraJoule (TJ)
+	/// Unit of measurement for TeraJoule (TJ)
 	/// </summary>
 	public struct TeraJoule : IEnergy {
         public static string Name => "TeraJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraJoule (TJ)
+	/// Extension method factory for generating TeraJoule (TJ)
 	/// </summary>
 	public static class TeraJouleFactory {
 		/// <summary>

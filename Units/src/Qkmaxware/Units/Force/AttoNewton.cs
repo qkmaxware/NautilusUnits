@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the AttoNewton (aN)
+	/// Unit of measurement for AttoNewton (aN)
 	/// </summary>
 	public struct AttoNewton : IForce {
         public static string Name => "AttoNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoNewton (aN)
+	/// Extension method factory for generating AttoNewton (aN)
 	/// </summary>
 	public static class AttoNewtonFactory {
 		/// <summary>

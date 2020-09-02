@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the GigaAmpere (GA)
+	/// Unit of measurement for GigaAmpere (GA)
 	/// </summary>
 	public struct GigaAmpere : ICurrent {
         public static string Name => "GigaAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaAmpere (GA)
+	/// Extension method factory for generating GigaAmpere (GA)
 	/// </summary>
 	public static class GigaAmpereFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the PetaCandela (Pcd)
+	/// Unit of measurement for PetaCandela (Pcd)
 	/// </summary>
 	public struct PetaCandela : ILuminosity {
         public static string Name => "PetaCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaCandela (Pcd)
+	/// Extension method factory for generating PetaCandela (Pcd)
 	/// </summary>
 	public static class PetaCandelaFactory {
 		/// <summary>

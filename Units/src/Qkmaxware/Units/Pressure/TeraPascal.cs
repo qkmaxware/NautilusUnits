@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the TeraPascal (TPa)
+	/// Unit of measurement for TeraPascal (TPa)
 	/// </summary>
 	public struct TeraPascal : IPressure {
         public static string Name => "TeraPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraPascal (TPa)
+	/// Extension method factory for generating TeraPascal (TPa)
 	/// </summary>
 	public static class TeraPascalFactory {
 		/// <summary>

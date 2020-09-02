@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the CentiVolt (cV)
+	/// Unit of measurement for CentiVolt (cV)
 	/// </summary>
 	public struct CentiVolt : IElectricPotential {
         public static string Name => "CentiVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiVolt (cV)
+	/// Extension method factory for generating CentiVolt (cV)
 	/// </summary>
 	public static class CentiVoltFactory {
 		/// <summary>

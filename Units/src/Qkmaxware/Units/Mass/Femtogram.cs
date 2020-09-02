@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the FemtoGram (fg)
+	/// Unit of measurement for FemtoGram (fg)
 	/// </summary>
 	public struct FemtoGram : IMass {
         public static string Name => "FemtoGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoGram (fg)
+	/// Extension method factory for generating FemtoGram (fg)
 	/// </summary>
 	public static class FemtoGramFactory {
 		/// <summary>

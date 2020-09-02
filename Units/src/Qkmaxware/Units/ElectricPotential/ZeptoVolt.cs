@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the ZeptoVolt (zV)
+	/// Unit of measurement for ZeptoVolt (zV)
 	/// </summary>
 	public struct ZeptoVolt : IElectricPotential {
         public static string Name => "ZeptoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoVolt (zV)
+	/// Extension method factory for generating ZeptoVolt (zV)
 	/// </summary>
 	public static class ZeptoVoltFactory {
 		/// <summary>

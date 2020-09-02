@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the ZeptoAmpere (zA)
+	/// Unit of measurement for ZeptoAmpere (zA)
 	/// </summary>
 	public struct ZeptoAmpere : ICurrent {
         public static string Name => "ZeptoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZeptoAmpere (zA)
+	/// Extension method factory for generating ZeptoAmpere (zA)
 	/// </summary>
 	public static class ZeptoAmpereFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the MilliBar (mbar)
+	/// Unit of measurement for MilliBar (mbar)
 	/// </summary>
 	public struct MilliBar : IPressure {
         public static string Name => "MilliBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliBar (mbar)
+	/// Extension method factory for generating MilliBar (mbar)
 	/// </summary>
 	public static class MilliBarFactory {
 		/// <summary>

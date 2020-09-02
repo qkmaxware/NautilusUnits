@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Length {
 	/// <summary>
-	/// Unit of measurement for the GigaMetre (Gm)
+	/// Unit of measurement for GigaMetre (Gm)
 	/// </summary>
 	public struct GigaMetre : ILength {
         public static string Name => "GigaMetre";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Length {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaMetre (Gm)
+	/// Extension method factory for generating GigaMetre (Gm)
 	/// </summary>
 	public static class GigaMetreFactory {
 		/// <summary>

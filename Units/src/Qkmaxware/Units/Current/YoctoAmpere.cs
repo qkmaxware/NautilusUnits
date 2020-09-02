@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the YoctoAmpere (yA)
+	/// Unit of measurement for YoctoAmpere (yA)
 	/// </summary>
 	public struct YoctoAmpere : ICurrent {
         public static string Name => "YoctoAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoAmpere (yA)
+	/// Extension method factory for generating YoctoAmpere (yA)
 	/// </summary>
 	public static class YoctoAmpereFactory {
 		/// <summary>

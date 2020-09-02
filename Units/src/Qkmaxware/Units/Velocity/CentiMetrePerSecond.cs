@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the CentiMetrePerSecond (cm/s)
+	/// Unit of measurement for CentiMetrePerSecond (cm/s)
 	/// </summary>
 	public struct CentiMetrePerSecond : IVelocity {
         public static string Name => "CentiMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiMetrePerSecond (cm/s)
+	/// Extension method factory for generating CentiMetrePerSecond (cm/s)
 	/// </summary>
 	public static class CentiMetrePerSecondFactory {
 		/// <summary>

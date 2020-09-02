@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the PetaVolt (PV)
+	/// Unit of measurement for PetaVolt (PV)
 	/// </summary>
 	public struct PetaVolt : IElectricPotential {
         public static string Name => "PetaVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaVolt (PV)
+	/// Extension method factory for generating PetaVolt (PV)
 	/// </summary>
 	public static class PetaVoltFactory {
 		/// <summary>

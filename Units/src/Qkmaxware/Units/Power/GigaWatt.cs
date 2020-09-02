@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the GigaWatt (GW)
+	/// Unit of measurement for GigaWatt (GW)
 	/// </summary>
 	public struct GigaWatt : IPower {
         public static string Name => "GigaWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaWatt (GW)
+	/// Extension method factory for generating GigaWatt (GW)
 	/// </summary>
 	public static class GigaWattFactory {
 		/// <summary>

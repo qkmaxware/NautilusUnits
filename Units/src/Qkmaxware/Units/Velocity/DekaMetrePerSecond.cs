@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the DekaMetrePerSecond (dam/s)
+	/// Unit of measurement for DekaMetrePerSecond (dam/s)
 	/// </summary>
 	public struct DekaMetrePerSecond : IVelocity {
         public static string Name => "DekaMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaMetrePerSecond (dam/s)
+	/// Extension method factory for generating DekaMetrePerSecond (dam/s)
 	/// </summary>
 	public static class DekaMetrePerSecondFactory {
 		/// <summary>

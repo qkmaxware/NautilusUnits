@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the YoctoNewton (yN)
+	/// Unit of measurement for YoctoNewton (yN)
 	/// </summary>
 	public struct YoctoNewton : IForce {
         public static string Name => "YoctoNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoNewton (yN)
+	/// Extension method factory for generating YoctoNewton (yN)
 	/// </summary>
 	public static class YoctoNewtonFactory {
 		/// <summary>

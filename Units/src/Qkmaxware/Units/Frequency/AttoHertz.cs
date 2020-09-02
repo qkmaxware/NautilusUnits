@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the AttoHertz (aHz)
+	/// Unit of measurement for AttoHertz (aHz)
 	/// </summary>
 	public struct AttoHertz : IFrequency {
         public static string Name => "AttoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoHertz (aHz)
+	/// Extension method factory for generating AttoHertz (aHz)
 	/// </summary>
 	public static class AttoHertzFactory {
 		/// <summary>

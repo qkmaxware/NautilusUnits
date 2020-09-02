@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the PetaBar (Pbar)
+	/// Unit of measurement for PetaBar (Pbar)
 	/// </summary>
 	public struct PetaBar : IPressure {
         public static string Name => "PetaBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaBar (Pbar)
+	/// Extension method factory for generating PetaBar (Pbar)
 	/// </summary>
 	public static class PetaBarFactory {
 		/// <summary>

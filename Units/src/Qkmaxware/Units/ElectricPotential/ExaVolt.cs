@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the ExaVolt (EV)
+	/// Unit of measurement for ExaVolt (EV)
 	/// </summary>
 	public struct ExaVolt : IElectricPotential {
         public static string Name => "ExaVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaVolt (EV)
+	/// Extension method factory for generating ExaVolt (EV)
 	/// </summary>
 	public static class ExaVoltFactory {
 		/// <summary>

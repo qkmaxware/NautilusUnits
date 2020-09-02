@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the NanoElectronvolt (neV)
+	/// Unit of measurement for NanoElectronvolt (neV)
 	/// </summary>
 	public struct NanoElectronvolt : IEnergy {
         public static string Name => "NanoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoElectronvolt (neV)
+	/// Extension method factory for generating NanoElectronvolt (neV)
 	/// </summary>
 	public static class NanoElectronvoltFactory {
 		/// <summary>

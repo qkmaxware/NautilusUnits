@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the TeraBar (Tbar)
+	/// Unit of measurement for TeraBar (Tbar)
 	/// </summary>
 	public struct TeraBar : IPressure {
         public static string Name => "TeraBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraBar (Tbar)
+	/// Extension method factory for generating TeraBar (Tbar)
 	/// </summary>
 	public static class TeraBarFactory {
 		/// <summary>

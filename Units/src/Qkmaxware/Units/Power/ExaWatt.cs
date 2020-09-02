@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the ExaWatt (EW)
+	/// Unit of measurement for ExaWatt (EW)
 	/// </summary>
 	public struct ExaWatt : IPower {
         public static string Name => "ExaWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaWatt (EW)
+	/// Extension method factory for generating ExaWatt (EW)
 	/// </summary>
 	public static class ExaWattFactory {
 		/// <summary>

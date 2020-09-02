@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the MegaJoule (MJ)
+	/// Unit of measurement for MegaJoule (MJ)
 	/// </summary>
 	public struct MegaJoule : IEnergy {
         public static string Name => "MegaJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaJoule (MJ)
+	/// Extension method factory for generating MegaJoule (MJ)
 	/// </summary>
 	public static class MegaJouleFactory {
 		/// <summary>

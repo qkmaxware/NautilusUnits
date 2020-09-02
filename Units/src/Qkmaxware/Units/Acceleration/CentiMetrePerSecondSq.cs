@@ -1,13 +1,13 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the CentiMetrePerSecondSq (cm/s^2)
+	/// Unit of measurement for CentiMetrePerSecondSq (cm/s^2)
 	/// </summary>
 	public struct CentiMetrePerSecondSq : IAcceleration {
         public static string Name => "CentiMetrePerSecondSq";
         public static string Symbol => "cm/s^2";
     }
 	
-    /// <summary>
+	/// <summary>
 	/// Extension method factory for generating CentiMetrePerSecondSq (cm/s^2)
 	/// </summary>
 	public static class CentiMetrePerSecondSqFactory {

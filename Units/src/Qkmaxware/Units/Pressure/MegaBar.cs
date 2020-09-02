@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the MegaBar (Mbar)
+	/// Unit of measurement for MegaBar (Mbar)
 	/// </summary>
 	public struct MegaBar : IPressure {
         public static string Name => "MegaBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaBar (Mbar)
+	/// Extension method factory for generating MegaBar (Mbar)
 	/// </summary>
 	public static class MegaBarFactory {
 		/// <summary>

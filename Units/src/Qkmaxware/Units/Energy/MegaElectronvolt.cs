@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the MegaElectronvolt (MeV)
+	/// Unit of measurement for MegaElectronvolt (MeV)
 	/// </summary>
 	public struct MegaElectronvolt : IEnergy {
         public static string Name => "MegaElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaElectronvolt (MeV)
+	/// Extension method factory for generating MegaElectronvolt (MeV)
 	/// </summary>
 	public static class MegaElectronvoltFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the DekaElectronvolt (daeV)
+	/// Unit of measurement for DekaElectronvolt (daeV)
 	/// </summary>
 	public struct DekaElectronvolt : IEnergy {
         public static string Name => "DekaElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaElectronvolt (daeV)
+	/// Extension method factory for generating DekaElectronvolt (daeV)
 	/// </summary>
 	public static class DekaElectronvoltFactory {
 		/// <summary>

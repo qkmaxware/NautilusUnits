@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the KiloHertz (kHz)
+	/// Unit of measurement for KiloHertz (kHz)
 	/// </summary>
 	public struct KiloHertz : IFrequency {
         public static string Name => "KiloHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloHertz (kHz)
+	/// Extension method factory for generating KiloHertz (kHz)
 	/// </summary>
 	public static class KiloHertzFactory {
 		/// <summary>

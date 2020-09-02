@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the KiloGram (kg)
+	/// Unit of measurement for KiloGram (kg)
 	/// </summary>
 	public struct KiloGram : IMass {
         public static string Name => "KiloGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloGram (kg)
+	/// Extension method factory for generating KiloGram (kg)
 	/// </summary>
 	public static class KiloGramFactory {
 		/// <summary>

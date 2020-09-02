@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the YoctoMetrePerSecond (ym/s)
+	/// Unit of measurement for YoctoMetrePerSecond (ym/s)
 	/// </summary>
 	public struct YoctoMetrePerSecond : IVelocity {
         public static string Name => "YoctoMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoMetrePerSecond (ym/s)
+	/// Extension method factory for generating YoctoMetrePerSecond (ym/s)
 	/// </summary>
 	public static class YoctoMetrePerSecondFactory {
 		/// <summary>

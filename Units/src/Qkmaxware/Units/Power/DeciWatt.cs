@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the DeciWatt (dW)
+	/// Unit of measurement for DeciWatt (dW)
 	/// </summary>
 	public struct DeciWatt : IPower {
         public static string Name => "DeciWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciWatt (dW)
+	/// Extension method factory for generating DeciWatt (dW)
 	/// </summary>
 	public static class DeciWattFactory {
 		/// <summary>

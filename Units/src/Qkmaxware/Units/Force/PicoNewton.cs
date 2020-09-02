@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Force {
 	/// <summary>
-	/// Unit of measurement for the PicoNewton (pN)
+	/// Unit of measurement for PicoNewton (pN)
 	/// </summary>
 	public struct PicoNewton : IForce {
         public static string Name => "PicoNewton";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Force {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoNewton (pN)
+	/// Extension method factory for generating PicoNewton (pN)
 	/// </summary>
 	public static class PicoNewtonFactory {
 		/// <summary>

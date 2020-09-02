@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the TeraAmpere (TA)
+	/// Unit of measurement for TeraAmpere (TA)
 	/// </summary>
 	public struct TeraAmpere : ICurrent {
         public static string Name => "TeraAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraAmpere (TA)
+	/// Extension method factory for generating TeraAmpere (TA)
 	/// </summary>
 	public static class TeraAmpereFactory {
 		/// <summary>

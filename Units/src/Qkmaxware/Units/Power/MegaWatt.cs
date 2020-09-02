@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the MegaWatt (MW)
+	/// Unit of measurement for MegaWatt (MW)
 	/// </summary>
 	public struct MegaWatt : IPower {
         public static string Name => "MegaWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MegaWatt (MW)
+	/// Extension method factory for generating MegaWatt (MW)
 	/// </summary>
 	public static class MegaWattFactory {
 		/// <summary>

@@ -6,5 +6,4 @@ namespace Qkmaxware.Units.Resistance {
         public static string Name => "NanoOhm";
         public static string Symbol => "n\u03A9";
     }
-	
 }

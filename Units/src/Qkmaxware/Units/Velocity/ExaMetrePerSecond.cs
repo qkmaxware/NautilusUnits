@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the ExaMetrePerSecond (Em/s)
+	/// Unit of measurement for ExaMetrePerSecond (Em/s)
 	/// </summary>
 	public struct ExaMetrePerSecond : IVelocity {
         public static string Name => "ExaMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaMetrePerSecond (Em/s)
+	/// Extension method factory for generating ExaMetrePerSecond (Em/s)
 	/// </summary>
 	public static class ExaMetrePerSecondFactory {
 		/// <summary>

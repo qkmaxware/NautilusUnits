@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the DekaGram (dag)
+	/// Unit of measurement for DekaGram (dag)
 	/// </summary>
 	public struct DekaGram : IMass {
         public static string Name => "DekaGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaGram (dag)
+	/// Extension method factory for generating DekaGram (dag)
 	/// </summary>
 	public static class DekaGramFactory {
 		/// <summary>

@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the MilliJoule (mJ)
+	/// Unit of measurement for MilliJoule (mJ)
 	/// </summary>
 	public struct MilliJoule : IEnergy {
         public static string Name => "MilliJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliJoule (mJ)
+	/// Extension method factory for generating MilliJoule (mJ)
 	/// </summary>
 	public static class MilliJouleFactory {
 		/// <summary>

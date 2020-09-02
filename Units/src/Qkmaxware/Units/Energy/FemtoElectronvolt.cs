@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the FemtoElectronvolt (feV)
+	/// Unit of measurement for FemtoElectronvolt (feV)
 	/// </summary>
 	public struct FemtoElectronvolt : IEnergy {
         public static string Name => "FemtoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating FemtoElectronvolt (feV)
+	/// Extension method factory for generating FemtoElectronvolt (feV)
 	/// </summary>
 	public static class FemtoElectronvoltFactory {
 		/// <summary>

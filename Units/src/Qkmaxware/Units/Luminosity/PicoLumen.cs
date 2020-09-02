@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the PicoLumen (plm)
+	/// Unit of measurement for PicoLumen (plm)
 	/// </summary>
 	public struct PicoLumen : ILuminosity {
         public static string Name => "PicoLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoLumen (plm)
+	/// Extension method factory for generating PicoLumen (plm)
 	/// </summary>
 	public static class PicoLumenFactory {
 		/// <summary>

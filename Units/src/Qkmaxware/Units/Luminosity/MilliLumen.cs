@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the MilliLumen (mlm)
+	/// Unit of measurement for MilliLumen (mlm)
 	/// </summary>
 	public struct MilliLumen : ILuminosity {
         public static string Name => "MilliLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliLumen (mlm)
+	/// Extension method factory for generating MilliLumen (mlm)
 	/// </summary>
 	public static class MilliLumenFactory {
 		/// <summary>

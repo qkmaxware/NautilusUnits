@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the PicoWatt (pW)
+	/// Unit of measurement for PicoWatt (pW)
 	/// </summary>
 	public struct PicoWatt : IPower {
         public static string Name => "PicoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoWatt (pW)
+	/// Extension method factory for generating PicoWatt (pW)
 	/// </summary>
 	public static class PicoWattFactory {
 		/// <summary>

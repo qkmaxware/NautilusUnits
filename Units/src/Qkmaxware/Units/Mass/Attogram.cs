@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the AttoGram (ag)
+	/// Unit of measurement for AttoGram (ag)
 	/// </summary>
 	public struct AttoGram : IMass {
         public static string Name => "AttoGram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoGram (ag)
+	/// Extension method factory for generating AttoGram (ag)
 	/// </summary>
 	public static class AttoGramFactory {
 		/// <summary>

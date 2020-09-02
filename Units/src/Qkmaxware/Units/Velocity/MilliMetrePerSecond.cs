@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the MilliMetrePerSecond (mm/s)
+	/// Unit of measurement for MilliMetrePerSecond (mm/s)
 	/// </summary>
 	public struct MilliMetrePerSecond : IVelocity {
         public static string Name => "MilliMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MilliMetrePerSecond (mm/s)
+	/// Extension method factory for generating MilliMetrePerSecond (mm/s)
 	/// </summary>
 	public static class MilliMetrePerSecondFactory {
 		/// <summary>

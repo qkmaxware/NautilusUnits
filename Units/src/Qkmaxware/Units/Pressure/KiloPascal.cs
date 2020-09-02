@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the KiloPascal (kPa)
+	/// Unit of measurement for KiloPascal (kPa)
 	/// </summary>
 	public struct KiloPascal : IPressure {
         public static string Name => "KiloPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloPascal (kPa)
+	/// Extension method factory for generating KiloPascal (kPa)
 	/// </summary>
 	public static class KiloPascalFactory {
 		/// <summary>

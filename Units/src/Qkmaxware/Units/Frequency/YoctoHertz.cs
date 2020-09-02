@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the YoctoHertz (yHz)
+	/// Unit of measurement for YoctoHertz (yHz)
 	/// </summary>
 	public struct YoctoHertz : IFrequency {
         public static string Name => "YoctoHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoHertz (yHz)
+	/// Extension method factory for generating YoctoHertz (yHz)
 	/// </summary>
 	public static class YoctoHertzFactory {
 		/// <summary>

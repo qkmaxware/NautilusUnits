@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the MicroPascal (uPa)
+	/// Unit of measurement for MicroPascal (uPa)
 	/// </summary>
 	public struct MicroPascal : IPressure {
         public static string Name => "MicroPascal";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating MicroPascal (uPa)
+	/// Extension method factory for generating MicroPascal (uPa)
 	/// </summary>
 	public static class MicroPascalFactory {
 		/// <summary>

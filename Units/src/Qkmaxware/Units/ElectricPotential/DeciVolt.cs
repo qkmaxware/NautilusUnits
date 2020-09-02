@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the DeciVolt (dV)
+	/// Unit of measurement for DeciVolt (dV)
 	/// </summary>
 	public struct DeciVolt : IElectricPotential {
         public static string Name => "DeciVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciVolt (dV)
+	/// Extension method factory for generating DeciVolt (dV)
 	/// </summary>
 	public static class DeciVoltFactory {
 		/// <summary>

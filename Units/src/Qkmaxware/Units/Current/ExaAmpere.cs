@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the ExaAmpere (EA)
+	/// Unit of measurement for ExaAmpere (EA)
 	/// </summary>
 	public struct ExaAmpere : ICurrent {
         public static string Name => "ExaAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ExaAmpere (EA)
+	/// Extension method factory for generating ExaAmpere (EA)
 	/// </summary>
 	public static class ExaAmpereFactory {
 		/// <summary>

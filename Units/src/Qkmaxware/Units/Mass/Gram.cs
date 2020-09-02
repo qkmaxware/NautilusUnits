@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Mass {
 	/// <summary>
-	/// Unit of measurement for the Gram (g)
+	/// Unit of measurement for Gram (g)
 	/// </summary>
 	public struct Gram : IMass {
         public static string Name => "Gram";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Mass {
     }
 	
 	/// <summary>
-	///Extension method factory for generating Gram (g)
+	/// Extension method factory for generating Gram (g)
 	/// </summary>
 	public static class GramFactory {
 		/// <summary>

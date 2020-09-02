@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Power {
 	/// <summary>
-	/// Unit of measurement for the AttoWatt (aW)
+	/// Unit of measurement for AttoWatt (aW)
 	/// </summary>
 	public struct AttoWatt : IPower {
         public static string Name => "AttoWatt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Power {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoWatt (aW)
+	/// Extension method factory for generating AttoWatt (aW)
 	/// </summary>
 	public static class AttoWattFactory {
 		/// <summary>

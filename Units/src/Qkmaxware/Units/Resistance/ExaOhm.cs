@@ -6,5 +6,4 @@ namespace Qkmaxware.Units.Resistance {
         public static string Name => "ExaOhm";
         public static string Symbol => "E\u03A9";
     }
-	
 }

@@ -6,5 +6,4 @@ namespace Qkmaxware.Units.Resistance {
         public static string Name => "PetaOhm";
         public static string Symbol => "P\u03A9";
     }
-	
 }

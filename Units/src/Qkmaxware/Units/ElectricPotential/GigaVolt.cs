@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the GigaVolt (GV)
+	/// Unit of measurement for GigaVolt (GV)
 	/// </summary>
 	public struct GigaVolt : IElectricPotential {
         public static string Name => "GigaVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaVolt (GV)
+	/// Extension method factory for generating GigaVolt (GV)
 	/// </summary>
 	public static class GigaVoltFactory {
 		/// <summary>

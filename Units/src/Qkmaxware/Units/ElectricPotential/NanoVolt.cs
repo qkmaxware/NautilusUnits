@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the NanoVolt (nV)
+	/// Unit of measurement for NanoVolt (nV)
 	/// </summary>
 	public struct NanoVolt : IElectricPotential {
         public static string Name => "NanoVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating NanoVolt (nV)
+	/// Extension method factory for generating NanoVolt (nV)
 	/// </summary>
 	public static class NanoVoltFactory {
 		/// <summary>

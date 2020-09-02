@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the ZettaElectronvolt (ZeV)
+	/// Unit of measurement for ZettaElectronvolt (ZeV)
 	/// </summary>
 	public struct ZettaElectronvolt : IEnergy {
         public static string Name => "ZettaElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaElectronvolt (ZeV)
+	/// Extension method factory for generating ZettaElectronvolt (ZeV)
 	/// </summary>
 	public static class ZettaElectronvoltFactory {
 		/// <summary>

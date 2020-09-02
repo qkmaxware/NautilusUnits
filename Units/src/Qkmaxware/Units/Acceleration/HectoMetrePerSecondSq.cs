@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the HectoMetrePerSecondSq (hm/s^2)
+	/// Unit of measurement for HectoMetrePerSecondSq (hm/s^2)
 	/// </summary>
 	public struct HectoMetrePerSecondSq : IAcceleration {
         public static string Name => "HectoMetrePerSecondSq";
         public static string Symbol => "hm/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating HectoMetrePerSecondSq (hm/s^2) 
+	/// <summary>
+	/// Extension method factory for generating HectoMetrePerSecondSq (hm/s^2)
 	/// </summary>
 	public static class HectoMetrePerSecondSqFactory {
 		/// <summary>

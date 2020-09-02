@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the AttoLumen (alm)
+	/// Unit of measurement for AttoLumen (alm)
 	/// </summary>
 	public struct AttoLumen : ILuminosity {
         public static string Name => "AttoLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoLumen (alm)
+	/// Extension method factory for generating AttoLumen (alm)
 	/// </summary>
 	public static class AttoLumenFactory {
 		/// <summary>

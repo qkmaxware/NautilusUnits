@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the ZettaMetrePerSecond (Zm/s)
+	/// Unit of measurement for ZettaMetrePerSecond (Zm/s)
 	/// </summary>
 	public struct ZettaMetrePerSecond : IVelocity {
         public static string Name => "ZettaMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating ZettaMetrePerSecond (Zm/s)
+	/// Extension method factory for generating ZettaMetrePerSecond (Zm/s)
 	/// </summary>
 	public static class ZettaMetrePerSecondFactory {
 		/// <summary>

@@ -1,13 +1,13 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the NanoMetrePerSecondSq (nm/s^2)
+	/// Unit of measurement for NanoMetrePerSecondSq (nm/s^2)
 	/// </summary>
 	public struct NanoMetrePerSecondSq : IAcceleration {
         public static string Name => "NanoMetrePerSecondSq";
         public static string Symbol => "nm/s^2";
     }
 	
-    /// <summary>
+	/// <summary>
 	/// Extension method factory for generating NanoMetrePerSecondSq (nm/s^2)
 	/// </summary>
 	public static class NanoMetrePerSecondSqFactory {

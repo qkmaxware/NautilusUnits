@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the GigaElectronvolt (GeV)
+	/// Unit of measurement for GigaElectronvolt (GeV)
 	/// </summary>
 	public struct GigaElectronvolt : IEnergy {
         public static string Name => "GigaElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating GigaElectronvolt (GeV)
+	/// Extension method factory for generating GigaElectronvolt (GeV)
 	/// </summary>
 	public static class GigaElectronvoltFactory {
 		/// <summary>

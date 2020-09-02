@@ -1,14 +1,14 @@
 namespace Qkmaxware.Units.Acceleration {
 	/// <summary>
-	/// Unit of measurement for the ZeptoMetrePerSecondSq (zm/s^2)
+	/// Unit of measurement for ZeptoMetrePerSecondSq (zm/s^2)
 	/// </summary>
 	public struct ZeptoMetrePerSecondSq : IAcceleration {
         public static string Name => "ZeptoMetrePerSecondSq";
         public static string Symbol => "zm/s^2";
     }
 	
-    /// <summary>
-	/// Extension method factory for generating ZeptoMetrePerSecondSq (zm/s^2) 
+	/// <summary>
+	/// Extension method factory for generating ZeptoMetrePerSecondSq (zm/s^2)
 	/// </summary>
 	public static class ZeptoMetrePerSecondSqFactory {
 		/// <summary>

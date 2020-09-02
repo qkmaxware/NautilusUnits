@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Current {
 	/// <summary>
-	/// Unit of measurement for the DekaAmpere (daA)
+	/// Unit of measurement for DekaAmpere (daA)
 	/// </summary>
 	public struct DekaAmpere : ICurrent {
         public static string Name => "DekaAmpere";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Current {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaAmpere (daA)
+	/// Extension method factory for generating DekaAmpere (daA)
 	/// </summary>
 	public static class DekaAmpereFactory {
 		/// <summary>

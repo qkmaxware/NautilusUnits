@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.MagneticFlux {
 	/// <summary>
-	/// Unit of measurement for the CentiTesla (cT)
+	/// Unit of measurement for CentiTesla (cT)
 	/// </summary>
 	public struct CentiTesla : IMagneticFlux {
         public static string Name => "CentiTesla";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.MagneticFlux {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiTesla (cT)
+	/// Extension method factory for generating CentiTesla (cT)
 	/// </summary>
 	public static class CentiTeslaFactory {
 		/// <summary>

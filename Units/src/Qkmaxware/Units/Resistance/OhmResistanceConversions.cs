@@ -1,17 +1,27 @@
 using System;
 namespace Qkmaxware.Units.Resistance {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Ohm"
+/// Static class housing si-prefix conversions for the unit "OhmResistance"
 /// </summary>
-public static class ResistanceConversions {
+public static class OhmResistanceConversions {
 	/// <summary>
     /// Extension method to convert Ohm to YottaOhm
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in YottaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -19,9 +29,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZettaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E21
         );
     }
 	/// <summary>
@@ -29,9 +49,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in ExaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -39,9 +69,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PetaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in PetaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E15
         );
     }
 	/// <summary>
@@ -49,9 +89,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in TeraOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -59,9 +109,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert GigaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in GigaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E9
         );
     }
 	/// <summary>
@@ -69,9 +129,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in MegaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -79,9 +149,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert KiloOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in KiloOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E3
         );
     }
 	/// <summary>
@@ -89,9 +169,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in HectoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -99,9 +189,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DekaOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in DekaOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E1
         );
     }
 	/// <summary>
@@ -109,9 +209,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in DeciOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -119,9 +229,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert CentiOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in CentiOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-2
         );
     }
 	/// <summary>
@@ -129,9 +249,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in MilliOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -139,9 +269,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MicroOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in MicroOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-6
         );
     }
 	/// <summary>
@@ -149,9 +289,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in NanoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -159,9 +309,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert PicoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in PicoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-12
         );
     }
 	/// <summary>
@@ -169,9 +329,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -179,9 +349,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert AttoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in AttoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-18
         );
     }
 	/// <summary>
@@ -189,9 +369,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ZeptoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-21
         );
     }
 	/// <summary>
@@ -199,9 +389,19 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in Ohm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, Ohm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, Ohm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoOhm to Ohm
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoOhm</param>
+    /// <returns>quantity measured in Ohm</returns>
+	public static Quantity<double, Ohm> ToOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
+        return new Quantity<double, Ohm>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>
@@ -209,7 +409,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -219,7 +419,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -229,7 +429,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -239,7 +439,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -249,7 +449,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -259,7 +459,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -269,7 +469,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -279,7 +479,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -289,7 +489,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -299,7 +499,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -309,7 +509,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -319,7 +519,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -329,7 +529,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -339,7 +539,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -349,7 +549,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -359,7 +559,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -369,7 +569,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -379,7 +579,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -389,7 +589,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YottaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, YottaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, YottaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-24
         );
@@ -399,7 +599,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -409,7 +609,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -419,7 +619,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -429,7 +629,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -439,7 +639,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -449,7 +649,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -459,7 +659,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -469,7 +669,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -479,7 +679,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -489,7 +689,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -499,7 +699,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -509,7 +709,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -519,7 +719,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -529,7 +729,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -539,7 +739,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -549,7 +749,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -559,7 +759,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -569,7 +769,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -579,7 +779,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZettaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, ZettaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, ZettaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-21
         );
@@ -589,7 +789,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -599,7 +799,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -609,7 +809,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -619,7 +819,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -629,7 +829,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -639,7 +839,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -649,7 +849,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -659,7 +859,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -669,7 +869,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -679,7 +879,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -689,7 +889,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -699,7 +899,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -709,7 +909,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -719,7 +919,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -729,7 +929,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -739,7 +939,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -749,7 +949,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -759,7 +959,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -769,7 +969,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ExaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, ExaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, ExaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-18
         );
@@ -779,7 +979,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -789,7 +989,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -799,7 +999,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -809,7 +1009,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -819,7 +1019,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -829,7 +1029,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -839,7 +1039,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -849,7 +1049,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -859,7 +1059,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -869,7 +1069,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -879,7 +1079,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -889,7 +1089,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -899,7 +1099,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -909,7 +1109,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -919,7 +1119,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -929,7 +1129,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -939,7 +1139,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -949,7 +1149,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -959,7 +1159,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PetaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, PetaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, PetaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-15
         );
@@ -969,7 +1169,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -979,7 +1179,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -989,7 +1189,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -999,7 +1199,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1009,7 +1209,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1019,7 +1219,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1029,7 +1229,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1039,7 +1239,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1049,7 +1249,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1059,7 +1259,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1069,7 +1269,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1079,7 +1279,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1089,7 +1289,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1099,7 +1299,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1109,7 +1309,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1119,7 +1319,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1129,7 +1329,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1139,7 +1339,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1149,7 +1349,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in TeraOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, TeraOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, TeraOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-12
         );
@@ -1159,7 +1359,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1169,7 +1369,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1179,7 +1379,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1189,7 +1389,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1199,7 +1399,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1209,7 +1409,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1219,7 +1419,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1229,7 +1429,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1239,7 +1439,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1249,7 +1449,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1259,7 +1459,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1269,7 +1469,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1279,7 +1479,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1289,7 +1489,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1299,7 +1499,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1309,7 +1509,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1319,7 +1519,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1329,7 +1529,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1339,7 +1539,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in GigaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, GigaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, GigaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-9
         );
@@ -1349,7 +1549,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1359,7 +1559,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1369,7 +1569,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1379,7 +1579,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1389,7 +1589,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1399,7 +1599,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1409,7 +1609,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1419,7 +1619,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1429,7 +1629,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1439,7 +1639,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1449,7 +1649,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1459,7 +1659,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1469,7 +1669,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1479,7 +1679,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1489,7 +1689,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1499,7 +1699,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1509,7 +1709,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1519,7 +1719,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1529,7 +1729,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MegaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, MegaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, MegaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-6
         );
@@ -1539,7 +1739,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1549,7 +1749,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1559,7 +1759,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1569,7 +1769,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1579,7 +1779,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1589,7 +1789,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1599,7 +1799,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1609,7 +1809,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1619,7 +1819,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1629,7 +1829,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1639,7 +1839,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1649,7 +1849,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1659,7 +1859,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1669,7 +1869,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1679,7 +1879,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1689,7 +1889,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1699,7 +1899,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1709,7 +1909,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1719,7 +1919,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in KiloOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, KiloOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, KiloOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-3
         );
@@ -1729,7 +1929,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1739,7 +1939,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1749,7 +1949,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1759,7 +1959,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1769,7 +1969,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1779,7 +1979,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1789,7 +1989,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1799,7 +1999,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1809,7 +2009,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1819,7 +2019,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1829,7 +2029,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1839,7 +2039,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1849,7 +2049,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1859,7 +2059,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1869,7 +2069,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1879,7 +2079,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1889,7 +2089,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1899,7 +2099,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1909,7 +2109,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in HectoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, HectoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, HectoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-2
         );
@@ -1919,7 +2119,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1929,7 +2129,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1939,7 +2139,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1949,7 +2149,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1959,7 +2159,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1969,7 +2169,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1979,7 +2179,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1989,7 +2189,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -1999,7 +2199,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2009,7 +2209,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2019,7 +2219,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2029,7 +2229,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2039,7 +2239,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2049,7 +2249,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2059,7 +2259,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2069,7 +2269,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2079,7 +2279,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2089,7 +2289,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2099,7 +2299,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DekaOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, DekaOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, DekaOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E-1
         );
@@ -2109,7 +2309,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2119,7 +2319,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2129,7 +2329,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2139,7 +2339,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2149,7 +2349,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2159,7 +2359,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2169,7 +2369,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2179,7 +2379,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2189,7 +2389,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2199,7 +2399,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2209,7 +2409,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2219,7 +2419,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2229,7 +2429,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2239,7 +2439,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2249,7 +2449,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2259,7 +2459,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2269,7 +2469,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2279,7 +2479,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2289,7 +2489,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in DeciOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, DeciOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, DeciOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E1
         );
@@ -2299,7 +2499,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2309,7 +2509,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2319,7 +2519,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2329,7 +2529,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2339,7 +2539,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2349,7 +2549,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2359,7 +2559,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2369,7 +2569,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2379,7 +2579,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2389,7 +2589,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2399,7 +2599,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2409,7 +2609,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2419,7 +2619,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2429,7 +2629,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2439,7 +2639,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2449,7 +2649,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2459,7 +2659,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2469,7 +2669,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2479,7 +2679,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in CentiOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, CentiOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, CentiOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E2
         );
@@ -2489,7 +2689,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2499,7 +2699,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2509,7 +2709,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2519,7 +2719,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2529,7 +2729,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2539,7 +2739,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2549,7 +2749,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2559,7 +2759,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2569,7 +2769,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2579,7 +2779,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2589,7 +2789,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2599,7 +2799,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2609,7 +2809,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2619,7 +2819,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2629,7 +2829,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2639,7 +2839,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2649,7 +2849,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2659,7 +2859,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2669,7 +2869,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MilliOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, MilliOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, MilliOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E3
         );
@@ -2679,7 +2879,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2689,7 +2889,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2699,7 +2899,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2709,7 +2909,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2719,7 +2919,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2729,7 +2929,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2739,7 +2939,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2749,7 +2949,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2759,7 +2959,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2769,7 +2969,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2779,7 +2979,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2789,7 +2989,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2799,7 +2999,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2809,7 +3009,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2819,7 +3019,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2829,7 +3029,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2839,7 +3039,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2849,7 +3049,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2859,7 +3059,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in MicroOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, MicroOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, MicroOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E6
         );
@@ -2869,7 +3069,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2879,7 +3079,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2889,7 +3089,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2899,7 +3099,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2909,7 +3109,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2919,7 +3119,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2929,7 +3129,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2939,7 +3139,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2949,7 +3149,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2959,7 +3159,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2969,7 +3169,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2979,7 +3179,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2989,7 +3189,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -2999,7 +3199,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3009,7 +3209,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3019,7 +3219,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3029,7 +3229,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3039,7 +3239,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3049,7 +3249,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in NanoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, NanoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, NanoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E9
         );
@@ -3059,7 +3259,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3069,7 +3269,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3079,7 +3279,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3089,7 +3289,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3099,7 +3299,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3109,7 +3309,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3119,7 +3319,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3129,7 +3329,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3139,7 +3339,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3149,7 +3349,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3159,7 +3359,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3169,7 +3369,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3179,7 +3379,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3189,7 +3389,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3199,7 +3399,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3209,7 +3409,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3219,7 +3419,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3229,7 +3429,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3239,7 +3439,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in PicoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, PicoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, PicoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E12
         );
@@ -3249,7 +3449,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3259,7 +3459,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3269,7 +3469,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3279,7 +3479,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3289,7 +3489,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3299,7 +3499,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3309,7 +3509,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3319,7 +3519,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3329,7 +3529,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3339,7 +3539,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3349,7 +3549,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3359,7 +3559,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3369,7 +3569,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3379,7 +3579,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3389,7 +3589,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3399,7 +3599,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3409,7 +3609,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3419,7 +3619,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3429,7 +3629,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in FemtoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, FemtoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, FemtoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E15
         );
@@ -3439,7 +3639,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3449,7 +3649,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3459,7 +3659,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3469,7 +3669,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3479,7 +3679,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3489,7 +3689,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3499,7 +3699,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3509,7 +3709,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3519,7 +3719,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3529,7 +3729,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3539,7 +3739,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3549,7 +3749,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3559,7 +3759,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3569,7 +3769,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3579,7 +3779,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3589,7 +3789,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3599,7 +3799,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3609,7 +3809,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3619,7 +3819,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in AttoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, AttoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, AttoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E18
         );
@@ -3629,7 +3829,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3639,7 +3839,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3649,7 +3849,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3659,7 +3859,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3669,7 +3869,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3679,7 +3879,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3689,7 +3889,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3699,7 +3899,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3709,7 +3909,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3719,7 +3919,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3729,7 +3929,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3739,7 +3939,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3749,7 +3949,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3759,7 +3959,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3769,7 +3969,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3779,7 +3979,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3789,7 +3989,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3799,7 +3999,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3809,7 +4009,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in ZeptoOhm</param>
     /// <returns>quantity measured in YoctoOhm</returns>
-	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this Quantity<T, ZeptoOhm> val) where T:IConvertible {
+	public static Quantity<double, YoctoOhm> ToYoctoOhm<T>(this BaseQuantity<T, ZeptoOhm> val) where T:IConvertible {
         return new Quantity<double, YoctoOhm>(
             Convert.ToDouble(val.Value) * 1E21
         );
@@ -3819,7 +4019,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in YottaOhm</returns>
-	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, YottaOhm> ToYottaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, YottaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3829,7 +4029,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in ZettaOhm</returns>
-	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZettaOhm> ToZettaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, ZettaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3839,7 +4039,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in ExaOhm</returns>
-	public static Quantity<double, ExaOhm> ToExaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, ExaOhm> ToExaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, ExaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3849,7 +4049,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in PetaOhm</returns>
-	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, PetaOhm> ToPetaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, PetaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3859,7 +4059,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in TeraOhm</returns>
-	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, TeraOhm> ToTeraOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, TeraOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3869,7 +4069,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in GigaOhm</returns>
-	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, GigaOhm> ToGigaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, GigaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3879,7 +4079,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in MegaOhm</returns>
-	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, MegaOhm> ToMegaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, MegaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3889,7 +4089,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in KiloOhm</returns>
-	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, KiloOhm> ToKiloOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, KiloOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3899,7 +4099,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in HectoOhm</returns>
-	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, HectoOhm> ToHectoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, HectoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3909,7 +4109,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in DekaOhm</returns>
-	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, DekaOhm> ToDekaOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, DekaOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3919,7 +4119,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in DeciOhm</returns>
-	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, DeciOhm> ToDeciOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, DeciOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3929,7 +4129,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in CentiOhm</returns>
-	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, CentiOhm> ToCentiOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, CentiOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3939,7 +4139,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in MilliOhm</returns>
-	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, MilliOhm> ToMilliOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, MilliOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3949,7 +4149,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in MicroOhm</returns>
-	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, MicroOhm> ToMicroOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, MicroOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3959,7 +4159,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in NanoOhm</returns>
-	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, NanoOhm> ToNanoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, NanoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3969,7 +4169,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in PicoOhm</returns>
-	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, PicoOhm> ToPicoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, PicoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3979,7 +4179,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in FemtoOhm</returns>
-	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, FemtoOhm> ToFemtoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, FemtoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3989,7 +4189,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in AttoOhm</returns>
-	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, AttoOhm> ToAttoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, AttoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );
@@ -3999,7 +4199,7 @@ public static class ResistanceConversions {
     /// </summary>
     /// <param name="val">quantity measured in YoctoOhm</param>
     /// <returns>quantity measured in ZeptoOhm</returns>
-	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this Quantity<T, YoctoOhm> val) where T:IConvertible {
+	public static Quantity<double, ZeptoOhm> ToZeptoOhm<T>(this BaseQuantity<T, YoctoOhm> val) where T:IConvertible {
         return new Quantity<double, ZeptoOhm>(
             Convert.ToDouble(val.Value) * 1E24
         );

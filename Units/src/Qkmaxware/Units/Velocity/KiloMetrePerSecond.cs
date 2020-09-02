@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Velocity {
 	/// <summary>
-	/// Unit of measurement for the KiloMetrePerSecond (km/s)
+	/// Unit of measurement for KiloMetrePerSecond (km/s)
 	/// </summary>
 	public struct KiloMetrePerSecond : IVelocity {
         public static string Name => "KiloMetrePerSecond";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Velocity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating KiloMetrePerSecond (km/s)
+	/// Extension method factory for generating KiloMetrePerSecond (km/s)
 	/// </summary>
 	public static class KiloMetrePerSecondFactory {
 		/// <summary>

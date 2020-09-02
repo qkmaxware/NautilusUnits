@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the CentiLumen (clm)
+	/// Unit of measurement for CentiLumen (clm)
 	/// </summary>
 	public struct CentiLumen : ILuminosity {
         public static string Name => "CentiLumen";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating CentiLumen (clm)
+	/// Extension method factory for generating CentiLumen (clm)
 	/// </summary>
 	public static class CentiLumenFactory {
 		/// <summary>

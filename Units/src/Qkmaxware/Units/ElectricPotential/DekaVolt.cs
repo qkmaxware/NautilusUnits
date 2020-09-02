@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the DekaVolt (daV)
+	/// Unit of measurement for DekaVolt (daV)
 	/// </summary>
 	public struct DekaVolt : IElectricPotential {
         public static string Name => "DekaVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaVolt (daV)
+	/// Extension method factory for generating DekaVolt (daV)
 	/// </summary>
 	public static class DekaVoltFactory {
 		/// <summary>

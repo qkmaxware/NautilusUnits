@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the DekaCandela (dacd)
+	/// Unit of measurement for DekaCandela (dacd)
 	/// </summary>
 	public struct DekaCandela : ILuminosity {
         public static string Name => "DekaCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DekaCandela (dacd)
+	/// Extension method factory for generating DekaCandela (dacd)
 	/// </summary>
 	public static class DekaCandelaFactory {
 		/// <summary>

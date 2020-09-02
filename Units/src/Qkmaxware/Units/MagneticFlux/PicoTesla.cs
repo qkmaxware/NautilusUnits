@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.MagneticFlux {
 	/// <summary>
-	/// Unit of measurement for the PicoTesla (pT)
+	/// Unit of measurement for PicoTesla (pT)
 	/// </summary>
 	public struct PicoTesla : IMagneticFlux {
         public static string Name => "PicoTesla";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.MagneticFlux {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PicoTesla (pT)
+	/// Extension method factory for generating PicoTesla (pT)
 	/// </summary>
 	public static class PicoTeslaFactory {
 		/// <summary>

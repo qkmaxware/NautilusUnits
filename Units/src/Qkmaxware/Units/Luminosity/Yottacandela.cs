@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Luminosity {
 	/// <summary>
-	/// Unit of measurement for the YottaCandela (Ycd)
+	/// Unit of measurement for YottaCandela (Ycd)
 	/// </summary>
 	public struct YottaCandela : ILuminosity {
         public static string Name => "YottaCandela";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Luminosity {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaCandela (Ycd)
+	/// Extension method factory for generating YottaCandela (Ycd)
 	/// </summary>
 	public static class YottaCandelaFactory {
 		/// <summary>

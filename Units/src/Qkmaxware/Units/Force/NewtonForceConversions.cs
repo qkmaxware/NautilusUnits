@@ -1,9 +1,9 @@
 using System;
 namespace Qkmaxware.Units.Force {
 /// <summary>
-/// Static class housing si-prefix conversions for the unit "Newton"
+/// Static class housing si-prefix conversions for the unit "NewtonForce"
 /// </summary>
-public static class ForceConversions {
+public static class NewtonForceConversions {
 	/// <summary>
     /// Extension method to convert Newton to YottaNewton
     /// </summary>
@@ -12,6 +12,16 @@ public static class ForceConversions {
 	public static Quantity<double, YottaNewton> ToYottaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, YottaNewton>(
             Convert.ToDouble(val.Value) * 1E-24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YottaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in YottaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, YottaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E24
         );
     }
 	/// <summary>
@@ -25,6 +35,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZettaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in ZettaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, ZettaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to ExaNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -32,6 +52,16 @@ public static class ForceConversions {
 	public static Quantity<double, ExaNewton> ToExaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, ExaNewton>(
             Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
+    /// Extension method to convert ExaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in ExaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, ExaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E18
         );
     }
 	/// <summary>
@@ -45,6 +75,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PetaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in PetaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, PetaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to TeraNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -52,6 +92,16 @@ public static class ForceConversions {
 	public static Quantity<double, TeraNewton> ToTeraNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, TeraNewton>(
             Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
+    /// Extension method to convert TeraNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in TeraNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, TeraNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E12
         );
     }
 	/// <summary>
@@ -65,6 +115,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert GigaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in GigaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, GigaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to MegaNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -72,6 +132,16 @@ public static class ForceConversions {
 	public static Quantity<double, MegaNewton> ToMegaNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, MegaNewton>(
             Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MegaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in MegaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, MegaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E6
         );
     }
 	/// <summary>
@@ -85,6 +155,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert KiloNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in KiloNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, KiloNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to HectoNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -92,6 +172,16 @@ public static class ForceConversions {
 	public static Quantity<double, HectoNewton> ToHectoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, HectoNewton>(
             Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
+    /// Extension method to convert HectoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in HectoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, HectoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E2
         );
     }
 	/// <summary>
@@ -105,6 +195,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert DekaNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in DekaNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, DekaNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to DeciNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -112,6 +212,16 @@ public static class ForceConversions {
 	public static Quantity<double, DeciNewton> ToDeciNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, DeciNewton>(
             Convert.ToDouble(val.Value) * 1E1
+        );
+    }
+	/// <summary>
+    /// Extension method to convert DeciNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in DeciNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, DeciNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-1
         );
     }
 	/// <summary>
@@ -125,6 +235,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert CentiNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in CentiNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, CentiNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-2
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to MilliNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -132,6 +252,16 @@ public static class ForceConversions {
 	public static Quantity<double, MilliNewton> ToMilliNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, MilliNewton>(
             Convert.ToDouble(val.Value) * 1E3
+        );
+    }
+	/// <summary>
+    /// Extension method to convert MilliNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in MilliNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, MilliNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-3
         );
     }
 	/// <summary>
@@ -145,6 +275,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert MicroNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in MicroNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, MicroNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-6
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to NanoNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -152,6 +292,16 @@ public static class ForceConversions {
 	public static Quantity<double, NanoNewton> ToNanoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, NanoNewton>(
             Convert.ToDouble(val.Value) * 1E9
+        );
+    }
+	/// <summary>
+    /// Extension method to convert NanoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in NanoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, NanoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-9
         );
     }
 	/// <summary>
@@ -165,6 +315,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert PicoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in PicoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, PicoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-12
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to FemtoNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -172,6 +332,16 @@ public static class ForceConversions {
 	public static Quantity<double, FemtoNewton> ToFemtoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, FemtoNewton>(
             Convert.ToDouble(val.Value) * 1E15
+        );
+    }
+	/// <summary>
+    /// Extension method to convert FemtoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in FemtoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, FemtoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-15
         );
     }
 	/// <summary>
@@ -185,6 +355,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert AttoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in AttoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, AttoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-18
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to ZeptoNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -195,6 +375,16 @@ public static class ForceConversions {
         );
     }
 	/// <summary>
+    /// Extension method to convert ZeptoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in ZeptoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, ZeptoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-21
+        );
+    }
+	/// <summary>
     /// Extension method to convert Newton to YoctoNewton
     /// </summary>
     /// <param name="val">quantity measured in Newton</param>
@@ -202,6 +392,16 @@ public static class ForceConversions {
 	public static Quantity<double, YoctoNewton> ToYoctoNewton<T>(this BaseQuantity<T, Newton> val) where T:IConvertible {
         return new Quantity<double, YoctoNewton>(
             Convert.ToDouble(val.Value) * 1E24
+        );
+    }
+	/// <summary>
+    /// Extension method to convert YoctoNewton to Newton
+    /// </summary>
+    /// <param name="val">quantity measured in YoctoNewton</param>
+    /// <returns>quantity measured in Newton</returns>
+	public static Quantity<double, Newton> ToNewton<T>(this BaseQuantity<T, YoctoNewton> val) where T:IConvertible {
+        return new Quantity<double, Newton>(
+            Convert.ToDouble(val.Value) * 1E-24
         );
     }
 	/// <summary>

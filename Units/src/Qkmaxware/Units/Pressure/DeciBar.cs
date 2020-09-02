@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Pressure {
 	/// <summary>
-	/// Unit of measurement for the DeciBar (dbar)
+	/// Unit of measurement for DeciBar (dbar)
 	/// </summary>
 	public struct DeciBar : IPressure {
         public static string Name => "DeciBar";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Pressure {
     }
 	
 	/// <summary>
-	///Extension method factory for generating DeciBar (dbar)
+	/// Extension method factory for generating DeciBar (dbar)
 	/// </summary>
 	public static class DeciBarFactory {
 		/// <summary>

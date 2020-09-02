@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Frequency {
 	/// <summary>
-	/// Unit of measurement for the TeraHertz (THz)
+	/// Unit of measurement for TeraHertz (THz)
 	/// </summary>
 	public struct TeraHertz : IFrequency {
         public static string Name => "TeraHertz";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Frequency {
     }
 	
 	/// <summary>
-	///Extension method factory for generating TeraHertz (THz)
+	/// Extension method factory for generating TeraHertz (THz)
 	/// </summary>
 	public static class TeraHertzFactory {
 		/// <summary>

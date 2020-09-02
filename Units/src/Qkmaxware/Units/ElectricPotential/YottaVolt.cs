@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.ElectricPotential {
 	/// <summary>
-	/// Unit of measurement for the YottaVolt (YV)
+	/// Unit of measurement for YottaVolt (YV)
 	/// </summary>
 	public struct YottaVolt : IElectricPotential {
         public static string Name => "YottaVolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.ElectricPotential {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YottaVolt (YV)
+	/// Extension method factory for generating YottaVolt (YV)
 	/// </summary>
 	public static class YottaVoltFactory {
 		/// <summary>

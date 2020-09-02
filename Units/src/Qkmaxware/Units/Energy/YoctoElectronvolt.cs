@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the YoctoElectronvolt (yeV)
+	/// Unit of measurement for YoctoElectronvolt (yeV)
 	/// </summary>
 	public struct YoctoElectronvolt : IEnergy {
         public static string Name => "YoctoElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating YoctoElectronvolt (yeV)
+	/// Extension method factory for generating YoctoElectronvolt (yeV)
 	/// </summary>
 	public static class YoctoElectronvoltFactory {
 		/// <summary>

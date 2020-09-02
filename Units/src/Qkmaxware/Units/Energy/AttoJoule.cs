@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the AttoJoule (aJ)
+	/// Unit of measurement for AttoJoule (aJ)
 	/// </summary>
 	public struct AttoJoule : IEnergy {
         public static string Name => "AttoJoule";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating AttoJoule (aJ)
+	/// Extension method factory for generating AttoJoule (aJ)
 	/// </summary>
 	public static class AttoJouleFactory {
 		/// <summary>

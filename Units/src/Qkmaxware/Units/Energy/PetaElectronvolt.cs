@@ -1,6 +1,6 @@
 namespace Qkmaxware.Units.Energy {
 	/// <summary>
-	/// Unit of measurement for the PetaElectronvolt (PeV)
+	/// Unit of measurement for PetaElectronvolt (PeV)
 	/// </summary>
 	public struct PetaElectronvolt : IEnergy {
         public static string Name => "PetaElectronvolt";
@@ -8,7 +8,7 @@ namespace Qkmaxware.Units.Energy {
     }
 	
 	/// <summary>
-	///Extension method factory for generating PetaElectronvolt (PeV)
+	/// Extension method factory for generating PetaElectronvolt (PeV)
 	/// </summary>
 	public static class PetaElectronvoltFactory {
 		/// <summary>
